@@ -8,7 +8,9 @@ const Users=()=>{
         const renderBadgeClass=()=>{
             return users.length>0?"primary":"danger"
         }
-        const phrase = users.length<1?"No one":(users.length>1?`${users.length}`:"Only one")
+        const phrase=()=>{
+            return users.length<1?"No one":(users.length>1?`${users.length}`:"Only one")
+        }
         return <span className={`badge bg-${renderBadgeClass()} m-2`}>{`${phrase} people hang out with you tonight`}</span>
     }
     const handelDelete=(id)=>{
@@ -47,5 +49,4 @@ const Users=()=>{
         {createTable()}
     </>
 }
-
 export default Users
