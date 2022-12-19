@@ -6,10 +6,13 @@ import User from "./user";
 const Users=()=>{
     const [users,setUsers]=useState(api.users.fetchAll())
     console.log(users);
-
     const handelDelete=(id)=>{
         setUsers(users.filter((filteredUser)=>filteredUser._id!==id))
     }
+    const handelBookmark=()=>{
+
+    }
+
     const createTable=()=>{
         if(users.length>0){
             return <table className="table">
@@ -20,11 +23,12 @@ const Users=()=>{
                     <th scope="col">Profession</th>
                     <th scope="col">Meets</th>
                     <th scope="col">Rate</th>
+                    <th scope="col">Bookmark</th>
                     <th scope="col"></th>
                 </tr>
                 </thead>
                 <tbody>
-                    <User users={users} onDelete={handelDelete}/>
+                    <User users={users} onDelete={handelDelete} onBookmark={handelBookmark}/>
                 </tbody>
             </table>
         }
