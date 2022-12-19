@@ -1,18 +1,12 @@
 import React,{useState} from "react";
 import api from "../api"
+import RenderPhrase from "./renderPhrase";
+import User from "./user";
 
 const Users=()=>{
     const [users,setUsers]=useState(api.users.fetchAll())
     console.log(users);
-    const renderPhrase=()=>{
-        const renderBadgeClass=()=>{
-            return users.length>0?"primary":"danger"
-        }
-        const phrase=()=>{
-            return users.length<1?"No one":(users.length>1?`${users.length}`:"Only one")
-        }
-        return <span className={`badge bg-${renderBadgeClass()} m-2`}>{`${phrase} people hang out with you tonight`}</span>
-    }
+
     const handelDelete=(id)=>{
         setUsers(users.filter((filteredUser)=>filteredUser._id!==id))
     }
@@ -30,22 +24,13 @@ const Users=()=>{
                 </tr>
                 </thead>
                 <tbody>
-                {users.map((userObject)=>
-                    <tr key={userObject._id}>
-                        <td>{userObject.name}</td>
-                        <td>{userObject.qualities.map((userQuality)=><span className={`badge m-1 bg-${userQuality.color}`} key={userQuality._id}>{userQuality.name}</span>)}</td>
-                        <td>{userObject.profession.name}</td>
-                        <td>{userObject.completedMeetings}</td>
-                        <td>{userObject.rate}</td>
-                        <td><button className="btn bg-danger" onClick={()=>handelDelete(userObject._id)}>Delete</button></td>
-                    </tr>
-                )}
+                    <User users={users} onDelete={handelDelete}/>
                 </tbody>
             </table>
         }
     }
     return <>
-        {renderPhrase()}
+        {<RenderPhrase users={users}/>}
         {createTable()}
     </>
 }
