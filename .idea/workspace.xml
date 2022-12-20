@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="lesson 3 week 3 &#10;Add component Pagination to users.jsx">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="lesson 3 week 3 &#10;install _lodash &#10;complete pages in pagination.jsx">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pagination.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pagination.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users.jsx" afterDir="false" />
     </list>
@@ -175,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671555516068</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="lesson 3 week 3 &#10;install _lodash &#10;complete pages in pagination.jsx">
+      <created>1671558465877</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1671558465877</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +209,7 @@
     <MESSAGE value="lesson 1 week 1 complete" />
     <MESSAGE value="lesson 3 week 3 pagination.jsx" />
     <MESSAGE value="lesson 3 week 3 &#10;Add component Pagination to users.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 3 week 3 &#10;Add component Pagination to users.jsx" />
+    <MESSAGE value="lesson 3 week 3 &#10;install _lodash &#10;complete pages in pagination.jsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 3 week 3 &#10;install _lodash &#10;complete pages in pagination.jsx" />
   </component>
 </project>
