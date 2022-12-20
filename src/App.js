@@ -12,10 +12,18 @@ const App = () => {
         setUsers(users.filter((filteredUser)=>filteredUser._id!==id))
     }
     const handelBookmark=(id)=>{
-        const userIndex = users.findIndex(user=>user._id===id)
-        const bookmarkUsers=[...users]
-        bookmarkUsers[userIndex].bookmark=!bookmarkUsers[userIndex].bookmark
-        setUsers(bookmarkUsers)
+        setUsers(
+            users.map((user)=>{
+                if(user._id===id){
+                    return {...user, bookmark:!user.bookmark}
+                }
+                return user
+            })
+        )
+        // const userIndex = users.findIndex(user=>user._id===id)
+        // const bookmarkUsers=[...users]
+        // bookmarkUsers[userIndex].bookmark=!bookmarkUsers[userIndex].bookmark
+        // setUsers(bookmarkUsers)
     }
     return <>
         <RenderPhrase users={users}/>
