@@ -5,7 +5,6 @@ import User from "./user";
 
 const Users=()=>{
     const [users,setUsers]=useState(api.users.fetchAll())
-    console.log(users);
     const handelDelete=(id)=>{
         setUsers(users.filter((filteredUser)=>filteredUser._id!==id))
     }
