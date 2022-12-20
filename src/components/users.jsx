@@ -1,6 +1,7 @@
 import React,{useState} from "react";
 import User from "./user";
 import Pagination from "./pagination";
+import {paginate} from "./utils/paginate";
 
 const Users=({users, onDelete, onBookmark})=>{
     const count = users.length
@@ -9,10 +10,7 @@ const Users=({users, onDelete, onBookmark})=>{
     const handlePageChange=(page)=>{
         setCurrentPage(page)
     }
-    const paginate=(items, pageNumber, pageSize)=>{
-        const startIndex = (pageNumber-1)*pageSize
-        return [...items].splice(startIndex,pageSize)
-    }
+
     const usersCrop = paginate(users,currentPage,pageSize)
     return <>
         {count>0 && <table className="table">
