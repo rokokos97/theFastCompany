@@ -9,8 +9,11 @@ const Users=()=>{
     const handelDelete=(id)=>{
         setUsers(users.filter((filteredUser)=>filteredUser._id!==id))
     }
-    const handelBookmark=()=>{
-
+    const handelBookmark=(id)=>{
+        const userIndex = users.findIndex(user=>user._id===id)
+        const bookmarkUsers=[...users]
+        bookmarkUsers[userIndex].bookmark=!bookmarkUsers[userIndex].bookmark
+        setUsers(bookmarkUsers)
     }
 
     const createTable=()=>{
