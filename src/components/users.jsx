@@ -3,18 +3,7 @@ import api from "../api"
 import RenderPhrase from "./renderPhrase";
 import User from "./user";
 
-const Users=()=>{
-    const [users,setUsers]=useState(api.users.fetchAll())
-    const handelDelete=(id)=>{
-        setUsers(users.filter((filteredUser)=>filteredUser._id!==id))
-    }
-    const handelBookmark=(id)=>{
-        const userIndex = users.findIndex(user=>user._id===id)
-        const bookmarkUsers=[...users]
-        bookmarkUsers[userIndex].bookmark=!bookmarkUsers[userIndex].bookmark
-        setUsers(bookmarkUsers)
-    }
-
+const Users=({users, onDelete, onBookmark})=>{
     const createTable=()=>{
         if(users.length>0){
             return <table className="table">
@@ -30,13 +19,12 @@ const Users=()=>{
                 </tr>
                 </thead>
                 <tbody>
-                    <User users={users} onDelete={handelDelete} onBookmark={handelBookmark}/>
+                    <User users={users} onDelete={onDelete} onBookmark={onBookmark}/>
                 </tbody>
             </table>
         }
     }
     return <>
-        {<RenderPhrase users={users}/>}
         {createTable()}
     </>
 }
