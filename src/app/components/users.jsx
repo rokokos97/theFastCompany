@@ -10,15 +10,16 @@ function Users({ users, ...rest }) {
     const count = users.length;
     const pageSize = 4;
     const [currentPage, setCurrentPage] = useState(1);
-    const [professions, setProfessions] = useState();
+    const [professions, setProfessions] = useState(null);
+    const [selectedProf, setSelectedProf] = useState(null);
     useEffect(() => {
         api.professions.fetchAll().then((data) => setProfessions(data));
     }, []);
     const handlePageChange = (page) => {
         setCurrentPage(page);
     };
-    const handleProfessionSelect = () => {
-        console.log(professions);
+    const handleProfessionSelect = (item) => {
+        setSelectedProf(item);
     };
 
     const usersCrop = paginate(users, currentPage, pageSize);
@@ -28,6 +29,7 @@ function Users({ users, ...rest }) {
                 <GroupList
                     items={professions}
                     onItemSelect={handleProfessionSelect}
+                    selectedItem={selectedProf}
                     // contentProperty="_id"
                     // valueProperty="name"
                 />
