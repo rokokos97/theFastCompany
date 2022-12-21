@@ -5,16 +5,16 @@ const professions = {
     engineer: { _id: "67rdca3eeb7f6fgeed471822", name: "Engineer" },
     actor: { _id: "67rdca3eeb7f6fgeed471824", name: "Actor" },
     cook: { _id: "67rdca3eeb7f6fgeed471829", name: "Cook" }
-}
+};
 const qualities = {
     tedious: { _id: "67rdca3eeb7f6fgeed471198", name: "Offered", color: "primary" },
     strange: { _id: "67rdca3eeb7f6fgeed471100", name: "Strange", color: "secondary" },
     buller: { _id: "67rdca3eeb7f6fgeed4711012", name: "Troll", color: "success" },
     alcoholic: { _id: "67rdca3eeb7f6fgeed471101", name: "Alcoholic", color: "danger" },
     handsome: { _id: "67rdca3eeb7f6fgeed471102", name: "Handsome", color: "info" },
-    uncertain: { _id: "67rdca3eeb7f6fgeed471103", name: "Uncertain", color: "dark" },
+    uncertain: { _id: "67rdca3eeb7f6fgeed471103", name: "Uncertain", color: "dark" }
 
-}
+};
 
 const users = [
     {
@@ -124,8 +124,8 @@ const users = [
         completedMeetings: 434,
         rate: 5,
         bookmark: false
-    },
-]
-export function fetchAll() {
-    return users
+    }
+];
+export function fetchAll () {
+    return users;
 }
