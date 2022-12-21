@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add defaultProps = { contentProperty valueProperty } in groupList.jsx&#10;&#10;&#10;}">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add EventListener to item in groupList.jsx&#10;add useState from selectedProf &#10;add render class to item list in groupList.jsx&#10;&#10;}">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/groupList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/groupList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/users.jsx" afterDir="false" />
@@ -260,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671644455957</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="add EventListener to item in groupList.jsx&#10;add useState from selectedProf &#10;add render class to item list in groupList.jsx&#10;&#10;}">
+      <created>1671646576481</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1671646576481</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,6 +306,7 @@
     <MESSAGE value="expended fake api" />
     <MESSAGE value="add processing the incoming object in groupList &#10;add independent parameters contentProperty and valueProperty" />
     <MESSAGE value="add defaultProps = { contentProperty valueProperty } in groupList.jsx&#10;&#10;&#10;}" />
-    <option name="LAST_COMMIT_MESSAGE" value="add defaultProps = { contentProperty valueProperty } in groupList.jsx&#10;&#10;&#10;}" />
+    <MESSAGE value="add EventListener to item in groupList.jsx&#10;add useState from selectedProf &#10;add render class to item list in groupList.jsx&#10;&#10;}" />
+    <option name="LAST_COMMIT_MESSAGE" value="add EventListener to item in groupList.jsx&#10;add useState from selectedProf &#10;add render class to item list in groupList.jsx&#10;&#10;}" />
   </component>
 </project>

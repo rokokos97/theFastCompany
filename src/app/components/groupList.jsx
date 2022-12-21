@@ -5,7 +5,8 @@ const GroupList = ({
     contentProperty,
     valueProperty,
     onItemSelect,
-    selectedItem
+    selectedItem,
+    onResat
 }) => {
     console.log(items);
     return (
@@ -25,6 +26,9 @@ const GroupList = ({
                     </li>
                 ))}
             </ul>
+            <button className={"btn btn-secondary m-2"} onClick={onResat}>
+                Reset
+            </button>
         </>
     );
 };
@@ -38,6 +42,7 @@ GroupList.propTypes = {
     contentProperty: PropTypes.string.isRequired,
     items: PropTypes.object.isRequired,
     onItemSelect: PropTypes.func,
-    selectedItem: PropTypes.object
+    selectedItem: PropTypes.object,
+    onResat: PropTypes.func
 };
 export default GroupList;

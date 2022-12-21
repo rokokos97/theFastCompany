@@ -6,12 +6,12 @@ import { paginate } from "./utils/paginate";
 import api from "../api";
 import GroupList from "./groupList";
 
-function Users({ users, ...rest }) {
-    const count = users.length;
+function Users({ users: allUsers, ...rest }) {
+    const count = allUsers.length;
     const pageSize = 4;
     const [currentPage, setCurrentPage] = useState(1);
     const [professions, setProfessions] = useState(null);
-    const [selectedProf, setSelectedProf] = useState(null);
+    const [selectedProf, setSelectedProf] = useState();
     useEffect(() => {
         api.professions.fetchAll().then((data) => setProfessions(data));
     }, []);
@@ -21,8 +21,14 @@ function Users({ users, ...rest }) {
     const handleProfessionSelect = (item) => {
         setSelectedProf(item);
     };
-
-    const usersCrop = paginate(users, currentPage, pageSize);
+    const handleReset = () => {
+        setSelectedProf();
+    };
+    const filteredUsers = selectedProf
+        ? allUsers.filter((user) => user.profession === selectedProf)
+        : allUsers;
+    console.log(filteredUsers);
+    const usersCrop = paginate(filteredUsers, currentPage, pageSize);
     return (
         <>
             {professions && (
@@ -30,6 +36,7 @@ function Users({ users, ...rest }) {
                     items={professions}
                     onItemSelect={handleProfessionSelect}
                     selectedItem={selectedProf}
+                    onResat={handleReset}
                     // contentProperty="_id"
                     // valueProperty="name"
                 />
