@@ -4,26 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add rules to eslint.js&#10;refactoring code">
-      <change afterPath="$PROJECT_DIR$/src/app/api/fake.api/professions.api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/groupList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="expended fake api">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/fake.api/user.api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/fake.api/user.api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/bookmark.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/bookmark.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pagination.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pagination.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/qualitie.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/qualitie.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/renderPhrase.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/renderPhrase.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/user.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/user.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/users.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/utils/paginate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/utils/paginate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/svg/bookmark-heart-fill.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/svg/bookmark-heart.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/paginate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/utils/paginate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/groupList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/groupList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/users.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671635026489</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="expended fake api">
+      <created>1671639559153</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1671639559153</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,6 +274,8 @@
     <MESSAGE value="install ESlint" />
     <MESSAGE value="add rules to eslint.js&#10;refactoring code" />
     <MESSAGE value="all PropTypes complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="all PropTypes complete" />
+    <MESSAGE value="expended fake api &#10;create component groupList.jsx" />
+    <MESSAGE value="expended fake api" />
+    <option name="LAST_COMMIT_MESSAGE" value="expended fake api" />
   </component>
 </project>
