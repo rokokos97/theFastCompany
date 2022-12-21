@@ -1,8 +1,15 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const Bookmark = ({user,onBookmark}) => {
-    return <button className={"btn btn-outline-danger"} onClick={()=>onBookmark(user._id)}>
-        <i className={"bi bi-bookmark-heart"+(user.bookmark?"-fill":"")}></i>
+function Bookmark({ user, onBookmark }) {
+  return (
+    <button type="button" className="btn btn-outline-danger" onClick={() => onBookmark(user._id)}>
+      <i className={`bi bi-bookmark-heart${user.bookmark ? '-fill' : ''}`} />
     </button>
+  );
 }
-export default Bookmark
+Bookmark.propTypes = {
+  user: PropTypes.object.isRequired,
+  onBookmark: PropTypes.bool.isRequired,
+};
+export default Bookmark;
