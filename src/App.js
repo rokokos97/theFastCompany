@@ -1,9 +1,9 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Users from "./components/users";
 import api from "./api";
 import RenderPhrase from "./components/renderPhrase";
 
-function App () {
+function App() {
     const [users, setUsers] = useState(api.users.fetchAll());
 
     const handelDelete = (id) => {
@@ -27,9 +27,9 @@ function App () {
         <>
             <RenderPhrase users={users} />
             <Users
-                onDelete={handelDelete}
                 users={users}
-                onBookmark={handelBookmark}
+                onDelete={handelDelete}
+                onToggleBookMark={handelBookmark}
             />
         </>
     );

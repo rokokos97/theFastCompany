@@ -1,10 +1,11 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import User from "./user";
 import Pagination from "./pagination";
-import {paginate} from "./utils/paginate";
+import { paginate } from "./utils/paginate";
 
-function Users ({ users, onDelete, onBookmark }) {
+function Users({ users, ...rest }) {
+    console.log(users);
     const count = users.length;
     const pageSize = 4;
     const [currentPage, setCurrentPage] = useState(1);
@@ -29,11 +30,9 @@ function Users ({ users, onDelete, onBookmark }) {
                         </tr>
                     </thead>
                     <tbody>
-                        <User
-                            users={usersCrop}
-                            onDelete={onDelete}
-                            onBookmark={onBookmark}
-                        />
+                        {usersCrop.map((user) => (
+                            <User key={user._id} {...rest} {...user} />
+                        ))}
                     </tbody>
                 </table>
             )}

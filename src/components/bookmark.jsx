@@ -1,15 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function Bookmark ({ user, onBookmark }) {
+function Bookmark({ status, ...rest }) {
     return (
-        <button type="button" className="btn btn-outline-danger" onClick={() => onBookmark(user._id)}>
-            <i className={`bi bi-bookmark-heart${user.bookmark ? "-fill" : ""}`} />
+        <button {...rest} type="button" className="btn btn-outline-danger">
+            <i className={"bi bi-bookmark" + (status ? "-heart-fill" : "")}></i>
         </button>
     );
 }
 Bookmark.propTypes = {
-    user: PropTypes.object.isRequired,
-    onBookmark: PropTypes.func.isRequired
+    status: PropTypes.bool
 };
 export default Bookmark;

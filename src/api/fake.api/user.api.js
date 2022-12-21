@@ -7,13 +7,36 @@ const professions = {
     cook: { _id: "67rdca3eeb7f6fgeed471829", name: "Cook" }
 };
 const qualities = {
-    tedious: { _id: "67rdca3eeb7f6fgeed471198", name: "Offered", color: "primary" },
-    strange: { _id: "67rdca3eeb7f6fgeed471100", name: "Strange", color: "secondary" },
-    buller: { _id: "67rdca3eeb7f6fgeed4711012", name: "Troll", color: "success" },
-    alcoholic: { _id: "67rdca3eeb7f6fgeed471101", name: "Alcoholic", color: "danger" },
-    handsome: { _id: "67rdca3eeb7f6fgeed471102", name: "Handsome", color: "info" },
-    uncertain: { _id: "67rdca3eeb7f6fgeed471103", name: "Uncertain", color: "dark" }
-
+    tedious: {
+        _id: "67rdca3eeb7f6fgeed471198",
+        name: "Offered",
+        color: "primary"
+    },
+    strange: {
+        _id: "67rdca3eeb7f6fgeed471100",
+        name: "Strange",
+        color: "secondary"
+    },
+    buller: {
+        _id: "67rdca3eeb7f6fgeed4711012",
+        name: "Troll",
+        color: "success"
+    },
+    alcoholic: {
+        _id: "67rdca3eeb7f6fgeed471101",
+        name: "Alcoholic",
+        color: "danger"
+    },
+    handsome: {
+        _id: "67rdca3eeb7f6fgeed471102",
+        name: "Handsome",
+        color: "info"
+    },
+    uncertain: {
+        _id: "67rdca3eeb7f6fgeed471103",
+        name: "Uncertain",
+        color: "dark"
+    }
 };
 
 const users = [
@@ -126,6 +149,6 @@ const users = [
         bookmark: false
     }
 ];
-export function fetchAll () {
+export function fetchAll() {
     return users;
 }

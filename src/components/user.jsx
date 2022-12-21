@@ -1,35 +1,57 @@
 import React from "react";
+import Qualitie from "./qualitie";
 import PropTypes from "prop-types";
-import Qualities from "./qualities";
 import Bookmark from "./bookmark";
 
-function User ({ users, onDelete, onBookmark }) {
+const User = ({
+    _id,
+    name,
+    qualities,
+    profession,
+    completedMeetings,
+    rate,
+    onDelete,
+    bookmark,
+    onToggleBookMark
+}) => {
     return (
-        <>
-            {users.map((userObject) => (
-                <tr key={userObject._id}>
-                    <td>{userObject.name}</td>
-                    <Qualities userObject={userObject} />
-                    <td>{userObject.profession.name}</td>
-                    <td>{userObject.completedMeetings}</td>
-                    <td>{userObject.rate}</td>
-                    <td><Bookmark user={userObject} onBookmark={onBookmark} /></td>
-                    <td>
-                        <button
-                            className="btn bg-danger"
-                            onClick={() => onDelete(userObject._id)}
-                        >
-              Delete
-                        </button>
-                    </td>
-                </tr>
-            ))}
-        </>
+        <tr>
+            <td>{name}</td>
+            <td>
+                {/* eslint-disable-next-line react/prop-types */}
+                {qualities.map((qual) => (
+                    <Qualitie key={qual._id} {...qual} />
+                ))}
+            </td>
+            <td>{profession.name}</td>
+            <td>{completedMeetings}</td>
+            <td>{rate}</td>
+            <td>
+                <Bookmark
+                    status={bookmark}
+                    onClick={() => onToggleBookMark(_id)}
+                />
+            </td>
+            <td>
+                <button
+                    className={"btn btn-danger"}
+                    onClick={() => onDelete(_id)}
+                >
+                    Delete
+                </button>
+            </td>
+        </tr>
     );
-}
+};
 User.propTypes = {
-    users: PropTypes.array.isRequired,
-    onDelete: PropTypes.func.isRequired,
-    onBookmark: PropTypes.func.isRequired
+    _id: PropTypes.string,
+    name: PropTypes.string,
+    qualities: PropTypes.array,
+    profession: PropTypes.object,
+    completedMeetings: PropTypes.number,
+    rate: PropTypes.number,
+    bookmark: PropTypes.bool,
+    onToggleBookMark: PropTypes.func,
+    onDelete: PropTypes.func
 };
 export default User;
