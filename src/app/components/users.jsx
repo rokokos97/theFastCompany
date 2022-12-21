@@ -28,8 +28,8 @@ function Users({ users, ...rest }) {
                 <GroupList
                     items={professions}
                     onItemSelect={handleProfessionSelect}
-                    contentProperty="_id"
-                    valueProperty="name"
+                    // contentProperty="_id"
+                    // valueProperty="name"
                 />
             )}
             {count > 0 && (
