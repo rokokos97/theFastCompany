@@ -8,7 +8,6 @@ const GroupList = ({
     selectedItem,
     onResat
 }) => {
-    console.log(items);
     return (
         <>
             <ul className="list-group">
