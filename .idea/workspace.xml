@@ -4,10 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="install propTypes&#10;add propTypes in pagination.jsx">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="install ESlint">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/bookmark.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/bookmark.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pagination.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pagination.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/qualitie.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/qualitie.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/searchStatus.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/searchStatus.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/user.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reportWebVitals.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/paginate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/paginate.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +31,9 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -58,6 +72,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="ProjectId" id="2J2v0H4OQ6Vd0Jod7OFBWe44HsP" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -68,16 +85,18 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "code.cleanup.on.save": "true",
     "last_opened_file_path": "/Users/rokokos97/WebstormProjects/the-fast-company",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "",
+    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/usr/local/lib/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "actions.on.save",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -101,7 +120,8 @@
       <workItem from="1671576970980" duration="1568000" />
       <workItem from="1671578550776" duration="29000" />
       <workItem from="1671578588693" duration="290000" />
-      <workItem from="1671578886212" duration="96000" />
+      <workItem from="1671578886212" duration="940000" />
+      <workItem from="1671579843926" duration="3010000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1671290103691</created>
@@ -208,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671574663872</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="install ESlint">
+      <created>1671579065590</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1671579065590</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +267,7 @@
     <MESSAGE value="lesson 3 week 3 &#10;install _lodash &#10;complete pages in pagination.jsx" />
     <MESSAGE value="lesson 3 week 3 &#10;add utils/paginate.js&#10;create method paginate" />
     <MESSAGE value="install propTypes&#10;add propTypes in pagination.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="install propTypes&#10;add propTypes in pagination.jsx" />
+    <MESSAGE value="install ESlint" />
+    <option name="LAST_COMMIT_MESSAGE" value="install ESlint" />
   </component>
 </project>

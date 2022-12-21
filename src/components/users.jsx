@@ -1,8 +1,10 @@
-import React, { useState } from "react";
-import User from "./user";
-import Pagination from "./pagination";
-import { paginate } from "../utils/paginate";
-const Users = ({ users, ...rest }) => {
+import React, {useState} from 'react';
+import User from './user';
+import Pagination from './pagination';
+import {paginate} from '../utils/paginate';
+import PropTypes from 'prop-types';
+
+const Users = ({users, ...rest}) => {
   const count = users.length;
   const pageSize = 4;
   const [currentPage, setCurrentPage] = useState(1);
@@ -44,4 +46,7 @@ const Users = ({ users, ...rest }) => {
   );
 };
 
+Users.propTypes = {
+  users: PropTypes.array,
+};
 export default Users;

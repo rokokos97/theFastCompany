@@ -4,6 +4,8 @@
 ##frontend toolkit
 Bootstrap 5.1.0
 
-##Snippit 
+##package 
 Prettier
 Reasct Snippet
+_lodesh
+ESLint
