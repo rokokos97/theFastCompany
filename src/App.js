@@ -25,7 +25,7 @@ function App() {
     };
     return (
         <>
-            <RenderPhrase users={users} />
+            <RenderPhrase usersNumber={users.length} />
             <Users
                 users={users}
                 onDelete={handelDelete}

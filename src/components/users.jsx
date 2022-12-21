@@ -47,8 +47,6 @@ function Users({ users, ...rest }) {
 }
 
 Users.propTypes = {
-    users: PropTypes.array.isRequired,
-    onDelete: PropTypes.func,
-    onBookmark: PropTypes.func
+    users: PropTypes.array
 };
 export default Users;

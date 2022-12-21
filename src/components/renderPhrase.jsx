@@ -1,16 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function RenderPhrase({ users }) {
-    const renderBadgeClass = () => (users.length > 0 ? "primary" : "danger");
+function RenderPhrase({ usersNumber }) {
+    const renderBadgeClass = () => (usersNumber > 0 ? "primary" : "danger");
     const phrase = () => {
-        switch (users.length) {
+        switch (usersNumber) {
             case 0:
                 return "No one";
             case 1:
                 return "Only one person";
             default:
-                return `${users.length}`;
+                return `${usersNumber}`;
         }
     };
     return (
@@ -20,6 +20,6 @@ function RenderPhrase({ users }) {
     );
 }
 RenderPhrase.propTypes = {
-    users: PropTypes.array.isRequired
+    usersNumber: PropTypes.number
 };
 export default RenderPhrase;
