@@ -13,11 +13,11 @@ function RenderPhrase({ usersNumber }) {
                 return `${usersNumber}`;
         }
     };
-    return (
-        <span
-            className={`badge bg-${renderBadgeClass()} m-2`}
-        >{`${phrase()} hang out with you tonight`}</span>
-    );
+    // return (
+    //     <span
+    //         className={`badge bg-${renderBadgeClass()} m-2`}
+    //     >{`${phrase()} hang out with you tonight`}</span>
+    // );
 }
 RenderPhrase.propTypes = {
     usersNumber: PropTypes.number

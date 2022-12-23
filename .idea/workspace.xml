@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add button Resat">
+      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/fake.api/professions.api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/fake.api/user.api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/index.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/groupList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/groupList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/renderPhrase.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/renderPhrase.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/users.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="week_5_filtration" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -78,7 +83,8 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/usr/local/lib/node_modules/prettier",
-    "settings.editor.selected.configurable": "cn.yiiguxing.plugin.translate",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "actions.on.save",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>

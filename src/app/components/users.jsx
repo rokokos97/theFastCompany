@@ -8,7 +8,7 @@ import GroupList from "./groupList";
 import RenderPhrase from "./renderPhrase";
 
 function Users({ users: allUsers, ...rest }) {
-    const pageSize = 2;
+    const pageSize = 3;
     const [currentPage, setCurrentPage] = useState(1);
     const [professions, setProfessions] = useState(null);
     const [selectedProf, setSelectedProf] = useState();
@@ -28,7 +28,11 @@ function Users({ users: allUsers, ...rest }) {
         setSelectedProf(null);
     };
     const filteredUsers = selectedProf
-        ? allUsers.filter((user) => user.profession === selectedProf)
+        ? allUsers.filter(
+            (user) =>
+                JSON.stringify(user.profession) ===
+                  JSON.stringify(selectedProf)
+        )
         : allUsers;
     const count = filteredUsers.length;
     const usersCrop = paginate(filteredUsers, currentPage, pageSize);
@@ -51,7 +55,7 @@ function Users({ users: allUsers, ...rest }) {
             </div>
             <div>
                 <RenderPhrase usersNumber={count} />
-                {count > 0 && (
+                {(count > 0) && (
                     <table className="table">
                         <thead>
                             <tr>
