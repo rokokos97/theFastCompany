@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add button Resat">
-      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="filtration complete">
+      <change afterPath="$PROJECT_DIR$/src/app/components/userTable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/fake.api/professions.api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/fake.api/user.api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/groupList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/groupList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/renderPhrase.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/renderPhrase.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/renderPhrase.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/searchStatus.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/users.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -281,7 +276,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671648568712</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="filtration complete">
+      <created>1671826376883</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1671826376883</updated>
+    </task>
+    <task id="LOCAL-00026" summary="filtration complete">
+      <created>1671826385326</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1671826385326</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,6 +331,7 @@
     <MESSAGE value="add defaultProps = { contentProperty valueProperty } in groupList.jsx&#10;&#10;&#10;}" />
     <MESSAGE value="add EventListener to item in groupList.jsx&#10;add useState from selectedProf &#10;add render class to item list in groupList.jsx&#10;&#10;}" />
     <MESSAGE value="add button Resat" />
-    <option name="LAST_COMMIT_MESSAGE" value="add button Resat" />
+    <MESSAGE value="filtration complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="filtration complete" />
   </component>
 </project>

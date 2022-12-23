@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import User from "./user";
 import Pagination from "./pagination";
 import { paginate } from "./utils/paginate";
 import api from "../api";
 import GroupList from "./groupList";
-import RenderPhrase from "./renderPhrase";
+import SearchStatus from "./searchStatus";
+import UserTable from "./userTable";
 
 function Users({ users: allUsers, ...rest }) {
     const pageSize = 3;
@@ -53,27 +53,10 @@ function Users({ users: allUsers, ...rest }) {
                     />
                 )}
             </div>
-            <div>
-                <RenderPhrase usersNumber={count} />
+            <div className={"vw-100"}>
+                <SearchStatus usersNumber={count} />
                 {(count > 0) && (
-                    <table className="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Name</th>
-                                <th scope="col">Qualities</th>
-                                <th scope="col">Profession</th>
-                                <th scope="col">Meets</th>
-                                <th scope="col">Rate</th>
-                                <th scope="col">Bookmark</th>
-                                <th scope="col" />
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {usersCrop.map((user) => (
-                                <User key={user._id} {...rest} {...user} />
-                            ))}
-                        </tbody>
-                    </table>
+                    <UserTable users={usersCrop} {...rest}/>
                 )}
                 <Pagination
                     countItem={count}
