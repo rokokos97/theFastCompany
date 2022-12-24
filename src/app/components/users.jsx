@@ -9,10 +9,11 @@ import UserTable from "./userTable";
 import _ from "lodash";
 
 function Users({ users: allUsers, ...rest }) {
-    const pageSize = 3;
+    const pageSize = 8;
     const [currentPage, setCurrentPage] = useState(1);
     const [professions, setProfessions] = useState(null);
     const [selectedProf, setSelectedProf] = useState();
+    const [sortBY, setSortBy] = useState({ iter: "name", order: "asc" });
     useEffect(() => {
         api.professions.fetchAll().then((data) => setProfessions(data));
     }, []);
@@ -40,7 +41,7 @@ function Users({ users: allUsers, ...rest }) {
         )
         : allUsers;
     const count = filteredUsers.length;
-    const sortedUsers = _.orderBy(filteredUsers, ["name"], ["desc"]);
+    const sortedUsers = _.orderBy(filteredUsers, sortBY.iter, sortBY.order);
     const usersCrop = paginate(sortedUsers, currentPage, pageSize);
     useEffect(() => {
         if (usersCrop.length === 0) setCurrentPage(1);
