@@ -1,28 +1,21 @@
 import React from "react";
 import User from "./user";
 import PropTypes from "prop-types";
+import TableHeader from "./tableHeader";
 
-const UserTable = ({ users, onSort, currentSort, ...rest }) => {
-    const handelSort = (item) => {
-        if (currentSort.iter === item) {
-            onSort({ ...currentSort, order: currentSort.order === "asc" ? "desc" : "asc" });
-        } else {
-            onSort({ iter: item, order: "asc" });
-        }
+const UserTable = ({ users, onSort, selectedSort, ...rest }) => {
+    const columns = {
+        name: { iter: "name", name: "Name" },
+        qualities: { name: "Qualities" },
+        profession: { iter: "profession.name", name: "Profession" },
+        completedMeetings: { iter: "completedMeetings", name: "Meets" },
+        rate: { iter: "rate", name: "Rate" },
+        bookmark: { iter: "bookmark", name: "Bookmark" },
+        delete: {}
     };
     return (
         <table className="table">
-            <thead>
-                <tr>
-                    <th onClick={() => handelSort("name")} scope="col">Name</th>
-                    <th scope="col">Qualities</th>
-                    <th onClick={() => handelSort("profession.name")} scope="col">Profession</th>
-                    <th onClick={() => handelSort("completedMeetings")} scope="col">Meets</th>
-                    <th onClick={() => handelSort("rate")} scope="col">Rate</th>
-                    <th onClick={() => handelSort("bookmark")} scope="col">Bookmark</th>
-                    <th scope="col" />
-                </tr>
-            </thead>
+            <TableHeader selectedSort={selectedSort} onSort={onSort} columns={columns}/>
             <tbody>
                 {users.map((user) => (
                     <User key={user._id} {...rest} {...user} />
@@ -33,7 +26,7 @@ const UserTable = ({ users, onSort, currentSort, ...rest }) => {
 };
 
 UserTable.propTypes = {
-    currentSort: PropTypes.object,
+    selectedSort: PropTypes.object,
     users: PropTypes.array.isRequired,
     onSort: PropTypes.func
 };

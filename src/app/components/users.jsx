@@ -62,7 +62,7 @@ function Users({ users: allUsers, ...rest }) {
             <div className={"vw-100"}>
                 <SearchStatus usersNumber={count} />
                 {(count > 0) && (
-                    <UserTable users={usersCrop} onSort={handelSort} currentSort={sortBy} {...rest}/>
+                    <UserTable users={usersCrop} onSort={handelSort} selectedSort={sortBy} {...rest}/>
                 )}
                 <Pagination
                     countItem={count}
