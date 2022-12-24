@@ -6,6 +6,7 @@ import api from "../api";
 import GroupList from "./groupList";
 import SearchStatus from "./searchStatus";
 import UserTable from "./userTable";
+import _ from "lodash";
 
 function Users({ users: allUsers, ...rest }) {
     const pageSize = 3;
@@ -27,6 +28,10 @@ function Users({ users: allUsers, ...rest }) {
     const handleReset = () => {
         setSelectedProf(null);
     };
+    const handelSort = (item) => {
+        console.log(item);
+    };
+
     const filteredUsers = selectedProf
         ? allUsers.filter(
             (user) =>
@@ -35,7 +40,8 @@ function Users({ users: allUsers, ...rest }) {
         )
         : allUsers;
     const count = filteredUsers.length;
-    const usersCrop = paginate(filteredUsers, currentPage, pageSize);
+    const sortedUsers = _.orderBy(filteredUsers, ["name"], ["desc"]);
+    const usersCrop = paginate(sortedUsers, currentPage, pageSize);
     useEffect(() => {
         if (usersCrop.length === 0) setCurrentPage(1);
     }, [usersCrop]);
@@ -56,7 +62,7 @@ function Users({ users: allUsers, ...rest }) {
             <div className={"vw-100"}>
                 <SearchStatus usersNumber={count} />
                 {(count > 0) && (
-                    <UserTable users={usersCrop} {...rest}/>
+                    <UserTable users={usersCrop} onSort={handelSort} {...rest}/>
                 )}
                 <Pagination
                     countItem={count}
@@ -68,7 +74,6 @@ function Users({ users: allUsers, ...rest }) {
         </div>
     );
 }
-
 Users.propTypes = {
     users: PropTypes.array
 };
