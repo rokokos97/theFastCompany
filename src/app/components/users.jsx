@@ -30,11 +30,7 @@ function Users({ users: allUsers, ...rest }) {
         setSelectedProf(null);
     };
     const handelSort = (item) => {
-        if (sortBy.iter === item) {
-            setSortBy((prevState) => ({ ...prevState, order: prevState.order === "asc" ? "desc" : "asc" }));
-        } else {
-            setSortBy({ iter: item, order: "asc" });
-        }
+        setSortBy(item);
     };
     const filteredUsers = selectedProf
         ? allUsers.filter(
@@ -66,7 +62,7 @@ function Users({ users: allUsers, ...rest }) {
             <div className={"vw-100"}>
                 <SearchStatus usersNumber={count} />
                 {(count > 0) && (
-                    <UserTable users={usersCrop} onSort={handelSort} {...rest}/>
+                    <UserTable users={usersCrop} onSort={handelSort} currentSort={sortBy} {...rest}/>
                 )}
                 <Pagination
                     countItem={count}
