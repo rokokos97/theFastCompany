@@ -16,8 +16,8 @@ const User = ({
 }) => {
     return (
         <tr>
-            <td>{name}</td>
-            <td>
+            <td className={"w-25"}>{name}</td>
+            <td className={"w-25"}>
                 {/* eslint-disable-next-line react/prop-types */}
                 {qualities.map((qual) => (
                     <Qualitie key={qual._id} {...qual} />
