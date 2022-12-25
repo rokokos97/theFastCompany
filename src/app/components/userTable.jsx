@@ -14,7 +14,7 @@ const UserTable = ({ users, onSort, selectedSort, onToggleBookMark }) => {
         bookmark: {
             path: "bookmark",
             name: "Bookmark",
-            component: <Bookmark
+            component: (user) => <Bookmark
                 status={bookmark}
                 onClick={() => onToggleBookMark(_id)}
             /> },
