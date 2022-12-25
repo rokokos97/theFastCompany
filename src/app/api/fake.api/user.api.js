@@ -89,7 +89,7 @@ const users = [
     },
     {
         _id: "67rdca3eeb7f6fgeed471821",
-        name: "Говард Воловиц",
+        name: "Howard Wolowitz",
         profession: professions.engineer,
         qualities: [qualities.strange, qualities.tedious],
         completedMeetings: 72,
