@@ -1,10 +1,9 @@
 import React from "react";
-import User from "./user";
 import PropTypes from "prop-types";
 import TableHeader from "./tableHeader";
 import TableBody from "./tableBody";
 
-const UserTable = ({ users, onSort, selectedSort, ...rest }) => {
+const UserTable = ({ users, onSort, selectedSort }) => {
     const columns = {
         name: { path: "name", name: "Name" },
         qualities: { name: "Qualities" },
