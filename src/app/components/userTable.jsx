@@ -10,8 +10,8 @@ const UserTable = ({ users, onSort, selectedSort }) => {
         profession: { path: "profession.name", name: "Profession" },
         completedMeetings: { path: "completedMeetings", name: "Meets" },
         rate: { path: "rate", name: "Rate" },
-        bookmark: { path: "bookmark", name: "Bookmark" },
-        delete: {}
+        bookmark: { path: "bookmark", name: "Bookmark", component: "Bookmark" },
+        delete: { component: "Delete" }
     };
     return (
         <table className="table">

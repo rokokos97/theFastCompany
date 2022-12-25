@@ -6,7 +6,11 @@ const TableBody = ({ data, columns }) => {
         { data.map((item) =>
             <tr key={item._id}>
                 {Object.keys(columns).map((column) =>
-                    <td key={column} >{_.get(item, columns[column].path)}</td>
+                    <td key={column} >
+                        {columns[column].component
+                            ? columns[column].component
+                            : _.get(item, columns[column].path)}
+                    </td>
                 )}
             </tr>
         )}
