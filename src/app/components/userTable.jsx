@@ -18,11 +18,11 @@ const UserTable = ({ users, onSort, selectedSort, ...rest }) => {
         <table className="table">
             <TableHeader selectedSort={selectedSort} onSort={onSort} columns={columns}/>
             <TableBody data={users} columns={columns}/>
-            <tbody>
-                {users.map((user) => (
-                    <User key={user._id} {...rest} {...user} />
-                ))}
-            </tbody>
+            {/*<tbody>*/}
+            {/*    {users.map((user) => (*/}
+            {/*        <User key={user._id} {...rest} {...user} />*/}
+            {/*    ))}*/}
+            {/*</tbody>*/}
         </table>
     );
 };
