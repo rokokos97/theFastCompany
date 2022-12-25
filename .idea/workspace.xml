@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="fix bag with sorting">
-      <change beforePath="$PROJECT_DIR$/src/app/components/tableBody.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/tableBody.jsx" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add new parameter &quot;component&quot; for columns button and bookmark in TableHeader.&#10;add ternary expression in TableBody - if component exist return component if not exist return dynamic data _.get(...)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/userTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/userTable.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +106,7 @@
       <workItem from="1671578886212" duration="940000" />
       <workItem from="1671579843926" duration="3010000" />
       <workItem from="1671837413091" duration="806000" />
-      <workItem from="1671875245222" duration="12433000" />
+      <workItem from="1671875245222" duration="13065000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1671290103691</created>
@@ -381,7 +381,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672008395028</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="add new parameter &quot;component&quot; for columns button and bookmark in TableHeader.&#10;add ternary expression in TableBody - if component exist return component if not exist return dynamic data _.get(...)">
+      <created>1672009140808</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1672009140808</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -399,7 +406,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lesson 3 week 3 pagination.jsx" />
     <MESSAGE value="lesson 3 week 3 &#10;Add component Pagination to users.jsx" />
     <MESSAGE value="lesson 3 week 3 &#10;install _lodash &#10;complete pages in pagination.jsx" />
     <MESSAGE value="lesson 3 week 3 &#10;add utils/paginate.js&#10;create method paginate" />
@@ -424,6 +430,7 @@
     <MESSAGE value="create tableBody.jsx&#10;create TableBody dynamic" />
     <MESSAGE value="get profession.name dynamic with _lodash (_.get())" />
     <MESSAGE value="fix bag with sorting" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bag with sorting" />
+    <MESSAGE value="add new parameter &quot;component&quot; for columns button and bookmark in TableHeader.&#10;add ternary expression in TableBody - if component exist return component if not exist return dynamic data _.get(...)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new parameter &quot;component&quot; for columns button and bookmark in TableHeader.&#10;add ternary expression in TableBody - if component exist return component if not exist return dynamic data _.get(...)" />
   </component>
 </project>
