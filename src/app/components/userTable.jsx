@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import Bookmark from "./bookmark";
 import QualitiesList from "./qualitiesList";
 import Table from "./table";
+import TableHeader from "./tableHeader";
+import TableBody from "./tableBody";
 
 const UserTable = ({ users, onSort, selectedSort, onToggleBookMark, onDelete, ...rest }) => {
     const columns = {
@@ -30,7 +32,11 @@ const UserTable = ({ users, onSort, selectedSort, onToggleBookMark, onDelete, ..
             </button>)
         }
     };
-    return <Table selectedSort={selectedSort} onSort={onSort} columns={columns} data={users}/>;
+    return (
+        <Table selectedSort={selectedSort} onSort={onSort} columns={columns} data={users}>
+            <TableHeader selectedSort={selectedSort} onSort={onSort} columns={columns}/>
+            <TableBody data={users} columns={columns}/>
+        </Table>);
 };
 
 UserTable.propTypes = {
@@ -39,5 +45,6 @@ UserTable.propTypes = {
     onSort: PropTypes.func.isRequired,
     onToggleBookMark: PropTypes.func.isRequired,
     onDelete: PropTypes.func.isRequired
+
 };
 export default UserTable;
