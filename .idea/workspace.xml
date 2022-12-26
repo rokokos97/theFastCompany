@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create table.jsx&#10;import tableHeader and tableBody into table.jsx">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="delete user.jsx">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/table.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/table.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/tableBody.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/tableBody.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/userTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/userTable.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/users.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +110,7 @@
       <workItem from="1671579843926" duration="3010000" />
       <workItem from="1671837413091" duration="806000" />
       <workItem from="1671875245222" duration="18078000" />
-      <workItem from="1672076667027" duration="4022000" />
+      <workItem from="1672076667027" duration="5276000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1671290103691</created>
@@ -419,7 +420,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672078479365</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="delete user.jsx">
+      <created>1672094550089</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1672094550089</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,7 +445,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="install ESlint" />
     <MESSAGE value="add rules to eslint.js&#10;refactoring code" />
     <MESSAGE value="all PropTypes complete" />
     <MESSAGE value="expended fake api &#10;create component groupList.jsx" />
@@ -462,6 +469,7 @@
     <MESSAGE value="add function renderContent and check type of component -&gt;&#10;if component is function it return this function and the function return component" />
     <MESSAGE value="dynamic rendering button Delete" />
     <MESSAGE value="create table.jsx&#10;import tableHeader and tableBody into table.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="create table.jsx&#10;import tableHeader and tableBody into table.jsx" />
+    <MESSAGE value="delete user.jsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete user.jsx" />
   </component>
 </project>

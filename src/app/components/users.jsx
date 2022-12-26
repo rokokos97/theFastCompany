@@ -8,12 +8,33 @@ import SearchStatus from "./searchStatus";
 import UserTable from "./userTable";
 import _ from "lodash";
 
-function Users({ users: allUsers, ...rest }) {
+const Users = () => {
     const pageSize = 8;
     const [currentPage, setCurrentPage] = useState(1);
     const [professions, setProfessions] = useState(null);
     const [selectedProf, setSelectedProf] = useState();
     const [sortBy, setSortBy] = useState({ path: "name", order: "asc" });
+
+    const [users, setUsers] = useState(0);
+
+    useEffect(() => {
+        api.users.fetchAll().then((data) => setUsers(data));
+    }, []);
+
+    const handelDelete = (id) => {
+        setUsers(users.filter((filteredUser) => filteredUser._id !== id));
+    };
+    const handelBookmark = (id) => {
+        setUsers(
+            users.map((user) => {
+                if (user._id === id) {
+                    return { ...user, bookmark: !user.bookmark };
+                }
+                return user;
+            })
+        );
+    };
+
     useEffect(() => {
         api.professions.fetchAll().then((data) => setProfessions(data));
     }, []);
@@ -32,48 +53,56 @@ function Users({ users: allUsers, ...rest }) {
     const handelSort = (item) => {
         setSortBy(item);
     };
-    const filteredUsers = selectedProf
-        ? allUsers.filter(
-            (user) =>
-                JSON.stringify(user.profession) ===
-                  JSON.stringify(selectedProf)
-        )
-        : allUsers;
-    const count = filteredUsers.length;
-    const sortedUsers = _.orderBy(filteredUsers, sortBy.path, sortBy.order);
-    const usersCrop = paginate(sortedUsers, currentPage, pageSize);
-    useEffect(() => {
-        if (usersCrop.length === 0) setCurrentPage(1);
-    }, [usersCrop]);
-    return (
-        <div className={"d-flex flex-shrink-0"}>
-            <div className={"d-flex flex-column p-2"}>
-                {professions && (
-                    <GroupList
-                        items={professions}
-                        onItemSelect={handleProfessionSelect}
-                        selectedItem={selectedProf}
-                        onResat={handleReset}
-                        // contentProperty="_id"
-                        // valueProperty="name"
+    if (users) {
+        const filteredUsers = selectedProf
+            ? users.filter(
+                (user) =>
+                    JSON.stringify(user.profession) ===
+                    JSON.stringify(selectedProf)
+            )
+            : users;
+        const count = filteredUsers.length;
+        const sortedUsers = _.orderBy(filteredUsers, sortBy.path, sortBy.order);
+        const usersCrop = paginate(sortedUsers, currentPage, pageSize);
+        // useEffect(() => {
+        //     if (usersCrop.length === 0) setCurrentPage(1);
+        // }, [usersCrop]);
+        return (
+            <div className={"d-flex flex-shrink-0"}>
+                <div className={"d-flex flex-column p-2"}>
+                    {professions && (
+                        <GroupList
+                            items={professions}
+                            onItemSelect={handleProfessionSelect}
+                            selectedItem={selectedProf}
+                            onResat={handleReset}
+                            // contentProperty="_id"
+                            // valueProperty="name"
+                        />
+                    )}
+                </div>
+                <div className={"vw-100"}>
+                    <SearchStatus usersNumber={count}/>
+                    {(count > 0) && (
+                        <UserTable
+                            users={usersCrop}
+                            onSort={handelSort}
+                            selectedSort={sortBy}
+                            onDelete={handelDelete}
+                            onToggleBookMark={handelBookmark}/>
+                    )}
+                    <Pagination
+                        countItem={count}
+                        pageSize={pageSize}
+                        onPageChange={handlePageChange}
+                        currentPage={currentPage}
                     />
-                )}
+                </div>
             </div>
-            <div className={"vw-100"}>
-                <SearchStatus usersNumber={count} />
-                {(count > 0) && (
-                    <UserTable users={usersCrop} onSort={handelSort} selectedSort={sortBy} {...rest}/>
-                )}
-                <Pagination
-                    countItem={count}
-                    pageSize={pageSize}
-                    onPageChange={handlePageChange}
-                    currentPage={currentPage}
-                />
-            </div>
-        </div>
-    );
-}
+        );
+    }
+    return "loading";
+};
 Users.propTypes = {
     users: PropTypes.array
 };

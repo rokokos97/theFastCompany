@@ -12,7 +12,7 @@ const TableBody = ({ data, columns }) => {
         }
         return _.get(item, columns[column].path);
     };
-    return <>
+    return <tbody>
         { data.map((item) =>
             <tr key={item._id}>
                 {Object.keys(columns).map((column) =>
@@ -22,7 +22,7 @@ const TableBody = ({ data, columns }) => {
                 )}
             </tr>
         )}
-    </>;
+    </tbody>;
 };
 TableBody.propTypes = {
     data: PropTypes.array.isRequired,

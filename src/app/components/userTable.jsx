@@ -6,7 +6,7 @@ import Table from "./table";
 import TableHeader from "./tableHeader";
 import TableBody from "./tableBody";
 
-const UserTable = ({ users, onSort, selectedSort, onToggleBookMark, onDelete, ...rest }) => {
+const UserTable = ({ users, onSort, selectedSort, onToggleBookMark, onDelete }) => {
     const columns = {
         name: { path: "name", name: "Name" },
         qualities: { name: "Qualities", component: (user) => (<QualitiesList qualities={user.qualities}/>) },
