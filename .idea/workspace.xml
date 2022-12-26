@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add component: &lt;Bookmark/&gt;">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add function renderContent and check type of component -&gt;&#10;if component is function it return this function and the function return component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/tableBody.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/tableBody.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/userTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/userTable.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +108,7 @@
       <workItem from="1671578886212" duration="940000" />
       <workItem from="1671579843926" duration="3010000" />
       <workItem from="1671837413091" duration="806000" />
-      <workItem from="1671875245222" duration="14092000" />
+      <workItem from="1671875245222" duration="17722000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1671290103691</created>
@@ -396,7 +397,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672009710711</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="add function renderContent and check type of component -&gt;&#10;if component is function it return this function and the function return component">
+      <created>1672010866889</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1672010866889</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -414,7 +422,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lesson 3 week 3 &#10;install _lodash &#10;complete pages in pagination.jsx" />
     <MESSAGE value="lesson 3 week 3 &#10;add utils/paginate.js&#10;create method paginate" />
     <MESSAGE value="install propTypes&#10;add propTypes in pagination.jsx" />
     <MESSAGE value="install ESlint" />
@@ -439,6 +446,7 @@
     <MESSAGE value="fix bag with sorting" />
     <MESSAGE value="add new parameter &quot;component&quot; for columns button and bookmark in TableHeader.&#10;add ternary expression in TableBody - if component exist return component if not exist return dynamic data _.get(...)" />
     <MESSAGE value="add component: &lt;Bookmark/&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="add component: &lt;Bookmark/&gt;" />
+    <MESSAGE value="add function renderContent and check type of component -&gt;&#10;if component is function it return this function and the function return component" />
+    <option name="LAST_COMMIT_MESSAGE" value="add function renderContent and check type of component -&gt;&#10;if component is function it return this function and the function return component" />
   </component>
 </project>
