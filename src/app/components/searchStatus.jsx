@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 function SearchStatus({ usersNumber }) {
     const renderBadgeClass = () => (usersNumber > 0 ? "primary" : "danger");
-    const randePhrase = (number) => {
+    const renderPhrase = (number) => {
         switch (number) {
             case 0:
                 return "No one";
@@ -16,7 +16,7 @@ function SearchStatus({ usersNumber }) {
     return (
         <span
             className={`badge bg-${renderBadgeClass()} m-2`}
-        >{`${randePhrase(usersNumber)} hang out with you tonight`}</span>
+        >{`${renderPhrase(usersNumber)} hang out with you tonight`}</span>
     );
 }
 SearchStatus.propTypes = {

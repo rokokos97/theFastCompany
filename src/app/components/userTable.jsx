@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import TableHeader from "./tableHeader";
-import TableBody from "./tableBody";
 import Bookmark from "./bookmark";
+import QualitiesList from "./qualitiesList";
+import Table from "./table";
 
 const UserTable = ({ users, onSort, selectedSort, onToggleBookMark, onDelete, ...rest }) => {
     const columns = {
         name: { path: "name", name: "Name" },
-        qualities: { name: "Qualities" },
+        qualities: { name: "Qualities", component: (user) => (<QualitiesList qualities={user.qualities}/>) },
         profession: { path: "profession.name", name: "Profession" },
         completedMeetings: { path: "completedMeetings", name: "Meets" },
         rate: { path: "rate", name: "Rate" },
@@ -30,12 +30,7 @@ const UserTable = ({ users, onSort, selectedSort, onToggleBookMark, onDelete, ..
             </button>)
         }
     };
-    return (
-        <table className="table">
-            <TableHeader selectedSort={selectedSort} onSort={onSort} columns={columns}/>
-            <TableBody data={users} columns={columns}/>
-        </table>
-    );
+    return <Table selectedSort={selectedSort} onSort={onSort} columns={columns} data={users}/>;
 };
 
 UserTable.propTypes = {
