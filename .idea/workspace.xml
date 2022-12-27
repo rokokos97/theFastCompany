@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="delete user.jsx">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/tableBody.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/tableBody.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/userTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/userTable.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/tableHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/tableHeader.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
