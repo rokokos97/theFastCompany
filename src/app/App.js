@@ -1,7 +1,7 @@
 import React from "react";
-import Users from "./components/users";
+import UsersList from "./components/usersList";
 
 function App() {
-    return <Users/>;
+    return <UsersList/>;
 }
 export default App;
