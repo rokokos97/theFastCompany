@@ -4,16 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="delete user.jsx">
-      <change afterPath="$PROJECT_DIR$/src/app/components/layout/login.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/layout/main.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/layout/users.jsx" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="rename users =&gt; usersList.jsx&#10;add layout folder&#10;add main.jsx, login.jsx, users.jsx&#10;install react-router-dom&#10;import BrowserRouter in app.js">
+      <change afterPath="$PROJECT_DIR$/src/app/components/navBar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/userPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layouts/users.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/usersList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/fake.api/user.api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/fake.api/user.api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/layout/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/layout/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/layout/users.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/userTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/userTable.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -434,7 +435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672094550089</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="rename users =&gt; usersList.jsx&#10;add layout folder&#10;add main.jsx, login.jsx, users.jsx&#10;install react-router-dom&#10;import BrowserRouter in app.js">
+      <created>1672782397427</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1672782397427</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -452,7 +460,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add rules to eslint.js&#10;refactoring code" />
     <MESSAGE value="all PropTypes complete" />
     <MESSAGE value="expended fake api &#10;create component groupList.jsx" />
     <MESSAGE value="expended fake api" />
@@ -477,6 +484,7 @@
     <MESSAGE value="dynamic rendering button Delete" />
     <MESSAGE value="create table.jsx&#10;import tableHeader and tableBody into table.jsx" />
     <MESSAGE value="delete user.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete user.jsx" />
+    <MESSAGE value="rename users =&gt; usersList.jsx&#10;add layout folder&#10;add main.jsx, login.jsx, users.jsx&#10;install react-router-dom&#10;import BrowserRouter in app.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename users =&gt; usersList.jsx&#10;add layout folder&#10;add main.jsx, login.jsx, users.jsx&#10;install react-router-dom&#10;import BrowserRouter in app.js" />
   </component>
 </project>
