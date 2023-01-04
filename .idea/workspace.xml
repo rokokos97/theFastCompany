@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create navBar.jsx&#10;create userPage.jsx">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_19_12_22,_21_59_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_19_12_22__21_59__Changes_.xml" beforeDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="Create form in login.jsx">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/usersList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/usersList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/layouts/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/login.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +111,7 @@
       <workItem from="1671837413091" duration="806000" />
       <workItem from="1671875245222" duration="18078000" />
       <workItem from="1672076667027" duration="5276000" />
-      <workItem from="1672827720387" duration="1226000" />
+      <workItem from="1672827720387" duration="1750000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1671290103691</created>
@@ -445,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672783783882</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Create form in login.jsx">
+      <created>1672829971808</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1672829971808</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -463,7 +467,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="expended fake api &#10;create component groupList.jsx" />
     <MESSAGE value="expended fake api" />
     <MESSAGE value="add processing the incoming object in groupList &#10;add independent parameters contentProperty and valueProperty" />
     <MESSAGE value="add defaultProps = { contentProperty valueProperty } in groupList.jsx&#10;&#10;&#10;}" />
@@ -488,6 +491,7 @@
     <MESSAGE value="delete user.jsx" />
     <MESSAGE value="rename users =&gt; usersList.jsx&#10;add layout folder&#10;add main.jsx, login.jsx, users.jsx&#10;install react-router-dom&#10;import BrowserRouter in app.js" />
     <MESSAGE value="create navBar.jsx&#10;create userPage.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="create navBar.jsx&#10;create userPage.jsx" />
+    <MESSAGE value="Create form in login.jsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create form in login.jsx" />
   </component>
 </project>
