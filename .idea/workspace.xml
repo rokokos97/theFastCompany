@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add textField.jsx">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add button Submit and handelSubmit to login.jsx">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/textField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/textField.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/layouts/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/login.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,14 +111,7 @@
       <workItem from="1671837413091" duration="806000" />
       <workItem from="1671875245222" duration="18078000" />
       <workItem from="1672076667027" duration="5276000" />
-      <workItem from="1672827720387" duration="8831000" />
-    </task>
-    <task id="LOCAL-00003" summary="create component table">
-      <created>1671293940450</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1671293940451</updated>
+      <workItem from="1672827720387" duration="11967000" />
     </task>
     <task id="LOCAL-00004" summary="create conventional rendering badge with phrase">
       <created>1671296467845</created>
@@ -457,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672836002146</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="add button Submit and handelSubmit to login.jsx">
+      <created>1672839651177</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1672839651178</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -475,7 +474,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add EventListener to item in groupList.jsx&#10;add useState from selectedProf &#10;add render class to item list in groupList.jsx&#10;&#10;}" />
     <MESSAGE value="add button Resat" />
     <MESSAGE value="filtration complete" />
     <MESSAGE value="create userTable.jsx&#10;transfer table from users.jsx to userTable.jsx" />
@@ -500,6 +498,7 @@
     <MESSAGE value="Create form in login.jsx&#10;{&quot; &quot;} add space between &lt;label&gt; and &lt;input&gt;" />
     <MESSAGE value="in login.jsx =&gt; add state of email, add handelChange" />
     <MESSAGE value="add textField.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="add textField.jsx" />
+    <MESSAGE value="add button Submit and handelSubmit to login.jsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="add button Submit and handelSubmit to login.jsx" />
   </component>
 </project>

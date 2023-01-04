@@ -1,15 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import TextFiled from "../components/textField";
 
 const Login = () => {
     const [data, setData] = useState({ email: "", password: "" });
+    const [, setErrors] = useState();
     const handelChange = ({ target }) => {
         setData((prevState) =>
             ({ ...prevState, [target.name]: target.value }));
     };
     const handelSubmit = (e) => {
         e.preventDefault();
+        const isValid = validate();
+        if (!isValid) return;
         console.log(data);
+    };
+    useEffect(() => { validate(); }, [data]);
+    const validate = () => {
+        const errors = {};
+        for (const fieldName in data) {
+            if (data[fieldName].trim() === "") {
+                errors[fieldName] = `${fieldName} is required`;
+            }
+        }
+        setErrors(errors);
+        return Object.keys(errors).length === 0 || false;
     };
     return (
         <form onSubmit={handelSubmit} className={"m-2"}>
