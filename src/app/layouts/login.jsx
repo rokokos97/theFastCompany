@@ -6,28 +6,33 @@ const Login = () => {
     const handelChange = ({ target }) => {
         setData((prevState) =>
             ({ ...prevState, [target.name]: target.value }));
-        console.log(target.value);
+    };
+    const handelSubmit = (e) => {
+        e.preventDefault();
+        console.log(data);
     };
     return (
-        <>
-            <form action="" className={"m-2"}>
-                <TextFiled
-                    label={"Email"}
-                    name={"email"}
-                    value={data.email}
-                    onChange={handelChange}
-                />
-                <div className={"m-2"}>
-                    <TextFiled
-                        label={"Password"}
-                        type={"password"}
-                        name={"password"}
-                        value={data.password}
-                        onChange={handelChange}
-                    />
-                </div>
-            </form>
-        </>
+        <form onSubmit={handelSubmit} className={"m-2"}>
+            <TextFiled
+                label={"Email"}
+                name={"email"}
+                value={data.email}
+                onChange={handelChange}
+            />
+            <TextFiled
+                label={"Password"}
+                type={"password"}
+                name={"password"}
+                value={data.password}
+                onChange={handelChange}
+            />
+            <button
+                type={"submit"}
+                className={"btn btn-success"}
+            >
+                Submit
+            </button>
+        </form>
     );
 };
 
