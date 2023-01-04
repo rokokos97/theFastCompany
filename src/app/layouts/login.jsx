@@ -1,26 +1,30 @@
 import React, { useState } from "react";
+import TextFiled from "../components/textField";
 
 const Login = () => {
-    const [email] = useState();
-    const handelChange = (e) => {
-        console.log(e.target.value);
+    const [data, setData] = useState({ email: "", password: "" });
+    const handelChange = ({ target }) => {
+        setData((prevState) =>
+            ({ ...prevState, [target.name]: target.value }));
+        console.log(target.value);
     };
     return (
         <>
             <form action="" className={"m-2"}>
+                <TextFiled
+                    label={"Email"}
+                    name={"email"}
+                    value={data.email}
+                    onChange={handelChange}
+                />
                 <div className={"m-2"}>
-                    <label htmlFor={"email"}>Email</label>{" "}
-                    <input
-                        type={"text"}
-                        id={"email"}
-                        placeholder={"Enter your email"}
-                        value={email}
+                    <TextFiled
+                        label={"Password"}
+                        type={"password"}
+                        name={"password"}
+                        value={data.password}
                         onChange={handelChange}
                     />
-                </div>
-                <div className={"m-2"}>
-                    <label htmlFor={"password"}>Password</label>{" "}
-                    <input type={"password"} id={"password"} placeholder={"Enter your password"}/>
                 </div>
             </form>
         </>

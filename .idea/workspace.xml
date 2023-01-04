@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="Create form in login.jsx&#10;{&quot; &quot;} add space between &lt;label&gt; and &lt;input&gt;">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="in login.jsx =&gt; add state of email, add handelChange">
+      <change afterPath="$PROJECT_DIR$/src/app/components/textField.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/layouts/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/login.jsx" afterDir="false" />
     </list>
@@ -111,14 +112,7 @@
       <workItem from="1671837413091" duration="806000" />
       <workItem from="1671875245222" duration="18078000" />
       <workItem from="1672076667027" duration="5276000" />
-      <workItem from="1672827720387" duration="3628000" />
-    </task>
-    <task id="LOCAL-00001" summary="init project">
-      <created>1671290103691</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1671290103691</updated>
+      <workItem from="1672827720387" duration="6400000" />
     </task>
     <task id="LOCAL-00002" summary="init project">
       <created>1671290162795</created>
@@ -456,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672830454561</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="in login.jsx =&gt; add state of email, add handelChange">
+      <created>1672832386639</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1672832386641</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -474,7 +475,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add processing the incoming object in groupList &#10;add independent parameters contentProperty and valueProperty" />
     <MESSAGE value="add defaultProps = { contentProperty valueProperty } in groupList.jsx&#10;&#10;&#10;}" />
     <MESSAGE value="add EventListener to item in groupList.jsx&#10;add useState from selectedProf &#10;add render class to item list in groupList.jsx&#10;&#10;}" />
     <MESSAGE value="add button Resat" />
@@ -499,6 +499,7 @@
     <MESSAGE value="create navBar.jsx&#10;create userPage.jsx" />
     <MESSAGE value="Create form in login.jsx" />
     <MESSAGE value="Create form in login.jsx&#10;{&quot; &quot;} add space between &lt;label&gt; and &lt;input&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create form in login.jsx&#10;{&quot; &quot;} add space between &lt;label&gt; and &lt;input&gt;" />
+    <MESSAGE value="in login.jsx =&gt; add state of email, add handelChange" />
+    <option name="LAST_COMMIT_MESSAGE" value="in login.jsx =&gt; add state of email, add handelChange" />
   </component>
 </project>
