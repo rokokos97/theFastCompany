@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="rename users =&gt; usersList.jsx&#10;add layout folder&#10;add main.jsx, login.jsx, users.jsx&#10;install react-router-dom&#10;import BrowserRouter in app.js">
-      <change afterPath="$PROJECT_DIR$/src/app/components/navBar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/userPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/layouts/users.jsx" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create navBar.jsx&#10;create userPage.jsx">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_19_12_22,_21_59_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_19_12_22__21_59__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/fake.api/user.api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/fake.api/user.api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/layout/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/layout/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/layout/users.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/userTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/userTable.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/usersList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/usersList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layouts/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/login.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,25 +65,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/rokokos97/WebstormProjects/the-fast-company/src/app/components/layout",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/usr/local/lib/node_modules/prettier",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "actions.on.save",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/rokokos97/WebstormProjects/the-fast-company/src/app/components/layout&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/usr/local/lib/node_modules/prettier&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/app/components/layout" />
@@ -119,6 +114,7 @@
       <workItem from="1671837413091" duration="806000" />
       <workItem from="1671875245222" duration="18078000" />
       <workItem from="1672076667027" duration="5276000" />
+      <workItem from="1672827720387" duration="1226000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1671290103691</created>
@@ -442,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672782397427</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="create navBar.jsx&#10;create userPage.jsx">
+      <created>1672783783882</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1672783783882</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -460,7 +463,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="all PropTypes complete" />
     <MESSAGE value="expended fake api &#10;create component groupList.jsx" />
     <MESSAGE value="expended fake api" />
     <MESSAGE value="add processing the incoming object in groupList &#10;add independent parameters contentProperty and valueProperty" />
@@ -485,6 +487,7 @@
     <MESSAGE value="create table.jsx&#10;import tableHeader and tableBody into table.jsx" />
     <MESSAGE value="delete user.jsx" />
     <MESSAGE value="rename users =&gt; usersList.jsx&#10;add layout folder&#10;add main.jsx, login.jsx, users.jsx&#10;install react-router-dom&#10;import BrowserRouter in app.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename users =&gt; usersList.jsx&#10;add layout folder&#10;add main.jsx, login.jsx, users.jsx&#10;install react-router-dom&#10;import BrowserRouter in app.js" />
+    <MESSAGE value="create navBar.jsx&#10;create userPage.jsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="create navBar.jsx&#10;create userPage.jsx" />
   </component>
 </project>
