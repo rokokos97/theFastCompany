@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add new state by errors&#10;add method validate &#10;add last check before submit in handelSubmit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/textField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/textField.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layouts/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/login.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add visual info about errors" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,14 +108,7 @@
       <workItem from="1671837413091" duration="806000" />
       <workItem from="1671875245222" duration="18078000" />
       <workItem from="1672076667027" duration="5276000" />
-      <workItem from="1672827720387" duration="12813000" />
-    </task>
-    <task id="LOCAL-00005" summary="first lesson homework complete">
-      <created>1671296639523</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1671296639523</updated>
+      <workItem from="1672827720387" duration="13477000" />
     </task>
     <task id="LOCAL-00006" summary="add api">
       <created>1671360429481</created>
@@ -457,7 +446,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672867756064</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="add visual info about errors">
+      <created>1672907117105</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1672907117105</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -475,7 +471,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="filtration complete" />
     <MESSAGE value="create userTable.jsx&#10;transfer table from users.jsx to userTable.jsx" />
     <MESSAGE value="create sortedBy &#10;use _.orderBy by sorted filteredUsers in users.jsx" />
     <MESSAGE value="create state [sortBy, setSortBy]&#10;add initial state {iter: 'name', order:'asc'}" />
@@ -500,6 +495,7 @@
     <MESSAGE value="add textField.jsx" />
     <MESSAGE value="add button Submit and handelSubmit to login.jsx" />
     <MESSAGE value="add new state by errors&#10;add method validate &#10;add last check before submit in handelSubmit" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new state by errors&#10;add method validate &#10;add last check before submit in handelSubmit" />
+    <MESSAGE value="add visual info about errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="add visual info about errors" />
   </component>
 </project>
