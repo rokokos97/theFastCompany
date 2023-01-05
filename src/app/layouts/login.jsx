@@ -3,7 +3,7 @@ import TextFiled from "../components/textField";
 
 const Login = () => {
     const [data, setData] = useState({ email: "", password: "" });
-    const [, setErrors] = useState();
+    const [errors, setErrors] = useState({});
     const handelChange = ({ target }) => {
         setData((prevState) =>
             ({ ...prevState, [target.name]: target.value }));
@@ -32,6 +32,7 @@ const Login = () => {
                 name={"email"}
                 value={data.email}
                 onChange={handelChange}
+                error={errors.email}
             />
             <TextFiled
                 label={"Password"}
@@ -39,6 +40,7 @@ const Login = () => {
                 name={"password"}
                 value={data.password}
                 onChange={handelChange}
+                error={errors.password}
             />
             <button
                 type={"submit"}

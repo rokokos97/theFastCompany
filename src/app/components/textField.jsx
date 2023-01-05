@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-const TextFiled = ({ label, type, name, value, onChange }) => {
+const TextFiled = ({ label, type, name, value, onChange, error }) => {
     return (
         <>
             <div className={"m-2"}>
@@ -13,6 +13,7 @@ const TextFiled = ({ label, type, name, value, onChange }) => {
                     name={name}
                     onChange={onChange}
                 />
+                <p>{error}</p>
             </div>
         </>
     );
@@ -23,6 +24,7 @@ TextFiled.propTypes = {
     type: PropTypes.string,
     name: PropTypes.string,
     value: PropTypes.string,
-    onChange: PropTypes.func
+    onChange: PropTypes.func,
+    error: PropTypes.string
 };
 export default TextFiled;
