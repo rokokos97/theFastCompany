@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import TextFiled from "../components/textField";
-
+import { validator } from "../utils/validator";
 const Login = () => {
     const [data, setData] = useState({ email: "", password: "" });
     const [errors, setErrors] = useState({});
@@ -21,14 +21,9 @@ const Login = () => {
         password: { isRequired: { password: "Email is required" } }
     };
     const validate = () => {
-        const errors = {};
-        for (const fieldName in data) {
-            if (data[fieldName].trim() === "") {
-                errors[fieldName] = `${fieldName} is required`;
-            }
-        }
+        const errors = validator(data, validatorConfig);
         setErrors(errors);
-        return Object.keys(errors).length === 0 || false;
+        return Object.keys(errors).length === 0;
     };
     return (
         <form onSubmit={handelSubmit} className={"m-2"}>
