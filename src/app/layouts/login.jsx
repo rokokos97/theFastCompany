@@ -33,6 +33,7 @@ const Login = () => {
         setErrors(errors);
         return Object.keys(errors).length === 0;
     };
+    const isValid = Object.keys(errors).length === 0;
     return (
         <form onSubmit={handelSubmit} className={"m-2"}>
             <TextFiled
@@ -53,6 +54,7 @@ const Login = () => {
             <button
                 type={"submit"}
                 className={"btn btn-success"}
+                disabled={!isValid}
             >
                 Submit
             </button>

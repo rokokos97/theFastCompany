@@ -33,8 +33,7 @@ export function validator(data, config) {
                 data[fieldName],
                 config[fieldName][validateMethod]);
             if (error && !errors[fieldName]) {
-                errors[fieldName] = error;
-                console.log(errors[fieldName]);
+                errors[fieldName] = error;d
             }
         }
     } return errors;
