@@ -14,7 +14,7 @@ const UsersList = () => {
     const [professions, setProfessions] = useState(null);
     const [selectedProf, setSelectedProf] = useState();
     const [sortBy, setSortBy] = useState({ path: "name", order: "asc" });
-
+    const [searchQuery, setSearchQuery] = useState();
     const [users, setUsers] = useState(0);
 
     useEffect(() => {
@@ -54,13 +54,15 @@ const UsersList = () => {
         setSortBy(item);
     };
     if (users) {
-        const filteredUsers = selectedProf
-            ? users.filter(
-                (user) =>
-                    JSON.stringify(user.profession) ===
-                    JSON.stringify(selectedProf)
-            )
-            : users;
+        const filteredUsers = searchQuery
+            ? users.filter((user) => user.name.toLowerCase().indexOf(searchQuery.toLowerCase()) !== -1)
+            : selectedProf
+                ? users.filter(
+                    (user) =>
+                        JSON.stringify(user.profession) ===
+                        JSON.stringify(selectedProf)
+                )
+                : users;
         const count = filteredUsers.length;
         const sortedUsers = _.orderBy(filteredUsers, sortBy.path, sortBy.order);
         const usersCrop = paginate(sortedUsers, currentPage, pageSize);
@@ -85,7 +87,7 @@ const UsersList = () => {
                     <SearchStatus usersNumber={count}/>
                     <input
                         type="text"
-                        name={"searchQuery"}
+                        name={searchQuery}
                         placeholder={"Search..."}
                     />
                     {(count > 0) && (
