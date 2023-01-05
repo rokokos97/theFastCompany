@@ -21,7 +21,12 @@ const Login = () => {
             isRequired: { message: "Email is required" },
             isEmail: { message: "Email is not correct" }
         },
-        password: { isRequired: { message: "Password is required" } }
+        password: {
+            isRequired: { message: "Password is required" },
+            isContainCapital: { message: "Password must contain capital latter" },
+            isContainDigit: { message: "password must contain number" },
+            min: { message: "Password must contain at least 8 characters", value: 8 }
+        }
     };
     const validate = () => {
         const errors = validator(data, validatorConfig);

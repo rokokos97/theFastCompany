@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create validator.js in utils">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add regEx by email to validatorConfig&#10;fix validator config =&gt; add one more requirement by field =&gt; (error &amp;&amp; !errors[fieldName])">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/layouts/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/login.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/utils/validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/utils/validator.js" afterDir="false" />
@@ -112,14 +112,7 @@
       <workItem from="1671837413091" duration="806000" />
       <workItem from="1671875245222" duration="18078000" />
       <workItem from="1672076667027" duration="5276000" />
-      <workItem from="1672827720387" duration="18429000" />
-    </task>
-    <task id="LOCAL-00010" summary="lesson 3 week 3 pagination.jsx">
-      <created>1671553691702</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1671553691702</updated>
+      <workItem from="1672827720387" duration="20886000" />
     </task>
     <task id="LOCAL-00011" summary="lesson 3 week 3 &#10;Add component Pagination to users.jsx">
       <created>1671555516068</created>
@@ -457,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672914472811</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="add regEx by email to validatorConfig&#10;fix validator config =&gt; add one more requirement by field =&gt; (error &amp;&amp; !errors[fieldName])">
+      <created>1672916454568</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1672916454568</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -475,7 +475,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create state [sortBy, setSortBy]&#10;add initial state {iter: 'name', order:'asc'}" />
     <MESSAGE value="added sorting direction change by clicking on the name" />
     <MESSAGE value="transfer sorting process form users.jsx to userTable.jsx" />
     <MESSAGE value="add dynamic rendering table header" />
@@ -500,6 +499,7 @@
     <MESSAGE value="add visual info about errors" />
     <MESSAGE value="create validatorConfig object in login.jsx" />
     <MESSAGE value="create validator.js in utils" />
-    <option name="LAST_COMMIT_MESSAGE" value="create validator.js in utils" />
+    <MESSAGE value="add regEx by email to validatorConfig&#10;fix validator config =&gt; add one more requirement by field =&gt; (error &amp;&amp; !errors[fieldName])" />
+    <option name="LAST_COMMIT_MESSAGE" value="add regEx by email to validatorConfig&#10;fix validator config =&gt; add one more requirement by field =&gt; (error &amp;&amp; !errors[fieldName])" />
   </component>
 </project>
