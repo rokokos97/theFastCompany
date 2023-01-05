@@ -17,6 +17,7 @@ export function validator(data, config) {
                 config[fieldName][validateMethod]);
             if (error) {
                 errors[fieldName] = error;
+                console.log(errors[fieldName]);
             }
         }
     } return errors;

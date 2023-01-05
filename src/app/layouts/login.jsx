@@ -18,7 +18,7 @@ const Login = () => {
 
     const validatorConfig = {
         email: { isRequired: { message: "Email is required" } },
-        password: { isRequired: { password: "Email is required" } }
+        password: { isRequired: { message: "Password is required" } }
     };
     const validate = () => {
         const errors = validator(data, validatorConfig);
