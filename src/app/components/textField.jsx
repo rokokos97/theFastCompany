@@ -1,9 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 const TextFiled = ({ label, type, name, value, onChange, error }) => {
+    const renderClass = () => {
+        return "form-control" + (error ? " is-invalid" : "");
+    };
     return (
         <>
-            <div className={"m-2"}>
+            <div className={"mb-4"}>
                 <label htmlFor={name}>{label}</label>{" "}
                 <input
                     type={type}
@@ -12,8 +15,9 @@ const TextFiled = ({ label, type, name, value, onChange, error }) => {
                     value={value}
                     name={name}
                     onChange={onChange}
+                    className={renderClass()}
                 />
-                <p>{error}</p>
+                {error && <div className={"invalid-feedback"}><p>{error}</p></div>}
             </div>
         </>
     );

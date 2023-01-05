@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add any validations by password">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add parameter disabled to submit button">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/textField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/textField.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/layouts/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/utils/validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/utils/validator.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,21 +112,7 @@
       <workItem from="1671837413091" duration="806000" />
       <workItem from="1671875245222" duration="18078000" />
       <workItem from="1672076667027" duration="5276000" />
-      <workItem from="1672827720387" duration="21774000" />
-    </task>
-    <task id="LOCAL-00012" summary="lesson 3 week 3 &#10;install _lodash &#10;complete pages in pagination.jsx">
-      <created>1671558465877</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1671558465877</updated>
-    </task>
-    <task id="LOCAL-00013" summary="lesson 3 week 3 &#10;add utils/paginate.js&#10;create method paginate">
-      <created>1671561911156</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1671561911156</updated>
+      <workItem from="1672827720387" duration="24365000" />
     </task>
     <task id="LOCAL-00014" summary="install propTypes&#10;add propTypes in pagination.jsx">
       <created>1671574658968</created>
@@ -457,7 +443,21 @@
       <option name="project" value="LOCAL" />
       <updated>1672932686048</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="add parameter disabled to submit button">
+      <created>1672933394213</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1672933394213</updated>
+    </task>
+    <task id="LOCAL-00062" summary="add parameter disabled to submit button">
+      <created>1672933420567</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1672933420567</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -475,7 +475,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="transfer sorting process form users.jsx to userTable.jsx" />
     <MESSAGE value="add dynamic rendering table header" />
     <MESSAGE value="change &quot;iter&quot; to &quot;path&quot; everywhere" />
     <MESSAGE value="create tableBody.jsx&#10;create TableBody dynamic" />
@@ -500,6 +499,7 @@
     <MESSAGE value="create validator.js in utils" />
     <MESSAGE value="add regEx by email to validatorConfig&#10;fix validator config =&gt; add one more requirement by field =&gt; (error &amp;&amp; !errors[fieldName])" />
     <MESSAGE value="add any validations by password" />
-    <option name="LAST_COMMIT_MESSAGE" value="add any validations by password" />
+    <MESSAGE value="add parameter disabled to submit button" />
+    <option name="LAST_COMMIT_MESSAGE" value="add parameter disabled to submit button" />
   </component>
 </project>

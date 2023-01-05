@@ -35,30 +35,37 @@ const Login = () => {
     };
     const isValid = Object.keys(errors).length === 0;
     return (
-        <form onSubmit={handelSubmit} className={"m-2"}>
-            <TextFiled
-                label={"Email"}
-                name={"email"}
-                value={data.email}
-                onChange={handelChange}
-                error={errors.email}
-            />
-            <TextFiled
-                label={"Password"}
-                type={"password"}
-                name={"password"}
-                value={data.password}
-                onChange={handelChange}
-                error={errors.password}
-            />
-            <button
-                type={"submit"}
-                className={"btn btn-success"}
-                disabled={!isValid}
-            >
-                Submit
-            </button>
-        </form>
+        <div className={"container mt-5"}>
+            <div className="row">
+                <div className={"col-md-6 offset-md-3 shadow p-3"}>
+                    <h1>Login</h1>
+                    <form onSubmit={handelSubmit} className={""}>
+                        <TextFiled
+                            label={"Email"}
+                            name={"email"}
+                            value={data.email}
+                            onChange={handelChange}
+                            error={errors.email}
+                        />
+                        <TextFiled
+                            label={"Password"}
+                            type={"password"}
+                            name={"password"}
+                            value={data.password}
+                            onChange={handelChange}
+                            error={errors.password}
+                        />
+                        <button
+                            type={"submit"}
+                            className={"btn btn-success w-100 mx-auto"}
+                            disabled={!isValid}
+                        >
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
     );
 };
 
