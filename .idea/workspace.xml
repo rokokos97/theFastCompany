@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add &lt;input&gt; after &lt;SearchStatus/&gt; in usersList.jsx">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add one more filtration users by searshQuery">
       <change beforePath="$PROJECT_DIR$/src/app/components/usersList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/usersList.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,20 +111,6 @@
       <workItem from="1671875245222" duration="18078000" />
       <workItem from="1672076667027" duration="5276000" />
       <workItem from="1672827720387" duration="25593000" />
-    </task>
-    <task id="LOCAL-00016" summary="install ESlint">
-      <created>1671579065590</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1671579065590</updated>
-    </task>
-    <task id="LOCAL-00017" summary="add rules to eslint.js&#10;refactoring code">
-      <created>1671634917242</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1671634917242</updated>
     </task>
     <task id="LOCAL-00018" summary="add rules to eslint.js&#10;refactoring code">
       <created>1671635026489</created>
@@ -455,7 +441,21 @@
       <option name="project" value="LOCAL" />
       <updated>1672958111048</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="add one more filtration users by searshQuery">
+      <created>1672958799446</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1672958799446</updated>
+    </task>
+    <task id="LOCAL-00066" summary="add one more filtration users by searshQuery">
+      <created>1672958833139</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1672958833139</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -473,8 +473,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create tableBody.jsx&#10;create TableBody dynamic" />
-    <MESSAGE value="get profession.name dynamic with _lodash (_.get())" />
     <MESSAGE value="fix bag with sorting" />
     <MESSAGE value="add new parameter &quot;component&quot; for columns button and bookmark in TableHeader.&#10;add ternary expression in TableBody - if component exist return component if not exist return dynamic data _.get(...)" />
     <MESSAGE value="add component: &lt;Bookmark/&gt;" />
@@ -498,6 +496,8 @@
     <MESSAGE value="add parameter disabled to submit button" />
     <MESSAGE value="add styles to form Login" />
     <MESSAGE value="add &lt;input&gt; after &lt;SearchStatus/&gt; in usersList.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="add &lt;input&gt; after &lt;SearchStatus/&gt; in usersList.jsx" />
+    <MESSAGE value="add one more filtration users by searchQuery" />
+    <MESSAGE value="add one more filtration users by searshQuery" />
+    <option name="LAST_COMMIT_MESSAGE" value="add one more filtration users by searshQuery" />
   </component>
 </project>

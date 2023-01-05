@@ -53,6 +53,9 @@ const UsersList = () => {
     const handelSort = (item) => {
         setSortBy(item);
     };
+    const handleSearchQuery = ({ target }) => {
+        setSearchQuery(target.value);
+    };
     if (users) {
         const filteredUsers = searchQuery
             ? users.filter((user) => user.name.toLowerCase().indexOf(searchQuery.toLowerCase()) !== -1)
@@ -85,11 +88,15 @@ const UsersList = () => {
                 </div>
                 <div className={"vw-100"}>
                     <SearchStatus usersNumber={count}/>
-                    <input
-                        type="text"
-                        name={searchQuery}
-                        placeholder={"Search..."}
-                    />
+                    <div>
+                        <input
+                            type="text"
+                            name={searchQuery}
+                            placeholder={"Search..."}
+                            onChange={handleSearchQuery}
+                            className={"w-100 p-1 m-2"}
+                        />
+                    </div>
                     {(count > 0) && (
                         <UserTable
                             users={usersCrop}
