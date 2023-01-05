@@ -20,6 +20,12 @@ const UsersList = () => {
     useEffect(() => {
         api.users.fetchAll().then((data) => setUsers(data));
     }, []);
+    useEffect(() => {
+        api.professions.fetchAll().then((data) => setProfessions(data));
+    }, []);
+    useEffect(() => {
+        setCurrentPage(1);
+    }, [selectedProf]);
 
     const handelDelete = (id) => {
         setUsers(users.filter((filteredUser) => filteredUser._id !== id));
@@ -35,13 +41,6 @@ const UsersList = () => {
             })
         );
     };
-
-    useEffect(() => {
-        api.professions.fetchAll().then((data) => setProfessions(data));
-    }, []);
-    useEffect(() => {
-        setCurrentPage(1);
-    }, [selectedProf]);
     const handlePageChange = (page) => {
         setCurrentPage(page);
     };
@@ -84,6 +83,11 @@ const UsersList = () => {
                 </div>
                 <div className={"vw-100"}>
                     <SearchStatus usersNumber={count}/>
+                    <input
+                        type="text"
+                        name={"searchQuery"}
+                        placeholder={"Search..."}
+                    />
                     {(count > 0) && (
                         <UserTable
                             users={usersCrop}
