@@ -17,7 +17,10 @@ const Login = () => {
     useEffect(() => { validate(); }, [data]);
 
     const validatorConfig = {
-        email: { isRequired: { message: "Email is required" } },
+        email: {
+            isRequired: { message: "Email is required" },
+            isEmail: { message: "Email is not correct" }
+        },
         password: { isRequired: { message: "Password is required" } }
     };
     const validate = () => {

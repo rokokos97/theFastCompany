@@ -112,14 +112,7 @@
       <workItem from="1671837413091" duration="806000" />
       <workItem from="1671875245222" duration="18078000" />
       <workItem from="1672076667027" duration="5276000" />
-      <workItem from="1672827720387" duration="17135000" />
-    </task>
-    <task id="LOCAL-00009" summary="lesson 1 week 1 complete">
-      <created>1671378623667</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1671378623667</updated>
+      <workItem from="1672827720387" duration="18429000" />
     </task>
     <task id="LOCAL-00010" summary="lesson 3 week 3 pagination.jsx">
       <created>1671553691702</created>
@@ -457,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672910490209</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="create validator.js in utils">
+      <created>1672914472811</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1672914472811</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
