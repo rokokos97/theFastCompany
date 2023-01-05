@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add visual info about errors" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create validatorConfig object in login.jsx">
+      <change afterPath="$PROJECT_DIR$/src/app/utils/validator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,14 +111,7 @@
       <workItem from="1671837413091" duration="806000" />
       <workItem from="1671875245222" duration="18078000" />
       <workItem from="1672076667027" duration="5276000" />
-      <workItem from="1672827720387" duration="13477000" />
-    </task>
-    <task id="LOCAL-00006" summary="add api">
-      <created>1671360429481</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1671360429481</updated>
+      <workItem from="1672827720387" duration="14524000" />
     </task>
     <task id="LOCAL-00007" summary="add table">
       <created>1671360943093</created>
@@ -453,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672907117105</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="create validatorConfig object in login.jsx">
+      <created>1672909002135</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1672909002136</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,7 +474,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create userTable.jsx&#10;transfer table from users.jsx to userTable.jsx" />
     <MESSAGE value="create sortedBy &#10;use _.orderBy by sorted filteredUsers in users.jsx" />
     <MESSAGE value="create state [sortBy, setSortBy]&#10;add initial state {iter: 'name', order:'asc'}" />
     <MESSAGE value="added sorting direction change by clicking on the name" />
@@ -496,6 +498,7 @@
     <MESSAGE value="add button Submit and handelSubmit to login.jsx" />
     <MESSAGE value="add new state by errors&#10;add method validate &#10;add last check before submit in handelSubmit" />
     <MESSAGE value="add visual info about errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="add visual info about errors" />
+    <MESSAGE value="create validatorConfig object in login.jsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="create validatorConfig object in login.jsx" />
   </component>
 </project>
