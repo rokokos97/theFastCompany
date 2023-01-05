@@ -33,7 +33,7 @@ export function validator(data, config) {
                 data[fieldName],
                 config[fieldName][validateMethod]);
             if (error && !errors[fieldName]) {
-                errors[fieldName] = error;d
+                errors[fieldName] = error;
             }
         }
     } return errors;
