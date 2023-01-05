@@ -14,7 +14,7 @@ const UsersList = () => {
     const [professions, setProfessions] = useState(null);
     const [selectedProf, setSelectedProf] = useState();
     const [sortBy, setSortBy] = useState({ path: "name", order: "asc" });
-    const [searchQuery, setSearchQuery] = useState();
+    const [searchQuery, setSearchQuery] = useState("");
     const [users, setUsers] = useState(0);
 
     useEffect(() => {
@@ -25,7 +25,7 @@ const UsersList = () => {
     }, []);
     useEffect(() => {
         setCurrentPage(1);
-    }, [selectedProf]);
+    }, [selectedProf, searchQuery]);
 
     const handelDelete = (id) => {
         setUsers(users.filter((filteredUser) => filteredUser._id !== id));
@@ -45,6 +45,7 @@ const UsersList = () => {
         setCurrentPage(page);
     };
     const handleProfessionSelect = (item) => {
+        if (searchQuery !== "")setSearchQuery("");
         setSelectedProf(item);
     };
     const handleReset = () => {
@@ -55,6 +56,7 @@ const UsersList = () => {
     };
     const handleSearchQuery = ({ target }) => {
         setSearchQuery(target.value);
+        setSelectedProf(null);
     };
     if (users) {
         const filteredUsers = searchQuery
@@ -94,6 +96,7 @@ const UsersList = () => {
                             name={searchQuery}
                             placeholder={"Search..."}
                             onChange={handleSearchQuery}
+                            value={searchQuery}
                             className={"w-100 p-1 m-2"}
                         />
                     </div>
