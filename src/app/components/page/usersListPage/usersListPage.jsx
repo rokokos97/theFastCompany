@@ -4,8 +4,8 @@ import Pagination from "../../common/pagination";
 import { paginate } from "../../utils/paginate";
 import api from "../../../api";
 import GroupList from "../../common/groupList";
-import SearchStatus from "../../ ui/searchStatus";
-import UserTable from "../../ ui/userTable";
+import SearchStatus from "../../ui/searchStatus";
+import UserTable from "../../ui/userTable";
 import _ from "lodash";
 
 const UsersListPage = () => {

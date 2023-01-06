@@ -36,7 +36,6 @@ const LoginForm = () => {
     };
     const isValid = Object.keys(errors).length === 0;
     return (<>
-        <h1>Login</h1>
         <form onSubmit={handelSubmit} className={""}>
             <TextFiled
                 label={"Email"}
