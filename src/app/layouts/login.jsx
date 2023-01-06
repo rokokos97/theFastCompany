@@ -1,6 +1,7 @@
 import React from "react";
 import LoginForm from "../components/ ui/loginForm";
 const Login = () => {
+    const [formType, setFormType] = useState("login")
     return (
         <div className={"container mt-5"}>
             <div className="row">
