@@ -1,7 +1,9 @@
 import React from "react";
 import LoginForm from "../components/ ui/loginForm";
+import {useParams} from "react-router-dom";
 const Login = () => {
-    const [formType, setFormType] = useState("login")
+    const { type } = useParams();
+    const [ formType, setFormType ] = useState(type === "register" ? type : "login");
     return (
         <div className={"container mt-5"}>
             <div className="row">
