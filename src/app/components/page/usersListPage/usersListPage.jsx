@@ -83,12 +83,10 @@ const UsersListPage = () => {
                             onItemSelect={handleProfessionSelect}
                             selectedItem={selectedProf}
                             onResat={handleReset}
-                            // contentProperty="_id"
-                            // valueProperty="name"
                         />
                     )}
                 </div>
-                <div className={"vw-100"}>
+                <div className={"vw-100 px-4"}>
                     <SearchStatus usersNumber={count}/>
                     <div>
                         <input

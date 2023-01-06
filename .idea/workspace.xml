@@ -4,26 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add style to userPage.jsx">
-      <change afterPath="$PROJECT_DIR$/src/app/components/ ui/loginForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/page/userPage/index.js" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="refactoring and change folder structure of project">
+      <change afterPath="$PROJECT_DIR$/src/app/components/ ui/qualities/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/common/table/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/bookmark.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/bookmark.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/groupList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/groupList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/navBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ ui/navBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/pagination.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/pagination.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/qualitie.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ ui/qualities/qualitie.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/qualitiesList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ ui/qualities/qualitiesList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/searchStatus.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ ui/searchStatus.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/table.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/table/table.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/tableBody.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/table/tableBody.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/tableHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/table/tableHeader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/textField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/form/textField.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/userPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/userPage/userPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/userTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ ui/userTable.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/usersList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/usersListPage/usersList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layouts/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ ui/userTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ ui/userTable.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/page/usersListPage/usersListPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/usersListPage/usersListPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/layouts/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/users.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +71,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/rokokos97/WebstormProjects/the-fast-company/src/app/components/layout",
+    "last_opened_file_path": "/Users/rokokos97/WebstormProjects/the-fast-company/src/app/components/page/usersListPage",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -101,6 +87,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/components/page/usersListPage" />
       <recent name="$PROJECT_DIR$/src/app/components/layout" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -133,14 +120,7 @@
       <workItem from="1672076667027" duration="5276000" />
       <workItem from="1672827720387" duration="25593000" />
       <workItem from="1672996021268" duration="614000" />
-      <workItem from="1672997301295" duration="3244000" />
-    </task>
-    <task id="LOCAL-00022" summary="add defaultProps = { contentProperty valueProperty } in groupList.jsx&#10;&#10;&#10;}">
-      <created>1671644455957</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1671644455957</updated>
+      <workItem from="1672997301295" duration="5417000" />
     </task>
     <task id="LOCAL-00023" summary="add EventListener to item in groupList.jsx&#10;add useState from selectedProf &#10;add render class to item list in groupList.jsx&#10;&#10;}">
       <created>1671646576481</created>
@@ -478,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672998915018</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="refactoring and change folder structure of project">
+      <created>1673001011527</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1673001011527</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -496,7 +483,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add function renderContent and check type of component -&gt;&#10;if component is function it return this function and the function return component" />
     <MESSAGE value="dynamic rendering button Delete" />
     <MESSAGE value="create table.jsx&#10;import tableHeader and tableBody into table.jsx" />
     <MESSAGE value="delete user.jsx" />
@@ -521,6 +507,7 @@
     <MESSAGE value="add method handleSearchQuery" />
     <MESSAGE value="add reset searchQuery in handleProfessionSelect&#10;add reset selectedProf in handleSearchQuery" />
     <MESSAGE value="add style to userPage.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="add style to userPage.jsx" />
+    <MESSAGE value="refactoring and change folder structure of project" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring and change folder structure of project" />
   </component>
 </project>
