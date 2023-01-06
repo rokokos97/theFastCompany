@@ -78,7 +78,12 @@ const RegisterForm = () => {
                     >
                         Choose...
                     </option>
-                    <option>...</option>
+                    {professions && professions.map((profession) => <option
+                        key={profession._id}
+                        value={profession._id}
+                    >
+                        {profession.name}
+                    </option>)};
                 </select>
                 <div id="validationServer04Feedback" className="invalid-feedback">
                     Please select a valid state.
