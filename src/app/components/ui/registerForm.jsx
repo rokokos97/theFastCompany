@@ -84,6 +84,13 @@ const RegisterForm = () => {
                 name={"sex"}
                 onChange={handelChange}
             />
+            <Select
+                isMulti
+                options={""}
+                className="basic-multi-select"
+                classNamePrefix="select"
+                onChange={handelChange}
+            />
             <button
                 type={"submit"}
                 className={"btn btn-success w-100 mx-auto"}

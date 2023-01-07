@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create radioField.jsx" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="registrationForm.jsx =&gt; Select from react-select">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,28 +118,7 @@
       <workItem from="1672076667027" duration="5276000" />
       <workItem from="1672827720387" duration="25593000" />
       <workItem from="1672996021268" duration="614000" />
-      <workItem from="1672997301295" duration="27694000" />
-    </task>
-    <task id="LOCAL-00035" summary="create tableBody.jsx&#10;create TableBody dynamic">
-      <created>1671967334320</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1671967334320</updated>
-    </task>
-    <task id="LOCAL-00036" summary="get profession.name dynamic with _lodash (_.get())">
-      <created>1671967657425</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1671967657425</updated>
-    </task>
-    <task id="LOCAL-00037" summary="get profession.name dynamic with _lodash (_.get())">
-      <created>1671967932916</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1671967932916</updated>
+      <workItem from="1672997301295" duration="28888000" />
     </task>
     <task id="LOCAL-00038" summary="fix bag with sorting">
       <created>1672008343448</created>
@@ -459,7 +442,28 @@
       <option name="project" value="LOCAL" />
       <updated>1673109613001</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="install react-select">
+      <created>1673111600563</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1673111600563</updated>
+    </task>
+    <task id="LOCAL-00085" summary="install react-select">
+      <created>1673111615374</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1673111615374</updated>
+    </task>
+    <task id="LOCAL-00086" summary="registrationForm.jsx =&gt; Select from react-select">
+      <created>1673112001162</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1673112001162</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,8 +481,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add visual info about errors" />
-    <MESSAGE value="create validatorConfig object in login.jsx" />
     <MESSAGE value="create validator.js in utils" />
     <MESSAGE value="add regEx by email to validatorConfig&#10;fix validator config =&gt; add one more requirement by field =&gt; (error &amp;&amp; !errors[fieldName])" />
     <MESSAGE value="add any validations by password" />
@@ -502,6 +504,8 @@
     <MESSAGE value="selectedFild.jsx =&gt; add validation errors" />
     <MESSAGE value="add RadioField to registerForm" />
     <MESSAGE value="create radioField.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="create radioField.jsx" />
+    <MESSAGE value="install react-select" />
+    <MESSAGE value="registrationForm.jsx =&gt; Select from react-select" />
+    <option name="LAST_COMMIT_MESSAGE" value="registrationForm.jsx =&gt; Select from react-select" />
   </component>
 </project>
