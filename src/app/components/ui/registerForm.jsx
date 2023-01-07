@@ -2,15 +2,19 @@ import React, { useEffect, useState } from "react";
 import { validator } from "../../utils/validator";
 import TextFiled from "../common/form/textField";
 import api from "../../api";
+import SelectedField from "../common/form/selectedFild";
 
 const RegisterForm = () => {
-    const [professions, setProfessions] = useState(null);
-    const [data, setData] = useState({ email: "", password: "" });
+    const [professions, setProfessions] = useState();
+    const [data, setData] = useState({ email: "", password: "", profession: "" });
     const [errors, setErrors] = useState({});
 
     useEffect(() => {
         api.professions.fetchAll().then((data) => setProfessions(data));
     }, []);
+    useEffect(() => {
+        console.log(professions);
+    }, [professions]);
     const handelChange = ({ target }) => {
         setData((prevState) =>
             ({ ...prevState, [target.name]: target.value }));
@@ -33,6 +37,9 @@ const RegisterForm = () => {
             isContainCapital: { message: "Password must contain capital latter" },
             isContainDigit: { message: "password must contain number" },
             min: { message: "Password must contain at least 8 characters", value: 8 }
+        },
+        profession: {
+            isRequired: { message: "Profession is required" }
         }
     };
     const validate = () => {
@@ -58,37 +65,14 @@ const RegisterForm = () => {
                 onChange={handelChange}
                 error={errors.password}
             />
-            <div className="mb-4">
-                <label
-                    htmlFor="validationServer04"
-                    className="form-label"
-                >
-                    State
-                </label>
-                <select
-                    className="form-select is-invalid"
-                    id="validationServer04"
-                    aria-describedby="validationServer04Feedback"
-                    required
-                >
-                    <option
-                        selected
-                        disabled
-                        value=""
-                    >
-                        Choose...
-                    </option>
-                    {professions && professions.map((profession) => <option
-                        key={profession._id}
-                        value={profession._id}
-                    >
-                        {profession.name}
-                    </option>)};
-                </select>
-                <div id="validationServer04Feedback" className="invalid-feedback">
-                    Please select a valid state.
-                </div>
-            </div>
+            <SelectedField
+                label={"Choose your profession"}
+                value={data.profession}
+                defaultOption={"Choose..."}
+                options={professions}
+                onChange={handelChange}
+                error={errors.profession}
+            />
             <button
                 type={"submit"}
                 className={"btn btn-success w-100 mx-auto"}
