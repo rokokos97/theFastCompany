@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="creat new component MultiselectField.jsx">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add error to multiselectField.jsx">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/common/form/multiselectField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/form/multiselectField.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/form/radioField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/form/radioField.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/form/selectedFild.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/form/selectedFild.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/form/textField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/form/textField.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layouts/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/utils/validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/utils/validator.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,14 +119,7 @@
       <workItem from="1672076667027" duration="5276000" />
       <workItem from="1672827720387" duration="25593000" />
       <workItem from="1672996021268" duration="614000" />
-      <workItem from="1672997301295" duration="36790000" />
-    </task>
-    <task id="LOCAL-00040" summary="add new parameter &quot;component&quot; for columns button and bookmark in TableHeader.&#10;add ternary expression in TableBody - if component exist return component if not exist return dynamic data _.get(...)">
-      <created>1672009140808</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1672009140808</updated>
+      <workItem from="1672997301295" duration="38538000" />
     </task>
     <task id="LOCAL-00041" summary="add component: &lt;Bookmark/&gt;">
       <created>1672009710711</created>
@@ -469,7 +457,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673114608080</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="add error to multiselectField.jsx">
+      <created>1673129630116</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1673129630116</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,7 +482,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add any validations by password" />
     <MESSAGE value="add parameter disabled to submit button" />
     <MESSAGE value="add styles to form Login" />
     <MESSAGE value="add &lt;input&gt; after &lt;SearchStatus/&gt; in usersList.jsx" />
@@ -512,6 +506,7 @@
     <MESSAGE value="registrationForm.jsx =&gt; Select from react-select" />
     <MESSAGE value="add fake api from qualities" />
     <MESSAGE value="creat new component MultiselectField.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="creat new component MultiselectField.jsx" />
+    <MESSAGE value="add error to multiselectField.jsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="add error to multiselectField.jsx" />
   </component>
 </project>

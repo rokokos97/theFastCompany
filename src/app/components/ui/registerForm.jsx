@@ -47,6 +47,9 @@ const RegisterForm = () => {
         },
         profession: {
             isRequired: { message: "Profession is required" }
+        },
+        qualities: {
+            notEmpty: { message: "Qualities is required" }
         }
     };
     const validate = () => {
@@ -94,6 +97,7 @@ const RegisterForm = () => {
                 onChange={handelChange}
                 name={"qualities"}
                 label={"Choose your qualities"}
+                error={errors.qualities}
             />
             <button
                 type={"submit"}

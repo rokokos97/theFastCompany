@@ -21,6 +21,9 @@ export function validator(data, config) {
             case "min":
                 statusValidate = data.length <= config.value;
                 break;
+            case "notEmpty":
+                statusValidate = data.length === 0;
+                break;
             default:
                 break;
         }
