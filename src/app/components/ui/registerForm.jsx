@@ -4,6 +4,7 @@ import TextFiled from "../common/form/textField";
 import api from "../../api";
 import SelectedField from "../common/form/selectedFild";
 import RadioField from "../common/form/radioField";
+import Select from "react-select/base";
 
 const RegisterForm = () => {
     const [professions, setProfessions] = useState();
