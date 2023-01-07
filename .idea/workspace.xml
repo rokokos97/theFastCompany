@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create radioField.jsx">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/form/radioField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/form/radioField.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create radioField.jsx" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,21 +114,7 @@
       <workItem from="1672076667027" duration="5276000" />
       <workItem from="1672827720387" duration="25593000" />
       <workItem from="1672996021268" duration="614000" />
-      <workItem from="1672997301295" duration="26807000" />
-    </task>
-    <task id="LOCAL-00033" summary="add dynamic rendering table header">
-      <created>1671921748050</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1671921748050</updated>
-    </task>
-    <task id="LOCAL-00034" summary="change &quot;iter&quot; to &quot;path&quot; everywhere">
-      <created>1671967252092</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1671967252092</updated>
+      <workItem from="1672997301295" duration="27694000" />
     </task>
     <task id="LOCAL-00035" summary="create tableBody.jsx&#10;create TableBody dynamic">
       <created>1671967334320</created>
@@ -463,7 +445,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673104677645</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="create radioField.jsx">
+      <created>1673109569923</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1673109569923</updated>
+    </task>
+    <task id="LOCAL-00083" summary="create radioField.jsx">
+      <created>1673109613001</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1673109613001</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -481,7 +477,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add new state by errors&#10;add method validate &#10;add last check before submit in handelSubmit" />
     <MESSAGE value="add visual info about errors" />
     <MESSAGE value="create validatorConfig object in login.jsx" />
     <MESSAGE value="create validator.js in utils" />
@@ -505,6 +500,7 @@
     <MESSAGE value="login.jsx =&gt; add new state for profession" />
     <MESSAGE value="login.jsx =&gt; add iteration profession and making &lt;obtions&gt; for profession" />
     <MESSAGE value="selectedFild.jsx =&gt; add validation errors" />
+    <MESSAGE value="add RadioField to registerForm" />
     <MESSAGE value="create radioField.jsx" />
     <option name="LAST_COMMIT_MESSAGE" value="create radioField.jsx" />
   </component>
