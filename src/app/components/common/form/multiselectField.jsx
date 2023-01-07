@@ -7,7 +7,7 @@ const MultiSelectField = ({ options, onChange, name, label, error }) => {
         ? Object.keys(options).map(optionName => ({ label: options[optionName].name, value: options[optionName]._id }))
         : options;
     const handelChange = (value) => {
-        onChange({ name: name, value });
+        onChange({ name, value });
     };
     const renderClass = () => {
         return "basic-multi-select" + (error ? " is-invalid" : "");
