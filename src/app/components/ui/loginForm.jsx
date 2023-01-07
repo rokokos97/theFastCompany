@@ -5,7 +5,7 @@ import TextFiled from "../common/form/textField";
 const LoginForm = () => {
     const [data, setData] = useState({ email: "", password: "" });
     const [errors, setErrors] = useState({});
-    const handelChange = ({ target }) => {
+    const handelChange = (target) => {
         setData((prevState) =>
             ({ ...prevState, [target.name]: target.value }));
     };

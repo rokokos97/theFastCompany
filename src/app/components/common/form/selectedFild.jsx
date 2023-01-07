@@ -3,10 +3,13 @@ import PropTypes from "prop-types";
 
 const SelectedField = ({ label, value, onChange, defaultOption, options, error }) => {
     const optionsArray = !Array.isArray(options) && typeof options === "object"
-        ? Object.keys(options).map(optionName => ({ name: options[optionName].name, _id: options[optionName]._id }))
+        ? Object.keys(options).map(optionName => ({ name: options[optionName].name, value: options[optionName]._id }))
         : options;
     const renderClass = () => {
         return "form-select" + (error ? " is-invalid" : "");
+    };
+    const handleChange = ({ target }) => {
+        onChange({ name: [target.name], value: target.value });
     };
     return (
         <>
@@ -21,7 +24,7 @@ const SelectedField = ({ label, value, onChange, defaultOption, options, error }
                     id="validationServer04"
                     name={"profession"}
                     value={value}
-                    onChange={onChange}
+                    onChange={handleChange}
                     className={renderClass()}
                 >
                     <option
@@ -32,8 +35,8 @@ const SelectedField = ({ label, value, onChange, defaultOption, options, error }
                     </option>
                     {}
                     {optionsArray && optionsArray.map((option) => <option
-                        key={option._id}
-                        value={option._id}
+                        key={option.value}
+                        value={option.value}
                     >{option.name}</option>)
                     }
                 </select>

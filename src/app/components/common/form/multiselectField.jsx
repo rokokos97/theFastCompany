@@ -1,24 +1,34 @@
 import React from "react";
-import Select from "react-select/base";
+import Select from "react-select";
 import PropTypes from "prop-types";
 
-const MultiSelectField = ({ options, onChange }) => {
+const MultiSelectField = ({ options, onChange, name, label }) => {
     const optionsArray = !Array.isArray(options) && typeof options === "object"
-        ? Object.keys(options).map(optionName => ({ name: options[optionName].name, _id: options[optionName]._id }))
+        ? Object.keys(options).map(optionName => ({ label: options[optionName].name, value: options[optionName]._id }))
         : options;
-
+    const handelChange = (value) => {
+        onChange({ name: name, value });
+    };
     return (<>
-        <Select
-            isMulti
-            options={optionsArray}
-            className="basic-multi-select"
-            classNamePrefix="select"
-            onChange={onChange}
-        />
+        <div className={"mb-4"}>
+            <label className={"form-label"}>{label}</label>
+            <Select
+                closeMenuOnSelect={false}
+                isMulti
+                options={optionsArray}
+                className="basic-multi-select"
+                classNamePrefix="select"
+                onChange={handelChange}
+                name={name}
+            />
+        </div>
     </>);
 };
 MultiSelectField.propTypes = {
     onChange: PropTypes.func,
-    options: PropTypes.oneOfType([PropTypes.array, PropTypes.object])
+    options: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
+    name: PropTypes.string,
+    label: PropTypes.string
+    // error: PropTypes.string,
 };
 export default MultiSelectField;

@@ -6,21 +6,23 @@ import SelectedField from "../common/form/selectedFild";
 import RadioField from "../common/form/radioField";
 import MultiSelectField from "../common/form/multiselectField";
 
-
 const RegisterForm = () => {
     const [qualities, setQualities] = useState({});
     const [professions, setProfessions] = useState([]);
-    const [data, setData] = useState({ email: "", password: "", profession: "", sex: "male", qualities: {} });
+    const [data, setData] = useState({
+        email: "",
+        password: "",
+        profession: "",
+        sex: "male",
+        qualities: []
+    });
     const [errors, setErrors] = useState({});
 
     useEffect(() => {
         api.professions.fetchAll().then((data) => setProfessions(data));
         api.qualities.fetchAll().then((data) => setQualities(data));
     }, []);
-    useEffect(() => {
-        console.log(professions,qualities);
-    }, [professions, qualities]);
-    const handelChange = ({ target }) => {
+    const handelChange = (target) => {
         setData((prevState) =>
             ({ ...prevState, [target.name]: target.value }));
     };
@@ -88,8 +90,10 @@ const RegisterForm = () => {
                 onChange={handelChange}
             />
             <MultiSelectField
+                options={qualities}
                 onChange={handelChange}
-                options={data.qualities}
+                name={"qualities"}
+                label={"Choose your qualities"}
             />
             <button
                 type={"submit"}
