@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="registrationForm.jsx =&gt; Select from react-select">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add fake api from qualities">
+      <change afterPath="$PROJECT_DIR$/src/app/components/common/form/multiselectField.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,14 +118,7 @@
       <workItem from="1672076667027" duration="5276000" />
       <workItem from="1672827720387" duration="25593000" />
       <workItem from="1672996021268" duration="614000" />
-      <workItem from="1672997301295" duration="28888000" />
-    </task>
-    <task id="LOCAL-00038" summary="fix bag with sorting">
-      <created>1672008343448</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1672008343448</updated>
+      <workItem from="1672997301295" duration="30399000" />
     </task>
     <task id="LOCAL-00039" summary="fix bag with sorting">
       <created>1672008395027</created>
@@ -463,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673112001162</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="add fake api from qualities">
+      <created>1673112794593</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1673112794593</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -481,7 +481,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create validator.js in utils" />
     <MESSAGE value="add regEx by email to validatorConfig&#10;fix validator config =&gt; add one more requirement by field =&gt; (error &amp;&amp; !errors[fieldName])" />
     <MESSAGE value="add any validations by password" />
     <MESSAGE value="add parameter disabled to submit button" />
@@ -506,6 +505,7 @@
     <MESSAGE value="create radioField.jsx" />
     <MESSAGE value="install react-select" />
     <MESSAGE value="registrationForm.jsx =&gt; Select from react-select" />
-    <option name="LAST_COMMIT_MESSAGE" value="registrationForm.jsx =&gt; Select from react-select" />
+    <MESSAGE value="add fake api from qualities" />
+    <option name="LAST_COMMIT_MESSAGE" value="add fake api from qualities" />
   </component>
 </project>

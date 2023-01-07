@@ -4,19 +4,22 @@ import TextFiled from "../common/form/textField";
 import api from "../../api";
 import SelectedField from "../common/form/selectedFild";
 import RadioField from "../common/form/radioField";
-import Select from "react-select/base";
+import MultiSelectField from "../common/form/multiselectField";
+
 
 const RegisterForm = () => {
-    const [professions, setProfessions] = useState();
-    const [data, setData] = useState({ email: "", password: "", profession: "", sex: "male" });
+    const [qualities, setQualities] = useState({});
+    const [professions, setProfessions] = useState([]);
+    const [data, setData] = useState({ email: "", password: "", profession: "", sex: "male", qualities: {} });
     const [errors, setErrors] = useState({});
 
     useEffect(() => {
         api.professions.fetchAll().then((data) => setProfessions(data));
+        api.qualities.fetchAll().then((data) => setQualities(data));
     }, []);
     useEffect(() => {
-        console.log(professions);
-    }, [professions]);
+        console.log(professions,qualities);
+    }, [professions, qualities]);
     const handelChange = ({ target }) => {
         setData((prevState) =>
             ({ ...prevState, [target.name]: target.value }));
@@ -84,12 +87,9 @@ const RegisterForm = () => {
                 name={"sex"}
                 onChange={handelChange}
             />
-            <Select
-                isMulti
-                options={""}
-                className="basic-multi-select"
-                classNamePrefix="select"
+            <MultiSelectField
                 onChange={handelChange}
+                options={data.qualities}
             />
             <button
                 type={"submit"}
