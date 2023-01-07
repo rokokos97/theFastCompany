@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="login.jsx =&gt; add iteration profession and making &lt;obtions&gt; for profession">
-      <change afterPath="$PROJECT_DIR$/src/app/components/common/form/selectedFild.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/fake.api/professions.api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/fake.api/professions.api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="selectedFild.jsx =&gt; add validation errors" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -119,14 +114,7 @@
       <workItem from="1672076667027" duration="5276000" />
       <workItem from="1672827720387" duration="25593000" />
       <workItem from="1672996021268" duration="614000" />
-      <workItem from="1672997301295" duration="22762000" />
-    </task>
-    <task id="LOCAL-00031" summary="transfer sorting process form users.jsx to userTable.jsx">
-      <created>1671879346511</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1671879346511</updated>
+      <workItem from="1672997301295" duration="23065000" />
     </task>
     <task id="LOCAL-00032" summary="transfer sorting process form users.jsx to userTable.jsx">
       <created>1671880154565</created>
@@ -464,7 +452,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673036429182</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="selectedFild.jsx =&gt; add validation errors">
+      <created>1673104363301</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1673104363301</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,7 +477,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add textField.jsx" />
     <MESSAGE value="add button Submit and handelSubmit to login.jsx" />
     <MESSAGE value="add new state by errors&#10;add method validate &#10;add last check before submit in handelSubmit" />
     <MESSAGE value="add visual info about errors" />
@@ -507,6 +501,7 @@
     <MESSAGE value="login.jsx =&gt; add changing form register&lt;=&gt;login" />
     <MESSAGE value="login.jsx =&gt; add new state for profession" />
     <MESSAGE value="login.jsx =&gt; add iteration profession and making &lt;obtions&gt; for profession" />
-    <option name="LAST_COMMIT_MESSAGE" value="login.jsx =&gt; add iteration profession and making &lt;obtions&gt; for profession" />
+    <MESSAGE value="selectedFild.jsx =&gt; add validation errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="selectedFild.jsx =&gt; add validation errors" />
   </component>
 </project>
