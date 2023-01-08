@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="install Yup">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add validationSchema for Yup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,14 +117,7 @@
       <workItem from="1672076667027" duration="5276000" />
       <workItem from="1672827720387" duration="25593000" />
       <workItem from="1672996021268" duration="614000" />
-      <workItem from="1672997301295" duration="45129000" />
-    </task>
-    <task id="LOCAL-00049" summary="Create form in login.jsx&#10;{&quot; &quot;} add space between &lt;label&gt; and &lt;input&gt;">
-      <created>1672830454561</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1672830454561</updated>
+      <workItem from="1672997301295" duration="46073000" />
     </task>
     <task id="LOCAL-00050" summary="in login.jsx =&gt; add state of email, add handelChange">
       <created>1672832386639</created>
@@ -463,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673180194357</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="add validationSchema for Yup">
+      <created>1673182167126</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1673182167126</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -481,7 +480,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method handleSearchQuery" />
     <MESSAGE value="add reset searchQuery in handleProfessionSelect&#10;add reset selectedProf in handleSearchQuery" />
     <MESSAGE value="add style to userPage.jsx" />
     <MESSAGE value="refactoring and change folder structure of project" />
@@ -506,6 +504,7 @@
     <MESSAGE value="add error to CheckBoxField in registerForm.jsx" />
     <MESSAGE value="add  CheckBoxField in loginForm.jsx" />
     <MESSAGE value="install Yup" />
-    <option name="LAST_COMMIT_MESSAGE" value="install Yup" />
+    <MESSAGE value="add validationSchema for Yup" />
+    <option name="LAST_COMMIT_MESSAGE" value="add validationSchema for Yup" />
   </component>
 </project>
