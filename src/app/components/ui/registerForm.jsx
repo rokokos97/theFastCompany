@@ -5,6 +5,7 @@ import api from "../../api";
 import SelectedField from "../common/form/selectedFild";
 import RadioField from "../common/form/radioField";
 import MultiSelectField from "../common/form/multiselectField";
+import CheckBoxField from "../common/form/checkBoxField";
 
 const RegisterForm = () => {
     const [qualities, setQualities] = useState({});
@@ -14,7 +15,8 @@ const RegisterForm = () => {
         password: "",
         profession: "",
         sex: "male",
-        qualities: []
+        qualities: [],
+        license: false
     });
     const [errors, setErrors] = useState({});
 
@@ -99,6 +101,9 @@ const RegisterForm = () => {
                 label={"Choose your qualities"}
                 error={errors.qualities}
             />
+            <CheckBoxField value={data.license} onChange={handelChange} name={"license"}>
+                Allow the <a href={"#"}>license</a>
+            </CheckBoxField>
             <button
                 type={"submit"}
                 className={"btn btn-success w-100 mx-auto"}
