@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add error to multiselectField.jsx">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create checkBoxField.jsx">
+      <change afterPath="$PROJECT_DIR$/src/app/components/common/form/checkBoxField.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/form/multiselectField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/form/multiselectField.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/utils/validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/utils/validator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/form/selectedFild.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/form/selectedFild.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,21 +118,7 @@
       <workItem from="1672076667027" duration="5276000" />
       <workItem from="1672827720387" duration="25593000" />
       <workItem from="1672996021268" duration="614000" />
-      <workItem from="1672997301295" duration="38538000" />
-    </task>
-    <task id="LOCAL-00041" summary="add component: &lt;Bookmark/&gt;">
-      <created>1672009710711</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1672009710711</updated>
-    </task>
-    <task id="LOCAL-00042" summary="add function renderContent and check type of component -&gt;&#10;if component is function it return this function and the function return component">
-      <created>1672010866889</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1672010866889</updated>
+      <workItem from="1672997301295" duration="40820000" />
     </task>
     <task id="LOCAL-00043" summary="dynamic rendering button Delete">
       <created>1672074012921</created>
@@ -464,7 +449,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673129630116</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="add error to multiselectField.jsx">
+      <created>1673131126033</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1673131126033</updated>
+    </task>
+    <task id="LOCAL-00091" summary="add error to multiselectField.jsx">
+      <created>1673131226375</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1673131226376</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,7 +481,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add parameter disabled to submit button" />
     <MESSAGE value="add styles to form Login" />
     <MESSAGE value="add &lt;input&gt; after &lt;SearchStatus/&gt; in usersList.jsx" />
     <MESSAGE value="add one more filtration users by searchQuery" />
@@ -507,6 +505,7 @@
     <MESSAGE value="add fake api from qualities" />
     <MESSAGE value="creat new component MultiselectField.jsx" />
     <MESSAGE value="add error to multiselectField.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="add error to multiselectField.jsx" />
+    <MESSAGE value="create checkBoxField.jsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="create checkBoxField.jsx" />
   </component>
 </project>

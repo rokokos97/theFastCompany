@@ -21,7 +21,7 @@ const SelectedField = ({ label, value, onChange, defaultOption, options, error }
                     {label}
                 </label>
                 <select
-                    id="validationServer04"
+                    id={name}
                     name={"profession"}
                     value={value}
                     onChange={handleChange}
