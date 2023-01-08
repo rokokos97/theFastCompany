@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add CheckBoxField to registerForm.jsx">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/form/checkBoxField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/form/checkBoxField.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/utils/validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/utils/validator.js" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add error to CheckBoxField in registerForm.jsx">
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,14 +116,7 @@
       <workItem from="1672076667027" duration="5276000" />
       <workItem from="1672827720387" duration="25593000" />
       <workItem from="1672996021268" duration="614000" />
-      <workItem from="1672997301295" duration="42952000" />
-    </task>
-    <task id="LOCAL-00045" summary="delete user.jsx">
-      <created>1672094550089</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1672094550089</updated>
+      <workItem from="1672997301295" duration="43262000" />
     </task>
     <task id="LOCAL-00046" summary="rename users =&gt; usersList.jsx&#10;add layout folder&#10;add main.jsx, login.jsx, users.jsx&#10;install react-router-dom&#10;import BrowserRouter in app.js">
       <created>1672782397427</created>
@@ -464,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673178494712</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="add error to CheckBoxField in registerForm.jsx">
+      <created>1673179838113</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1673179838113</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,7 +479,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add &lt;input&gt; after &lt;SearchStatus/&gt; in usersList.jsx" />
     <MESSAGE value="add one more filtration users by searchQuery" />
     <MESSAGE value="add one more filtration users by searshQuery" />
     <MESSAGE value="add method handleSearchQuery" />
@@ -507,6 +503,7 @@
     <MESSAGE value="add error to multiselectField.jsx" />
     <MESSAGE value="create checkBoxField.jsx" />
     <MESSAGE value="add CheckBoxField to registerForm.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="add CheckBoxField to registerForm.jsx" />
+    <MESSAGE value="add error to CheckBoxField in registerForm.jsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="add error to CheckBoxField in registerForm.jsx" />
   </component>
 </project>

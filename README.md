@@ -9,4 +9,6 @@ Reasct Snippet
 \_lodesh
 ESLint
 react-select
+Yup
+
 
