@@ -52,6 +52,9 @@ const RegisterForm = () => {
         },
         qualities: {
             notEmpty: { message: "Qualities is required" }
+        },
+        license: {
+            isRequired: { message: "Confirm license before proceeding." }
         }
     };
     const validate = () => {
@@ -101,7 +104,12 @@ const RegisterForm = () => {
                 label={"Choose your qualities"}
                 error={errors.qualities}
             />
-            <CheckBoxField value={data.license} onChange={handelChange} name={"license"}>
+            <CheckBoxField
+                value={data.license}
+                onChange={handelChange}
+                name={"license"}
+                error={errors.license}
+            >
                 Allow the <a href={"#"}>license</a>
             </CheckBoxField>
             <button

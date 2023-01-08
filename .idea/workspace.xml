@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create checkBoxField.jsx">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add CheckBoxField to registerForm.jsx">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/form/checkBoxField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/form/checkBoxField.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/utils/validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/utils/validator.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,14 +119,7 @@
       <workItem from="1672076667027" duration="5276000" />
       <workItem from="1672827720387" duration="25593000" />
       <workItem from="1672996021268" duration="614000" />
-      <workItem from="1672997301295" duration="41443000" />
-    </task>
-    <task id="LOCAL-00044" summary="create table.jsx&#10;import tableHeader and tableBody into table.jsx">
-      <created>1672078479365</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1672078479365</updated>
+      <workItem from="1672997301295" duration="42952000" />
     </task>
     <task id="LOCAL-00045" summary="delete user.jsx">
       <created>1672094550089</created>
@@ -461,7 +457,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673177580055</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="add CheckBoxField to registerForm.jsx">
+      <created>1673178494712</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1673178494712</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -479,7 +482,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add styles to form Login" />
     <MESSAGE value="add &lt;input&gt; after &lt;SearchStatus/&gt; in usersList.jsx" />
     <MESSAGE value="add one more filtration users by searchQuery" />
     <MESSAGE value="add one more filtration users by searshQuery" />
@@ -504,6 +506,7 @@
     <MESSAGE value="creat new component MultiselectField.jsx" />
     <MESSAGE value="add error to multiselectField.jsx" />
     <MESSAGE value="create checkBoxField.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="create checkBoxField.jsx" />
+    <MESSAGE value="add CheckBoxField to registerForm.jsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="add CheckBoxField to registerForm.jsx" />
   </component>
 </project>
