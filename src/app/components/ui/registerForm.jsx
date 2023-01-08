@@ -15,7 +15,7 @@ const RegisterForm = () => {
         password: "",
         profession: "",
         sex: "male",
-        qualities: [],
+        qualities: [{}],
         license: false
     });
     const [errors, setErrors] = useState({});
@@ -101,6 +101,7 @@ const RegisterForm = () => {
             <MultiSelectField
                 options={qualities}
                 onChange={handelChange}
+                defaultOption={data.qualities}
                 name={"qualities"}
                 label={"Choose your qualities"}
                 error={errors.qualities}
