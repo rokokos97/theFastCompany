@@ -82,6 +82,7 @@ const RegisterForm = () => {
             />
             <SelectedField
                 label={"Choose your profession"}
+                name={"professions"}
                 value={data.profession}
                 defaultOption={"Choose..."}
                 options={professions}
