@@ -2,10 +2,21 @@ import React, { useEffect, useState } from "react";
 import { validator } from "../../utils/validator";
 import TextFiled from "../common/form/textField";
 import CheckBoxField from "../common/form/checkBoxField";
+import * as yup from "yup";
 
 const LoginForm = () => {
     const [data, setData] = useState({ email: "", password: "", stayOn: false });
     const [errors, setErrors] = useState({});
+
+    const validateSchema = yup.object().shape({
+        email: yup.string().isRequired("Email is required").email("Email is not correct"),
+        password: yup.string()
+            .isRequired("Password is required")
+            .matches(/(?=.*[A-Z])/, "Password must contain capital latter")
+            .matches(/(?=.*[0-9])/, "Password must contain number")
+            .matches(/(?=.*[_!$%&*#])/, "Password must contain on of specific symbol _!$%&*#")
+            .matches(/(?=.{8,})/, "Password must contain at least 8 characters")
+    });
     const handelChange = (target) => {
         setData((prevState) =>
             ({ ...prevState, [target.name]: target.value }));
@@ -26,7 +37,7 @@ const LoginForm = () => {
         password: {
             isRequired: { message: "Password is required" },
             isContainCapital: { message: "Password must contain capital latter" },
-            isContainDigit: { message: "password must contain number" },
+            isContainDigit: { message: "Password must contain number" },
             min: { message: "Password must contain at least 8 characters", value: 8 }
         }
     };

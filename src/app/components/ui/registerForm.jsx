@@ -43,7 +43,7 @@ const RegisterForm = () => {
         },
         password: {
             isRequired: { message: "Password is required" },
-            isContainCapital: { message: "Password must contain capital latter" },
+            isContainCapital: { message: "Password must include capital latter" },
             isContainDigit: { message: "password must contain number" },
             min: { message: "Password must contain at least 8 characters", value: 8 }
         },

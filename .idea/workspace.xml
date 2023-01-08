@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add error to CheckBoxField in registerForm.jsx">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="install Yup">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,28 +118,7 @@
       <workItem from="1672076667027" duration="5276000" />
       <workItem from="1672827720387" duration="25593000" />
       <workItem from="1672996021268" duration="614000" />
-      <workItem from="1672997301295" duration="43262000" />
-    </task>
-    <task id="LOCAL-00046" summary="rename users =&gt; usersList.jsx&#10;add layout folder&#10;add main.jsx, login.jsx, users.jsx&#10;install react-router-dom&#10;import BrowserRouter in app.js">
-      <created>1672782397427</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1672782397427</updated>
-    </task>
-    <task id="LOCAL-00047" summary="create navBar.jsx&#10;create userPage.jsx">
-      <created>1672783783882</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1672783783882</updated>
-    </task>
-    <task id="LOCAL-00048" summary="Create form in login.jsx">
-      <created>1672829971808</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1672829971808</updated>
+      <workItem from="1672997301295" duration="45129000" />
     </task>
     <task id="LOCAL-00049" summary="Create form in login.jsx&#10;{&quot; &quot;} add space between &lt;label&gt; and &lt;input&gt;">
       <created>1672830454561</created>
@@ -461,7 +442,28 @@
       <option name="project" value="LOCAL" />
       <updated>1673179838113</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="add  CheckBoxField in loginForm.jsx">
+      <created>1673180039540</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1673180039540</updated>
+    </task>
+    <task id="LOCAL-00096" summary="install Yup">
+      <created>1673180159610</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1673180159610</updated>
+    </task>
+    <task id="LOCAL-00097" summary="install Yup">
+      <created>1673180194357</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1673180194357</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -479,8 +481,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add one more filtration users by searchQuery" />
-    <MESSAGE value="add one more filtration users by searshQuery" />
     <MESSAGE value="add method handleSearchQuery" />
     <MESSAGE value="add reset searchQuery in handleProfessionSelect&#10;add reset selectedProf in handleSearchQuery" />
     <MESSAGE value="add style to userPage.jsx" />
@@ -504,6 +504,8 @@
     <MESSAGE value="create checkBoxField.jsx" />
     <MESSAGE value="add CheckBoxField to registerForm.jsx" />
     <MESSAGE value="add error to CheckBoxField in registerForm.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="add error to CheckBoxField in registerForm.jsx" />
+    <MESSAGE value="add  CheckBoxField in loginForm.jsx" />
+    <MESSAGE value="install Yup" />
+    <option name="LAST_COMMIT_MESSAGE" value="install Yup" />
   </component>
 </project>
