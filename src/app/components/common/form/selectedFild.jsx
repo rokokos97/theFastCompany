@@ -2,9 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const SelectedField = ({ label, name, value, onChange, defaultOption, options, error }) => {
+    console.log(options);
     const optionsArray = !Array.isArray(options) && typeof options === "object"
         ? Object.keys(options).map(optionName => ({ name: options[optionName].name, value: options[optionName]._id }))
         : options;
+    console.log(optionsArray);
     const renderClass = () => {
         return "form-select" + (error ? " is-invalid" : "");
     };

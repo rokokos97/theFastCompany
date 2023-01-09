@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="refactoring and debug =&gt; registerForm.jsx =&gt; &lt;SelectedField&gt; add name=&quot;professions&quot;">
-      <change beforePath="$PROJECT_DIR$/src/app/api/fake.api/user.api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/fake.api/user.api.js" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="editUserPage.jsx =&gt; add textField for user Name">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/form/selectedFild.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/form/selectedFild.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +119,7 @@
       <workItem from="1672827720387" duration="25593000" />
       <workItem from="1672996021268" duration="614000" />
       <workItem from="1672997301295" duration="47641000" />
+      <workItem from="1673305347340" duration="1143000" />
     </task>
     <task id="LOCAL-00052" summary="add button Submit and handelSubmit to login.jsx">
       <created>1672839651177</created>

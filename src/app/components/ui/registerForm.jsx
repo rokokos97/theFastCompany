@@ -13,7 +13,7 @@ const RegisterForm = () => {
     const [data, setData] = useState({
         email: "",
         password: "",
-        profession: "",
+        professions: "",
         sex: "male",
         qualities: [{}],
         license: false
@@ -25,6 +25,7 @@ const RegisterForm = () => {
         api.qualities.fetchAll().then((data) => setQualities(data));
     }, []);
     const handelChange = (target) => {
+        console.log("target", target.name);
         setData((prevState) =>
             ({ ...prevState, [target.name]: target.value }));
     };
