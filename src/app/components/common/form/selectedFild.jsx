@@ -2,11 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const SelectedField = ({ label, name, value, onChange, defaultOption, options, error }) => {
-    console.log(options);
+    // console.log("options", options);
     const optionsArray = !Array.isArray(options) && typeof options === "object"
-        ? Object.keys(options).map(optionName => ({ name: options[optionName].name, value: options[optionName]._id }))
+        ? Object.values(options)
         : options;
-    console.log(optionsArray);
+    // console.log("optionsArray", optionsArray);
     const renderClass = () => {
         return "form-select" + (error ? " is-invalid" : "");
     };
@@ -39,7 +39,7 @@ const SelectedField = ({ label, name, value, onChange, defaultOption, options, e
                     {optionsArray && optionsArray.map((option) => <option
                         key={option.value}
                         value={option.value}
-                    >{option.name}</option>)
+                    >{option.label}</option>)
                     }
                 </select>
                 <div className="invalid-feedback">

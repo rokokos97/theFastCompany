@@ -13,7 +13,7 @@ const RegisterForm = () => {
     const [data, setData] = useState({
         email: "",
         password: "",
-        professions: "",
+        profession: "",
         sex: "male",
         qualities: [{}],
         license: false
@@ -21,11 +21,19 @@ const RegisterForm = () => {
     const [errors, setErrors] = useState({});
 
     useEffect(() => {
-        api.professions.fetchAll().then((data) => setProfessions(data));
+        api.professions.fetchAll().then((data) => {
+            const professionList =
+                Object.keys(data).map((professionName) => ({
+                    label: data[professionName].name,
+                    value: data[professionName]._id
+                }));
+            setProfessions(professionList);
+        });
         api.qualities.fetchAll().then((data) => setQualities(data));
     }, []);
     const handelChange = (target) => {
         console.log("target", target.name);
+        console.log("data", data);
         setData((prevState) =>
             ({ ...prevState, [target.name]: target.value }));
     };
@@ -83,11 +91,11 @@ const RegisterForm = () => {
             />
             <SelectedField
                 label={"Choose your profession"}
-                name={"professions"}
-                value={data.profession}
+                name={"profession"}
                 defaultOption={"Choose..."}
                 options={professions}
                 onChange={handelChange}
+                value={data.profession}
                 error={errors.profession}
             />
             <RadioField
