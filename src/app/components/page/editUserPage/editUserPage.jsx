@@ -6,7 +6,6 @@ import SelectedField from "../../common/form/selectedFild";
 import RadioField from "../../common/form/radioField";
 import MultiSelectField from "../../common/form/multiselectField";
 import { useHistory, useParams } from "react-router-dom";
-
 const EditUserPage = () => {
     const { userId } = useParams();
     const history = useHistory();
@@ -187,5 +186,4 @@ const EditUserPage = () => {
     </div>
     );
 };
-
 export default EditUserPage;
