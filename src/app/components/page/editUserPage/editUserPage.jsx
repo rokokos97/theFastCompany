@@ -68,24 +68,13 @@ const EditUserPage = () => {
     useEffect(() => { validate(); }, [data]);
 
     const validatorConfig = {
+        name: { isRequired: { message: "Name is required" } },
         email: {
             isRequired: { message: "Email is required" },
             isEmail: { message: "Email is not correct" }
         },
-        password: {
-            isRequired: { message: "Password is required" },
-            isContainCapital: { message: "Password must include capital latter" },
-            isContainDigit: { message: "password must contain number" },
-            min: { message: "Password must contain at least 8 characters", value: 8 }
-        },
-        profession: {
-            isRequired: { message: "Profession is required" }
-        },
         qualities: {
             notEmpty: { message: "Qualities is required" }
-        },
-        license: {
-            isRequired: { message: "Confirm license before proceeding." }
         }
     };
     const validate = () => {
@@ -117,16 +106,14 @@ const EditUserPage = () => {
                             <TextFiled
                                 label={"Rate"}
                                 name={"rate"}
-                                value={data.email}
+                                value={data.rate}
                                 onChange={handelChange}
-                                error={errors.rate}
                             />
                             <TextFiled
                                 label={"Completed Meetings"}
                                 name={"completedMeetings"}
                                 value={data.completedMeetings}
                                 onChange={handelChange}
-                                error={errors.completedMeetings}
                             />
                             <RadioField
                                 label={"Choose your sex"}
@@ -144,7 +131,6 @@ const EditUserPage = () => {
                                 options={professions}
                                 onChange={handelChange}
                                 value={data.profession}
-                                error={errors.profession}
                             />
                             <MultiSelectField
                                 options={qualities}
