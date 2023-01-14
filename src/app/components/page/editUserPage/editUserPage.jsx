@@ -64,6 +64,7 @@ const EditUserPage = () => {
         const isValid = validate();
         if (!isValid) return;
         console.log(data);
+
     };
     useEffect(() => { validate(); }, [data]);
 

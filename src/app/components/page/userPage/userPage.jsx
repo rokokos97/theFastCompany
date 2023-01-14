@@ -11,7 +11,7 @@ const UserPage = ({ userId }) => {
         api.users.getById(userId).then((data) => setUser(data));
     }, []);
     const handleClick = () => {
-        history.push("/users");
+        history.push(`/users/${userId}/edit`);
     };
     if (user) {
         return (
@@ -25,7 +25,7 @@ const UserPage = ({ userId }) => {
                                 <p className="card-text"><QualitiesList qualities={user.qualities} /></p>
                                 <p className="card-text">completedMeetings: {user.completedMeetings}</p>
                                 <p className="card-text">Rate: {user.rate}</p>
-                                <button className={"btn btn-primary w-100 wx-auto"} onClick={handleClick}> All users</button>
+                                <button className={"btn btn-primary w-100 wx-auto"} onClick={handleClick}>Edit info</button>
                             </div>
                         </div>
                     </div>
