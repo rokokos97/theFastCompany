@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="App.js =&gt; add optional parameter :edit?">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create =&gt; editUserPage.jsx">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/page/editUserPage/editUserPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/editUserPage/editUserPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/page/userPage/userPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/userPage/userPage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,13 +121,6 @@
       <workItem from="1672996021268" duration="614000" />
       <workItem from="1672997301295" duration="47641000" />
       <workItem from="1673305347340" duration="1143000" />
-    </task>
-    <task id="LOCAL-00053" summary="add new state by errors&#10;add method validate &#10;add last check before submit in handelSubmit">
-      <created>1672867756064</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1672867756064</updated>
     </task>
     <task id="LOCAL-00054" summary="add visual info about errors">
       <created>1672907117105</created>
@@ -466,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673629918253</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="create =&gt; editUserPage.jsx">
+      <created>1673631457544</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1673631457544</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -484,7 +483,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactoring and change folder structure of project" />
     <MESSAGE value="transfer part of loginForm into login.jsx" />
     <MESSAGE value="login.jsx add new state formType" />
     <MESSAGE value="app.js =&gt; add new parametr &quot;type&quot; to &#10;&lt;Route path=&quot;/login/:type?&quot; component={Login} /&gt;" />
@@ -509,7 +507,8 @@
     <MESSAGE value="add validationSchema for Yup" />
     <MESSAGE value="refactoring and debug =&gt; registerForm.jsx =&gt; &lt;SelectedField&gt; add name=&quot;professions&quot;" />
     <MESSAGE value="App.js =&gt; add optional parameter :edit?" />
-    <option name="LAST_COMMIT_MESSAGE" value="App.js =&gt; add optional parameter :edit?" />
+    <MESSAGE value="create =&gt; editUserPage.jsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="create =&gt; editUserPage.jsx" />
   </component>
   <component name="regexState">
     <option name="map">
