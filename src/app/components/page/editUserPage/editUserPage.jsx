@@ -23,6 +23,29 @@ const EditUserPage = () => {
     const [errors, setErrors] = useState({});
     const [qualities, setQualities] = useState({});
     const [professions, setProfessions] = useState([]);
+
+    const getProfessionById = (id) => {
+        for (const prof of professions) {
+            if (prof.value === id) {
+                return { _id: prof.value, name: prof.label };
+            }
+        }
+    };
+    const getQualities = (elements) => {
+        const qualitiesArray = [];
+        for (const elem of elements) {
+            for (const quality in qualities) {
+                if (elem.value === qualities[quality].value) {
+                    qualitiesArray.push({
+                        _id: qualities[quality].value,
+                        name: qualities[quality].label,
+                        color: qualities[quality].color
+                    });
+                }
+            }
+        }
+        return qualitiesArray;
+    };
     const transformData = (data) => {
         return data.map((qual) => ({ label: qual.name, value: qual._id }));
     };
@@ -64,9 +87,17 @@ const EditUserPage = () => {
         const isValid = validate();
         if (!isValid) return;
         console.log(data);
-
+        const { profession, qualities } = data;
+        api.users.update(userId, {
+            ...data,
+            profession: getProfessionById(profession),
+            qualities: getQualities(qualities)
+        }).then((data) => (history.push(`/users/${data._id}`)));
     };
-    useEffect(() => { validate(); }, [data]);
+    useEffect(() => {
+        validate();
+        if (data._id) setIsLoading(false);
+    }, [data]);
 
     const validatorConfig = {
         name: { isRequired: { message: "Name is required" } },
