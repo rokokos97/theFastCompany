@@ -17,6 +17,16 @@ const UserPage = ({ userId }) => {
         return (
             <>
                 <div className="container">
+                    <div className="row gutters-sm">
+                        <div className="col-md-4 mb-3">
+
+                        </div>
+                        <div className="col-md-8">
+
+                        </div>
+                    </div>
+                </div>
+                <div className="container">
                     <div className="row">
                         <div className="card text-center col-md-6 offset-md-3">
                             <div className="card-body">
