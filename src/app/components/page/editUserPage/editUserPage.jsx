@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { validator } from "../../../utils/validator";
 import TextFiled from "../../common/form/textField";
 import api from "../../../api";
-import SelectedField from "../../common/form/selectedFild";
+import SelectedField from "../../common/form/selectedField";
 import RadioField from "../../common/form/radioField";
 import MultiSelectField from "../../common/form/multiselectField";
 import { useHistory, useParams } from "react-router-dom";

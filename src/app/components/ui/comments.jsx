@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import api from "../../api";
-import _ from "lodash"
+import _ from "lodash";
+import CommentsList from "../common/comments/commentsList";
+import AddCommentForm from "../common/comments/addCommentForm";
 
 const Comments = () => {
     const { userId } = useParams();
@@ -9,6 +11,16 @@ const Comments = () => {
     useEffect(() => {
         api.comments.fetchCommentsForUser(userId).then((data) => setComments(data));
     }, []);
+    const handleSubmit = (data) => {
+        api.comments
+            .add({ ...data, pageId: userId })
+            .then((data) => setComments([...comments, data]));
+    };
+    const handleRemoveComment = (id) => {
+        api.comments.remove(id).then((id) => {
+            setComments(comments.filter((x) => x._id !== id));
+        });
+    };
     const sortedComments = _.orderBy(comments, ["created_at"], ["desc"]);
     return <>
         <div className="card mb-2">
@@ -29,7 +41,6 @@ const Comments = () => {
                 </div>
             </div>
         )}
-    </>
+    </>;
 };
-
 export default Comments;

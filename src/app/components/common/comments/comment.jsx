@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import api from "../../../api";
+import { displayDate } from "../../../utils/displayDate";
 
 const Comment = ({
     content,
@@ -9,7 +10,7 @@ const Comment = ({
     userId,
     onRemove
 }) => {
-    const [user, setUser] = useState();
+    const [user, setUser] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
     useEffect(() => {
         setIsLoading(true);

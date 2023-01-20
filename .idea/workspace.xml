@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add comments.api.js">
-      <change afterPath="$PROJECT_DIR$/src/app/components/common/comments/comment.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/common/comments/commentsList.jsx" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add displayDate.js">
+      <change afterPath="$PROJECT_DIR$/src/app/components/common/comments/addCommentForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/comments/comment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/comments/comment.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/ui/comments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/comments.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -123,20 +124,6 @@
       <workItem from="1672996021268" duration="614000" />
       <workItem from="1672997301295" duration="47641000" />
       <workItem from="1673305347340" duration="1143000" />
-    </task>
-    <task id="LOCAL-00063" summary="add styles to form Login">
-      <created>1672936007966</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1672936007966</updated>
-    </task>
-    <task id="LOCAL-00064" summary="add &lt;input&gt; after &lt;SearchStatus/&gt; in usersList.jsx">
-      <created>1672958111048</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1672958111048</updated>
     </task>
     <task id="LOCAL-00065" summary="add one more filtration users by searshQuery">
       <created>1672958799446</created>
@@ -467,7 +454,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674254726696</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="add commentsList.jsx&#10;add comment.jsx">
+      <created>1674256048466</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1674256048466</updated>
+    </task>
+    <task id="LOCAL-00113" summary="add displayDate.js">
+      <created>1674256112872</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1674256112872</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -485,8 +486,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="selectedFild.jsx =&gt; add validation errors" />
-    <MESSAGE value="add RadioField to registerForm" />
     <MESSAGE value="create radioField.jsx" />
     <MESSAGE value="install react-select" />
     <MESSAGE value="registrationForm.jsx =&gt; Select from react-select" />
@@ -510,7 +509,9 @@
     <MESSAGE value="create meetingsCard.jsx" />
     <MESSAGE value="create comments.jsx&#10;add button editUserPage to userCard.jsx" />
     <MESSAGE value="add comments.api.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="add comments.api.js" />
+    <MESSAGE value="add commentsList.jsx&#10;add comment.jsx" />
+    <MESSAGE value="add displayDate.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="add displayDate.js" />
   </component>
   <component name="regexState">
     <option name="map">
