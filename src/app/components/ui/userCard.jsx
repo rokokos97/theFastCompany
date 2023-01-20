@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom";
 const UserCard = ({ user }) => {
     const history = useHistory();
     const handleClick = () => {
-        history.push(`/users/${user._id}/edit`);
+        history.push(history.location.pathname + "/edit");
     };
     return <div className="card mb-3">
         <div className="card-body">
