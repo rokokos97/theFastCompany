@@ -1,10 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { useHistory } from "react-router-dom";
 
 const UserCard = ({ user }) => {
+    const history = useHistory();
+    const handleClick = () => {
+        history.push(`/users/${user._id}/edit`);
+    };
     return <div className="card mb-3">
         <div className="card-body">
-            <button className="position-absolute top-0 end-0 btn btn-light btn-sm">
+            <button className="position-absolute top-0 end-0 btn btn-light btn-sm" onClick={handleClick}>
                 <i className="bi bi-gear"></i>
             </button>
             <div className="d-flex flex-column align-items-center text-center position-relative">
