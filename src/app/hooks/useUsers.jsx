@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import userService from "../services/userService";
+import { toast } from "react-toastify";
 const UserContext = React.createContext();
 
 export const useUser = () => {
@@ -13,6 +14,12 @@ const UserProvider = ({ children }) => {
     useEffect(() => {
         getUsers();
     }, []);
+    useEffect(() => {
+        if (error !== null) {
+            toast.error(error);
+            setError(null);
+        }
+    }, [error]);
     const getUsers = async () => {
         try {
             const users = await userService.fetchAll();
