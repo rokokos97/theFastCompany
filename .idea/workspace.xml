@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add folder services &#10;add httpService.js&#10;add config.json&#10;install axsios&#10;install react-tostify">
-      <change afterPath="$PROJECT_DIR$/src/app/hooks/useUsers.jsx" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create &quot;hooks&quot; folder&#10;add useUsers.jsx =&gt; creatr useUser&#10;&#10;use UserProvider in [layout].users.jsx">
+      <change afterPath="$PROJECT_DIR$/src/app/services/userService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layouts/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/hooks/useUsers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useUsers.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/logService.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +69,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/rokokos97/WebstormProjects/the-fast-company/src/app",
+    "last_opened_file_path": "/Users/rokokos97/WebstormProjects/the-fast-company/src/app/services",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -84,11 +85,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/services" />
       <recent name="$PROJECT_DIR$/src/app" />
       <recent name="$PROJECT_DIR$/src/app/api" />
       <recent name="$PROJECT_DIR$/src/app/components/common" />
       <recent name="$PROJECT_DIR$/src/app/api/fake.api" />
-      <recent name="$PROJECT_DIR$/src/app/components/page/EditUserPage" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/app" />
@@ -123,21 +124,7 @@
       <workItem from="1672997301295" duration="47641000" />
       <workItem from="1673305347340" duration="1143000" />
       <workItem from="1674577711290" duration="657000" />
-      <workItem from="1674678288742" duration="1847000" />
-    </task>
-    <task id="LOCAL-00069" summary="add reset searchQuery in handleProfessionSelect&#10;add reset selectedProf in handleSearchQuery">
-      <created>1672959756994</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1672959756994</updated>
-    </task>
-    <task id="LOCAL-00070" summary="add style to userPage.jsx">
-      <created>1672998915017</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1672998915018</updated>
+      <workItem from="1674678288742" duration="3292000" />
     </task>
     <task id="LOCAL-00071" summary="refactoring and change folder structure of project">
       <created>1673001011527</created>
@@ -468,7 +455,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674679301268</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="create &quot;hooks&quot; folder&#10;add useUsers.jsx =&gt; creatr useUser&#10;&#10;use UserProvider in [layout].users.jsx">
+      <created>1674683852870</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1674683852870</updated>
+    </task>
+    <task id="LOCAL-00119" summary="create &quot;hooks&quot; folder&#10;add useUsers.jsx =&gt; creatr useUser&#10;&#10;use UserProvider in [layout].users.jsx">
+      <created>1674683893041</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1674683893041</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -486,7 +487,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="creat new component MultiselectField.jsx" />
     <MESSAGE value="add error to multiselectField.jsx" />
     <MESSAGE value="create checkBoxField.jsx" />
     <MESSAGE value="add CheckBoxField to registerForm.jsx" />
@@ -511,7 +511,8 @@
     <MESSAGE value="add backButton.jsx" />
     <MESSAGE value="complete week 11" />
     <MESSAGE value="add folder services &#10;add httpService.js&#10;add config.json&#10;install axsios&#10;install react-tostify" />
-    <option name="LAST_COMMIT_MESSAGE" value="add folder services &#10;add httpService.js&#10;add config.json&#10;install axsios&#10;install react-tostify" />
+    <MESSAGE value="create &quot;hooks&quot; folder&#10;add useUsers.jsx =&gt; creatr useUser&#10;&#10;use UserProvider in [layout].users.jsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="create &quot;hooks&quot; folder&#10;add useUsers.jsx =&gt; creatr useUser&#10;&#10;use UserProvider in [layout].users.jsx" />
   </component>
   <component name="regexState">
     <option name="map">
