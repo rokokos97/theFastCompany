@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="complete week 11">
-      <change afterPath="$PROJECT_DIR$/src/app/config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/httpService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/logService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/qualityService.js" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add folder services &#10;add httpService.js&#10;add config.json&#10;install axsios&#10;install react-tostify">
+      <change afterPath="$PROJECT_DIR$/src/app/hooks/useUsers.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layouts/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/users.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,14 +123,7 @@
       <workItem from="1672997301295" duration="47641000" />
       <workItem from="1673305347340" duration="1143000" />
       <workItem from="1674577711290" duration="657000" />
-      <workItem from="1674678288742" duration="792000" />
-    </task>
-    <task id="LOCAL-00068" summary="add method handleSearchQuery">
-      <created>1672959256618</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1672959256618</updated>
+      <workItem from="1674678288742" duration="1847000" />
     </task>
     <task id="LOCAL-00069" summary="add reset searchQuery in handleProfessionSelect&#10;add reset selectedProf in handleSearchQuery">
       <created>1672959756994</created>
@@ -472,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674257514161</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="add folder services &#10;add httpService.js&#10;add config.json&#10;install axsios&#10;install react-tostify">
+      <created>1674679301268</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1674679301268</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,7 +486,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add fake api from qualities" />
     <MESSAGE value="creat new component MultiselectField.jsx" />
     <MESSAGE value="add error to multiselectField.jsx" />
     <MESSAGE value="create checkBoxField.jsx" />
@@ -515,7 +510,8 @@
     <MESSAGE value="add textAreaField.jsx" />
     <MESSAGE value="add backButton.jsx" />
     <MESSAGE value="complete week 11" />
-    <option name="LAST_COMMIT_MESSAGE" value="complete week 11" />
+    <MESSAGE value="add folder services &#10;add httpService.js&#10;add config.json&#10;install axsios&#10;install react-tostify" />
+    <option name="LAST_COMMIT_MESSAGE" value="add folder services &#10;add httpService.js&#10;add config.json&#10;install axsios&#10;install react-tostify" />
   </component>
   <component name="regexState">
     <option name="map">
