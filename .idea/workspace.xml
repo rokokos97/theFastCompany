@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create &quot;hooks&quot; folder&#10;add useUsers.jsx =&gt; creatr useUser&#10;&#10;use UserProvider in [layout].users.jsx">
-      <change afterPath="$PROJECT_DIR$/src/app/services/userService.js" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="useUser.jsx =&gt; UserProvider =&gt; add useEffect for error">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/page/usersListPage/usersListPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/usersListPage/usersListPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/hooks/useUsers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useUsers.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/logService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/httpService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/httpService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,25 +67,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/rokokos97/WebstormProjects/the-fast-company/src/app/services",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/usr/local/lib/node_modules/prettier",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "editing.templates",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/rokokos97/WebstormProjects/the-fast-company/src/app/services&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/usr/local/lib/node_modules/prettier&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/app/services" />
@@ -124,21 +127,8 @@
       <workItem from="1672997301295" duration="47641000" />
       <workItem from="1673305347340" duration="1143000" />
       <workItem from="1674577711290" duration="657000" />
-      <workItem from="1674678288742" duration="3292000" />
-    </task>
-    <task id="LOCAL-00071" summary="refactoring and change folder structure of project">
-      <created>1673001011527</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1673001011527</updated>
-    </task>
-    <task id="LOCAL-00072" summary="refactoring and change folder structure of project">
-      <created>1673003533357</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1673003533357</updated>
+      <workItem from="1674678288742" duration="4849000" />
+      <workItem from="1674686140889" duration="2053000" />
     </task>
     <task id="LOCAL-00073" summary="transfer part of loginForm into login.jsx">
       <created>1673019037921</created>
@@ -469,7 +459,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674683893041</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="useUser.jsx =&gt; UserProvider =&gt; add new state:&#10;-users&#10;-isLoading&#10;-errors&#10;add method getUsers&#10;add method catch Error">
+      <created>1674684761883</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1674684761883</updated>
+    </task>
+    <task id="LOCAL-00121" summary="useUser.jsx =&gt; UserProvider =&gt; add useEffect for error">
+      <created>1674684881558</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1674684881558</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,8 +491,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add error to multiselectField.jsx" />
-    <MESSAGE value="create checkBoxField.jsx" />
     <MESSAGE value="add CheckBoxField to registerForm.jsx" />
     <MESSAGE value="add error to CheckBoxField in registerForm.jsx" />
     <MESSAGE value="add  CheckBoxField in loginForm.jsx" />
@@ -512,7 +514,9 @@
     <MESSAGE value="complete week 11" />
     <MESSAGE value="add folder services &#10;add httpService.js&#10;add config.json&#10;install axsios&#10;install react-tostify" />
     <MESSAGE value="create &quot;hooks&quot; folder&#10;add useUsers.jsx =&gt; creatr useUser&#10;&#10;use UserProvider in [layout].users.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="create &quot;hooks&quot; folder&#10;add useUsers.jsx =&gt; creatr useUser&#10;&#10;use UserProvider in [layout].users.jsx" />
+    <MESSAGE value="useUser.jsx =&gt; UserProvider =&gt; add new state:&#10;-users&#10;-isLoading&#10;-errors&#10;add method getUsers&#10;add method catch Error" />
+    <MESSAGE value="useUser.jsx =&gt; UserProvider =&gt; add useEffect for error" />
+    <option name="LAST_COMMIT_MESSAGE" value="useUser.jsx =&gt; UserProvider =&gt; add useEffect for error" />
   </component>
   <component name="regexState">
     <option name="map">

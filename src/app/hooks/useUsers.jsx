@@ -22,7 +22,7 @@ const UserProvider = ({ children }) => {
     }, [error]);
     const getUsers = async () => {
         try {
-            const users = await userService.fetchAll();
+            const users = await userService.get();
             setUsers(users.content);
             setIsLoading(false);
         } catch (error) {
@@ -32,11 +32,13 @@ const UserProvider = ({ children }) => {
     const catchError = (error) => {
         const { message } = error.response.data;
         setError(message);
-        setError(false);
     };
     return (
-        <UserContext.Provider value={null}>
-            {children}
+        <UserContext.Provider value={{ users }}>
+            { !isLoading
+                ? children
+                : <h1>Users loading...</h1>
+            }
         </UserContext.Provider>
     );
 };
