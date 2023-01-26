@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add transformData pattern in httpService.js">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add markup to main.jsx">
+      <change afterPath="$PROJECT_DIR$/src/app/utils/mockData.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/layouts/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/main.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,13 +125,6 @@
       <workItem from="1674577711290" duration="657000" />
       <workItem from="1674678288742" duration="4849000" />
       <workItem from="1674686140889" duration="5159000" />
-    </task>
-    <task id="LOCAL-00081" summary="create radioField.jsx">
-      <created>1673104677645</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1673104677645</updated>
     </task>
     <task id="LOCAL-00082" summary="create radioField.jsx">
       <created>1673109569923</created>
@@ -469,7 +462,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674771802541</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="add markup to main.jsx">
+      <created>1674773115925</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1674773115925</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,7 +487,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create =&gt; editUserPage.jsx" />
     <MESSAGE value="editUserPage.jsx transfer user data from api to editUserPage.jsx" />
     <MESSAGE value="editUserPage.jsx add errors" />
     <MESSAGE value="userPage.jsx =&gt; edit button" />
@@ -512,7 +511,8 @@
     <MESSAGE value="add MockData" />
     <MESSAGE value="add axios.interceptors.request in httpService.js&#10;&#10;change endpoint url" />
     <MESSAGE value="add transformData pattern in httpService.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="add transformData pattern in httpService.js" />
+    <MESSAGE value="add markup to main.jsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="add markup to main.jsx" />
   </component>
   <component name="regexState">
     <option name="map">
