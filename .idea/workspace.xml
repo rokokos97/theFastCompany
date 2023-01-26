@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create professionService.js">
-      <change afterPath="$PROJECT_DIR$/src/app/components/ui/profession.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/hooks/useProfessions.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/userTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/userTable.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create professionService.js&#10;create useProfessions.jsx" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,14 +120,7 @@
       <workItem from="1673305347340" duration="1143000" />
       <workItem from="1674577711290" duration="657000" />
       <workItem from="1674678288742" duration="4849000" />
-      <workItem from="1674686140889" duration="4809000" />
-    </task>
-    <task id="LOCAL-00075" summary="login.jsx =&gt; add useParams add check &quot;type&quot; in useState">
-      <created>1673019482564</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1673019482564</updated>
+      <workItem from="1674686140889" duration="5159000" />
     </task>
     <task id="LOCAL-00076" summary="login.jsx =&gt; add method toggleFormType">
       <created>1673020059684</created>
@@ -471,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674688378859</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="create professionService.js&#10;create useProfessions.jsx">
+      <created>1674691174546</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1674691174546</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -489,7 +483,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add error to CheckBoxField in registerForm.jsx" />
     <MESSAGE value="add  CheckBoxField in loginForm.jsx" />
     <MESSAGE value="install Yup" />
     <MESSAGE value="add validationSchema for Yup" />
@@ -514,7 +507,8 @@
     <MESSAGE value="useUser.jsx =&gt; UserProvider =&gt; add new state:&#10;-users&#10;-isLoading&#10;-errors&#10;add method getUsers&#10;add method catch Error" />
     <MESSAGE value="useUser.jsx =&gt; UserProvider =&gt; add useEffect for error" />
     <MESSAGE value="create professionService.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="create professionService.js" />
+    <MESSAGE value="create professionService.js&#10;create useProfessions.jsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="create professionService.js&#10;create useProfessions.jsx" />
   </component>
   <component name="regexState">
     <option name="map">

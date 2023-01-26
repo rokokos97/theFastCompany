@@ -17,7 +17,6 @@ const UsersListPage = () => {
     const [sortBy, setSortBy] = useState({ path: "name", order: "asc" });
     const [searchQuery, setSearchQuery] = useState("");
     const { users } = useUser();
-    console.log("users", users);
     useEffect(() => {
         api.professions.fetchAll().then((data) => setProfessions(data));
     }, []);
