@@ -9,8 +9,12 @@ import { useProfessions } from "../../hooks/useProfessions";
 import { useQualities } from "../../hooks/useQualities";
 
 const RegisterForm = () => {
-    const qualities = useQualities();
-    const professions = useProfessions();
+    const { qualities } = useQualities();
+    const newQualities = qualities.map((q) => ({ label: q.name, value: q._id }));
+    console.log(qualities);
+    const { professions } = useProfessions();
+    const newProfessions = professions.map((p) => ({ label: p.name, value: p._id }));
+    // const newProfessions = professions.map((p)=> name: )
     const [data, setData] = useState({
         email: "",
         password: "",
@@ -29,7 +33,8 @@ const RegisterForm = () => {
         e.preventDefault();
         const isValid = validate();
         if (!isValid) return;
-        console.log(data);
+        const newData = { ...data, qualities: data.qualities.map((q) => q.value) };
+        console.log(newData);
     };
     useEffect(() => { validate(); }, [data]);
 
@@ -81,7 +86,7 @@ const RegisterForm = () => {
                 label={"Choose your profession"}
                 name={"profession"}
                 defaultOption={"Choose..."}
-                options={professions}
+                options={newProfessions}
                 onChange={handelChange}
                 value={data.profession}
                 error={errors.profession}
@@ -96,7 +101,7 @@ const RegisterForm = () => {
                 onChange={handelChange}
             />
             <MultiSelectField
-                options={qualities}
+                options={newQualities}
                 onChange={handelChange}
                 defaultOption={data.qualities}
                 name={"qualities"}

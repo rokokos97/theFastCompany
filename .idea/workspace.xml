@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create new HOOK useMockData">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="refactor registerForm.jsx =&gt; get profession and qualities from useQualities and useProfession">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" afterDir="false" />
     </list>
@@ -124,14 +124,7 @@
       <workItem from="1674577711290" duration="657000" />
       <workItem from="1674678288742" duration="4849000" />
       <workItem from="1674686140889" duration="5159000" />
-      <workItem from="1674836500249" duration="905000" />
-    </task>
-    <task id="LOCAL-00084" summary="install react-select">
-      <created>1673111600563</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1673111600563</updated>
+      <workItem from="1674836500249" duration="3966000" />
     </task>
     <task id="LOCAL-00085" summary="install react-select">
       <created>1673111615374</created>
@@ -469,7 +462,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674825684937</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <task id="LOCAL-00133" summary="refactor registerForm.jsx =&gt; get profession and qualities from useQualities and useProfession">
+      <created>1674842461876</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1674842461876</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,7 +487,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="editUserPage.jsx add errors" />
     <MESSAGE value="userPage.jsx =&gt; edit button" />
     <MESSAGE value="Reorganize userPage.jsx&#10;create userCard.jsx" />
     <MESSAGE value="create qualitiesCard.jsx.jsx" />
@@ -512,7 +511,8 @@
     <MESSAGE value="add transformData pattern in httpService.js" />
     <MESSAGE value="add markup to main.jsx" />
     <MESSAGE value="create new HOOK useMockData" />
-    <option name="LAST_COMMIT_MESSAGE" value="create new HOOK useMockData" />
+    <MESSAGE value="refactor registerForm.jsx =&gt; get profession and qualities from useQualities and useProfession" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor registerForm.jsx =&gt; get profession and qualities from useQualities and useProfession" />
   </component>
   <component name="regexState">
     <option name="map">
