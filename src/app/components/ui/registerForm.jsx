@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { validator } from "../../utils/validator";
 import TextFiled from "../common/form/textField";
-import api from "../../api";
 import SelectedField from "../common/form/selectedField";
 import RadioField from "../common/form/radioField";
 import MultiSelectField from "../common/form/multiselectField";
 import CheckBoxField from "../common/form/checkBoxField";
+import { useProfessions } from "../../hooks/useProfessions";
+import { useQualities } from "../../hooks/useQualities";
 
 const RegisterForm = () => {
-    const [qualities, setQualities] = useState({});
-    const [professions, setProfessions] = useState([]);
+    const qualities = useQualities();
+    const professions = useProfessions();
     const [data, setData] = useState({
         email: "",
         password: "",
@@ -19,20 +20,7 @@ const RegisterForm = () => {
         license: false
     });
     const [errors, setErrors] = useState({});
-
-    useEffect(() => {
-        api.professions.fetchAll().then((data) => {
-            const professionList =
-                Object.keys(data).map((professionName) => ({
-                    label: data[professionName].name,
-                    value: data[professionName]._id
-                }));
-            setProfessions(professionList);
-        });
-        api.qualities.fetchAll().then((data) => setQualities(data));
-    }, []);
     const handelChange = (target) => {
-        console.log("target", target.name);
         console.log("data", data);
         setData((prevState) =>
             ({ ...prevState, [target.name]: target.value }));
