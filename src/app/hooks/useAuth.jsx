@@ -22,6 +22,7 @@ const AuthProvider = ({ children }) => {
         const url = `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${key}`;
         console.log(url);
         const { data } = await httpAuth.post(url, { email, password, returnSecureToken: true });
+        setTokens(data);
         console.log("data", data);
     }
     return (
