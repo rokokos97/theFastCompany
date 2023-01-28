@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="refactor registerForm.jsx =&gt; get profession and qualities from useQualities and useProfession">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="refactor registerForm.jsx =&gt; get profession and qualities from useQualities and useProfession&#10;transform &quot;data&quot; before sending to server">
+      <change afterPath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/hooks/useUsers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useUsers.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,21 +125,7 @@
       <workItem from="1674577711290" duration="657000" />
       <workItem from="1674678288742" duration="4849000" />
       <workItem from="1674686140889" duration="5159000" />
-      <workItem from="1674836500249" duration="3966000" />
-    </task>
-    <task id="LOCAL-00085" summary="install react-select">
-      <created>1673111615374</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1673111615374</updated>
-    </task>
-    <task id="LOCAL-00086" summary="registrationForm.jsx =&gt; Select from react-select">
-      <created>1673112001162</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1673112001162</updated>
+      <workItem from="1674836500249" duration="5216000" />
     </task>
     <task id="LOCAL-00087" summary="add fake api from qualities">
       <created>1673112794593</created>
@@ -469,7 +456,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674842461876</updated>
     </task>
-    <option name="localTasksCounter" value="134" />
+    <task id="LOCAL-00134" summary="refactor registerForm.jsx =&gt; get profession and qualities from useQualities and useProfession">
+      <created>1674846441481</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1674846441481</updated>
+    </task>
+    <task id="LOCAL-00135" summary="refactor registerForm.jsx =&gt; get profession and qualities from useQualities and useProfession&#10;transform &quot;data&quot; before sending to server">
+      <created>1674846478926</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1674846478926</updated>
+    </task>
+    <option name="localTasksCounter" value="136" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,7 +488,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="userPage.jsx =&gt; edit button" />
     <MESSAGE value="Reorganize userPage.jsx&#10;create userCard.jsx" />
     <MESSAGE value="create qualitiesCard.jsx.jsx" />
     <MESSAGE value="create meetingsCard.jsx" />
@@ -512,7 +512,8 @@
     <MESSAGE value="add markup to main.jsx" />
     <MESSAGE value="create new HOOK useMockData" />
     <MESSAGE value="refactor registerForm.jsx =&gt; get profession and qualities from useQualities and useProfession" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor registerForm.jsx =&gt; get profession and qualities from useQualities and useProfession" />
+    <MESSAGE value="refactor registerForm.jsx =&gt; get profession and qualities from useQualities and useProfession&#10;transform &quot;data&quot; before sending to server" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor registerForm.jsx =&gt; get profession and qualities from useQualities and useProfession&#10;transform &quot;data&quot; before sending to server" />
   </component>
   <component name="regexState">
     <option name="map">
