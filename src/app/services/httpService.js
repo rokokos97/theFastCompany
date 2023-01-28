@@ -1,6 +1,6 @@
+import axios from "axios";
 import { toast } from "react-toastify";
 import configFile from "../config.json";
-import axios from "axios";
 
 const http = axios.create({
     baseURL: configFile.apiEndPoint
