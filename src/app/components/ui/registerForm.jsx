@@ -7,11 +7,11 @@ import MultiSelectField from "../common/form/multiselectField";
 import CheckBoxField from "../common/form/checkBoxField";
 import { useProfessions } from "../../hooks/useProfessions";
 import { useQualities } from "../../hooks/useQualities";
+import { useAuth } from "../../hooks/useAuth";
 
 const RegisterForm = () => {
     const { qualities } = useQualities();
     const newQualities = qualities.map((q) => ({ label: q.name, value: q._id }));
-    console.log(qualities);
     const { professions } = useProfessions();
     const newProfessions = professions.map((p) => ({ label: p.name, value: p._id }));
     // const newProfessions = professions.map((p)=> name: )
@@ -23,6 +23,7 @@ const RegisterForm = () => {
         qualities: [{}],
         license: false
     });
+    const { signUp } = useAuth();
     const [errors, setErrors] = useState({});
     const handelChange = (target) => {
         console.log("data", data);
@@ -35,6 +36,7 @@ const RegisterForm = () => {
         if (!isValid) return;
         const newData = { ...data, qualities: data.qualities.map((q) => q.value) };
         console.log(newData);
+        signUp(newData);
     };
     useEffect(() => { validate(); }, [data]);
 
