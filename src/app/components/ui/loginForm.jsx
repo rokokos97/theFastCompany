@@ -8,6 +8,7 @@ import { useHistory } from "react-router-dom";
 const LoginForm = () => {
     const [data, setData] = useState({ email: "", password: "", stayOn: false });
     const [errors, setErrors] = useState({});
+    const [enterError, setEnterError] = useState(null);
     const { logIn } = useAuth();
     const history = useHistory();
     const validateSchema = yup.object().shape({
@@ -24,17 +25,22 @@ const LoginForm = () => {
     const handelChange = (target) => {
         setData((prevState) =>
             ({ ...prevState, [target.name]: target.value }));
+        setEnterError(null);
     };
-    const handelSubmit = (e) => {
+    const handelSubmit = async (e) => {
         e.preventDefault();
         const isValid = validate();
         if (!isValid) return;
-        logIn(data);
-        history.push("/");
-        console.log(data);
+        try {
+            await logIn(data);
+            console.log(data);
+            history.push("/");
+        } catch (error) {
+            console.log(error.message);
+            setEnterError(error.message);
+        }
     };
     useEffect(() => { validate(); }, [data]);
-
     // const validatorConfig = {
     //     email: {
     //         isRequired: { message: "Email is required" },
@@ -81,10 +87,11 @@ const LoginForm = () => {
             >
                 Remember me
             </CheckBoxField>
+            {enterError && <p className={"text-danger"}>{enterError}</p>}
             <button
                 type={"submit"}
                 className={"btn btn-success w-100 mx-auto"}
-                disabled={!isValid}
+                disabled={!isValid || enterError}
             >
                             Submit
             </button>

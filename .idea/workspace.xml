@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="useAuth =&gt; &#10;1. Add logIn method like signUp&#10;2. Add config to httpAuth =&gt;">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="loginForm.jsx =&gt; add initial logIn and history">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,20 +126,6 @@
       <workItem from="1674678288742" duration="4849000" />
       <workItem from="1674686140889" duration="5159000" />
       <workItem from="1674836500249" duration="22756000" />
-    </task>
-    <task id="LOCAL-00101" summary="App.js =&gt; add optional parameter :edit?">
-      <created>1673629918253</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1673629918253</updated>
-    </task>
-    <task id="LOCAL-00102" summary="create =&gt; editUserPage.jsx">
-      <created>1673631457544</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1673631457544</updated>
     </task>
     <task id="LOCAL-00103" summary="editUserPage.jsx transfer user data from api to editUserPage.jsx">
       <created>1673694534855</created>
@@ -469,7 +456,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675008572689</updated>
     </task>
-    <option name="localTasksCounter" value="150" />
+    <task id="LOCAL-00150" summary="useAuth =&gt; &#10;1. Add logIn method like signUp&#10;2. Add config to httpAuth =&gt; {&#10;                                 baseURL: &quot;https://identitytoolkit.googleapis.com/v1/&quot;,&#10;                                 params: {&#10;                                     key: process.env.REACT_APP_FIREBASE_KEY&#10;                                 }">
+      <created>1675009092390</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1675009092390</updated>
+    </task>
+    <task id="LOCAL-00151" summary="loginForm.jsx =&gt; add initial logIn and history">
+      <created>1675009298092</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1675009298092</updated>
+    </task>
+    <option name="localTasksCounter" value="152" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,8 +488,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="useUser.jsx =&gt; UserProvider =&gt; add new state:&#10;-users&#10;-isLoading&#10;-errors&#10;add method getUsers&#10;add method catch Error" />
-    <MESSAGE value="useUser.jsx =&gt; UserProvider =&gt; add useEffect for error" />
     <MESSAGE value="create professionService.js" />
     <MESSAGE value="create professionService.js&#10;create useProfessions.jsx" />
     <MESSAGE value="add useQualities&#10;change logic in qualitiesList.jsx and qualitie.jsx" />
@@ -512,7 +511,9 @@
     <MESSAGE value="cath error in useAuth.jsx and show it in registerForm.jsx like validation errors" />
     <MESSAGE value="cath error in useAuth.jsx and show it in registerForm.jsx" />
     <MESSAGE value="useAuth =&gt; &#10;1. Add logIn method like signUp&#10;2. Add config to httpAuth =&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="useAuth =&gt; &#10;1. Add logIn method like signUp&#10;2. Add config to httpAuth =&gt;" />
+    <MESSAGE value="useAuth =&gt; &#10;1. Add logIn method like signUp&#10;2. Add config to httpAuth =&gt; {&#10;                                 baseURL: &quot;https://identitytoolkit.googleapis.com/v1/&quot;,&#10;                                 params: {&#10;                                     key: process.env.REACT_APP_FIREBASE_KEY&#10;                                 }" />
+    <MESSAGE value="loginForm.jsx =&gt; add initial logIn and history" />
+    <option name="LAST_COMMIT_MESSAGE" value="loginForm.jsx =&gt; add initial logIn and history" />
   </component>
   <component name="regexState">
     <option name="map">

@@ -31,9 +31,12 @@ const AuthProvider = ({ children }) => {
             catchError(error);
             const { code, message } = error.response.data.error;
             if (code === 400) {
-                if (message === "EMAIL_EXISTS") {
-                    const errorObject = { email: "User with this email already does exist" };
-                    throw errorObject;
+                if (message === "INVALID_PASSWORD") {
+                    throw new Error("Email or Password is not correct");
+                } else if (message === "EMAIL_NOT_FOUND") {
+                    throw new Error("Email or Password is not correct");
+                } else {
+                    throw new Error("Too many attempts try latter");
                 }
             }
         }
