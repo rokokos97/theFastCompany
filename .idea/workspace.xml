@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="httpService.js =&gt; create new instance">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="useAuth =&gt; create setTokens">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/httpService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/httpService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/userService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/userService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,21 +125,7 @@
       <workItem from="1674577711290" duration="657000" />
       <workItem from="1674678288742" duration="4849000" />
       <workItem from="1674686140889" duration="5159000" />
-      <workItem from="1674836500249" duration="12337000" />
-    </task>
-    <task id="LOCAL-00090" summary="add error to multiselectField.jsx">
-      <created>1673131126033</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1673131126033</updated>
-    </task>
-    <task id="LOCAL-00091" summary="add error to multiselectField.jsx">
-      <created>1673131226375</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1673131226376</updated>
+      <workItem from="1674836500249" duration="16501000" />
     </task>
     <task id="LOCAL-00092" summary="create checkBoxField.jsx">
       <created>1673177580054</created>
@@ -470,7 +456,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674917060751</updated>
     </task>
-    <option name="localTasksCounter" value="139" />
+    <task id="LOCAL-00139" summary="useAuth =&gt; create setTokens">
+      <created>1674936208176</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1674936208176</updated>
+    </task>
+    <task id="LOCAL-00140" summary="useAuth =&gt; create setTokens">
+      <created>1674936296223</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1674936296223</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -488,7 +488,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create comments.jsx&#10;add button editUserPage to userCard.jsx" />
     <MESSAGE value="add comments.api.js" />
     <MESSAGE value="add commentsList.jsx&#10;add comment.jsx" />
     <MESSAGE value="add displayDate.js" />
@@ -513,7 +512,8 @@
     <MESSAGE value="create new provider useAuth" />
     <MESSAGE value="add AuthProvider to App.js" />
     <MESSAGE value="httpService.js =&gt; create new instance" />
-    <option name="LAST_COMMIT_MESSAGE" value="httpService.js =&gt; create new instance" />
+    <MESSAGE value="useAuth =&gt; create setTokens" />
+    <option name="LAST_COMMIT_MESSAGE" value="useAuth =&gt; create setTokens" />
   </component>
   <component name="regexState">
     <option name="map">
