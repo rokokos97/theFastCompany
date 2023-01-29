@@ -5,7 +5,6 @@ import userService from "../services/userService";
 import { toast } from "react-toastify";
 import { setTokens } from "../services/loscalStorageService";
 
-
 const httpAuth = axios.create();
 const AuthContext = React.createContext();
 export const useAuth = () => {
@@ -28,6 +27,14 @@ const AuthProvider = ({ children }) => {
             console.log("data", data);
         } catch (error) {
             catchError(error);
+            const { code, message } = error.response.data.error;
+            if (code === 400) {
+                if (message === "EMAIL_EXISTS") {
+                    const errorObject = { email: "User with this email already does exist" };
+                    throw errorObject;
+                }
+            }
+            console.log(code, message);
         }
     }
     async function createUser(data) {

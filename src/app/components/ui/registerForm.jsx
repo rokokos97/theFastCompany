@@ -30,13 +30,18 @@ const RegisterForm = () => {
         setData((prevState) =>
             ({ ...prevState, [target.name]: target.value }));
     };
-    const handelSubmit = (e) => {
+    const handelSubmit = async (e) => {
         e.preventDefault();
         const isValid = validate();
         if (!isValid) return;
         const newData = { ...data, qualities: data.qualities.map((q) => q.value) };
         console.log(newData);
-        signUp(newData);
+        try {
+            await signUp(newData);
+        } catch (error) {
+            setErrors(error);
+            console.log(error);
+        }
     };
     useEffect(() => { validate(); }, [data]);
 
