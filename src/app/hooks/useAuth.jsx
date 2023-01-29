@@ -22,9 +22,8 @@ const AuthProvider = ({ children }) => {
                 password,
                 returnSecureToken: true
             });
-            setTokens();
+            setTokens(data);
             await createUser({ _id: data.localId, email, ...rest });
-            console.log("data", data);
         } catch (error) {
             catchError(error);
             const { code, message } = error.response.data.error;
@@ -34,14 +33,12 @@ const AuthProvider = ({ children }) => {
                     throw errorObject;
                 }
             }
-            console.log(code, message);
         }
     }
     async function createUser(data) {
         try {
             const { content } = userService.create(data);
-            console.log(content);
-            setCurrentUser(data);
+            setCurrentUser(content);
         } catch (error) {
             catchError(error);
         }

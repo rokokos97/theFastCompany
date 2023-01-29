@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add methods to localServiceService">
-      <change beforePath="$PROJECT_DIR$/.env.development" beforeDir="false" afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="cath error in useAuth.jsx and show it in registerForm.jsx">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/loscalStorageService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/loscalStorageService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,21 +126,7 @@
       <workItem from="1674577711290" duration="657000" />
       <workItem from="1674678288742" duration="4849000" />
       <workItem from="1674686140889" duration="5159000" />
-      <workItem from="1674836500249" duration="21199000" />
-    </task>
-    <task id="LOCAL-00098" summary="add validationSchema for Yup">
-      <created>1673182167126</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1673182167126</updated>
-    </task>
-    <task id="LOCAL-00099" summary="add validationSchema for Yup">
-      <created>1673183177305</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1673183177305</updated>
+      <workItem from="1674836500249" duration="22756000" />
     </task>
     <task id="LOCAL-00100" summary="refactoring and debug =&gt; registerForm.jsx =&gt; &lt;SelectedField&gt; add name=&quot;professions&quot;">
       <created>1673183651268</created>
@@ -471,7 +457,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674991214099</updated>
     </task>
-    <option name="localTasksCounter" value="147" />
+    <task id="LOCAL-00147" summary="cath error in useAuth.jsx and show it in registerForm.jsx">
+      <created>1674993715533</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1674993715533</updated>
+    </task>
+    <task id="LOCAL-00148" summary="cath error in useAuth.jsx and show it in registerForm.jsx">
+      <created>1674993779217</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1674993779217</updated>
+    </task>
+    <option name="localTasksCounter" value="149" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -489,8 +489,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="complete week 11" />
-    <MESSAGE value="add folder services &#10;add httpService.js&#10;add config.json&#10;install axsios&#10;install react-tostify" />
     <MESSAGE value="create &quot;hooks&quot; folder&#10;add useUsers.jsx =&gt; creatr useUser&#10;&#10;use UserProvider in [layout].users.jsx" />
     <MESSAGE value="useUser.jsx =&gt; UserProvider =&gt; add new state:&#10;-users&#10;-isLoading&#10;-errors&#10;add method getUsers&#10;add method catch Error" />
     <MESSAGE value="useUser.jsx =&gt; UserProvider =&gt; add useEffect for error" />
@@ -514,7 +512,9 @@
     <MESSAGE value="create service for cooperation with localstorage" />
     <MESSAGE value="add TOKENS to localStorageService" />
     <MESSAGE value="add methods to localServiceService" />
-    <option name="LAST_COMMIT_MESSAGE" value="add methods to localServiceService" />
+    <MESSAGE value="cath error in useAuth.jsx and show it in registerForm.jsx like validation errors" />
+    <MESSAGE value="cath error in useAuth.jsx and show it in registerForm.jsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="cath error in useAuth.jsx and show it in registerForm.jsx" />
   </component>
   <component name="regexState">
     <option name="map">
