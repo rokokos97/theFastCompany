@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="useAuth =&gt; add user to firebase">
-      <change afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.prodaction" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create service for cooperation with localstorage">
+      <change afterPath="$PROJECT_DIR$/src/app/services/loscalStorageService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -127,21 +124,7 @@
       <workItem from="1674577711290" duration="657000" />
       <workItem from="1674678288742" duration="4849000" />
       <workItem from="1674686140889" duration="5159000" />
-      <workItem from="1674836500249" duration="17887000" />
-    </task>
-    <task id="LOCAL-00093" summary="add CheckBoxField to registerForm.jsx">
-      <created>1673178494712</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1673178494712</updated>
-    </task>
-    <task id="LOCAL-00094" summary="add error to CheckBoxField in registerForm.jsx">
-      <created>1673179838113</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1673179838113</updated>
+      <workItem from="1674836500249" duration="18828000" />
     </task>
     <task id="LOCAL-00095" summary="add  CheckBoxField in loginForm.jsx">
       <created>1673180039540</created>
@@ -472,7 +455,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674988112379</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="create .env&#10;create .env.prodaction &#10;&#10;hide key for production">
+      <created>1674989515550</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1674989515550</updated>
+    </task>
+    <task id="LOCAL-00143" summary="create service for cooperation with localstorage">
+      <created>1674989676870</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1674989676870</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,8 +487,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add commentsList.jsx&#10;add comment.jsx" />
-    <MESSAGE value="add displayDate.js" />
     <MESSAGE value="add textAreaField.jsx" />
     <MESSAGE value="add backButton.jsx" />
     <MESSAGE value="complete week 11" />
@@ -515,7 +510,9 @@
     <MESSAGE value="httpService.js =&gt; create new instance" />
     <MESSAGE value="useAuth =&gt; create setTokens" />
     <MESSAGE value="useAuth =&gt; add user to firebase" />
-    <option name="LAST_COMMIT_MESSAGE" value="useAuth =&gt; add user to firebase" />
+    <MESSAGE value="create .env&#10;create .env.prodaction &#10;&#10;hide key for production" />
+    <MESSAGE value="create service for cooperation with localstorage" />
+    <option name="LAST_COMMIT_MESSAGE" value="create service for cooperation with localstorage" />
   </component>
   <component name="regexState">
     <option name="map">
