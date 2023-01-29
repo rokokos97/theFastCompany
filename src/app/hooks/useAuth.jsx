@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 import { setTokens } from "../services/loscalStorageService";
 
 const httpAuth = axios.create({
-    baseURL: "https://identitytoolkit.googleapis.com/v1/accounts:",
+    baseURL: "https://identitytoolkit.googleapis.com/v1/",
     params: {
         key: process.env.REACT_APP_FIREBASE_KEY
     }
@@ -20,9 +20,8 @@ const AuthProvider = ({ children }) => {
     const [currentUser, setCurrentUser] = useState({});
     const [error, setError] = useState(null);
     async function logIn({ email, password }) {
-        const url = `signInWithPassword`;
         try {
-            const { data } = await httpAuth.post(url, {
+            const { data } = await httpAuth.post(`accounts:signInWithPassword`, {
                 email,
                 password,
                 returnSecureToken: true
@@ -40,9 +39,8 @@ const AuthProvider = ({ children }) => {
         }
     }
     async function signUp({ email, password, ...rest }) {
-        const url = `signUp`;
         try {
-            const { data } = await httpAuth.post(url, {
+            const { data } = await httpAuth.post("accounts:signUp", {
                 email,
                 password,
                 returnSecureToken: true

@@ -126,13 +126,6 @@
       <workItem from="1674686140889" duration="5159000" />
       <workItem from="1674836500249" duration="22756000" />
     </task>
-    <task id="LOCAL-00100" summary="refactoring and debug =&gt; registerForm.jsx =&gt; &lt;SelectedField&gt; add name=&quot;professions&quot;">
-      <created>1673183651268</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1673183651268</updated>
-    </task>
     <task id="LOCAL-00101" summary="App.js =&gt; add optional parameter :edit?">
       <created>1673629918253</created>
       <option name="number" value="00101" />
@@ -469,7 +462,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674993779217</updated>
     </task>
-    <option name="localTasksCounter" value="149" />
+    <task id="LOCAL-00149" summary="useAuth =&gt; &#10;1. Add logIn method like signUp&#10;2. Add config to httpAuth =&gt;">
+      <created>1675008572689</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1675008572689</updated>
+    </task>
+    <option name="localTasksCounter" value="150" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
