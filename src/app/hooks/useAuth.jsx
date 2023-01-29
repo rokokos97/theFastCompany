@@ -5,6 +5,7 @@ import userService from "../services/userService";
 import { toast } from "react-toastify";
 import { setTokens } from "../services/loscalStorageService";
 
+
 const httpAuth = axios.create();
 const AuthContext = React.createContext();
 export const useAuth = () => {
@@ -22,7 +23,7 @@ const AuthProvider = ({ children }) => {
                 password,
                 returnSecureToken: true
             });
-            setTokens(data);
+            setTokens();
             await createUser({ _id: data.localId, email, ...rest });
             console.log("data", data);
         } catch (error) {

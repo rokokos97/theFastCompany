@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create service for cooperation with localstorage">
-      <change afterPath="$PROJECT_DIR$/src/app/services/loscalStorageService.js" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add TOKENS to localStorageService">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/loscalStorageService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/loscalStorageService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,21 +125,7 @@
       <workItem from="1674577711290" duration="657000" />
       <workItem from="1674678288742" duration="4849000" />
       <workItem from="1674686140889" duration="5159000" />
-      <workItem from="1674836500249" duration="18828000" />
-    </task>
-    <task id="LOCAL-00095" summary="add  CheckBoxField in loginForm.jsx">
-      <created>1673180039540</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1673180039540</updated>
-    </task>
-    <task id="LOCAL-00096" summary="install Yup">
-      <created>1673180159610</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1673180159610</updated>
+      <workItem from="1674836500249" duration="19508000" />
     </task>
     <task id="LOCAL-00097" summary="install Yup">
       <created>1673180194357</created>
@@ -469,7 +456,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674989676870</updated>
     </task>
-    <option name="localTasksCounter" value="144" />
+    <task id="LOCAL-00144" summary="add TOKENS to localStorageService">
+      <created>1674990731120</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1674990731120</updated>
+    </task>
+    <task id="LOCAL-00145" summary="add TOKENS to localStorageService">
+      <created>1674990751089</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1674990751089</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,7 +488,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add textAreaField.jsx" />
     <MESSAGE value="add backButton.jsx" />
     <MESSAGE value="complete week 11" />
     <MESSAGE value="add folder services &#10;add httpService.js&#10;add config.json&#10;install axsios&#10;install react-tostify" />
@@ -512,7 +512,8 @@
     <MESSAGE value="useAuth =&gt; add user to firebase" />
     <MESSAGE value="create .env&#10;create .env.prodaction &#10;&#10;hide key for production" />
     <MESSAGE value="create service for cooperation with localstorage" />
-    <option name="LAST_COMMIT_MESSAGE" value="create service for cooperation with localstorage" />
+    <MESSAGE value="add TOKENS to localStorageService" />
+    <option name="LAST_COMMIT_MESSAGE" value="add TOKENS to localStorageService" />
   </component>
   <component name="regexState">
     <option name="map">
