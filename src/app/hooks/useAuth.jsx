@@ -5,7 +5,12 @@ import userService from "../services/userService";
 import { toast } from "react-toastify";
 import { setTokens } from "../services/loscalStorageService";
 
-const httpAuth = axios.create();
+const httpAuth = axios.create({
+    baseURL: "https://identitytoolkit.googleapis.com/v1/accounts:",
+    params: {
+        key: process.env.REACT_APP_FIREBASE_KEY
+    }
+});
 const AuthContext = React.createContext();
 export const useAuth = () => {
     return useContext(AuthContext);
@@ -14,8 +19,28 @@ export const useAuth = () => {
 const AuthProvider = ({ children }) => {
     const [currentUser, setCurrentUser] = useState({});
     const [error, setError] = useState(null);
+    async function logIn({ email, password }) {
+        const url = `signInWithPassword`;
+        try {
+            const { data } = await httpAuth.post(url, {
+                email,
+                password,
+                returnSecureToken: true
+            });
+            setTokens(data);
+        } catch (error) {
+            catchError(error);
+            const { code, message } = error.response.data.error;
+            if (code === 400) {
+                if (message === "EMAIL_EXISTS") {
+                    const errorObject = { email: "User with this email already does exist" };
+                    throw errorObject;
+                }
+            }
+        }
+    }
     async function signUp({ email, password, ...rest }) {
-        const url = `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${process.env.REACT_APP_FIREBASE_KEY}`;
+        const url = `signUp`;
         try {
             const { data } = await httpAuth.post(url, {
                 email,
@@ -54,7 +79,7 @@ const AuthProvider = ({ children }) => {
         }
     }, [error]);
     return (
-        <AuthContext.Provider value={{ signUp, currentUser }}>
+        <AuthContext.Provider value={{ signUp, logIn, currentUser }}>
             { children }
         </AuthContext.Provider>
     );
