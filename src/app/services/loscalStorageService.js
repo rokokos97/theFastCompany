@@ -15,6 +15,3 @@ const localStorageService = {
 };
 
 export default localStorageService;
-
-
-export default setTokens();
