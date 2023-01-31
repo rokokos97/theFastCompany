@@ -42,6 +42,9 @@ const AuthProvider = ({ children }) => {
         }
     }
     async function signUp({ email, password, ...rest }) {
+        const randomInt = (min, max) => {
+            return Math.floor(Math.random() * ((max - min + 1) + min));
+        };
         try {
             const { data } = await httpAuth.post("accounts:signUp", {
                 email,
@@ -49,7 +52,13 @@ const AuthProvider = ({ children }) => {
                 returnSecureToken: true
             });
             setTokens(data);
-            await createUser({ _id: data.localId, email, ...rest });
+            await createUser({
+                _id: data.localId,
+                email,
+                completedMeetings: randomInt(1, 200),
+                rate: randomInt(1, 5),
+                ...rest
+            });
         } catch (error) {
             catchError(error);
             const { code, message } = error.response.data.error;
