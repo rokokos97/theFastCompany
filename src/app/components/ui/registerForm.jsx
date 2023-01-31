@@ -19,6 +19,7 @@ const RegisterForm = () => {
     // const newProfessions = professions.map((p)=> name: )
     const [data, setData] = useState({
         email: "",
+        name: "",
         password: "",
         profession: "",
         sex: "male",
@@ -51,6 +52,11 @@ const RegisterForm = () => {
             isRequired: { message: "Email is required" },
             isEmail: { message: "Email is not correct" }
         },
+        name: {
+            isRequired: { message: "Name is required" },
+            isContainCapital: { message: "Name must include capital latter" },
+            min: { message: "Name must contain at least 2 characters", value: 2 }
+        },
         password: {
             isRequired: { message: "Password is required" },
             isContainCapital: { message: "Password must include capital latter" },
@@ -81,6 +87,13 @@ const RegisterForm = () => {
                 value={data.email}
                 onChange={handelChange}
                 error={errors.email}
+            />
+            <TextFiled
+                label={"Name"}
+                name={"name"}
+                value={data.name}
+                onChange={handelChange}
+                error={errors.name}
             />
             <TextFiled
                 label={"Password"}
