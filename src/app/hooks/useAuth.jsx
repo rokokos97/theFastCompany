@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import axios from "axios";
 import userService from "../services/userService";
 import { toast } from "react-toastify";
-import { setTokens } from "../services/loscalStorageService";
+import localStorageService, { setTokens } from "../services/localStorageService";
 
 const httpAuth = axios.create({
     baseURL: "https://identitytoolkit.googleapis.com/v1/",
@@ -83,6 +83,11 @@ const AuthProvider = ({ children }) => {
         const { message } = error.response.data;
         setError(message);
     };
+    useEffect(() => {
+        if (localStorageService.getAccessToken()) {
+            userService.getCurrentUser();
+        }
+    }, []);
     useEffect(() => {
         if (error !== null) {
             toast.error(error);

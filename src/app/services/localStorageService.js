@@ -27,7 +27,8 @@ const localStorageService = {
     setTokens,
     getAccessToken,
     getRefreshToken,
-    getTokenExpiresData
+    getTokenExpiresData,
+    getUserId
 };
 
 export default localStorageService;
