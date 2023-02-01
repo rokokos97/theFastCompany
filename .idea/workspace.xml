@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="useAuth.jsx =&gt; logIn =&gt; add getUserData();">
-      <change beforePath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="httpService.js =&gt; add refreshing Token inside request!">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/services/httpService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/httpService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,21 +125,7 @@
       <workItem from="1674678288742" duration="4849000" />
       <workItem from="1674686140889" duration="5159000" />
       <workItem from="1674836500249" duration="22756000" />
-      <workItem from="1675166485859" duration="7662000" />
-    </task>
-    <task id="LOCAL-00112" summary="add commentsList.jsx&#10;add comment.jsx">
-      <created>1674256048466</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1674256048466</updated>
-    </task>
-    <task id="LOCAL-00113" summary="add displayDate.js">
-      <created>1674256112872</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1674256112872</updated>
+      <workItem from="1675166485859" duration="8654000" />
     </task>
     <task id="LOCAL-00114" summary="add textAreaField.jsx">
       <created>1674257013518</created>
@@ -470,7 +456,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675245150214</updated>
     </task>
-    <option name="localTasksCounter" value="161" />
+    <task id="LOCAL-00161" summary="useAuth.jsx =&gt; export httpAuth&#10;and import it in httpService.js">
+      <created>1675246285464</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1675246285464</updated>
+    </task>
+    <task id="LOCAL-00162" summary="httpService.js =&gt; add refreshing Token inside request!">
+      <created>1675246876697</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1675246876697</updated>
+    </task>
+    <option name="localTasksCounter" value="163" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -488,8 +488,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor registerForm.jsx =&gt; get profession and qualities from useQualities and useProfession" />
-    <MESSAGE value="refactor registerForm.jsx =&gt; get profession and qualities from useQualities and useProfession&#10;transform &quot;data&quot; before sending to server" />
     <MESSAGE value="create new provider useAuth" />
     <MESSAGE value="add AuthProvider to App.js" />
     <MESSAGE value="httpService.js =&gt; create new instance" />
@@ -513,7 +511,9 @@
     <MESSAGE value="useAuth.jsx =&gt; create useEffect =&gt; after full page downloaded chack userToken and after get currentUser by id from token" />
     <MESSAGE value="useAuth.jsx =&gt; add new transit method&#10;=&gt; getUserData" />
     <MESSAGE value="useAuth.jsx =&gt; logIn =&gt; add getUserData();" />
-    <option name="LAST_COMMIT_MESSAGE" value="useAuth.jsx =&gt; logIn =&gt; add getUserData();" />
+    <MESSAGE value="useAuth.jsx =&gt; export httpAuth&#10;and import it in httpService.js" />
+    <MESSAGE value="httpService.js =&gt; add refreshing Token inside request!" />
+    <option name="LAST_COMMIT_MESSAGE" value="httpService.js =&gt; add refreshing Token inside request!" />
   </component>
   <component name="regexState">
     <option name="map">

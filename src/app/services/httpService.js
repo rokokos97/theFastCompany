@@ -18,8 +18,8 @@ http.interceptors.request.use(
             const refreshToken = localStorageService.getRefreshToken();
             if (refreshToken && expiresData > Date.now()) {
                 const { data } = await httpAuth.post("token", {
-                    grant_type: "refreshToken",
-                    refresh_Token: refreshToken
+                    grant_type: "refresh_token",
+                    refresh_token: refreshToken
                 });
                 console.log("data", data);
             }
