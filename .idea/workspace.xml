@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="httpService.js =&gt; modify token before set =&gt;">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="navBar.jsx =&gt; modify navigation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/navBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/navBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/userService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/userService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,14 +124,7 @@
       <workItem from="1674678288742" duration="4849000" />
       <workItem from="1674686140889" duration="5159000" />
       <workItem from="1674836500249" duration="22756000" />
-      <workItem from="1675166485859" duration="19536000" />
-    </task>
-    <task id="LOCAL-00118" summary="create &quot;hooks&quot; folder&#10;add useUsers.jsx =&gt; creatr useUser&#10;&#10;use UserProvider in [layout].users.jsx">
-      <created>1674683852870</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1674683852870</updated>
+      <workItem from="1675166485859" duration="20274000" />
     </task>
     <task id="LOCAL-00119" summary="create &quot;hooks&quot; folder&#10;add useUsers.jsx =&gt; creatr useUser&#10;&#10;use UserProvider in [layout].users.jsx">
       <created>1674683893041</created>
@@ -471,7 +462,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675278015351</updated>
     </task>
-    <option name="localTasksCounter" value="167" />
+    <task id="LOCAL-00167" summary="navBar.jsx =&gt; modify navigation">
+      <created>1675282478669</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1675282478669</updated>
+    </task>
+    <option name="localTasksCounter" value="168" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -489,7 +487,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="httpService.js =&gt; create new instance" />
     <MESSAGE value="useAuth =&gt; create setTokens" />
     <MESSAGE value="useAuth =&gt; add user to firebase" />
     <MESSAGE value="create .env&#10;create .env.prodaction &#10;&#10;hide key for production" />
@@ -514,7 +511,8 @@
     <MESSAGE value="httpService.js =&gt; add refreshing Token inside request!" />
     <MESSAGE value="httpService.js =&gt; transform request data =&gt; setToken" />
     <MESSAGE value="httpService.js =&gt; modify token before set =&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="httpService.js =&gt; modify token before set =&gt;" />
+    <MESSAGE value="navBar.jsx =&gt; modify navigation" />
+    <option name="LAST_COMMIT_MESSAGE" value="navBar.jsx =&gt; modify navigation" />
   </component>
   <component name="regexState">
     <option name="map">
