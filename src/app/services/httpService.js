@@ -24,7 +24,7 @@ const transformData = (data) => {
         ? Object.keys(data).map((key) => ({
             ...data[key]
         }))
-        : [];
+        : data;
 };
 http.interceptors.response.use(
     (res) => {
