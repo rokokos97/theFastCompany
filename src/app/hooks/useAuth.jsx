@@ -83,9 +83,17 @@ const AuthProvider = ({ children }) => {
         const { message } = error.response.data;
         setError(message);
     };
+    const getUserData = async () => {
+        try {
+            const { content } = await userService.getCurrentUser();
+            setCurrentUser(content);
+        } catch (error) {
+            catchError(error);
+        }
+    };
     useEffect(() => {
         if (localStorageService.getAccessToken()) {
-            userService.getCurrentUser();
+            getUserData();
         }
     }, []);
     useEffect(() => {

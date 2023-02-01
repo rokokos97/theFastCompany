@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="localStorageService.js =&gt; create function getUserId and export it">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="useAuth.jsx =&gt; create useEffect =&gt; after full page downloaded chack userToken and after get currentUser by id from token">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/loscalStorageService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/loscalStorageService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/userService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/userService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,14 +125,7 @@
       <workItem from="1674678288742" duration="4849000" />
       <workItem from="1674686140889" duration="5159000" />
       <workItem from="1674836500249" duration="22756000" />
-      <workItem from="1675166485859" duration="6013000" />
-    </task>
-    <task id="LOCAL-00109" summary="create comments.jsx&#10;add button editUserPage to userCard.jsx">
-      <created>1674254119930</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1674254119930</updated>
+      <workItem from="1675166485859" duration="6597000" />
     </task>
     <task id="LOCAL-00110" summary="create comments.jsx&#10;add button editUserPage to userCard.jsx">
       <created>1674254262675</created>
@@ -472,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675243431883</updated>
     </task>
-    <option name="localTasksCounter" value="158" />
+    <task id="LOCAL-00158" summary="useAuth.jsx =&gt; create useEffect =&gt; after full page downloaded chack userToken and after get currentUser by id from token">
+      <created>1675244431152</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1675244431152</updated>
+    </task>
+    <option name="localTasksCounter" value="159" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,7 +488,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add transformData pattern in httpService.js" />
     <MESSAGE value="add markup to main.jsx" />
     <MESSAGE value="create new HOOK useMockData" />
     <MESSAGE value="refactor registerForm.jsx =&gt; get profession and qualities from useQualities and useProfession" />
@@ -515,7 +512,8 @@
     <MESSAGE value="httpService.js add one more rule to function transformData." />
     <MESSAGE value="modify function in localStorageService =&gt; add new parameter localID and set localId in localStorage" />
     <MESSAGE value="localStorageService.js =&gt; create function getUserId and export it" />
-    <option name="LAST_COMMIT_MESSAGE" value="localStorageService.js =&gt; create function getUserId and export it" />
+    <MESSAGE value="useAuth.jsx =&gt; create useEffect =&gt; after full page downloaded chack userToken and after get currentUser by id from token" />
+    <option name="LAST_COMMIT_MESSAGE" value="useAuth.jsx =&gt; create useEffect =&gt; after full page downloaded chack userToken and after get currentUser by id from token" />
   </component>
   <component name="regexState">
     <option name="map">
