@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="useAuth.jsx =&gt; add new transit method&#10;=&gt; getUserData">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="useAuth.jsx =&gt; logIn =&gt; add getUserData();">
       <change beforePath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/httpService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/httpService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,14 +125,7 @@
       <workItem from="1674678288742" duration="4849000" />
       <workItem from="1674686140889" duration="5159000" />
       <workItem from="1674836500249" duration="22756000" />
-      <workItem from="1675166485859" duration="6975000" />
-    </task>
-    <task id="LOCAL-00111" summary="add comments.api.js">
-      <created>1674254726696</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1674254726696</updated>
+      <workItem from="1675166485859" duration="7662000" />
     </task>
     <task id="LOCAL-00112" summary="add commentsList.jsx&#10;add comment.jsx">
       <created>1674256048466</created>
@@ -470,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675244778077</updated>
     </task>
-    <option name="localTasksCounter" value="160" />
+    <task id="LOCAL-00160" summary="useAuth.jsx =&gt; logIn =&gt; add getUserData();">
+      <created>1675245150214</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1675245150214</updated>
+    </task>
+    <option name="localTasksCounter" value="161" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -488,7 +488,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create new HOOK useMockData" />
     <MESSAGE value="refactor registerForm.jsx =&gt; get profession and qualities from useQualities and useProfession" />
     <MESSAGE value="refactor registerForm.jsx =&gt; get profession and qualities from useQualities and useProfession&#10;transform &quot;data&quot; before sending to server" />
     <MESSAGE value="create new provider useAuth" />
@@ -513,7 +512,8 @@
     <MESSAGE value="localStorageService.js =&gt; create function getUserId and export it" />
     <MESSAGE value="useAuth.jsx =&gt; create useEffect =&gt; after full page downloaded chack userToken and after get currentUser by id from token" />
     <MESSAGE value="useAuth.jsx =&gt; add new transit method&#10;=&gt; getUserData" />
-    <option name="LAST_COMMIT_MESSAGE" value="useAuth.jsx =&gt; add new transit method&#10;=&gt; getUserData" />
+    <MESSAGE value="useAuth.jsx =&gt; logIn =&gt; add getUserData();" />
+    <option name="LAST_COMMIT_MESSAGE" value="useAuth.jsx =&gt; logIn =&gt; add getUserData();" />
   </component>
   <component name="regexState">
     <option name="map">

@@ -1,7 +1,7 @@
 import axios from "axios";
 import { toast } from "react-toastify";
 import configFile from "../config.json";
-
+import { httpAuth } from "../hooks/useAuth";
 const http = axios.create({
     baseURL: configFile.apiEndPoint
 });
@@ -12,6 +12,7 @@ http.interceptors.request.use(
             const containSlash = /\/$/gi.test(config.url);
             config.url =
                 (containSlash ? config.url.slice(0, -1) : config.url) + ".json";
+            httpAuth;
             return config;
         }
     },
