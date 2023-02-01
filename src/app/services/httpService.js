@@ -27,10 +27,10 @@ http.interceptors.request.use(
                     expiresIn: data.expires_in,
                     localId: data.user_id
                 });
-                const accessToken = localStorageService.getAccessToken();
-                if (accessToken) {
-                    config.params = { ...config.params, auth: accessToken };
-                }
+            }
+            const accessToken = localStorageService.getAccessToken();
+            if (accessToken) {
+                config.params = { ...config.params, auth: accessToken };
             }
             return config;
         }
