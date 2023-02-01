@@ -27,6 +27,7 @@ const AuthProvider = ({ children }) => {
                 returnSecureToken: true
             });
             setTokens(data);
+            getUserData();
         } catch (error) {
             catchError(error);
             const { code, message } = error.response.data.error;
@@ -73,7 +74,6 @@ const AuthProvider = ({ children }) => {
     async function createUser(data) {
         try {
             const { content } = await userService.create(data);
-            console.log("data");
             setCurrentUser(content);
         } catch (error) {
             catchError(error);
