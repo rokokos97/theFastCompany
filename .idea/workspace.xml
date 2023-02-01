@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="httpService.js =&gt; add refreshing Token inside request!">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="httpService.js =&gt; transform request data =&gt; setToken">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/services/httpService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/httpService.js" afterDir="false" />
     </list>
@@ -125,14 +125,7 @@
       <workItem from="1674678288742" duration="4849000" />
       <workItem from="1674686140889" duration="5159000" />
       <workItem from="1674836500249" duration="22756000" />
-      <workItem from="1675166485859" duration="9430000" />
-    </task>
-    <task id="LOCAL-00115" summary="add backButton.jsx">
-      <created>1674257360489</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1674257360489</updated>
+      <workItem from="1675166485859" duration="10345000" />
     </task>
     <task id="LOCAL-00116" summary="complete week 11">
       <created>1674257514161</created>
@@ -470,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675247225051</updated>
     </task>
-    <option name="localTasksCounter" value="164" />
+    <task id="LOCAL-00164" summary="httpService.js =&gt; transform request data =&gt; setToken">
+      <created>1675247806948</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1675247806948</updated>
+    </task>
+    <option name="localTasksCounter" value="165" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -488,7 +488,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create new provider useAuth" />
     <MESSAGE value="add AuthProvider to App.js" />
     <MESSAGE value="httpService.js =&gt; create new instance" />
     <MESSAGE value="useAuth =&gt; create setTokens" />
@@ -513,7 +512,8 @@
     <MESSAGE value="useAuth.jsx =&gt; logIn =&gt; add getUserData();" />
     <MESSAGE value="useAuth.jsx =&gt; export httpAuth&#10;and import it in httpService.js" />
     <MESSAGE value="httpService.js =&gt; add refreshing Token inside request!" />
-    <option name="LAST_COMMIT_MESSAGE" value="httpService.js =&gt; add refreshing Token inside request!" />
+    <MESSAGE value="httpService.js =&gt; transform request data =&gt; setToken" />
+    <option name="LAST_COMMIT_MESSAGE" value="httpService.js =&gt; transform request data =&gt; setToken" />
   </component>
   <component name="regexState">
     <option name="map">
