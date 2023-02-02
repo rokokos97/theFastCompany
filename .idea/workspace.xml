@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="navBar.jsx =&gt; add avatar and user info">
-      <change afterPath="$PROJECT_DIR$/src/app/components/ui/navProfile.jsx" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="navBar.jsx =&gt; realise dropdown menu with links">
+      <change afterPath="$PROJECT_DIR$/src/app/components/common/protectedRouth.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/navBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/navBar.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,13 +127,7 @@
       <workItem from="1674836500249" duration="22756000" />
       <workItem from="1675166485859" duration="20563000" />
       <workItem from="1675336550583" duration="2377000" />
-    </task>
-    <task id="LOCAL-00121" summary="useUser.jsx =&gt; UserProvider =&gt; add useEffect for error">
-      <created>1674684881558</created>
-      <option name="number" value="00121" />
-      <option name="presentableId" value="LOCAL-00121" />
-      <option name="project" value="LOCAL" />
-      <updated>1674684881558</updated>
+      <workItem from="1675347098206" duration="2713000" />
     </task>
     <task id="LOCAL-00122" summary="useUser.jsx =&gt; UserProvider =&gt; add useEffect for error">
       <created>1674688214001</created>
@@ -472,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675339071511</updated>
     </task>
-    <option name="localTasksCounter" value="170" />
+    <task id="LOCAL-00170" summary="navBar.jsx =&gt; realise dropdown menu with links">
+      <created>1675348231321</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1675348231321</updated>
+    </task>
+    <option name="localTasksCounter" value="171" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,7 +490,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="useAuth =&gt; add user to firebase" />
     <MESSAGE value="create .env&#10;create .env.prodaction &#10;&#10;hide key for production" />
     <MESSAGE value="create service for cooperation with localstorage" />
     <MESSAGE value="add TOKENS to localStorageService" />
@@ -515,7 +514,8 @@
     <MESSAGE value="httpService.js =&gt; modify token before set =&gt;" />
     <MESSAGE value="navBar.jsx =&gt; modify navigation" />
     <MESSAGE value="navBar.jsx =&gt; add avatar and user info" />
-    <option name="LAST_COMMIT_MESSAGE" value="navBar.jsx =&gt; add avatar and user info" />
+    <MESSAGE value="navBar.jsx =&gt; realise dropdown menu with links" />
+    <option name="LAST_COMMIT_MESSAGE" value="navBar.jsx =&gt; realise dropdown menu with links" />
   </component>
   <component name="regexState">
     <option name="map">
