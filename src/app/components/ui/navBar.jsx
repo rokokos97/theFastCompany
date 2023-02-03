@@ -24,9 +24,9 @@ const NavBar = () => {
                 </ul>
                 <div className={"d-flex"}>
                     {currentUser
-                        ? <p>
+                        ? <div>
                             <NavProfile/>
-                        </p>
+                        </div>
                         : <Link className="nav-link " aria-current="page" to="/login">
                             Login
                         </Link>

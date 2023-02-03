@@ -11,6 +11,7 @@ const LoginForm = () => {
     const [enterError, setEnterError] = useState(null);
     const { logIn } = useAuth();
     const history = useHistory();
+    console.log("history.location.state", history.location.state?.from?.pathname);
     const validateSchema = yup.object().shape({
         password: yup.string()
             .required("Password is required"),
@@ -33,10 +34,13 @@ const LoginForm = () => {
         if (!isValid) return;
         try {
             await logIn(data);
-            console.log(data);
-            history.push("/");
+            console.log(history.location.state?.form?.pathname);
+            history.push(
+                history.location.state
+                    ? history.location.state.form.pathname
+                    : "/"
+            );
         } catch (error) {
-            console.log(error.message);
             setEnterError(error.message);
         }
     };
@@ -62,7 +66,7 @@ const LoginForm = () => {
         // setErrors(errors);
         return Object.keys(errors).length === 0;
     };
-    const isValid = Object.keys(errors).length === 0;
+    const isValid = (Object.keys(errors).length === 0);
     return (<>
         <form onSubmit={handelSubmit} className={""}>
             <TextFiled

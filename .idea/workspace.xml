@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="navBar.jsx =&gt; realise dropdown menu with links">
-      <change afterPath="$PROJECT_DIR$/src/app/components/common/protectedRouth.jsx" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create protectedRouth.jsx">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/protectedRouth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/protectedRouth.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/navBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/navBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,14 +131,7 @@
       <workItem from="1674836500249" duration="22756000" />
       <workItem from="1675166485859" duration="20563000" />
       <workItem from="1675336550583" duration="2377000" />
-      <workItem from="1675347098206" duration="2713000" />
-    </task>
-    <task id="LOCAL-00122" summary="useUser.jsx =&gt; UserProvider =&gt; add useEffect for error">
-      <created>1674688214001</created>
-      <option name="number" value="00122" />
-      <option name="presentableId" value="LOCAL-00122" />
-      <option name="project" value="LOCAL" />
-      <updated>1674688214001</updated>
+      <workItem from="1675347098206" duration="11896000" />
     </task>
     <task id="LOCAL-00123" summary="create professionService.js">
       <created>1674688378859</created>
@@ -472,7 +469,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675348231321</updated>
     </task>
-    <option name="localTasksCounter" value="171" />
+    <task id="LOCAL-00171" summary="create protectedRouth.jsx">
+      <created>1675358888623</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1675358888623</updated>
+    </task>
+    <option name="localTasksCounter" value="172" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,7 +494,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create .env&#10;create .env.prodaction &#10;&#10;hide key for production" />
     <MESSAGE value="create service for cooperation with localstorage" />
     <MESSAGE value="add TOKENS to localStorageService" />
     <MESSAGE value="add methods to localServiceService" />
@@ -515,7 +518,8 @@
     <MESSAGE value="navBar.jsx =&gt; modify navigation" />
     <MESSAGE value="navBar.jsx =&gt; add avatar and user info" />
     <MESSAGE value="navBar.jsx =&gt; realise dropdown menu with links" />
-    <option name="LAST_COMMIT_MESSAGE" value="navBar.jsx =&gt; realise dropdown menu with links" />
+    <MESSAGE value="create protectedRouth.jsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="create protectedRouth.jsx" />
   </component>
   <component name="regexState">
     <option name="map">
