@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useAuth } from "../hooks/useAuth";
 
 const LogOut = () => {
-    return <h1>LogOut</h1>;
+    const { logOut } = useAuth();
+    useEffect(() => {
+        logOut();
+    }, []);
+    return <h1>Loading...</h1>;
 };
 
 export default LogOut;
