@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create protectedRouth.jsx">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="protectedRouth.jsx =&gt; transform Redirect parameter &quot;to&quot; =&gt;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/protectedRouth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/protectedRouth.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/navBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/navBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,14 +127,8 @@
       <workItem from="1674836500249" duration="22756000" />
       <workItem from="1675166485859" duration="20563000" />
       <workItem from="1675336550583" duration="2377000" />
-      <workItem from="1675347098206" duration="11896000" />
-    </task>
-    <task id="LOCAL-00123" summary="create professionService.js">
-      <created>1674688378859</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1674688378859</updated>
+      <workItem from="1675347098206" duration="11905000" />
+      <workItem from="1675500946053" duration="852000" />
     </task>
     <task id="LOCAL-00124" summary="create professionService.js&#10;create useProfessions.jsx">
       <created>1674691174546</created>
@@ -476,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675358888623</updated>
     </task>
-    <option name="localTasksCounter" value="172" />
+    <task id="LOCAL-00172" summary="protectedRouth.jsx =&gt; transform Redirect parameter &quot;to&quot; =&gt;">
+      <created>1675426955358</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1675426955358</updated>
+    </task>
+    <option name="localTasksCounter" value="173" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -494,7 +491,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create service for cooperation with localstorage" />
     <MESSAGE value="add TOKENS to localStorageService" />
     <MESSAGE value="add methods to localServiceService" />
     <MESSAGE value="cath error in useAuth.jsx and show it in registerForm.jsx like validation errors" />
@@ -519,7 +515,8 @@
     <MESSAGE value="navBar.jsx =&gt; add avatar and user info" />
     <MESSAGE value="navBar.jsx =&gt; realise dropdown menu with links" />
     <MESSAGE value="create protectedRouth.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="create protectedRouth.jsx" />
+    <MESSAGE value="protectedRouth.jsx =&gt; transform Redirect parameter &quot;to&quot; =&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="protectedRouth.jsx =&gt; transform Redirect parameter &quot;to&quot; =&gt;" />
   </component>
   <component name="regexState">
     <option name="map">
