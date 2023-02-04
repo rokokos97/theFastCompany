@@ -10,6 +10,7 @@ import { ProfessionProvider } from "./hooks/useProfessions";
 import { QualitiesProvider } from "./hooks/useQualities";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import LogOut from "./layouts/logOut";
 
 function App() {
     return (
@@ -28,6 +29,9 @@ function App() {
                             <Route
                                 path="/"
                                 exact component={Main} />
+                            <Route
+                                path="/logout"
+                                exact component={LogOut} />
                             <Redirect
                                 to="/" />
                         </Switch>

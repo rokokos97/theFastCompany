@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="protectedRouth.jsx =&gt; transform Redirect parameter &quot;to&quot; =&gt;">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="loginForm.jsx =&gt; add control redirect to history.location.state.from.pathname">
+      <change afterPath="$PROJECT_DIR$/src/app/layouts/logOut.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/localStorageService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/localStorageService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,14 +130,7 @@
       <workItem from="1675166485859" duration="20563000" />
       <workItem from="1675336550583" duration="2377000" />
       <workItem from="1675347098206" duration="11905000" />
-      <workItem from="1675500946053" duration="852000" />
-    </task>
-    <task id="LOCAL-00124" summary="create professionService.js&#10;create useProfessions.jsx">
-      <created>1674691174546</created>
-      <option name="number" value="00124" />
-      <option name="presentableId" value="LOCAL-00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1674691174546</updated>
+      <workItem from="1675500946053" duration="2153000" />
     </task>
     <task id="LOCAL-00125" summary="add useQualities&#10;change logic in qualitiesList.jsx and qualitie.jsx">
       <created>1674759081742</created>
@@ -473,7 +468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675426955358</updated>
     </task>
-    <option name="localTasksCounter" value="173" />
+    <task id="LOCAL-00173" summary="loginForm.jsx =&gt; add control redirect to history.location.state.from.pathname">
+      <created>1675502293152</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1675502293152</updated>
+    </task>
+    <option name="localTasksCounter" value="174" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -491,7 +493,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add TOKENS to localStorageService" />
     <MESSAGE value="add methods to localServiceService" />
     <MESSAGE value="cath error in useAuth.jsx and show it in registerForm.jsx like validation errors" />
     <MESSAGE value="cath error in useAuth.jsx and show it in registerForm.jsx" />
@@ -516,7 +517,8 @@
     <MESSAGE value="navBar.jsx =&gt; realise dropdown menu with links" />
     <MESSAGE value="create protectedRouth.jsx" />
     <MESSAGE value="protectedRouth.jsx =&gt; transform Redirect parameter &quot;to&quot; =&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="protectedRouth.jsx =&gt; transform Redirect parameter &quot;to&quot; =&gt;" />
+    <MESSAGE value="loginForm.jsx =&gt; add control redirect to history.location.state.from.pathname" />
+    <option name="LAST_COMMIT_MESSAGE" value="loginForm.jsx =&gt; add control redirect to history.location.state.from.pathname" />
   </component>
   <component name="regexState">
     <option name="map">
