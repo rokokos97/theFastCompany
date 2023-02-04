@@ -60,6 +60,10 @@ const AuthProvider = ({ children }) => {
                 _id: data.localId,
                 email,
                 completedMeetings: randomInt(1, 200),
+                image: `https://avatars.dicebear.com/api/avataaars/${
+                    (Math.random() + 1)
+                        .toString(36)
+                        .substring(7)}.svg`,
                 rate: randomInt(1, 5),
                 ...rest
             });
