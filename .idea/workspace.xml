@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="logOut =&gt; complete">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="navProfile.jsx =&gt; correction avatar image">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/navProfile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/navProfile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/page/usersListPage/usersListPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/usersListPage/usersListPage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,14 +128,7 @@
       <workItem from="1675166485859" duration="20563000" />
       <workItem from="1675336550583" duration="2377000" />
       <workItem from="1675347098206" duration="11905000" />
-      <workItem from="1675500946053" duration="4362000" />
-    </task>
-    <task id="LOCAL-00127" summary="add MockData">
-      <created>1674766746174</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1674766746174</updated>
+      <workItem from="1675500946053" duration="6171000" />
     </task>
     <task id="LOCAL-00128" summary="add axios.interceptors.request in httpService.js&#10;&#10;change endpoint url">
       <created>1674770304370</created>
@@ -474,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675521641505</updated>
     </task>
-    <option name="localTasksCounter" value="176" />
+    <task id="LOCAL-00176" summary="navProfile.jsx =&gt; correction avatar image">
+      <created>1675522553066</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1675522553066</updated>
+    </task>
+    <option name="localTasksCounter" value="177" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -492,7 +491,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="cath error in useAuth.jsx and show it in registerForm.jsx" />
     <MESSAGE value="useAuth =&gt; &#10;1. Add logIn method like signUp&#10;2. Add config to httpAuth =&gt;" />
     <MESSAGE value="useAuth =&gt; &#10;1. Add logIn method like signUp&#10;2. Add config to httpAuth =&gt; {&#10;                                 baseURL: &quot;https://identitytoolkit.googleapis.com/v1/&quot;,&#10;                                 params: {&#10;                                     key: process.env.REACT_APP_FIREBASE_KEY&#10;                                 }" />
     <MESSAGE value="loginForm.jsx =&gt; add initial logIn and history" />
@@ -517,7 +515,8 @@
     <MESSAGE value="loginForm.jsx =&gt; add control redirect to history.location.state.from.pathname" />
     <MESSAGE value="localStorageService.js =&gt; add new method removeAuthData()" />
     <MESSAGE value="logOut =&gt; complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="logOut =&gt; complete" />
+    <MESSAGE value="navProfile.jsx =&gt; correction avatar image" />
+    <option name="LAST_COMMIT_MESSAGE" value="navProfile.jsx =&gt; correction avatar image" />
   </component>
   <component name="regexState">
     <option name="map">
