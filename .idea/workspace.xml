@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="userTable.jsx =&gt; delete &quot;delete&quot; button">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/page/userPage/userPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/userPage/userPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/hooks/useUsers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useUsers.jsx" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="useUser.jsx =&gt; add new method getUserById">
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/userCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/userCard.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,14 +127,7 @@
       <workItem from="1675166485859" duration="20563000" />
       <workItem from="1675336550583" duration="2377000" />
       <workItem from="1675347098206" duration="11905000" />
-      <workItem from="1675500946053" duration="8181000" />
-    </task>
-    <task id="LOCAL-00130" summary="add markup to main.jsx">
-      <created>1674773115925</created>
-      <option name="number" value="00130" />
-      <option name="presentableId" value="LOCAL-00130" />
-      <option name="project" value="LOCAL" />
-      <updated>1674773115925</updated>
+      <workItem from="1675500946053" duration="8605000" />
     </task>
     <task id="LOCAL-00131" summary="create new HOOK useMockData">
       <created>1674774919905</created>
@@ -474,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675598947286</updated>
     </task>
-    <option name="localTasksCounter" value="179" />
+    <task id="LOCAL-00179" summary="useUser.jsx =&gt; add new method getUserById">
+      <created>1675600041576</created>
+      <option name="number" value="00179" />
+      <option name="presentableId" value="LOCAL-00179" />
+      <option name="project" value="LOCAL" />
+      <updated>1675600041576</updated>
+    </task>
+    <option name="localTasksCounter" value="180" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -492,7 +490,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="loginForm.jsx =&gt; add initial logIn and history" />
     <MESSAGE value="loginForm.jsx =&gt; add enter error" />
     <MESSAGE value="registerForm.jsx =&gt; add new field for Name." />
     <MESSAGE value="useAuth.jsx add method randomInt for completedMeetings and rate" />
@@ -517,7 +514,8 @@
     <MESSAGE value="navProfile.jsx =&gt; correction avatar image" />
     <MESSAGE value="userListPage.jsx =&gt; loading profession from useProfession()" />
     <MESSAGE value="userTable.jsx =&gt; delete &quot;delete&quot; button" />
-    <option name="LAST_COMMIT_MESSAGE" value="userTable.jsx =&gt; delete &quot;delete&quot; button" />
+    <MESSAGE value="useUser.jsx =&gt; add new method getUserById" />
+    <option name="LAST_COMMIT_MESSAGE" value="useUser.jsx =&gt; add new method getUserById" />
   </component>
   <component name="regexState">
     <option name="map">
