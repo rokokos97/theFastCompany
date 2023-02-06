@@ -31,7 +31,7 @@ const NavProfile = () => {
                     </Link>
                     <Link
                         className={"dropdown-item"}
-                        to={`logout`}
+                        to={`/logout`}
                     >
                         Logout
                     </Link>

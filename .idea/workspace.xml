@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="useUser.jsx =&gt; add new method getUserById">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="useCard.jsx =&gt; correction user image">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/navProfile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/navProfile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/ui/userCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/userCard.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -127,14 +129,8 @@
       <workItem from="1675166485859" duration="20563000" />
       <workItem from="1675336550583" duration="2377000" />
       <workItem from="1675347098206" duration="11905000" />
-      <workItem from="1675500946053" duration="8605000" />
-    </task>
-    <task id="LOCAL-00131" summary="create new HOOK useMockData">
-      <created>1674774919905</created>
-      <option name="number" value="00131" />
-      <option name="presentableId" value="LOCAL-00131" />
-      <option name="project" value="LOCAL" />
-      <updated>1674774919905</updated>
+      <workItem from="1675500946053" duration="8868000" />
+      <workItem from="1675681096668" duration="1064000" />
     </task>
     <task id="LOCAL-00132" summary="create new HOOK useMockData">
       <created>1674825684937</created>
@@ -472,7 +468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675600041576</updated>
     </task>
-    <option name="localTasksCounter" value="180" />
+    <task id="LOCAL-00180" summary="useCard.jsx =&gt; correction user image">
+      <created>1675600781799</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
+      <option name="project" value="LOCAL" />
+      <updated>1675600781799</updated>
+    </task>
+    <option name="localTasksCounter" value="181" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,7 +493,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="loginForm.jsx =&gt; add enter error" />
     <MESSAGE value="registerForm.jsx =&gt; add new field for Name." />
     <MESSAGE value="useAuth.jsx add method randomInt for completedMeetings and rate" />
     <MESSAGE value="httpService.js add one more rule to function transformData." />
@@ -515,7 +517,8 @@
     <MESSAGE value="userListPage.jsx =&gt; loading profession from useProfession()" />
     <MESSAGE value="userTable.jsx =&gt; delete &quot;delete&quot; button" />
     <MESSAGE value="useUser.jsx =&gt; add new method getUserById" />
-    <option name="LAST_COMMIT_MESSAGE" value="useUser.jsx =&gt; add new method getUserById" />
+    <MESSAGE value="useCard.jsx =&gt; correction user image" />
+    <option name="LAST_COMMIT_MESSAGE" value="useCard.jsx =&gt; correction user image" />
   </component>
   <component name="regexState">
     <option name="map">
