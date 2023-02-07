@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="userListPage.jsx =&gt; add one more filtration for users. Hide current user from the list">
-      <change afterPath="$PROJECT_DIR$/src/app/hooks/useComment.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create new hook =&gt; useComment.jsx" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,14 +126,7 @@
       <workItem from="1675336550583" duration="2377000" />
       <workItem from="1675347098206" duration="11905000" />
       <workItem from="1675500946053" duration="8868000" />
-      <workItem from="1675681096668" duration="5704000" />
-    </task>
-    <task id="LOCAL-00134" summary="refactor registerForm.jsx =&gt; get profession and qualities from useQualities and useProfession">
-      <created>1674846441481</created>
-      <option name="number" value="00134" />
-      <option name="presentableId" value="LOCAL-00134" />
-      <option name="project" value="LOCAL" />
-      <updated>1674846441481</updated>
+      <workItem from="1675681096668" duration="6164000" />
     </task>
     <task id="LOCAL-00135" summary="refactor registerForm.jsx =&gt; get profession and qualities from useQualities and useProfession&#10;transform &quot;data&quot; before sending to server">
       <created>1674846478926</created>
@@ -474,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675780810264</updated>
     </task>
-    <option name="localTasksCounter" value="183" />
+    <task id="LOCAL-00183" summary="create new hook =&gt; useComment.jsx">
+      <created>1675805220815</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1675805220815</updated>
+    </task>
+    <option name="localTasksCounter" value="184" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -492,7 +489,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="httpService.js add one more rule to function transformData." />
     <MESSAGE value="modify function in localStorageService =&gt; add new parameter localID and set localId in localStorage" />
     <MESSAGE value="localStorageService.js =&gt; create function getUserId and export it" />
     <MESSAGE value="useAuth.jsx =&gt; create useEffect =&gt; after full page downloaded chack userToken and after get currentUser by id from token" />
@@ -517,7 +513,8 @@
     <MESSAGE value="useCard.jsx =&gt; correction user image" />
     <MESSAGE value="userCard.jsx =&gt; personalise button settings for Current User" />
     <MESSAGE value="userListPage.jsx =&gt; add one more filtration for users. Hide current user from the list" />
-    <option name="LAST_COMMIT_MESSAGE" value="userListPage.jsx =&gt; add one more filtration for users. Hide current user from the list" />
+    <MESSAGE value="create new hook =&gt; useComment.jsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="create new hook =&gt; useComment.jsx" />
   </component>
   <component name="regexState">
     <option name="map">
