@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create new hook =&gt; useComment.jsx" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="install nano_id">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/comments/addCommentForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/comments/addCommentForm.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,14 +129,7 @@
       <workItem from="1675336550583" duration="2377000" />
       <workItem from="1675347098206" duration="11905000" />
       <workItem from="1675500946053" duration="8868000" />
-      <workItem from="1675681096668" duration="6164000" />
-    </task>
-    <task id="LOCAL-00135" summary="refactor registerForm.jsx =&gt; get profession and qualities from useQualities and useProfession&#10;transform &quot;data&quot; before sending to server">
-      <created>1674846478926</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1674846478926</updated>
+      <workItem from="1675681096668" duration="6826000" />
     </task>
     <task id="LOCAL-00136" summary="create new provider useAuth">
       <created>1674910702357</created>
@@ -471,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675805220815</updated>
     </task>
-    <option name="localTasksCounter" value="184" />
+    <task id="LOCAL-00184" summary="install nano_id">
+      <created>1675805933695</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1675805933695</updated>
+    </task>
+    <option name="localTasksCounter" value="185" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -489,7 +492,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modify function in localStorageService =&gt; add new parameter localID and set localId in localStorage" />
     <MESSAGE value="localStorageService.js =&gt; create function getUserId and export it" />
     <MESSAGE value="useAuth.jsx =&gt; create useEffect =&gt; after full page downloaded chack userToken and after get currentUser by id from token" />
     <MESSAGE value="useAuth.jsx =&gt; add new transit method&#10;=&gt; getUserData" />
@@ -514,7 +516,8 @@
     <MESSAGE value="userCard.jsx =&gt; personalise button settings for Current User" />
     <MESSAGE value="userListPage.jsx =&gt; add one more filtration for users. Hide current user from the list" />
     <MESSAGE value="create new hook =&gt; useComment.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="create new hook =&gt; useComment.jsx" />
+    <MESSAGE value="install nano_id" />
+    <option name="LAST_COMMIT_MESSAGE" value="install nano_id" />
   </component>
   <component name="regexState">
     <option name="map">
