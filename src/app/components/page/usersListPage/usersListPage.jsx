@@ -8,6 +8,7 @@ import UserTable from "../../ui/userTable";
 import _ from "lodash";
 import { useUser } from "../../../hooks/useUsers";
 import { useProfessions } from "../../../hooks/useProfessions";
+import { useAuth } from "../../../hooks/useAuth";
 
 const UsersListPage = () => {
     const pageSize = 8;
@@ -17,6 +18,7 @@ const UsersListPage = () => {
     const [searchQuery, setSearchQuery] = useState("");
     const { users } = useUser();
     const { professions, isLoading: professionsLoading } = useProfessions();
+    const { currentUser } = useAuth();
     useEffect(() => {
         setCurrentPage(1);
     }, [selectedProf, searchQuery]);
@@ -53,66 +55,65 @@ const UsersListPage = () => {
         setSearchQuery(target.value);
         setSelectedProf(null);
     };
-    if (users) {
+    function filterUsers(data) {
         const filteredUsers = searchQuery
-            ? users.filter((user) => user.name.toLowerCase().indexOf(searchQuery.toLowerCase()) !== -1)
+            ? data.filter((user) => user.name.toLowerCase().indexOf(searchQuery.toLowerCase()) !== -1)
             : selectedProf
-                ? users.filter(
+                ? data.filter(
                     (user) =>
                         JSON.stringify(user.profession) ===
                         JSON.stringify(selectedProf)
                 )
-                : users;
-        const count = filteredUsers.length;
-        const sortedUsers = _.orderBy(filteredUsers, sortBy.path, sortBy.order);
-        const usersCrop = paginate(sortedUsers, currentPage, pageSize);
-        // useEffect(() => {
-        //     if (usersCrop.length === 0) setCurrentPage(1);
-        // }, [usersCrop]);
-        return (
-            <div className={"d-flex flex-shrink-0"}>
-                <div className={"d-flex flex-column p-2"}>
-                    {professions && !professionsLoading && (
-                        <GroupList
-                            items={professions}
-                            onItemSelect={handleProfessionSelect}
-                            selectedItem={selectedProf}
-                            onResat={handleReset}
-                        />
-                    )}
-                </div>
-                <div className={"vw-100 px-4"}>
-                    <SearchStatus usersNumber={count}/>
-                    <div>
-                        <input
-                            type="text"
-                            name={searchQuery}
-                            placeholder={"Search..."}
-                            onChange={handleSearchQuery}
-                            value={searchQuery}
-                            className={"w-100 p-1 m-2"}
-                        />
-                    </div>
-                    {(count > 0) && (
-                        <UserTable
-                            users={usersCrop}
-                            onSort={handelSort}
-                            selectedSort={sortBy}
-                            onDelete={handelDelete}
-                            onToggleBookMark={handelBookmark}/>
-                    )}
-                    <Pagination
-                        countItem={count}
-                        pageSize={pageSize}
-                        onPageChange={handlePageChange}
-                        currentPage={currentPage}
+                : data;
+        return filteredUsers.filter((u) => u._id !== currentUser._id);
+    }
+    const filteredUsers = filterUsers(users);
+    const count = filteredUsers.length;
+    const sortedUsers = _.orderBy(filteredUsers, sortBy.path, sortBy.order);
+    const usersCrop = paginate(sortedUsers, currentPage, pageSize);
+    return (
+        <div className={"d-flex flex-shrink-0"}>
+            <div className={"d-flex flex-column p-2"}>
+                {professions && !professionsLoading && (
+                    <GroupList
+                        items={professions}
+                        onItemSelect={handleProfessionSelect}
+                        selectedItem={selectedProf}
+                        onResat={handleReset}
+                    />
+                )}
+            </div>
+            <div className={"vw-100 px-4"}>
+                <SearchStatus usersNumber={count}/>
+                <div>
+                    <input
+                        type="text"
+                        name={searchQuery}
+                        placeholder={"Search..."}
+                        onChange={handleSearchQuery}
+                        value={searchQuery}
+                        className={"w-100 p-1 m-2"}
                     />
                 </div>
+                {(count > 0) && (
+                    <UserTable
+                        users={usersCrop}
+                        onSort={handelSort}
+                        selectedSort={sortBy}
+                        onDelete={handelDelete}
+                        onToggleBookMark={handelBookmark}/>
+                )}
+                <Pagination
+                    countItem={count}
+                    pageSize={pageSize}
+                    onPageChange={handlePageChange}
+                    currentPage={currentPage}
+                />
             </div>
-        );
-    }
-    return <h1 className={"m-2"}>Loading...</h1>;
+        </div>
+    );
 };
+
 UsersListPage.propTypes = {
     users: PropTypes.array
 };
