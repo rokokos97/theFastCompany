@@ -8,8 +8,12 @@ const commentService = {
         return data;
     },
     getComment: async (pageId) => {
-        const { data } = await httpService.get(commentEndpoint);
-        console.log("data", data);
+        const { data } = await httpService.get(commentEndpoint, {
+            params: {
+                orderBy: `"pageId"`,
+                equalTo: `"${pageId}"`
+            }
+        });
         return data;
     }
 };
