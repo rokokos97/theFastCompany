@@ -27,7 +27,7 @@ export const CommentProvider = ({ children }) => {
         console.log(comment);
         try {
             const { content } = await commentService.createComment(comment);
-            console.log(content);
+            setComments(prevState => [...prevState, content]);
         } catch (error) {
             catchError(error);
         }
