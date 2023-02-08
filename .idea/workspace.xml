@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="commentService.js =&gt; add method getComments from base.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/hooks/useComment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useComment.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/commentService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/commentService.js" afterDir="false" />
-    </list>
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="commentService.js =&gt; transform requests parameters with double &#10;&#10;add new rule to firebase rule" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,14 +126,7 @@
       <workItem from="1675336550583" duration="2377000" />
       <workItem from="1675347098206" duration="11905000" />
       <workItem from="1675500946053" duration="8868000" />
-      <workItem from="1675681096668" duration="13874000" />
-    </task>
-    <task id="LOCAL-00141" summary="useAuth =&gt; add user to firebase">
-      <created>1674988112379</created>
-      <option name="number" value="00141" />
-      <option name="presentableId" value="LOCAL-00141" />
-      <option name="project" value="LOCAL" />
-      <updated>1674988112379</updated>
+      <workItem from="1675681096668" duration="14228000" />
     </task>
     <task id="LOCAL-00142" summary="create .env&#10;create .env.prodaction &#10;&#10;hide key for production">
       <created>1674989515550</created>
@@ -475,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675851294580</updated>
     </task>
-    <option name="localTasksCounter" value="190" />
+    <task id="LOCAL-00190" summary="commentService.js =&gt; transform requests parameters with double &#10;&#10;add new rule to firebase rule">
+      <created>1675852775314</created>
+      <option name="number" value="00190" />
+      <option name="presentableId" value="LOCAL-00190" />
+      <option name="project" value="LOCAL" />
+      <updated>1675852775314</updated>
+    </task>
+    <option name="localTasksCounter" value="191" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,7 +489,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="httpService.js =&gt; add refreshing Token inside request!" />
     <MESSAGE value="httpService.js =&gt; transform request data =&gt; setToken" />
     <MESSAGE value="httpService.js =&gt; modify token before set =&gt;" />
     <MESSAGE value="navBar.jsx =&gt; modify navigation" />
@@ -518,7 +513,8 @@
     <MESSAGE value="create new service =&gt; commentService.js" />
     <MESSAGE value="add request to server and save new comment in firebase" />
     <MESSAGE value="commentService.js =&gt; add method getComments from base." />
-    <option name="LAST_COMMIT_MESSAGE" value="commentService.js =&gt; add method getComments from base." />
+    <MESSAGE value="commentService.js =&gt; transform requests parameters with double &#10;&#10;add new rule to firebase rule" />
+    <option name="LAST_COMMIT_MESSAGE" value="commentService.js =&gt; transform requests parameters with double &#10;&#10;add new rule to firebase rule" />
   </component>
   <component name="regexState">
     <option name="map">

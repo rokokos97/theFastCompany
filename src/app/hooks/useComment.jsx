@@ -36,7 +36,7 @@ export const CommentProvider = ({ children }) => {
         try {
             const { content } = await commentService.getComment(userId);
             setComment(content);
-            console.log(content);
+            console.log("content", content);
         } catch (error) {
             catchError(error);
         } finally {
