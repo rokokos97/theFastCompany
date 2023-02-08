@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="useComment.jsx =&gt; add new comment to array of comment after creating (30)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="useComment.jsx =&gt; add following userId in useEffect (48) -&gt; needed for situation with changing user.">
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/comments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/comments.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,14 +128,7 @@
       <workItem from="1675336550583" duration="2377000" />
       <workItem from="1675347098206" duration="11905000" />
       <workItem from="1675500946053" duration="8868000" />
-      <workItem from="1675681096668" duration="15830000" />
-    </task>
-    <task id="LOCAL-00146" summary="add methods to localServiceService">
-      <created>1674991214099</created>
-      <option name="number" value="00146" />
-      <option name="presentableId" value="LOCAL-00146" />
-      <option name="project" value="LOCAL" />
-      <updated>1674991214099</updated>
+      <workItem from="1675681096668" duration="16489000" />
     </task>
     <task id="LOCAL-00147" summary="cath error in useAuth.jsx and show it in registerForm.jsx">
       <created>1674993715533</created>
@@ -473,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675854078579</updated>
     </task>
-    <option name="localTasksCounter" value="195" />
+    <task id="LOCAL-00195" summary="useComment.jsx =&gt; add following userId in useEffect (48) -&gt; needed for situation with changing user.">
+      <created>1675854546433</created>
+      <option name="number" value="00195" />
+      <option name="presentableId" value="LOCAL-00195" />
+      <option name="project" value="LOCAL" />
+      <updated>1675854546433</updated>
+    </task>
+    <option name="localTasksCounter" value="196" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -491,7 +491,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="navBar.jsx =&gt; realise dropdown menu with links" />
     <MESSAGE value="create protectedRouth.jsx" />
     <MESSAGE value="protectedRouth.jsx =&gt; transform Redirect parameter &quot;to&quot; =&gt;" />
     <MESSAGE value="loginForm.jsx =&gt; add control redirect to history.location.state.from.pathname" />
@@ -516,7 +515,8 @@
     <MESSAGE value="comments.jsx =&gt; transfer comments from useComments" />
     <MESSAGE value="comments.jsx =&gt; getUserById from useUser()&#10;&#10;fix user image from user.image" />
     <MESSAGE value="useComment.jsx =&gt; add new comment to array of comment after creating (30)" />
-    <option name="LAST_COMMIT_MESSAGE" value="useComment.jsx =&gt; add new comment to array of comment after creating (30)" />
+    <MESSAGE value="useComment.jsx =&gt; add following userId in useEffect (48) -&gt; needed for situation with changing user." />
+    <option name="LAST_COMMIT_MESSAGE" value="useComment.jsx =&gt; add following userId in useEffect (48) -&gt; needed for situation with changing user." />
   </component>
   <component name="regexState">
     <option name="map">

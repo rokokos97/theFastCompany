@@ -10,6 +10,7 @@ const Comments = () => {
         createComment(data);
     };
     const handleRemoveComment = (id) => {
+        console.log(id);
         // api.comments.remove(id).then((id) => {
         //     setComments(comments.filter((x) => x._id !== id));
         // });

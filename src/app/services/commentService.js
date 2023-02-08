@@ -7,6 +7,10 @@ const commentService = {
         console.log("data", data);
         return data;
     },
+    returnComment: async (commentId) => {
+        const { data } = await httpService.delete(commentEndpoint + commentId);
+        return data;
+    },
     getComment: async (pageId) => {
         const { data } = await httpService.get(commentEndpoint, {
             params: {
