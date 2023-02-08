@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="useComment.jsx =&gt; get comments by pageId">
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/comments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/comments.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/hooks/useComment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useComment.jsx" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="comments.jsx =&gt; transfer comments from useComments">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/comments/comment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/comments/comment.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,14 +129,7 @@
       <workItem from="1675336550583" duration="2377000" />
       <workItem from="1675347098206" duration="11905000" />
       <workItem from="1675500946053" duration="8868000" />
-      <workItem from="1675681096668" duration="14731000" />
-    </task>
-    <task id="LOCAL-00143" summary="create service for cooperation with localstorage">
-      <created>1674989676870</created>
-      <option name="number" value="00143" />
-      <option name="presentableId" value="LOCAL-00143" />
-      <option name="project" value="LOCAL" />
-      <updated>1674989676870</updated>
+      <workItem from="1675681096668" duration="15195000" />
     </task>
     <task id="LOCAL-00144" summary="add TOKENS to localStorageService">
       <created>1674990731120</created>
@@ -474,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675852980872</updated>
     </task>
-    <option name="localTasksCounter" value="192" />
+    <task id="LOCAL-00192" summary="comments.jsx =&gt; transfer comments from useComments">
+      <created>1675853391282</created>
+      <option name="number" value="00192" />
+      <option name="presentableId" value="LOCAL-00192" />
+      <option name="project" value="LOCAL" />
+      <updated>1675853391282</updated>
+    </task>
+    <option name="localTasksCounter" value="193" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -492,7 +492,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="httpService.js =&gt; modify token before set =&gt;" />
     <MESSAGE value="navBar.jsx =&gt; modify navigation" />
     <MESSAGE value="navBar.jsx =&gt; add avatar and user info" />
     <MESSAGE value="navBar.jsx =&gt; realise dropdown menu with links" />
@@ -517,7 +516,8 @@
     <MESSAGE value="commentService.js =&gt; add method getComments from base." />
     <MESSAGE value="commentService.js =&gt; transform requests parameters with double &#10;&#10;add new rule to firebase rule" />
     <MESSAGE value="useComment.jsx =&gt; get comments by pageId" />
-    <option name="LAST_COMMIT_MESSAGE" value="useComment.jsx =&gt; get comments by pageId" />
+    <MESSAGE value="comments.jsx =&gt; transfer comments from useComments" />
+    <option name="LAST_COMMIT_MESSAGE" value="comments.jsx =&gt; transfer comments from useComments" />
   </component>
   <component name="regexState">
     <option name="map">
