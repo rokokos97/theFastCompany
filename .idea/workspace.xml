@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="commentService.js =&gt; transform requests parameters with double &#10;&#10;add new rule to firebase rule" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="useComment.jsx =&gt; get comments by pageId">
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/comments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/comments.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/hooks/useComment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useComment.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,14 +129,7 @@
       <workItem from="1675336550583" duration="2377000" />
       <workItem from="1675347098206" duration="11905000" />
       <workItem from="1675500946053" duration="8868000" />
-      <workItem from="1675681096668" duration="14228000" />
-    </task>
-    <task id="LOCAL-00142" summary="create .env&#10;create .env.prodaction &#10;&#10;hide key for production">
-      <created>1674989515550</created>
-      <option name="number" value="00142" />
-      <option name="presentableId" value="LOCAL-00142" />
-      <option name="project" value="LOCAL" />
-      <updated>1674989515550</updated>
+      <workItem from="1675681096668" duration="14731000" />
     </task>
     <task id="LOCAL-00143" summary="create service for cooperation with localstorage">
       <created>1674989676870</created>
@@ -471,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675852775314</updated>
     </task>
-    <option name="localTasksCounter" value="191" />
+    <task id="LOCAL-00191" summary="useComment.jsx =&gt; get comments by pageId">
+      <created>1675852980872</created>
+      <option name="number" value="00191" />
+      <option name="presentableId" value="LOCAL-00191" />
+      <option name="project" value="LOCAL" />
+      <updated>1675852980872</updated>
+    </task>
+    <option name="localTasksCounter" value="192" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -489,7 +492,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="httpService.js =&gt; transform request data =&gt; setToken" />
     <MESSAGE value="httpService.js =&gt; modify token before set =&gt;" />
     <MESSAGE value="navBar.jsx =&gt; modify navigation" />
     <MESSAGE value="navBar.jsx =&gt; add avatar and user info" />
@@ -514,7 +516,8 @@
     <MESSAGE value="add request to server and save new comment in firebase" />
     <MESSAGE value="commentService.js =&gt; add method getComments from base." />
     <MESSAGE value="commentService.js =&gt; transform requests parameters with double &#10;&#10;add new rule to firebase rule" />
-    <option name="LAST_COMMIT_MESSAGE" value="commentService.js =&gt; transform requests parameters with double &#10;&#10;add new rule to firebase rule" />
+    <MESSAGE value="useComment.jsx =&gt; get comments by pageId" />
+    <option name="LAST_COMMIT_MESSAGE" value="useComment.jsx =&gt; get comments by pageId" />
   </component>
   <component name="regexState">
     <option name="map">

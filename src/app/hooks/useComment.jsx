@@ -13,7 +13,7 @@ export const useComment = () => {
 export const CommentProvider = ({ children }) => {
     const { userId } = useParams();
     const { currentUser } = useAuth();
-    const [comment, setComment] = useState([]);
+    const [comments, setComments] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
     async function createComment(data) {
@@ -35,7 +35,7 @@ export const CommentProvider = ({ children }) => {
     async function getComments() {
         try {
             const { content } = await commentService.getComment(userId);
-            setComment(content);
+            setComments(content);
             console.log("content", content);
         } catch (error) {
             catchError(error);
@@ -57,7 +57,7 @@ export const CommentProvider = ({ children }) => {
         setError(message);
     };
     return (
-        <CommentContext.Provider value={{ isLoading, comment, createComment }}>
+        <CommentContext.Provider value={{ isLoading, comments, createComment }}>
             { children }
         </CommentContext.Provider>
     );
