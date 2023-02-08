@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="addCommentForm.jsx =&gt; delete all users component">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="useComment.jsx =&gt; add method createComment(data)">
+      <change afterPath="$PROJECT_DIR$/src/app/services/commentService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/comments/addCommentForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/comments/addCommentForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/comments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/comments.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/hooks/useComment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useComment.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +68,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/rokokos97/WebstormProjects/the-fast-company/src/app/hooks",
+    "last_opened_file_path": "/Users/rokokos97/WebstormProjects/the-fast-company/src/app/services",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -85,10 +84,10 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/services" />
       <recent name="$PROJECT_DIR$/src/app/hooks" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/app" />
-      <recent name="$PROJECT_DIR$/src/app/services" />
       <recent name="$PROJECT_DIR$/src/app/api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -131,14 +130,7 @@
       <workItem from="1675336550583" duration="2377000" />
       <workItem from="1675347098206" duration="11905000" />
       <workItem from="1675500946053" duration="8868000" />
-      <workItem from="1675681096668" duration="10277000" />
-    </task>
-    <task id="LOCAL-00137" summary="add AuthProvider to App.js">
-      <created>1674910799520</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1674910799520</updated>
+      <workItem from="1675681096668" duration="10936000" />
     </task>
     <task id="LOCAL-00138" summary="httpService.js =&gt; create new instance">
       <created>1674917060751</created>
@@ -476,7 +468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675806134489</updated>
     </task>
-    <option name="localTasksCounter" value="186" />
+    <task id="LOCAL-00186" summary="useComment.jsx =&gt; add method createComment(data)">
+      <created>1675848539365</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1675848539365</updated>
+    </task>
+    <option name="localTasksCounter" value="187" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -494,7 +493,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="useAuth.jsx =&gt; create useEffect =&gt; after full page downloaded chack userToken and after get currentUser by id from token" />
     <MESSAGE value="useAuth.jsx =&gt; add new transit method&#10;=&gt; getUserData" />
     <MESSAGE value="useAuth.jsx =&gt; logIn =&gt; add getUserData();" />
     <MESSAGE value="useAuth.jsx =&gt; export httpAuth&#10;and import it in httpService.js" />
@@ -519,7 +517,8 @@
     <MESSAGE value="create new hook =&gt; useComment.jsx" />
     <MESSAGE value="install nano_id" />
     <MESSAGE value="addCommentForm.jsx =&gt; delete all users component" />
-    <option name="LAST_COMMIT_MESSAGE" value="addCommentForm.jsx =&gt; delete all users component" />
+    <MESSAGE value="useComment.jsx =&gt; add method createComment(data)" />
+    <option name="LAST_COMMIT_MESSAGE" value="useComment.jsx =&gt; add method createComment(data)" />
   </component>
   <component name="regexState">
     <option name="map">

@@ -4,6 +4,7 @@ import { toast } from "react-toastify";
 import { useParams } from "react-router-dom";
 import { useAuth } from "./useAuth";
 import { nanoid } from "nanoid";
+import commentService from "../services/commentService";
 const CommentContext = React.createContext();
 
 export const useComment = () => {
@@ -23,7 +24,12 @@ export const CommentProvider = ({ children }) => {
             userId: currentUser._id,
             _id: nanoid()
         };
-        console.log(comment);
+        try {
+            const { content } = await commentService.createComment(comment);
+            console.log(content);
+        } catch (error) {
+            catchError(error);
+        }
     }
     useEffect(() => {
         setComment(null);
@@ -35,10 +41,10 @@ export const CommentProvider = ({ children }) => {
             setError(null);
         }
     }, [error]);
-    // const catchError = (error) => {
-    //     const { message } = error.response.data;
-    //     setError(message);
-    // };
+    const catchError = (error) => {
+        const { message } = error.response.data;
+        setError(message);
+    };
     return (
         <CommentContext.Provider value={{ isLoading, comment, createComment }}>
             { children }
