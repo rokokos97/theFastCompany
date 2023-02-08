@@ -24,6 +24,7 @@ export const CommentProvider = ({ children }) => {
             userId: currentUser._id,
             _id: nanoid()
         };
+        console.log(comment);
         try {
             const { content } = await commentService.createComment(comment);
             console.log(content);
