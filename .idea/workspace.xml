@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create new service =&gt; commentService.js">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add request to server and save new comment in firebase">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/hooks/useComment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useComment.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/services/commentService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/commentService.js" afterDir="false" />
@@ -130,14 +130,7 @@
       <workItem from="1675336550583" duration="2377000" />
       <workItem from="1675347098206" duration="11905000" />
       <workItem from="1675500946053" duration="8868000" />
-      <workItem from="1675681096668" duration="11626000" />
-    </task>
-    <task id="LOCAL-00139" summary="useAuth =&gt; create setTokens">
-      <created>1674936208176</created>
-      <option name="number" value="00139" />
-      <option name="presentableId" value="LOCAL-00139" />
-      <option name="project" value="LOCAL" />
-      <updated>1674936208176</updated>
+      <workItem from="1675681096668" duration="12688000" />
     </task>
     <task id="LOCAL-00140" summary="useAuth =&gt; create setTokens">
       <created>1674936296223</created>
@@ -475,7 +468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675849501857</updated>
     </task>
-    <option name="localTasksCounter" value="188" />
+    <task id="LOCAL-00188" summary="add request to server and save new comment in firebase">
+      <created>1675849872396</created>
+      <option name="number" value="00188" />
+      <option name="presentableId" value="LOCAL-00188" />
+      <option name="project" value="LOCAL" />
+      <updated>1675849872396</updated>
+    </task>
+    <option name="localTasksCounter" value="189" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,7 +493,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="useAuth.jsx =&gt; logIn =&gt; add getUserData();" />
     <MESSAGE value="useAuth.jsx =&gt; export httpAuth&#10;and import it in httpService.js" />
     <MESSAGE value="httpService.js =&gt; add refreshing Token inside request!" />
     <MESSAGE value="httpService.js =&gt; transform request data =&gt; setToken" />
@@ -518,7 +517,8 @@
     <MESSAGE value="addCommentForm.jsx =&gt; delete all users component" />
     <MESSAGE value="useComment.jsx =&gt; add method createComment(data)" />
     <MESSAGE value="create new service =&gt; commentService.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="create new service =&gt; commentService.js" />
+    <MESSAGE value="add request to server and save new comment in firebase" />
+    <option name="LAST_COMMIT_MESSAGE" value="add request to server and save new comment in firebase" />
   </component>
   <component name="regexState">
     <option name="map">
