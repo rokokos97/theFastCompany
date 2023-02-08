@@ -5,12 +5,12 @@ import AddCommentForm from "../common/comments/addCommentForm";
 import { useComment } from "../../hooks/useComment";
 
 const Comments = () => {
-    const { createComment, comments } = useComment();
+    const { createComment, comments, removeComment } = useComment();
     const handleSubmit = (data) => {
         createComment(data);
     };
     const handleRemoveComment = (id) => {
-        console.log(id);
+        removeComment(id);
         // api.comments.remove(id).then((id) => {
         //     setComments(comments.filter((x) => x._id !== id));
         // });
