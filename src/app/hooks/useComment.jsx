@@ -45,7 +45,7 @@ export const CommentProvider = ({ children }) => {
     }
     useEffect(() => {
         getComments();
-    }, []);
+    }, [userId]);
     useEffect(() => {
         if (error !== null) {
             toast.error(error);
