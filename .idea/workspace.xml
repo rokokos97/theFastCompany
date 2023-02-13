@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="commentService.js =&gt; create new method &quot;removeComment&quot;">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="httpService =&gt; add new method patch: http.patch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/protectedRouth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/protectedRouth.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/hooks/useComment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useComment.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/services/userService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/userService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,20 +131,6 @@
       <workItem from="1675347098206" duration="11905000" />
       <workItem from="1675500946053" duration="8868000" />
       <workItem from="1675681096668" duration="18266000" />
-    </task>
-    <task id="LOCAL-00148" summary="cath error in useAuth.jsx and show it in registerForm.jsx">
-      <created>1674993779217</created>
-      <option name="number" value="00148" />
-      <option name="presentableId" value="LOCAL-00148" />
-      <option name="project" value="LOCAL" />
-      <updated>1674993779217</updated>
-    </task>
-    <task id="LOCAL-00149" summary="useAuth =&gt; &#10;1. Add logIn method like signUp&#10;2. Add config to httpAuth =&gt;">
-      <created>1675008572689</created>
-      <option name="number" value="00149" />
-      <option name="presentableId" value="LOCAL-00149" />
-      <option name="project" value="LOCAL" />
-      <updated>1675008572689</updated>
     </task>
     <task id="LOCAL-00150" summary="useAuth =&gt; &#10;1. Add logIn method like signUp&#10;2. Add config to httpAuth =&gt; {&#10;                                 baseURL: &quot;https://identitytoolkit.googleapis.com/v1/&quot;,&#10;                                 params: {&#10;                                     key: process.env.REACT_APP_FIREBASE_KEY&#10;                                 }">
       <created>1675009092390</created>
@@ -476,7 +461,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675865343933</updated>
     </task>
-    <option name="localTasksCounter" value="197" />
+    <task id="LOCAL-00197" summary="httpService =&gt; add new method patch: http.patch">
+      <created>1676316265413</created>
+      <option name="number" value="00197" />
+      <option name="presentableId" value="LOCAL-00197" />
+      <option name="project" value="LOCAL" />
+      <updated>1676316265413</updated>
+    </task>
+    <task id="LOCAL-00198" summary="httpService =&gt; add new method patch: http.patch">
+      <created>1676316273982</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
+      <option name="project" value="LOCAL" />
+      <updated>1676316273982</updated>
+    </task>
+    <option name="localTasksCounter" value="199" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -494,7 +493,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="protectedRouth.jsx =&gt; transform Redirect parameter &quot;to&quot; =&gt;" />
     <MESSAGE value="loginForm.jsx =&gt; add control redirect to history.location.state.from.pathname" />
     <MESSAGE value="localStorageService.js =&gt; add new method removeAuthData()" />
     <MESSAGE value="logOut =&gt; complete" />
@@ -519,7 +517,8 @@
     <MESSAGE value="useComment.jsx =&gt; add new comment to array of comment after creating (30)" />
     <MESSAGE value="useComment.jsx =&gt; add following userId in useEffect (48) -&gt; needed for situation with changing user." />
     <MESSAGE value="commentService.js =&gt; create new method &quot;removeComment&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="commentService.js =&gt; create new method &quot;removeComment&quot;" />
+    <MESSAGE value="httpService =&gt; add new method patch: http.patch" />
+    <option name="LAST_COMMIT_MESSAGE" value="httpService =&gt; add new method patch: http.patch" />
   </component>
   <component name="regexState">
     <option name="map">
