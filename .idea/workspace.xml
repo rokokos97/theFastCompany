@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="httpService =&gt; add new method patch: http.patch">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="useAuth.jsx =&gt; create method updateUserData">
       <change beforePath="$PROJECT_DIR$/src/app/services/userService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/userService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -131,13 +129,6 @@
       <workItem from="1675347098206" duration="11905000" />
       <workItem from="1675500946053" duration="8868000" />
       <workItem from="1675681096668" duration="18266000" />
-    </task>
-    <task id="LOCAL-00150" summary="useAuth =&gt; &#10;1. Add logIn method like signUp&#10;2. Add config to httpAuth =&gt; {&#10;                                 baseURL: &quot;https://identitytoolkit.googleapis.com/v1/&quot;,&#10;                                 params: {&#10;                                     key: process.env.REACT_APP_FIREBASE_KEY&#10;                                 }">
-      <created>1675009092390</created>
-      <option name="number" value="00150" />
-      <option name="presentableId" value="LOCAL-00150" />
-      <option name="project" value="LOCAL" />
-      <updated>1675009092390</updated>
     </task>
     <task id="LOCAL-00151" summary="loginForm.jsx =&gt; add initial logIn and history">
       <created>1675009298092</created>
@@ -475,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676316273982</updated>
     </task>
-    <option name="localTasksCounter" value="199" />
+    <task id="LOCAL-00199" summary="useAuth.jsx =&gt; create method updateUserData">
+      <created>1676317864071</created>
+      <option name="number" value="00199" />
+      <option name="presentableId" value="LOCAL-00199" />
+      <option name="project" value="LOCAL" />
+      <updated>1676317864071</updated>
+    </task>
+    <option name="localTasksCounter" value="200" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,7 +491,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="loginForm.jsx =&gt; add control redirect to history.location.state.from.pathname" />
     <MESSAGE value="localStorageService.js =&gt; add new method removeAuthData()" />
     <MESSAGE value="logOut =&gt; complete" />
     <MESSAGE value="navProfile.jsx =&gt; correction avatar image" />
@@ -518,7 +515,8 @@
     <MESSAGE value="useComment.jsx =&gt; add following userId in useEffect (48) -&gt; needed for situation with changing user." />
     <MESSAGE value="commentService.js =&gt; create new method &quot;removeComment&quot;" />
     <MESSAGE value="httpService =&gt; add new method patch: http.patch" />
-    <option name="LAST_COMMIT_MESSAGE" value="httpService =&gt; add new method patch: http.patch" />
+    <MESSAGE value="useAuth.jsx =&gt; create method updateUserData" />
+    <option name="LAST_COMMIT_MESSAGE" value="useAuth.jsx =&gt; create method updateUserData" />
   </component>
   <component name="regexState">
     <option name="map">
