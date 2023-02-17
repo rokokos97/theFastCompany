@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="index.js =&gt; initial createStore();&#10;add &lt;Provider&gt;">
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="fix bug in loginForm.jsx">
+      <change afterPath="$PROJECT_DIR$/src/app/store/qualities.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,14 +144,7 @@
       <workItem from="1675500946053" duration="8868000" />
       <workItem from="1675681096668" duration="18266000" />
       <workItem from="1676371033285" duration="900000" />
-      <workItem from="1676628750062" duration="2057000" />
-    </task>
-    <task id="LOCAL-00155" summary="httpService.js add one more rule to function transformData.">
-      <created>1675168745420</created>
-      <option name="number" value="00155" />
-      <option name="presentableId" value="LOCAL-00155" />
-      <option name="project" value="LOCAL" />
-      <updated>1675168745420</updated>
+      <workItem from="1676628750062" duration="3088000" />
     </task>
     <task id="LOCAL-00156" summary="modify function in localStorageService =&gt; add new parameter localID and set localId in localStorage">
       <created>1675243263674</created>
@@ -488,7 +482,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676630605386</updated>
     </task>
-    <option name="localTasksCounter" value="204" />
+    <task id="LOCAL-00204" summary="fix bug in loginForm.jsx">
+      <created>1676630917322</created>
+      <option name="number" value="00204" />
+      <option name="presentableId" value="LOCAL-00204" />
+      <option name="project" value="LOCAL" />
+      <updated>1676630917322</updated>
+    </task>
+    <option name="localTasksCounter" value="205" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +507,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="userListPage.jsx =&gt; loading profession from useProfession()" />
     <MESSAGE value="userTable.jsx =&gt; delete &quot;delete&quot; button" />
     <MESSAGE value="useUser.jsx =&gt; add new method getUserById" />
     <MESSAGE value="useCard.jsx =&gt; correction user image" />
@@ -531,7 +531,8 @@
     <MESSAGE value="install redux/toolkit and react-redux&#10;create folder store and createStore.js" />
     <MESSAGE value="createStore.js =&gt; initialise rootReducer;&#10;export function createStore()" />
     <MESSAGE value="index.js =&gt; initial createStore();&#10;add &lt;Provider&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="index.js =&gt; initial createStore();&#10;add &lt;Provider&gt;" />
+    <MESSAGE value="fix bug in loginForm.jsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug in loginForm.jsx" />
   </component>
   <component name="regexState">
     <option name="map">
