@@ -14,8 +14,8 @@ export const QualitiesProvider = ({ children }) => {
     useEffect(() => {
         const getQualities = async () => {
             try {
-                const qualities = await qualityService.fetchAll();
-                setQualities(qualities.content);
+                const { content } = await qualityService.fetchAll();
+                setQualities(content);
                 setIsLoading(false);
             } catch (error) {
                 const { message } = error.response.data;
