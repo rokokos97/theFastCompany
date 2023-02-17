@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="useAuth.jsx =&gt; updateUserData">
-      <change afterPath="$PROJECT_DIR$/src/app/store/createStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/userService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/userService.js" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="install redux/toolkit and react-redux&#10;create folder store and createStore.js">
+      <change beforePath="$PROJECT_DIR$/src/app/store/createStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/createStore.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +27,11 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
     <option name="recentBranches">
@@ -56,6 +56,14 @@
           </list>
         </option>
       </RecentBranches>
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="e0a41133-d513-4f38-800a-03bc48b45c97" />
+        <option name="url" value="git@github.com:/rokokos97/the-fast-company.git" />
+      </UrlAndAccount>
     </option>
   </component>
   <component name="MarkdownSettingsMigration">
@@ -135,14 +143,7 @@
       <workItem from="1675500946053" duration="8868000" />
       <workItem from="1675681096668" duration="18266000" />
       <workItem from="1676371033285" duration="900000" />
-      <workItem from="1676628750062" duration="942000" />
-    </task>
-    <task id="LOCAL-00152" summary="loginForm.jsx =&gt; add enter error">
-      <created>1675011017061</created>
-      <option name="number" value="00152" />
-      <option name="presentableId" value="LOCAL-00152" />
-      <option name="project" value="LOCAL" />
-      <updated>1675011017061</updated>
+      <workItem from="1676628750062" duration="1407000" />
     </task>
     <task id="LOCAL-00153" summary="registerForm.jsx =&gt; add new field for Name.">
       <created>1675166886104</created>
@@ -480,7 +481,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676317943981</updated>
     </task>
-    <option name="localTasksCounter" value="201" />
+    <task id="LOCAL-00201" summary="install redux/toolkit and react-redux&#10;create folder store and createStore.js">
+      <created>1676629837612</created>
+      <option name="number" value="00201" />
+      <option name="presentableId" value="LOCAL-00201" />
+      <option name="project" value="LOCAL" />
+      <updated>1676629837612</updated>
+    </task>
+    <option name="localTasksCounter" value="202" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -498,7 +506,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="localStorageService.js =&gt; add new method removeAuthData()" />
     <MESSAGE value="logOut =&gt; complete" />
     <MESSAGE value="navProfile.jsx =&gt; correction avatar image" />
     <MESSAGE value="userListPage.jsx =&gt; loading profession from useProfession()" />
@@ -523,7 +530,8 @@
     <MESSAGE value="commentService.js =&gt; create new method &quot;removeComment&quot;" />
     <MESSAGE value="httpService =&gt; add new method patch: http.patch" />
     <MESSAGE value="useAuth.jsx =&gt; create method updateUserData" />
-    <option name="LAST_COMMIT_MESSAGE" value="useAuth.jsx =&gt; create method updateUserData" />
+    <MESSAGE value="install redux/toolkit and react-redux&#10;create folder store and createStore.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="install redux/toolkit and react-redux&#10;create folder store and createStore.js" />
   </component>
   <component name="regexState">
     <option name="map">
