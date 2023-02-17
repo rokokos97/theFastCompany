@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="qualities.js =&gt; add error to initial state;&#10;add reducers;&#10;export loadQualitiesList">
-      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
-    </list>
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="App.js =&gt; import dispatch;&#10;add useEffect =&gt; dispatch(loadQualitiesList()" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -143,14 +141,7 @@
       <workItem from="1675500946053" duration="8868000" />
       <workItem from="1675681096668" duration="18266000" />
       <workItem from="1676371033285" duration="900000" />
-      <workItem from="1676628750062" duration="6179000" />
-    </task>
-    <task id="LOCAL-00159" summary="useAuth.jsx =&gt; add new transit method&#10;=&gt; getUserData">
-      <created>1675244778076</created>
-      <option name="number" value="00159" />
-      <option name="presentableId" value="LOCAL-00159" />
-      <option name="project" value="LOCAL" />
-      <updated>1675244778077</updated>
+      <workItem from="1676628750062" duration="6637000" />
     </task>
     <task id="LOCAL-00160" summary="useAuth.jsx =&gt; logIn =&gt; add getUserData();">
       <created>1675245150214</created>
@@ -488,7 +479,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676655007768</updated>
     </task>
-    <option name="localTasksCounter" value="208" />
+    <task id="LOCAL-00208" summary="App.js =&gt; import dispatch;&#10;add useEffect =&gt; dispatch(loadQualitiesList()">
+      <created>1676655278616</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1676655278616</updated>
+    </task>
+    <option name="localTasksCounter" value="209" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +504,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="userCard.jsx =&gt; personalise button settings for Current User" />
     <MESSAGE value="userListPage.jsx =&gt; add one more filtration for users. Hide current user from the list" />
     <MESSAGE value="create new hook =&gt; useComment.jsx" />
     <MESSAGE value="install nano_id" />
@@ -531,7 +528,8 @@
     <MESSAGE value="store =&gt; create qualities.js =&gt; create qualitiesSlice" />
     <MESSAGE value="createStore.js =&gt; add qualitiesReducer to combineReducer" />
     <MESSAGE value="qualities.js =&gt; add error to initial state;&#10;add reducers;&#10;export loadQualitiesList" />
-    <option name="LAST_COMMIT_MESSAGE" value="qualities.js =&gt; add error to initial state;&#10;add reducers;&#10;export loadQualitiesList" />
+    <MESSAGE value="App.js =&gt; import dispatch;&#10;add useEffect =&gt; dispatch(loadQualitiesList()" />
+    <option name="LAST_COMMIT_MESSAGE" value="App.js =&gt; import dispatch;&#10;add useEffect =&gt; dispatch(loadQualitiesList()" />
   </component>
   <component name="regexState">
     <option name="map">
