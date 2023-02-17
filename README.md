@@ -16,4 +16,7 @@ react-tostify
 
 firebase
 
+redux/toolkit
+react-redux
+
 
