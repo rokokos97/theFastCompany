@@ -23,7 +23,7 @@ const qualitiesSlice = createSlice({
     }
 });
 const { reducer: qualitiesReducer, actions } = qualitiesSlice;
-const { qualitiesRequestFiled, qualitiesReceived, qualitiesRequested} = actions;
+const { qualitiesRequestFiled, qualitiesReceived, qualitiesRequested } = actions;
 export const loadQualitiesList = () => async (dispatch) => {
     dispatch(qualitiesRequested());
     try {

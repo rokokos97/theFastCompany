@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="createStore.js =&gt; add qualitiesReducer to combineReducer">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/hooks/useQualities.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useQualities.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store/qualities.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/qualities.js" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="qualities.js =&gt; add error to initial state;&#10;add reducers;&#10;export loadQualitiesList">
+      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,14 +143,7 @@
       <workItem from="1675500946053" duration="8868000" />
       <workItem from="1675681096668" duration="18266000" />
       <workItem from="1676371033285" duration="900000" />
-      <workItem from="1676628750062" duration="5873000" />
-    </task>
-    <task id="LOCAL-00158" summary="useAuth.jsx =&gt; create useEffect =&gt; after full page downloaded chack userToken and after get currentUser by id from token">
-      <created>1675244431152</created>
-      <option name="number" value="00158" />
-      <option name="presentableId" value="LOCAL-00158" />
-      <option name="project" value="LOCAL" />
-      <updated>1675244431152</updated>
+      <workItem from="1676628750062" duration="6179000" />
     </task>
     <task id="LOCAL-00159" summary="useAuth.jsx =&gt; add new transit method&#10;=&gt; getUserData">
       <created>1675244778076</created>
@@ -490,7 +481,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676652280631</updated>
     </task>
-    <option name="localTasksCounter" value="207" />
+    <task id="LOCAL-00207" summary="qualities.js =&gt; add error to initial state;&#10;add reducers;&#10;export loadQualitiesList">
+      <created>1676655007768</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1676655007768</updated>
+    </task>
+    <option name="localTasksCounter" value="208" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -508,7 +506,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="useCard.jsx =&gt; correction user image" />
     <MESSAGE value="userCard.jsx =&gt; personalise button settings for Current User" />
     <MESSAGE value="userListPage.jsx =&gt; add one more filtration for users. Hide current user from the list" />
     <MESSAGE value="create new hook =&gt; useComment.jsx" />
@@ -533,7 +530,8 @@
     <MESSAGE value="fix bug in loginForm.jsx" />
     <MESSAGE value="store =&gt; create qualities.js =&gt; create qualitiesSlice" />
     <MESSAGE value="createStore.js =&gt; add qualitiesReducer to combineReducer" />
-    <option name="LAST_COMMIT_MESSAGE" value="createStore.js =&gt; add qualitiesReducer to combineReducer" />
+    <MESSAGE value="qualities.js =&gt; add error to initial state;&#10;add reducers;&#10;export loadQualitiesList" />
+    <option name="LAST_COMMIT_MESSAGE" value="qualities.js =&gt; add error to initial state;&#10;add reducers;&#10;export loadQualitiesList" />
   </component>
   <component name="regexState">
     <option name="map">
