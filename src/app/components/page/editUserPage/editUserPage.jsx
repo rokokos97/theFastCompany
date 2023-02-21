@@ -20,7 +20,7 @@ const EditUserPage = () => {
     const professionsList = professions.map((p) => ({ label: p.name, value: p._id }));
     useEffect(() => {
         if (!professionsLoading && !qualitiesLoading && currentUser && !data) {
-            setData({ ...currentUser });
+            setData({ ...currentUser, qualities: transformData(currentUser.qualities) });
         }
     }, [professionsLoading, qualitiesLoading, currentUser, data]);
     useEffect(() => {
@@ -29,31 +29,24 @@ const EditUserPage = () => {
             setIsLoading(false);
         }
     }, [data]);
-    // const getProfessionById = (id) => {
-    //     for (const prof of professions) {
-    //         if (prof.value === id) {
-    //             return { _id: prof.value, name: prof.label };
-    //         }
-    //     }
-    // };
-    // const getQualities = (elements) => {
-    //     const qualitiesArray = [];
-    //     for (const elem of elements) {
-    //         for (const quality in qualities) {
-    //             if (elem.value === qualities[quality].value) {
-    //                 qualitiesArray.push({
-    //                     _id: qualities[quality].value,
-    //                     name: qualities[quality].label,
-    //                     color: qualities[quality].color
-    //                 });
-    //             }
-    //         }
-    //     }
-    //     return qualitiesArray;
-    // };
-    // const transformData = (data) => {
-    //     return data.map((qual) => ({ label: qual.name, value: qual._id }));
-    // };
+    function getQualitiesListById(qualitiesIds) {
+        const qualitiesArray = [];
+        for (const qualId of qualitiesIds) {
+            for (const quality of qualities) {
+                if (quality._id === qualId) {
+                    qualitiesArray.push(quality);
+                    break;
+                }
+            }
+        }
+        return qualitiesArray;
+    }
+    const transformData = (data) => {
+        return getQualitiesListById(data).map((qual) => ({
+            label: qual.name,
+            value: qual._id
+        }));
+    };
     const handelChange = (target) => {
         setData((prevState) =>
             ({ ...prevState, [target.name]: target.value }));
