@@ -16,6 +16,8 @@ const EditUserPage = () => {
     const { qualities, isLoading: qualitiesLoading } = useQualities();
     const { professions, isLoading: professionsLoading } = useProfessions();
     const [errors, setErrors] = useState({});
+    const qualitiesList = qualities.map((q) => ({ label: q.name, value: q._id }));
+    const professionsList = professions.map((p) => ({ label: p.name, value: p._id }));
     useEffect(() => {
         if (!professionsLoading && !qualitiesLoading && currentUser && !data) {
             setData({ ...currentUser });
@@ -124,12 +126,12 @@ const EditUserPage = () => {
                                 label={"Choose your profession"}
                                 name={"profession"}
                                 defaultOption={"Choose..."}
-                                options={professions}
+                                options={professionsList}
                                 onChange={handelChange}
                                 value={data.profession}
                             />
                             <MultiSelectField
-                                options={qualities}
+                                options={qualitiesList}
                                 onChange={handelChange}
                                 defaultValue={data.qualities}
                                 name={"qualities"}
