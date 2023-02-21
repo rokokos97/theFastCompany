@@ -1,84 +1,58 @@
 import React, { useEffect, useState } from "react";
 import { validator } from "../../../utils/validator";
 import TextFiled from "../../common/form/textField";
-import api from "../../../api";
 import SelectedField from "../../common/form/selectedField";
 import RadioField from "../../common/form/radioField";
 import MultiSelectField from "../../common/form/multiselectField";
-import { useHistory, useParams } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 import BackHistoryButton from "../../common/backButton";
+import { useAuth } from "../../../hooks/useAuth";
+import { useQualities } from "../../../hooks/useQualities";
+import { useProfessions } from "../../../hooks/useProfessions";
 const EditUserPage = () => {
-    const { userId } = useParams();
-    const history = useHistory();
-    const [isLoading, setIsLoading] = useState(false);
-    const [data, setData] = useState({
-        name: "",
-        email: "",
-        sex: "male",
-        rate: "",
-        completedMeetings: "",
-        profession: "",
-        qualities: [{}]
-    });
+    const [isLoading, setIsLoading] = useState(true);
+    const [data, setData] = useState();
+    const { currentUser } = useAuth();
+    const { qualities, isLoading: qualitiesLoading } = useQualities();
+    const { professions, isLoading: professionsLoading } = useProfessions();
     const [errors, setErrors] = useState({});
-    const [qualities, setQualities] = useState({});
-    const [professions, setProfessions] = useState([]);
-
-    const getProfessionById = (id) => {
-        for (const prof of professions) {
-            if (prof.value === id) {
-                return { _id: prof.value, name: prof.label };
-            }
-        }
-    };
-    const getQualities = (elements) => {
-        const qualitiesArray = [];
-        for (const elem of elements) {
-            for (const quality in qualities) {
-                if (elem.value === qualities[quality].value) {
-                    qualitiesArray.push({
-                        _id: qualities[quality].value,
-                        name: qualities[quality].label,
-                        color: qualities[quality].color
-                    });
-                }
-            }
-        }
-        return qualitiesArray;
-    };
-    const transformData = (data) => {
-        return data.map((qual) => ({ label: qual.name, value: qual._id }));
-    };
     useEffect(() => {
-        api.users.getById(userId).then(({ profession, qualities, ...data }) => setData((prevState) => (
-            {
-                ...prevState,
-                ...data,
-                profession: profession._id,
-                qualities: transformData(qualities)
-            }
-        )));
-        api.professions.fetchAll().then((data) => {
-            const professionList =
-                Object.keys(data).map((professionName) => ({
-                    label: data[professionName].name,
-                    value: data[professionName]._id
-                }));
-            setProfessions(professionList);
-        });
-        api.qualities.fetchAll().then((data) => {
-            const qualitiesList =
-            Object.keys(data).map((qualitiesName) => ({
-                label: data[qualitiesName].name,
-                value: data[qualitiesName]._id,
-                color: data[qualitiesName].color
-            }));
-            setQualities(qualitiesList);
-        });
-    }, []);
+        if (!professionsLoading && !qualitiesLoading && currentUser && !data) {
+            setData({ ...currentUser });
+        }
+    }, [professionsLoading, qualitiesLoading, currentUser, data]);
+    useEffect(() => {
+        validate();
+        if (data && isLoading) {
+            setIsLoading(false);
+        }
+    }, [data]);
+    // const getProfessionById = (id) => {
+    //     for (const prof of professions) {
+    //         if (prof.value === id) {
+    //             return { _id: prof.value, name: prof.label };
+    //         }
+    //     }
+    // };
+    // const getQualities = (elements) => {
+    //     const qualitiesArray = [];
+    //     for (const elem of elements) {
+    //         for (const quality in qualities) {
+    //             if (elem.value === qualities[quality].value) {
+    //                 qualitiesArray.push({
+    //                     _id: qualities[quality].value,
+    //                     name: qualities[quality].label,
+    //                     color: qualities[quality].color
+    //                 });
+    //             }
+    //         }
+    //     }
+    //     return qualitiesArray;
+    // };
+    // const transformData = (data) => {
+    //     return data.map((qual) => ({ label: qual.name, value: qual._id }));
+    // };
     const handelChange = (target) => {
-        console.log("target", target.name);
-        console.log("data", data);
         setData((prevState) =>
             ({ ...prevState, [target.name]: target.value }));
     };
@@ -87,18 +61,7 @@ const EditUserPage = () => {
         const isValid = validate();
         if (!isValid) return;
         console.log(data);
-        const { profession, qualities } = data;
-        api.users.update(userId, {
-            ...data,
-            profession: getProfessionById(profession),
-            qualities: getQualities(qualities)
-        }).then((data) => (history.push(`/users/${data._id}`)));
     };
-    useEffect(() => {
-        validate();
-        if (data._id) setIsLoading(false);
-    }, [data]);
-
     const validatorConfig = {
         name: { isRequired: { message: "Name is required" } },
         email: {
@@ -118,7 +81,7 @@ const EditUserPage = () => {
     return (<div className="container mt-5">
         <BackHistoryButton/>
         <div className="row">
-            {(!isLoading && Object.keys(professions).length > 0 && Object.keys(qualities).length > 0)
+            {(!isLoading)
                 ? <div className="card col-md-6 offset-md-3">
                     <div className="card-body">
                         <form onSubmit={handelSubmit} className={"card-body"}>
