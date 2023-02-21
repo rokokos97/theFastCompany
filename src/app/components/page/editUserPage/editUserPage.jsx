@@ -4,7 +4,7 @@ import TextFiled from "../../common/form/textField";
 import SelectedField from "../../common/form/selectedField";
 import RadioField from "../../common/form/radioField";
 import MultiSelectField from "../../common/form/multiselectField";
-// import { useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import BackHistoryButton from "../../common/backButton";
 import { useAuth } from "../../../hooks/useAuth";
 import { useQualities } from "../../../hooks/useQualities";
@@ -12,12 +12,13 @@ import { useProfessions } from "../../../hooks/useProfessions";
 const EditUserPage = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [data, setData] = useState();
-    const { currentUser } = useAuth();
+    const { currentUser, updateUserData } = useAuth();
     const { qualities, isLoading: qualitiesLoading } = useQualities();
     const { professions, isLoading: professionsLoading } = useProfessions();
     const [errors, setErrors] = useState({});
     const qualitiesList = qualities.map((q) => ({ label: q.name, value: q._id }));
     const professionsList = professions.map((p) => ({ label: p.name, value: p._id }));
+    const history = useHistory();
     useEffect(() => {
         if (!professionsLoading && !qualitiesLoading && currentUser && !data) {
             setData({ ...currentUser, qualities: transformData(currentUser.qualities) });
@@ -51,11 +52,13 @@ const EditUserPage = () => {
         setData((prevState) =>
             ({ ...prevState, [target.name]: target.value }));
     };
-    const handelSubmit = (e) => {
+    const handelSubmit = async (e) => {
         e.preventDefault();
         const isValid = validate();
         if (!isValid) return;
         console.log(data);
+        await updateUserData({ ...data, qualities: data.qualities.map(q => q.value) });
+        history.push(`/users/${currentUser._id}`);
     };
     const validatorConfig = {
         name: { isRequired: { message: "Name is required" } },
