@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="delete QualitiesProvider in App.js">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="qualitiesList.jsx =&gt; add useEffect (11-13)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/qualities/qualitiesList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/qualities/qualitiesList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/store/qualities.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/qualities.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -135,14 +134,7 @@
       <workItem from="1676371033285" duration="900000" />
       <workItem from="1676628750062" duration="942000" />
       <workItem from="1676815002661" duration="7539000" />
-      <workItem from="1677067122908" duration="7335000" />
-    </task>
-    <task id="LOCAL-00162" summary="httpService.js =&gt; add refreshing Token inside request!">
-      <created>1675246876697</created>
-      <option name="number" value="00162" />
-      <option name="presentableId" value="LOCAL-00162" />
-      <option name="project" value="LOCAL" />
-      <updated>1675246876697</updated>
+      <workItem from="1677067122908" duration="8320000" />
     </task>
     <task id="LOCAL-00163" summary="httpService.js =&gt; add refreshing Token inside request!">
       <created>1675247225051</created>
@@ -480,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677078103675</updated>
     </task>
-    <option name="localTasksCounter" value="211" />
+    <task id="LOCAL-00211" summary="qualitiesList.jsx =&gt; add useEffect (11-13)">
+      <created>1677079690075</created>
+      <option name="number" value="00211" />
+      <option name="presentableId" value="LOCAL-00211" />
+      <option name="project" value="LOCAL" />
+      <updated>1677079690075</updated>
+    </task>
+    <option name="localTasksCounter" value="212" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -498,7 +497,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="install nano_id" />
     <MESSAGE value="addCommentForm.jsx =&gt; delete all users component" />
     <MESSAGE value="useComment.jsx =&gt; add method createComment(data)" />
     <MESSAGE value="create new service =&gt; commentService.js" />
@@ -523,7 +521,8 @@
     <MESSAGE value="change qualities from useQualities to useSelector(getQualities) in : &#10;registerForm.jsx&#10;editUserPage.jsx&#10;qualitiesList.jsx" />
     <MESSAGE value="qualities.js =&gt; add new selector getQualitiesByIds" />
     <MESSAGE value="delete QualitiesProvider in App.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete QualitiesProvider in App.js" />
+    <MESSAGE value="qualitiesList.jsx =&gt; add useEffect (11-13)" />
+    <option name="LAST_COMMIT_MESSAGE" value="qualitiesList.jsx =&gt; add useEffect (11-13)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
