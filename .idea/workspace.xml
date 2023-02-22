@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="users.jsx =&gt; add &lt;Redirect to={`/users/${currentUser._id}/edit`}/&gt; (16-19)">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="install reduxjs/toolkit and react-redux">
+      <change afterPath="$PROJECT_DIR$/src/store/createStore.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,13 +134,7 @@
       <workItem from="1676371033285" duration="900000" />
       <workItem from="1676628750062" duration="942000" />
       <workItem from="1676815002661" duration="7539000" />
-    </task>
-    <task id="LOCAL-00157" summary="localStorageService.js =&gt; create function getUserId and export it">
-      <created>1675243431883</created>
-      <option name="number" value="00157" />
-      <option name="presentableId" value="LOCAL-00157" />
-      <option name="project" value="LOCAL" />
-      <updated>1675243431883</updated>
+      <workItem from="1677067122908" duration="1425000" />
     </task>
     <task id="LOCAL-00158" summary="useAuth.jsx =&gt; create useEffect =&gt; after full page downloaded chack userToken and after get currentUser by id from token">
       <created>1675244431152</created>
@@ -477,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677017152698</updated>
     </task>
-    <option name="localTasksCounter" value="206" />
+    <task id="LOCAL-00206" summary="install reduxjs/toolkit and react-redux">
+      <created>1677068221337</created>
+      <option name="number" value="00206" />
+      <option name="presentableId" value="LOCAL-00206" />
+      <option name="project" value="LOCAL" />
+      <updated>1677068221338</updated>
+    </task>
+    <option name="localTasksCounter" value="207" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,7 +497,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="useUser.jsx =&gt; add new method getUserById" />
     <MESSAGE value="useCard.jsx =&gt; correction user image" />
     <MESSAGE value="userCard.jsx =&gt; personalise button settings for Current User" />
     <MESSAGE value="userListPage.jsx =&gt; add one more filtration for users. Hide current user from the list" />
@@ -520,7 +521,8 @@
     <MESSAGE value="editUserPage.js=&gt;&#10;transform qualities/professions to qualitiesList/qualitiesList;&#10;add method getQualitiesListById;&#10;modify transformData();" />
     <MESSAGE value="useUsers =&gt; add useEffect (19-26)" />
     <MESSAGE value="users.jsx =&gt; add &lt;Redirect to={`/users/${currentUser._id}/edit`}/&gt; (16-19)" />
-    <option name="LAST_COMMIT_MESSAGE" value="users.jsx =&gt; add &lt;Redirect to={`/users/${currentUser._id}/edit`}/&gt; (16-19)" />
+    <MESSAGE value="install reduxjs/toolkit and react-redux" />
+    <option name="LAST_COMMIT_MESSAGE" value="install reduxjs/toolkit and react-redux" />
   </component>
   <component name="regexState">
     <option name="map">
