@@ -7,13 +7,16 @@ import MultiSelectField from "../../common/form/multiselectField";
 import { useHistory } from "react-router-dom";
 import BackHistoryButton from "../../common/backButton";
 import { useAuth } from "../../../hooks/useAuth";
-import { useQualities } from "../../../hooks/useQualities";
+
 import { useProfessions } from "../../../hooks/useProfessions";
+import { useSelector } from "react-redux";
+import { getQualities, getQualitiesLoadingStatus } from "../../../store/qualities";
 const EditUserPage = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [data, setData] = useState();
     const { currentUser, updateUserData } = useAuth();
-    const { qualities, isLoading: qualitiesLoading } = useQualities();
+    const qualities = useSelector(getQualities());
+    const qualitiesLoading = useSelector(getQualitiesLoadingStatus());
     const { professions, isLoading: professionsLoading } = useProfessions();
     const [errors, setErrors] = useState({});
     const qualitiesList = qualities.map((q) => ({ label: q.name, value: q._id }));

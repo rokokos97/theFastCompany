@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="install reduxjs/toolkit and react-redux">
-      <change afterPath="$PROJECT_DIR$/src/store/createStore.js" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add folder store=&gt; add createStore.js =&gt;export function createStore()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/page/editUserPage/editUserPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/editUserPage/editUserPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/page/usersListPage/usersListPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/usersListPage/usersListPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/createStore.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,14 +137,7 @@
       <workItem from="1676371033285" duration="900000" />
       <workItem from="1676628750062" duration="942000" />
       <workItem from="1676815002661" duration="7539000" />
-      <workItem from="1677067122908" duration="1425000" />
-    </task>
-    <task id="LOCAL-00158" summary="useAuth.jsx =&gt; create useEffect =&gt; after full page downloaded chack userToken and after get currentUser by id from token">
-      <created>1675244431152</created>
-      <option name="number" value="00158" />
-      <option name="presentableId" value="LOCAL-00158" />
-      <option name="project" value="LOCAL" />
-      <updated>1675244431152</updated>
+      <workItem from="1677067122908" duration="3448000" />
     </task>
     <task id="LOCAL-00159" summary="useAuth.jsx =&gt; add new transit method&#10;=&gt; getUserData">
       <created>1675244778076</created>
@@ -479,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677068221338</updated>
     </task>
-    <option name="localTasksCounter" value="207" />
+    <task id="LOCAL-00207" summary="add folder store=&gt; add createStore.js =&gt;export function createStore()">
+      <created>1677068618499</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1677068618499</updated>
+    </task>
+    <option name="localTasksCounter" value="208" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,7 +500,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="useCard.jsx =&gt; correction user image" />
     <MESSAGE value="userCard.jsx =&gt; personalise button settings for Current User" />
     <MESSAGE value="userListPage.jsx =&gt; add one more filtration for users. Hide current user from the list" />
     <MESSAGE value="create new hook =&gt; useComment.jsx" />
@@ -522,7 +524,20 @@
     <MESSAGE value="useUsers =&gt; add useEffect (19-26)" />
     <MESSAGE value="users.jsx =&gt; add &lt;Redirect to={`/users/${currentUser._id}/edit`}/&gt; (16-19)" />
     <MESSAGE value="install reduxjs/toolkit and react-redux" />
-    <option name="LAST_COMMIT_MESSAGE" value="install reduxjs/toolkit and react-redux" />
+    <MESSAGE value="add folder store=&gt; add createStore.js =&gt;export function createStore()" />
+    <option name="LAST_COMMIT_MESSAGE" value="add folder store=&gt; add createStore.js =&gt;export function createStore()" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/components/ui/registerForm.jsx</url>
+          <line>6</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="regexState">
     <option name="map">

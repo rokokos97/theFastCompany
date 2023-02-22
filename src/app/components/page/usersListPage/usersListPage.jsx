@@ -25,8 +25,7 @@ const UsersListPage = () => {
 
     const handelDelete = (userId) => {
         // setUsers(users.filter((filteredUser) => filteredUser._id !== userId));
-        // setCurrentPage(1);
-        console.log(userId);
+        setCurrentPage(1);
     };
     const handelBookmark = (id) => {
         const newArray = users.map((user) => {
