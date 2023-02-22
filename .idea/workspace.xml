@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="change qualities from useQualities to useSelector(getQualities) in : &#10;registerForm.jsx&#10;editUserPage.jsx&#10;qualitiesList.jsx">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="qualities.js =&gt; add new selector getQualitiesByIds">
+      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/ui/qualities/qualitiesList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/qualities/qualitiesList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/ui/qualities/quality.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/qualities/quality.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store/qualities.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/qualities.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,14 +135,7 @@
       <workItem from="1676371033285" duration="900000" />
       <workItem from="1676628750062" duration="942000" />
       <workItem from="1676815002661" duration="7539000" />
-      <workItem from="1677067122908" duration="6163000" />
-    </task>
-    <task id="LOCAL-00160" summary="useAuth.jsx =&gt; logIn =&gt; add getUserData();">
-      <created>1675245150214</created>
-      <option name="number" value="00160" />
-      <option name="presentableId" value="LOCAL-00160" />
-      <option name="project" value="LOCAL" />
-      <updated>1675245150214</updated>
+      <workItem from="1677067122908" duration="6322000" />
     </task>
     <task id="LOCAL-00161" summary="useAuth.jsx =&gt; export httpAuth&#10;and import it in httpService.js">
       <created>1675246285464</created>
@@ -481,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677075934376</updated>
     </task>
-    <option name="localTasksCounter" value="209" />
+    <task id="LOCAL-00209" summary="qualities.js =&gt; add new selector getQualitiesByIds">
+      <created>1677078004704</created>
+      <option name="number" value="00209" />
+      <option name="presentableId" value="LOCAL-00209" />
+      <option name="project" value="LOCAL" />
+      <updated>1677078004704</updated>
+    </task>
+    <option name="localTasksCounter" value="210" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -499,7 +498,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="userListPage.jsx =&gt; add one more filtration for users. Hide current user from the list" />
     <MESSAGE value="create new hook =&gt; useComment.jsx" />
     <MESSAGE value="install nano_id" />
     <MESSAGE value="addCommentForm.jsx =&gt; delete all users component" />
@@ -524,7 +522,8 @@
     <MESSAGE value="install reduxjs/toolkit and react-redux" />
     <MESSAGE value="add folder store=&gt; add createStore.js =&gt;export function createStore()" />
     <MESSAGE value="change qualities from useQualities to useSelector(getQualities) in : &#10;registerForm.jsx&#10;editUserPage.jsx&#10;qualitiesList.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="change qualities from useQualities to useSelector(getQualities) in : &#10;registerForm.jsx&#10;editUserPage.jsx&#10;qualitiesList.jsx" />
+    <MESSAGE value="qualities.js =&gt; add new selector getQualitiesByIds" />
+    <option name="LAST_COMMIT_MESSAGE" value="qualities.js =&gt; add new selector getQualitiesByIds" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
