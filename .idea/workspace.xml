@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="useUsers =&gt; add useEffect (19-26)">
-      <change beforePath="$PROJECT_DIR$/src/app/layouts/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/users.jsx" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="users.jsx =&gt; add &lt;Redirect to={`/users/${currentUser._id}/edit`}/&gt; (16-19)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,14 +132,7 @@
       <workItem from="1675681096668" duration="18266000" />
       <workItem from="1676371033285" duration="900000" />
       <workItem from="1676628750062" duration="942000" />
-      <workItem from="1676815002661" duration="6700000" />
-    </task>
-    <task id="LOCAL-00156" summary="modify function in localStorageService =&gt; add new parameter localID and set localId in localStorage">
-      <created>1675243263674</created>
-      <option name="number" value="00156" />
-      <option name="presentableId" value="LOCAL-00156" />
-      <option name="project" value="LOCAL" />
-      <updated>1675243263674</updated>
+      <workItem from="1676815002661" duration="7539000" />
     </task>
     <task id="LOCAL-00157" summary="localStorageService.js =&gt; create function getUserId and export it">
       <created>1675243431883</created>
@@ -477,7 +470,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677016726676</updated>
     </task>
-    <option name="localTasksCounter" value="205" />
+    <task id="LOCAL-00205" summary="users.jsx =&gt; add &lt;Redirect to={`/users/${currentUser._id}/edit`}/&gt; (16-19)">
+      <created>1677017152698</created>
+      <option name="number" value="00205" />
+      <option name="presentableId" value="LOCAL-00205" />
+      <option name="project" value="LOCAL" />
+      <updated>1677017152698</updated>
+    </task>
+    <option name="localTasksCounter" value="206" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,7 +495,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="userTable.jsx =&gt; delete &quot;delete&quot; button" />
     <MESSAGE value="useUser.jsx =&gt; add new method getUserById" />
     <MESSAGE value="useCard.jsx =&gt; correction user image" />
     <MESSAGE value="userCard.jsx =&gt; personalise button settings for Current User" />
@@ -520,7 +519,8 @@
     <MESSAGE value="editUserPage.js=&gt;&#10;transform qualities/professions to qualitiesList/qualitiesList" />
     <MESSAGE value="editUserPage.js=&gt;&#10;transform qualities/professions to qualitiesList/qualitiesList;&#10;add method getQualitiesListById;&#10;modify transformData();" />
     <MESSAGE value="useUsers =&gt; add useEffect (19-26)" />
-    <option name="LAST_COMMIT_MESSAGE" value="useUsers =&gt; add useEffect (19-26)" />
+    <MESSAGE value="users.jsx =&gt; add &lt;Redirect to={`/users/${currentUser._id}/edit`}/&gt; (16-19)" />
+    <option name="LAST_COMMIT_MESSAGE" value="users.jsx =&gt; add &lt;Redirect to={`/users/${currentUser._id}/edit`}/&gt; (16-19)" />
   </component>
   <component name="regexState">
     <option name="map">
