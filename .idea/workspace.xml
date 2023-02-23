@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="delete &lt;ProfessionProvider/&gt;&#10;createStore.js =&gt; add professionReducer">
-      <change afterPath="$PROJECT_DIR$/src/app/store/users.js" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create users.js like professions.js&#10;createStore.js =&gt; add usersReducer&#10;App.js =&gt; download users">
+      <change afterPath="$PROJECT_DIR$/src/app/services/authService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/comments/comment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/comments/comment.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/page/userPage/userPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/userPage/userPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/page/usersListPage/usersListPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/usersListPage/usersListPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/comments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/comments.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/store/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,13 +140,6 @@
       <workItem from="1676628750062" duration="942000" />
       <workItem from="1676815002661" duration="7539000" />
       <workItem from="1677067122908" duration="8320000" />
-    </task>
-    <task id="LOCAL-00165" summary="httpService.js =&gt; modify token before set =&gt;">
-      <created>1675249699428</created>
-      <option name="number" value="00165" />
-      <option name="presentableId" value="LOCAL-00165" />
-      <option name="project" value="LOCAL" />
-      <updated>1675249699428</updated>
     </task>
     <task id="LOCAL-00166" summary="httpService.js =&gt; modify token before set =&gt;">
       <created>1675278015351</created>
@@ -479,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677169941771</updated>
     </task>
-    <option name="localTasksCounter" value="214" />
+    <task id="LOCAL-00214" summary="create users.js like professions.js&#10;createStore.js =&gt; add usersReducer&#10;App.js =&gt; download users">
+      <created>1677171595660</created>
+      <option name="number" value="00214" />
+      <option name="presentableId" value="LOCAL-00214" />
+      <option name="project" value="LOCAL" />
+      <updated>1677171595660</updated>
+    </task>
+    <option name="localTasksCounter" value="215" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,7 +502,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create new service =&gt; commentService.js" />
     <MESSAGE value="add request to server and save new comment in firebase" />
     <MESSAGE value="commentService.js =&gt; add method getComments from base." />
     <MESSAGE value="commentService.js =&gt; transform requests parameters with double &#10;&#10;add new rule to firebase rule" />
@@ -522,7 +526,8 @@
     <MESSAGE value="qualitiesList.jsx =&gt; add useEffect (11-13)" />
     <MESSAGE value="create professions.js &#10;create outdate.js&#10;realise logic like qualities.js" />
     <MESSAGE value="delete &lt;ProfessionProvider/&gt;&#10;createStore.js =&gt; add professionReducer" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete &lt;ProfessionProvider/&gt;&#10;createStore.js =&gt; add professionReducer" />
+    <MESSAGE value="create users.js like professions.js&#10;createStore.js =&gt; add usersReducer&#10;App.js =&gt; download users" />
+    <option name="LAST_COMMIT_MESSAGE" value="create users.js like professions.js&#10;createStore.js =&gt; add usersReducer&#10;App.js =&gt; download users" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

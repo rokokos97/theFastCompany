@@ -25,6 +25,13 @@ const usersSlice = createSlice({
 const { reducer: usersReducer, actions } = usersSlice;
 const { usersRequestFiled, usersReceived, usersRequested } = actions;
 
+export const singUp = (payload) => (dispatch) => {
+    try {
+
+    } catch (error) {
+
+    }
+}
 export const loadUsersList = () => async (dispatch) => {
     dispatch(usersRequested());
     try {
@@ -34,6 +41,12 @@ export const loadUsersList = () => async (dispatch) => {
         dispatch(usersRequestFiled(error.message));
     }
 };
-export const getQualities = () => (state) => state.users.entities;
-export const getQualitiesLoadingStatus = () => (state) => state.users.isLoading;
+export const getUsers = () => (state) => state.users.entities;
+// export const getUsersLoadingStatus = () => (state) => state.users.isLoading;
+export const getUserById = (userId) => (state) => {
+    if (state.users.entities) {
+        return state.users.entities.find((user) =>
+            user._id === userId);
+    }
+};
 export default usersReducer;
