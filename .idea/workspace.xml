@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="protectedRouth.jsx =&gt; const isLoggedIn = useSelector(getIsLoggedIn());">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layouts/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/users.jsx" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="users.js =&gt; add export const getCurrentUser = () =&gt; (state) =&gt; state.users.auth.userId;&#10;&#10;usersListPage.jsx =&gt; const { currentUser } = useSelector(getCurrentUser());">
+      <change beforePath="$PROJECT_DIR$/src/app/components/page/usersListPage/usersListPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/usersListPage/usersListPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/store/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,20 +135,6 @@
       <workItem from="1676628750062" duration="942000" />
       <workItem from="1676815002661" duration="7539000" />
       <workItem from="1677067122908" duration="8320000" />
-    </task>
-    <task id="LOCAL-00179" summary="useUser.jsx =&gt; add new method getUserById">
-      <created>1675600041576</created>
-      <option name="number" value="00179" />
-      <option name="presentableId" value="LOCAL-00179" />
-      <option name="project" value="LOCAL" />
-      <updated>1675600041576</updated>
-    </task>
-    <task id="LOCAL-00180" summary="useCard.jsx =&gt; correction user image">
-      <created>1675600781799</created>
-      <option name="number" value="00180" />
-      <option name="presentableId" value="LOCAL-00180" />
-      <option name="project" value="LOCAL" />
-      <updated>1675600781799</updated>
     </task>
     <task id="LOCAL-00181" summary="userCard.jsx =&gt; personalise button settings for Current User">
       <created>1675682438641</created>
@@ -480,7 +465,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677274183543</updated>
     </task>
-    <option name="localTasksCounter" value="228" />
+    <task id="LOCAL-00228" summary="users.js =&gt; add initialState parameter =&gt; dataLoaded: false;&#10; usersReceived =&gt; add state.dataLoaded = true;(24);&#10; export const getDataStatus = () =&gt; (state) =&gt; state.users.dataLoaded;(123)">
+      <created>1677275256083</created>
+      <option name="number" value="00228" />
+      <option name="presentableId" value="LOCAL-00228" />
+      <option name="project" value="LOCAL" />
+      <updated>1677275256083</updated>
+    </task>
+    <task id="LOCAL-00229" summary="users.js =&gt; add export const getCurrentUser = () =&gt; (state) =&gt; state.users.auth.userId;&#10;&#10;usersListPage.jsx =&gt; const { currentUser } = useSelector(getCurrentUser());">
+      <created>1677275491488</created>
+      <option name="number" value="00229" />
+      <option name="presentableId" value="LOCAL-00229" />
+      <option name="project" value="LOCAL" />
+      <updated>1677275491488</updated>
+    </task>
+    <option name="localTasksCounter" value="230" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,8 +503,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="useAuth.jsx =&gt; create method updateUserData" />
-    <MESSAGE value="editUserPage.js=&gt;&#10;clear data;&#10;delete getting profession/qualities from api;&#10;isLoading set true;" />
     <MESSAGE value="editUserPage.js=&gt;&#10;transform qualities/professions to qualitiesList/qualitiesList" />
     <MESSAGE value="editUserPage.js=&gt;&#10;transform qualities/professions to qualitiesList/qualitiesList;&#10;add method getQualitiesListById;&#10;modify transformData();" />
     <MESSAGE value="useUsers =&gt; add useEffect (19-26)" />
@@ -529,7 +526,9 @@
     <MESSAGE value="users.js =&gt; create logIn (58-67);&#10;useAuth.jsx =&gt; create login (19-26);" />
     <MESSAGE value="users.js =&gt; correct selector =&gt; authRequestSuccess: (state, action) =&gt; {&#10;                                            state.auth = action.payload;&#10;                                            state.isLoading = true;&#10;                                        }" />
     <MESSAGE value="protectedRouth.jsx =&gt; const isLoggedIn = useSelector(getIsLoggedIn());" />
-    <option name="LAST_COMMIT_MESSAGE" value="protectedRouth.jsx =&gt; const isLoggedIn = useSelector(getIsLoggedIn());" />
+    <MESSAGE value="users.js =&gt; add initialState parameter =&gt; dataLoaded: false;&#10; usersReceived =&gt; add state.dataLoaded = true;(24);&#10; export const getDataStatus = () =&gt; (state) =&gt; state.users.dataLoaded;(123)" />
+    <MESSAGE value="users.js =&gt; add export const getCurrentUser = () =&gt; (state) =&gt; state.users.auth.userId;&#10;&#10;usersListPage.jsx =&gt; const { currentUser } = useSelector(getCurrentUser());" />
+    <option name="LAST_COMMIT_MESSAGE" value="users.js =&gt; add export const getCurrentUser = () =&gt; (state) =&gt; state.users.auth.userId;&#10;&#10;usersListPage.jsx =&gt; const { currentUser } = useSelector(getCurrentUser());" />
   </component>
   <component name="regexState">
     <option name="map">

@@ -19,7 +19,7 @@ const UsersListPage = () => {
     const users = useSelector(getUsers());
     const professions = useSelector(getProfessions());
     const professionsLoading = useSelector(getProfessionsLoadingStatus());
-    const { currentUser } = useSelector(getCurrentUser());
+    const currentUserId = useSelector(getCurrentUser());
     useEffect(() => {
         setCurrentPage(1);
     }, [selectedProf, searchQuery]);
@@ -65,7 +65,7 @@ const UsersListPage = () => {
                         JSON.stringify(selectedProf)
                 )
                 : data;
-        return filteredUsers.filter((u) => u._id !== currentUser._id);
+        return filteredUsers.filter((u) => u._id !== currentUserId);
     }
     const filteredUsers = filterUsers(users);
     const count = filteredUsers.length;
