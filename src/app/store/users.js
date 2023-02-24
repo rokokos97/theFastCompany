@@ -2,6 +2,7 @@ import { createAction, createSlice } from "@reduxjs/toolkit";
 import userService from "../services/userService";
 import authService from "../services/authService";
 import localStorageService from "../services/localStorageService";
+import { randomInt } from "../utils/randomInt";
 
 const usersSlice = createSlice({
     name: "users",
@@ -29,13 +30,38 @@ const usersSlice = createSlice({
         },
         authRequestFailed: (state, action) => {
             state.auth = action.payload;
+        },
+        userCreated: (state, action) => {
+            if (Array.isArray(state.entities)) {
+                state.entities = [];
+            }
+            state.entities.push(action.payload);
         }
+
     }
 });
 const { reducer: usersReducer, actions } = usersSlice;
-const { usersRequestFiled, usersReceived, usersRequested, authRequestSuccess, authRequestFailed } = actions;
+const {
+    usersRequestFiled,
+    usersReceived,
+    usersRequested,
+    authRequestSuccess,
+    authRequestFailed,
+    userCreated
+} = actions;
 
 const authRequested = createAction("users/authRequested");
+const userCreateRequested = createAction("users/createUserRequested");
+const userCreateFailed = createAction("users/userCreateFailed");
+const createUser = (payload) => async (dispatch) => {
+    dispatch(userCreateRequested());
+    try {
+        const { content } = await userService.create(payload);
+        dispatch(userCreated(content));
+    } catch (error) {
+        dispatch(userCreateFailed(error.message));
+    }
+};
 export const singUp = ({ email, password, ...rest }) => async (dispatch) => {
     dispatch(authRequested());
     try {
@@ -43,6 +69,17 @@ export const singUp = ({ email, password, ...rest }) => async (dispatch) => {
         console.log(data);
         localStorageService.setTokens(data);
         dispatch(authRequestSuccess({ userId: data.localId }));
+        dispatch(createUser({
+            _id: data.localId,
+            email,
+            completedMeetings: randomInt(1, 200),
+            image: `https://avatars.dicebear.com/api/avataaars/${
+                (Math.random() + 1)
+                    .toString(36)
+                    .substring(7)}.svg`,
+            rate: randomInt(1, 5),
+            ...rest
+        }));
     } catch (error) {
         dispatch(authRequestFailed(error.message));
     }

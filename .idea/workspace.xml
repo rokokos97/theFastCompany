@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="registerForm.jsx =&gt; handleSubmit =&gt; dispatch(singUp(newData));">
+      <change afterPath="$PROJECT_DIR$/src/app/utils/randomInt.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/authService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/authService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store/professions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/professions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store/qualities.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/qualities.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/utils/paginate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/store/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,11 +94,11 @@
       <recent name="$PROJECT_DIR$/src/app/api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/utils" />
       <recent name="$PROJECT_DIR$/src/app" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/app/components/page/usersListPage" />
       <recent name="$PROJECT_DIR$/src/app/components/page/userPage" />
-      <recent name="$PROJECT_DIR$/src/app/components/ ui" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -140,13 +138,6 @@
       <workItem from="1676628750062" duration="942000" />
       <workItem from="1676815002661" duration="7539000" />
       <workItem from="1677067122908" duration="8320000" />
-    </task>
-    <task id="LOCAL-00169" summary="navBar.jsx =&gt; add avatar and user info">
-      <created>1675339071511</created>
-      <option name="number" value="00169" />
-      <option name="presentableId" value="LOCAL-00169" />
-      <option name="project" value="LOCAL" />
-      <updated>1675339071511</updated>
     </task>
     <task id="LOCAL-00170" summary="navBar.jsx =&gt; realise dropdown menu with links">
       <created>1675348231321</created>
@@ -484,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677186044484</updated>
     </task>
-    <option name="localTasksCounter" value="218" />
+    <task id="LOCAL-00218" summary="registerForm.jsx =&gt; handleSubmit =&gt; dispatch(singUp(newData));">
+      <created>1677253866809</created>
+      <option name="number" value="00218" />
+      <option name="presentableId" value="LOCAL-00218" />
+      <option name="project" value="LOCAL" />
+      <updated>1677253866809</updated>
+    </task>
+    <option name="localTasksCounter" value="219" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

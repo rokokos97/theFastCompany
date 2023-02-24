@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import Pagination from "../../common/pagination";
-import { paginate } from "../../utils/paginate";
+import { paginate } from "../../../utils/paginate";
 import GroupList from "../../common/groupList";
 import SearchStatus from "../../ui/searchStatus";
 import UserTable from "../../ui/userTable";
