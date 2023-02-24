@@ -40,6 +40,7 @@ export const singUp = ({ email, password, ...rest }) => async (dispatch) => {
     dispatch(authRequested());
     try {
         const data = await authService.register({ email, password });
+        console.log(data);
         localStorageService.setTokens(data);
         dispatch(authRequestSuccess({ userId: data.localId }));
     } catch (error) {

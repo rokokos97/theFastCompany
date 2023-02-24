@@ -31,7 +31,6 @@ const { qualitiesRequestFiled, qualitiesReceived, qualitiesRequested } = actions
 export const loadQualitiesList = () => async (dispatch, getState) => {
     const lastFetch = getState().qualities.lastFetch;
     if (isOutdated(lastFetch)) {
-        console.log(lastFetch);
         dispatch(qualitiesRequested());
         try {
             const { content } = await qualityService.fetchAll();

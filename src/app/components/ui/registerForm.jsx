@@ -5,18 +5,17 @@ import SelectedField from "../common/form/selectedField";
 import RadioField from "../common/form/radioField";
 import MultiSelectField from "../common/form/multiselectField";
 import CheckBoxField from "../common/form/checkBoxField";
-import { useProfessions } from "../../hooks/useProfessions";
 import { useDispatch, useSelector } from "react-redux";
 import { getQualities } from "../../store/qualities";
 import { singUp } from "../../store/users";
+import { getProfessions } from "../../store/professions";
 
 const RegisterForm = () => {
-    const dispatch = useDispatch;
+    const dispatch = useDispatch();
     const qualities = useSelector(getQualities());
     const newQualities = qualities.map((q) => ({ label: q.name, value: q._id }));
-    const { professions } = useProfessions();
+    const professions = useSelector(getProfessions());
     const newProfessions = professions.map((p) => ({ label: p.name, value: p._id }));
-    // const newProfessions = professions.map((p)=> name: )
     const [data, setData] = useState({
         email: "",
         name: "",
@@ -36,6 +35,7 @@ const RegisterForm = () => {
         const isValid = validate();
         if (!isValid) return;
         const newData = { ...data, qualities: data.qualities.map((q) => q.value) };
+        console.log("newData", newData);
         dispatch(singUp(newData));
     };
     useEffect(() => { validate(); }, [data]);

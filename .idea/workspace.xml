@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create authService.js">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="registerForm.jsx =&gt; handleSubmit =&gt; dispatch(singUp(newData));">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/services/authService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/authService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/store/professions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/professions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/store/qualities.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/qualities.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/store/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,20 +140,6 @@
       <workItem from="1676628750062" duration="942000" />
       <workItem from="1676815002661" duration="7539000" />
       <workItem from="1677067122908" duration="8320000" />
-    </task>
-    <task id="LOCAL-00167" summary="navBar.jsx =&gt; modify navigation">
-      <created>1675282478669</created>
-      <option name="number" value="00167" />
-      <option name="presentableId" value="LOCAL-00167" />
-      <option name="project" value="LOCAL" />
-      <updated>1675282478669</updated>
-    </task>
-    <task id="LOCAL-00168" summary="navBar.jsx =&gt; modify navigation">
-      <created>1675283082987</created>
-      <option name="number" value="00168" />
-      <option name="presentableId" value="LOCAL-00168" />
-      <option name="project" value="LOCAL" />
-      <updated>1675283082987</updated>
     </task>
     <task id="LOCAL-00169" summary="navBar.jsx =&gt; add avatar and user info">
       <created>1675339071511</created>
@@ -480,7 +470,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677184028586</updated>
     </task>
-    <option name="localTasksCounter" value="216" />
+    <task id="LOCAL-00216" summary="users.js =&gt; transfer singUp method (39-48)">
+      <created>1677185747897</created>
+      <option name="number" value="00216" />
+      <option name="presentableId" value="LOCAL-00216" />
+      <option name="project" value="LOCAL" />
+      <updated>1677185747898</updated>
+    </task>
+    <task id="LOCAL-00217" summary="registerForm.jsx =&gt; handleSubmit =&gt; dispatch(singUp(newData));">
+      <created>1677186044484</created>
+      <option name="number" value="00217" />
+      <option name="presentableId" value="LOCAL-00217" />
+      <option name="project" value="LOCAL" />
+      <updated>1677186044484</updated>
+    </task>
+    <option name="localTasksCounter" value="218" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -498,8 +502,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="commentService.js =&gt; add method getComments from base." />
-    <MESSAGE value="commentService.js =&gt; transform requests parameters with double &#10;&#10;add new rule to firebase rule" />
     <MESSAGE value="useComment.jsx =&gt; get comments by pageId" />
     <MESSAGE value="comments.jsx =&gt; transfer comments from useComments" />
     <MESSAGE value="comments.jsx =&gt; getUserById from useUser()&#10;&#10;fix user image from user.image" />
@@ -523,18 +525,9 @@
     <MESSAGE value="delete &lt;ProfessionProvider/&gt;&#10;createStore.js =&gt; add professionReducer" />
     <MESSAGE value="create users.js like professions.js&#10;createStore.js =&gt; add usersReducer&#10;App.js =&gt; download users" />
     <MESSAGE value="create authService.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="create authService.js" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/app/components/ui/registerForm.jsx</url>
-          <line>6</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="users.js =&gt; transfer singUp method (39-48)" />
+    <MESSAGE value="registerForm.jsx =&gt; handleSubmit =&gt; dispatch(singUp(newData));" />
+    <option name="LAST_COMMIT_MESSAGE" value="registerForm.jsx =&gt; handleSubmit =&gt; dispatch(singUp(newData));" />
   </component>
   <component name="regexState">
     <option name="map">
