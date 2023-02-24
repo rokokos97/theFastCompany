@@ -27,7 +27,8 @@ const usersSlice = createSlice({
             state.isLoading = false;
         },
         authRequestSuccess: (state, action) => {
-            state.auth = { ...action.payload, isLoggedIn: true };
+            state.auth = action.payload;
+            state.isLoading = true;
         },
         authRequestFailed: (state, action) => {
             state.auth = action.payload;
@@ -116,4 +117,5 @@ export const getUserById = (userId) => (state) => {
             user._id === userId);
     }
 };
+export const isLoggedIn = () => (state) => state.users.isLoading
 export default usersReducer;
