@@ -2,14 +2,15 @@ import React, { useEffect, useState } from "react";
 import TextFiled from "../common/form/textField";
 import CheckBoxField from "../common/form/checkBoxField";
 import * as yup from "yup";
-import { useAuth } from "../../hooks/useAuth";
 import { useHistory } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { logIn } from "../../store/users";
 
 const LoginForm = () => {
     const [data, setData] = useState({ email: "", password: "", stayOn: false });
     const [errors, setErrors] = useState({});
     const [enterError, setEnterError] = useState(null);
-    const { logIn } = useAuth();
+    const dispatch = useDispatch();
     const history = useHistory();
     const validateSchema = yup.object().shape({
         password: yup.string()
@@ -27,20 +28,14 @@ const LoginForm = () => {
             ({ ...prevState, [target.name]: target.value }));
         setEnterError(null);
     };
-    const handelSubmit = async (e) => {
+    const handelSubmit = (e) => {
         e.preventDefault();
         const isValid = validate();
         if (!isValid) return;
-        try {
-            await logIn(data);
-            history.push(
-                history.location.state
-                    ? history.location.state.from.pathname
-                    : "/"
-            );
-        } catch (error) {
-            setEnterError(error.message);
-        }
+        const redirect = history.location.state
+            ? history.location.state.from.pathname
+            : "/";
+        dispatch(logIn({ payload: data, redirect }));
     };
     useEffect(() => { validate(); }, [data]);
     // const validatorConfig = {
