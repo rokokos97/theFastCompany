@@ -6,10 +6,9 @@ import GroupList from "../../common/groupList";
 import SearchStatus from "../../ui/searchStatus";
 import UserTable from "../../ui/userTable";
 import _ from "lodash";
-import { useAuth } from "../../../hooks/useAuth";
 import { useSelector } from "react-redux";
 import { getProfessions, getProfessionsLoadingStatus } from "../../../store/professions";
-import { getUsers } from "../../../store/users";
+import { getCurrentUser, getUsers } from "../../../store/users";
 
 const UsersListPage = () => {
     const pageSize = 8;
@@ -20,7 +19,7 @@ const UsersListPage = () => {
     const users = useSelector(getUsers());
     const professions = useSelector(getProfessions());
     const professionsLoading = useSelector(getProfessionsLoadingStatus());
-    const { currentUser } = useAuth();
+    const { currentUser } = useSelector(getCurrentUser());
     useEffect(() => {
         setCurrentPage(1);
     }, [selectedProf, searchQuery]);

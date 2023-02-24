@@ -121,4 +121,5 @@ export const getUserById = (userId) => (state) => {
 };
 export const getIsLoggedIn = () => (state) => state.users.isLoading;
 export const getDataStatus = () => (state) => state.users.dataLoaded;
+export const getCurrentUser = () => (state) => state.users.auth.userId;
 export default usersReducer;
