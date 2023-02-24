@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="registerForm.jsx =&gt; handleSubmit =&gt; dispatch(singUp(newData));">
-      <change afterPath="$PROJECT_DIR$/src/app/utils/randomInt.js" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="users.jsx =&gt; userCreateRequested;&#10;add action created&#10;add method createUser;&#10;add reducer userCreated;&#10;add action userCreateFailed;">
+      <change afterPath="$PROJECT_DIR$/src/app/utils/history.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/utils/paginate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,13 +135,6 @@
       <workItem from="1676628750062" duration="942000" />
       <workItem from="1676815002661" duration="7539000" />
       <workItem from="1677067122908" duration="8320000" />
-    </task>
-    <task id="LOCAL-00170" summary="navBar.jsx =&gt; realise dropdown menu with links">
-      <created>1675348231321</created>
-      <option name="number" value="00170" />
-      <option name="presentableId" value="LOCAL-00170" />
-      <option name="project" value="LOCAL" />
-      <updated>1675348231321</updated>
     </task>
     <task id="LOCAL-00171" summary="create protectedRouth.jsx">
       <created>1675358888623</created>
@@ -482,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677253866809</updated>
     </task>
-    <option name="localTasksCounter" value="219" />
+    <task id="LOCAL-00219" summary="users.jsx =&gt; userCreateRequested;&#10;add action created&#10;add method createUser;&#10;add reducer userCreated;&#10;add action userCreateFailed;">
+      <created>1677258372292</created>
+      <option name="number" value="00219" />
+      <option name="presentableId" value="LOCAL-00219" />
+      <option name="project" value="LOCAL" />
+      <updated>1677258372292</updated>
+    </task>
+    <option name="localTasksCounter" value="220" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -500,7 +497,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="useComment.jsx =&gt; get comments by pageId" />
     <MESSAGE value="comments.jsx =&gt; transfer comments from useComments" />
     <MESSAGE value="comments.jsx =&gt; getUserById from useUser()&#10;&#10;fix user image from user.image" />
     <MESSAGE value="useComment.jsx =&gt; add new comment to array of comment after creating (30)" />
@@ -525,7 +521,8 @@
     <MESSAGE value="create authService.js" />
     <MESSAGE value="users.js =&gt; transfer singUp method (39-48)" />
     <MESSAGE value="registerForm.jsx =&gt; handleSubmit =&gt; dispatch(singUp(newData));" />
-    <option name="LAST_COMMIT_MESSAGE" value="registerForm.jsx =&gt; handleSubmit =&gt; dispatch(singUp(newData));" />
+    <MESSAGE value="users.jsx =&gt; userCreateRequested;&#10;add action created&#10;add method createUser;&#10;add reducer userCreated;&#10;add action userCreateFailed;" />
+    <option name="LAST_COMMIT_MESSAGE" value="users.jsx =&gt; userCreateRequested;&#10;add action created&#10;add method createUser;&#10;add reducer userCreated;&#10;add action userCreateFailed;" />
   </component>
   <component name="regexState">
     <option name="map">
