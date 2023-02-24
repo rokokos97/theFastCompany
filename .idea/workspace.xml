@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="npm i history@4.9.0&#10;create history.js">
-      <change beforePath="$PROJECT_DIR$/src/app/utils/history.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/utils/history.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="index.js =&gt; &lt;BrowserRouter&gt; change to &lt;Router history={history}&gt;&#10;users.js =&gt; add redirect after adding new user">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/authService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/authService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/store/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,20 +137,6 @@
       <workItem from="1676628750062" duration="942000" />
       <workItem from="1676815002661" duration="7539000" />
       <workItem from="1677067122908" duration="8320000" />
-    </task>
-    <task id="LOCAL-00173" summary="loginForm.jsx =&gt; add control redirect to history.location.state.from.pathname">
-      <created>1675502293152</created>
-      <option name="number" value="00173" />
-      <option name="presentableId" value="LOCAL-00173" />
-      <option name="project" value="LOCAL" />
-      <updated>1675502293152</updated>
-    </task>
-    <task id="LOCAL-00174" summary="localStorageService.js =&gt; add new method removeAuthData()">
-      <created>1675503417942</created>
-      <option name="number" value="00174" />
-      <option name="presentableId" value="LOCAL-00174" />
-      <option name="project" value="LOCAL" />
-      <updated>1675503417942</updated>
     </task>
     <task id="LOCAL-00175" summary="logOut =&gt; complete">
       <created>1675521641505</created>
@@ -479,7 +467,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677260218059</updated>
     </task>
-    <option name="localTasksCounter" value="222" />
+    <task id="LOCAL-00222" summary="index.js =&gt; &lt;BrowserRouter&gt; change to &lt;Router history={history}&gt;">
+      <created>1677260506252</created>
+      <option name="number" value="00222" />
+      <option name="presentableId" value="LOCAL-00222" />
+      <option name="project" value="LOCAL" />
+      <updated>1677260506252</updated>
+    </task>
+    <task id="LOCAL-00223" summary="index.js =&gt; &lt;BrowserRouter&gt; change to &lt;Router history={history}&gt;&#10;users.js =&gt; add redirect after adding new user">
+      <created>1677260706269</created>
+      <option name="number" value="00223" />
+      <option name="presentableId" value="LOCAL-00223" />
+      <option name="project" value="LOCAL" />
+      <updated>1677260706269</updated>
+    </task>
+    <option name="localTasksCounter" value="224" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,8 +499,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="comments.jsx =&gt; getUserById from useUser()&#10;&#10;fix user image from user.image" />
-    <MESSAGE value="useComment.jsx =&gt; add new comment to array of comment after creating (30)" />
     <MESSAGE value="useComment.jsx =&gt; add following userId in useEffect (48) -&gt; needed for situation with changing user." />
     <MESSAGE value="commentService.js =&gt; create new method &quot;removeComment&quot;" />
     <MESSAGE value="httpService =&gt; add new method patch: http.patch" />
@@ -522,7 +522,9 @@
     <MESSAGE value="registerForm.jsx =&gt; handleSubmit =&gt; dispatch(singUp(newData));" />
     <MESSAGE value="users.jsx =&gt; userCreateRequested;&#10;add action created&#10;add method createUser;&#10;add reducer userCreated;&#10;add action userCreateFailed;" />
     <MESSAGE value="npm i history@4.9.0&#10;create history.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="npm i history@4.9.0&#10;create history.js" />
+    <MESSAGE value="index.js =&gt; &lt;BrowserRouter&gt; change to &lt;Router history={history}&gt;" />
+    <MESSAGE value="index.js =&gt; &lt;BrowserRouter&gt; change to &lt;Router history={history}&gt;&#10;users.js =&gt; add redirect after adding new user" />
+    <option name="LAST_COMMIT_MESSAGE" value="index.js =&gt; &lt;BrowserRouter&gt; change to &lt;Router history={history}&gt;&#10;users.js =&gt; add redirect after adding new user" />
   </component>
   <component name="regexState">
     <option name="map">

@@ -35,7 +35,6 @@ const RegisterForm = () => {
         const isValid = validate();
         if (!isValid) return;
         const newData = { ...data, qualities: data.qualities.map((q) => q.value) };
-        console.log("newData", newData);
         dispatch(singUp(newData));
     };
     useEffect(() => { validate(); }, [data]);
