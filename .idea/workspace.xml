@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="users.js =&gt; correct selector =&gt; authRequestSuccess: (state, action) =&gt; {&#10;                                            state.auth = action.payload;&#10;                                            state.isLoading = true;&#10;                                        }">
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/protectedRouth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/protectedRouth.jsx" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="protectedRouth.jsx =&gt; const isLoggedIn = useSelector(getIsLoggedIn());">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layouts/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/users.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/store/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -135,13 +136,6 @@
       <workItem from="1676628750062" duration="942000" />
       <workItem from="1676815002661" duration="7539000" />
       <workItem from="1677067122908" duration="8320000" />
-    </task>
-    <task id="LOCAL-00178" summary="userTable.jsx =&gt; delete &quot;delete&quot; button">
-      <created>1675598947286</created>
-      <option name="number" value="00178" />
-      <option name="presentableId" value="LOCAL-00178" />
-      <option name="project" value="LOCAL" />
-      <updated>1675598947286</updated>
     </task>
     <task id="LOCAL-00179" summary="useUser.jsx =&gt; add new method getUserById">
       <created>1675600041576</created>
@@ -479,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677273812040</updated>
     </task>
-    <option name="localTasksCounter" value="227" />
+    <task id="LOCAL-00227" summary="protectedRouth.jsx =&gt; const isLoggedIn = useSelector(getIsLoggedIn());">
+      <created>1677274183543</created>
+      <option name="number" value="00227" />
+      <option name="presentableId" value="LOCAL-00227" />
+      <option name="project" value="LOCAL" />
+      <updated>1677274183543</updated>
+    </task>
+    <option name="localTasksCounter" value="228" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,7 +504,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="httpService =&gt; add new method patch: http.patch" />
     <MESSAGE value="useAuth.jsx =&gt; create method updateUserData" />
     <MESSAGE value="editUserPage.js=&gt;&#10;clear data;&#10;delete getting profession/qualities from api;&#10;isLoading set true;" />
     <MESSAGE value="editUserPage.js=&gt;&#10;transform qualities/professions to qualitiesList/qualitiesList" />
@@ -528,7 +528,8 @@
     <MESSAGE value="index.js =&gt; &lt;BrowserRouter&gt; change to &lt;Router history={history}&gt;&#10;users.js =&gt; add redirect after adding new user" />
     <MESSAGE value="users.js =&gt; create logIn (58-67);&#10;useAuth.jsx =&gt; create login (19-26);" />
     <MESSAGE value="users.js =&gt; correct selector =&gt; authRequestSuccess: (state, action) =&gt; {&#10;                                            state.auth = action.payload;&#10;                                            state.isLoading = true;&#10;                                        }" />
-    <option name="LAST_COMMIT_MESSAGE" value="users.js =&gt; correct selector =&gt; authRequestSuccess: (state, action) =&gt; {&#10;                                            state.auth = action.payload;&#10;                                            state.isLoading = true;&#10;                                        }" />
+    <MESSAGE value="protectedRouth.jsx =&gt; const isLoggedIn = useSelector(getIsLoggedIn());" />
+    <option name="LAST_COMMIT_MESSAGE" value="protectedRouth.jsx =&gt; const isLoggedIn = useSelector(getIsLoggedIn());" />
   </component>
   <component name="regexState">
     <option name="map">
