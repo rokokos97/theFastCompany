@@ -117,5 +117,5 @@ export const getUserById = (userId) => (state) => {
             user._id === userId);
     }
 };
-export const isLoggedIn = () => (state) => state.users.isLoading
+export const getIsLoggedIn = () => (state) => state.users.isLoading;
 export default usersReducer;
