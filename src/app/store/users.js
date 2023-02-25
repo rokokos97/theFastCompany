@@ -5,16 +5,26 @@ import localStorageService from "../services/localStorageService";
 import { randomInt } from "../utils/randomInt";
 import history from "../utils/history";
 
-const usersSlice = createSlice({
-    name: "users",
-    initialState: {
+const initialState = localStorageService.getAccessToken()
+    ? {
         entities: null,
         isLoading: true,
+        error: null,
+        auth: { userId: localStorageService.getUserId() },
+        isLoggedIn: true,
+        dataLoaded: false
+    }
+    : {
+        entities: null,
+        isLoading: false,
         error: null,
         auth: null,
         isLoggedIn: false,
         dataLoaded: false
-    },
+    };
+const usersSlice = createSlice({
+    name: "users",
+    initialState,
     reducers: {
         usersRequested: (state) => {
             state.isLoading = true;
@@ -119,7 +129,9 @@ export const getUserById = (userId) => (state) => {
             user._id === userId);
     }
 };
-export const getIsLoggedIn = () => (state) => state.users.isLoading;
+export const getIsLoggedIn = () => (state) => state.users.isLoggedIn;
 export const getDataStatus = () => (state) => state.users.dataLoaded;
 export const getCurrentUser = () => (state) => state.users.auth.userId;
+
+export const getUsersLoadingStatus = () => (state) => state.users.isLoading;
 export default usersReducer;

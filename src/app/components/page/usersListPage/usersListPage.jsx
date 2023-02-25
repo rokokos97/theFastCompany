@@ -20,6 +20,7 @@ const UsersListPage = () => {
     const professions = useSelector(getProfessions());
     const professionsLoading = useSelector(getProfessionsLoadingStatus());
     const currentUserId = useSelector(getCurrentUser());
+    console.log("currentUserId usersListPage", currentUserId);
     useEffect(() => {
         setCurrentPage(1);
     }, [selectedProf, searchQuery]);

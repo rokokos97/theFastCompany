@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="users.js =&gt; add export const getCurrentUser = () =&gt; (state) =&gt; state.users.auth.userId;&#10;&#10;usersListPage.jsx =&gt; const { currentUser } = useSelector(getCurrentUser());">
-      <change afterPath="$PROJECT_DIR$/src/app/components/ui/HOC/usersLoader.jsx" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create HOC =&gt; usersLoader.jsx">
+      <change afterPath="$PROJECT_DIR$/src/app/components/ui/HOC/appLoader.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/protectedRouth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/protectedRouth.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/page/usersListPage/usersListPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/usersListPage/usersListPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/HOC/usersLoader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/HOC/usersLoader.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/layouts/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/store/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,13 +141,6 @@
       <workItem from="1676628750062" duration="942000" />
       <workItem from="1676815002661" duration="7539000" />
       <workItem from="1677067122908" duration="8320000" />
-    </task>
-    <task id="LOCAL-00182" summary="userListPage.jsx =&gt; add one more filtration for users. Hide current user from the list">
-      <created>1675780810264</created>
-      <option name="number" value="00182" />
-      <option name="presentableId" value="LOCAL-00182" />
-      <option name="project" value="LOCAL" />
-      <updated>1675780810264</updated>
     </task>
     <task id="LOCAL-00183" summary="create new hook =&gt; useComment.jsx">
       <created>1675805220815</created>
@@ -480,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677275647907</updated>
     </task>
-    <option name="localTasksCounter" value="231" />
+    <task id="LOCAL-00231" summary="create HOC =&gt; usersLoader.jsx">
+      <created>1677276836803</created>
+      <option name="number" value="00231" />
+      <option name="presentableId" value="LOCAL-00231" />
+      <option name="project" value="LOCAL" />
+      <updated>1677276836803</updated>
+    </task>
+    <option name="localTasksCounter" value="232" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,7 +509,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="editUserPage.js=&gt;&#10;transform qualities/professions to qualitiesList/qualitiesList" />
     <MESSAGE value="editUserPage.js=&gt;&#10;transform qualities/professions to qualitiesList/qualitiesList;&#10;add method getQualitiesListById;&#10;modify transformData();" />
     <MESSAGE value="useUsers =&gt; add useEffect (19-26)" />
     <MESSAGE value="users.jsx =&gt; add &lt;Redirect to={`/users/${currentUser._id}/edit`}/&gt; (16-19)" />
@@ -529,7 +533,8 @@
     <MESSAGE value="protectedRouth.jsx =&gt; const isLoggedIn = useSelector(getIsLoggedIn());" />
     <MESSAGE value="users.js =&gt; add initialState parameter =&gt; dataLoaded: false;&#10; usersReceived =&gt; add state.dataLoaded = true;(24);&#10; export const getDataStatus = () =&gt; (state) =&gt; state.users.dataLoaded;(123)" />
     <MESSAGE value="users.js =&gt; add export const getCurrentUser = () =&gt; (state) =&gt; state.users.auth.userId;&#10;&#10;usersListPage.jsx =&gt; const { currentUser } = useSelector(getCurrentUser());" />
-    <option name="LAST_COMMIT_MESSAGE" value="users.js =&gt; add export const getCurrentUser = () =&gt; (state) =&gt; state.users.auth.userId;&#10;&#10;usersListPage.jsx =&gt; const { currentUser } = useSelector(getCurrentUser());" />
+    <MESSAGE value="create HOC =&gt; usersLoader.jsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="create HOC =&gt; usersLoader.jsx" />
   </component>
   <component name="regexState">
     <option name="map">
