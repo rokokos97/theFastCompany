@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create HOC =&gt; appLoader.jsx;&#10;users.js =&gt; add selector getUsersLoadingStatus();&#10;users.jsx =&gt; delete &lt;UserProvider&gt;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/comments/comment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/comments/comment.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/users.js" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="delete useAuth() from =&gt;&#10;comment.jsx&#10;users.js =&gt; export const getCurrentUserData(125);">
+      <change beforePath="$PROJECT_DIR$/src/app/components/page/editUserPage/editUserPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/editUserPage/editUserPage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,13 +134,6 @@
       <workItem from="1676628750062" duration="942000" />
       <workItem from="1676815002661" duration="7539000" />
       <workItem from="1677067122908" duration="8320000" />
-    </task>
-    <task id="LOCAL-00184" summary="install nano_id">
-      <created>1675805933695</created>
-      <option name="number" value="00184" />
-      <option name="presentableId" value="LOCAL-00184" />
-      <option name="project" value="LOCAL" />
-      <updated>1675805933695</updated>
     </task>
     <task id="LOCAL-00185" summary="addCommentForm.jsx =&gt; delete all users component">
       <created>1675806134489</created>
@@ -480,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677343108067</updated>
     </task>
-    <option name="localTasksCounter" value="233" />
+    <task id="LOCAL-00233" summary="delete useAuth() from =&gt;&#10;comment.jsx&#10;users.js =&gt; export const getCurrentUserData(125);">
+      <created>1677343929356</created>
+      <option name="number" value="00233" />
+      <option name="presentableId" value="LOCAL-00233" />
+      <option name="project" value="LOCAL" />
+      <updated>1677343929356</updated>
+    </task>
+    <option name="localTasksCounter" value="234" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,7 +502,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="users.jsx =&gt; add &lt;Redirect to={`/users/${currentUser._id}/edit`}/&gt; (16-19)" />
     <MESSAGE value="install reduxjs/toolkit and react-redux" />
     <MESSAGE value="add folder store=&gt; add createStore.js =&gt;export function createStore()" />
     <MESSAGE value="change qualities from useQualities to useSelector(getQualities) in : &#10;registerForm.jsx&#10;editUserPage.jsx&#10;qualitiesList.jsx" />
@@ -529,7 +526,8 @@
     <MESSAGE value="create HOC =&gt; usersLoader.jsx" />
     <MESSAGE value="create HOC =&gt; appLoader.jsx;&#10;users.js =&gt; add selector getUsersLoadingStatus();&#10;uusers.jsx =&gt; delete &lt;UserProvider&gt;" />
     <MESSAGE value="create HOC =&gt; appLoader.jsx;&#10;users.js =&gt; add selector getUsersLoadingStatus();&#10;users.jsx =&gt; delete &lt;UserProvider&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="create HOC =&gt; appLoader.jsx;&#10;users.js =&gt; add selector getUsersLoadingStatus();&#10;users.jsx =&gt; delete &lt;UserProvider&gt;" />
+    <MESSAGE value="delete useAuth() from =&gt;&#10;comment.jsx&#10;users.js =&gt; export const getCurrentUserData(125);" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete useAuth() from =&gt;&#10;comment.jsx&#10;users.js =&gt; export const getCurrentUserData(125);" />
   </component>
   <component name="regexState">
     <option name="map">
