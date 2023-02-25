@@ -18,7 +18,7 @@ const AppLoader = ({ children }) => {
     if (usersStatusLoading) return "Loading...";
     return children;
 };
-AppLoader.PropTypes = {
+AppLoader.propTypes = {
     children: PropTypes.oneOfType([
         PropTypes.arrayOf(PropTypes.node), PropTypes.node])
 };
