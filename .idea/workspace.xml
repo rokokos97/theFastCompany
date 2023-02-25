@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="delete useAuth() from =&gt;&#10;comment.jsx&#10;users.js =&gt; export const getCurrentUserData(125);">
-      <change beforePath="$PROJECT_DIR$/src/app/components/page/editUserPage/editUserPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/editUserPage/editUserPage.jsx" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="users.js =&gt; create method export const updateUser;&#10;create userUpdateRequested()/userUpdatedRequestSuccess()/userUpdateFailed()">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/comments/comment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/comments/comment.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/page/usersListPage/usersListPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/usersListPage/usersListPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layouts/logOut.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/logOut.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layouts/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/authService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/authService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/commentService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/commentService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/httpService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/httpService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/store/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/utils/randomInt.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/utils/getRandomInt.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { displayDate } from "../../../utils/displayDate";
 import { useSelector } from "react-redux";
-import { getCurrentUser, getUserById } from "../../../store/users";
+import { getCurrentUserId, getUserById } from "../../../store/users";
 
 const Comment = ({
     content,
@@ -11,7 +11,7 @@ const Comment = ({
     userId,
     onRemove
 }) => {
-    const currentUserId = useSelector(getCurrentUser());
+    const currentUserId = useSelector(getCurrentUserId());
     const user = useSelector(getUserById(userId));
     return (
         <div className="bg-light card-body  mb-3">

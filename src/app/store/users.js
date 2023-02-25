@@ -2,7 +2,7 @@ import { createAction, createSlice } from "@reduxjs/toolkit";
 import userService from "../services/userService";
 import authService from "../services/authService";
 import localStorageService from "../services/localStorageService";
-import { randomInt } from "../utils/randomInt";
+import { getRandomInt } from "../utils/getRandomInt";
 import history from "../utils/history";
 
 const initialState = localStorageService.getAccessToken()
@@ -50,8 +50,13 @@ const usersSlice = createSlice({
                 state.entities = [];
             }
             state.entities.push(action.payload);
+        },
+        userLoggedOut: (state) => {
+            state.entities = null;
+            state.isLoggedIn = false;
+            state.auth = null;
+            state.dataLoaded = false;
         }
-
     }
 });
 const { reducer: usersReducer, actions } = usersSlice;
@@ -61,7 +66,8 @@ const {
     usersRequested,
     authRequestSuccess,
     authRequestFailed,
-    userCreated
+    userCreated,
+    userLoggedOut
 } = actions;
 
 const authRequested = createAction("users/authRequested");
@@ -79,6 +85,11 @@ export const logIn = ({ payload, redirect }) => async (dispatch) => {
     } catch (error) {
         dispatch(authRequestFailed(error.message));
     }
+};
+export const logOut = () => (dispatch) => {
+    localStorageService.removeAuthData();
+    dispatch(userLoggedOut());
+    history.push("/");
 };
 const createUser = (payload) => async (dispatch) => {
     dispatch(userCreateRequested());
@@ -100,12 +111,12 @@ export const singUp = ({ email, password, ...rest }) => async (dispatch) => {
         dispatch(createUser({
             _id: data.localId,
             email,
-            completedMeetings: randomInt(1, 200),
+            completedMeetings: getRandomInt(1, 200),
             image: `https://avatars.dicebear.com/api/avataaars/${
                 (Math.random() + 1)
                     .toString(36)
                     .substring(7)}.svg`,
-            rate: randomInt(1, 5),
+            rate: getRandomInt(1, 5),
             ...rest
         }));
     } catch (error) {
@@ -132,7 +143,7 @@ export const getUserById = (userId) => (state) => {
 };
 export const getIsLoggedIn = () => (state) => state.users.isLoggedIn;
 export const getDataStatus = () => (state) => state.users.dataLoaded;
-export const getCurrentUser = () => (state) => state.users.auth.userId;
+export const getCurrentUserId = () => (state) => state.users.auth.userId;
 
 export const getUsersLoadingStatus = () => (state) => state.users.isLoading;
 export default usersReducer;

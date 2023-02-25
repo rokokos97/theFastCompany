@@ -5,7 +5,7 @@ import userService from "../services/userService";
 import { toast } from "react-toastify";
 import localStorageService, { setTokens } from "../services/localStorageService";
 import { useHistory } from "react-router-dom";
-import { randomInt } from "../utils/randomInt";
+import { getRandomInt } from "../utils/getRandomInt";
 
 export const httpAuth = axios.create({
     baseURL: "https://identitytoolkit.googleapis.com/v1/",
@@ -57,12 +57,12 @@ const AuthProvider = ({ children }) => {
             await createUser({
                 _id: data.localId,
                 email,
-                completedMeetings: randomInt(1, 200),
+                completedMeetings: getRandomInt(1, 200),
                 image: `https://avatars.dicebear.com/api/avataaars/${
                     (Math.random() + 1)
                         .toString(36)
                         .substring(7)}.svg`,
-                rate: randomInt(1, 5),
+                rate: getRandomInt(1, 5),
                 ...rest
             });
         } catch (error) {

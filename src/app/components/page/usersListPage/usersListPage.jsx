@@ -8,7 +8,7 @@ import UserTable from "../../ui/userTable";
 import _ from "lodash";
 import { useSelector } from "react-redux";
 import { getProfessions, getProfessionsLoadingStatus } from "../../../store/professions";
-import { getCurrentUser, getUsers } from "../../../store/users";
+import { getCurrentUserId, getUsers } from "../../../store/users";
 
 const UsersListPage = () => {
     const pageSize = 8;
@@ -19,7 +19,7 @@ const UsersListPage = () => {
     const users = useSelector(getUsers());
     const professions = useSelector(getProfessions());
     const professionsLoading = useSelector(getProfessionsLoadingStatus());
-    const currentUserId = useSelector(getCurrentUser());
+    const currentUserId = useSelector(getCurrentUserId());
     console.log("currentUserId usersListPage", currentUserId);
     useEffect(() => {
         setCurrentPage(1);
