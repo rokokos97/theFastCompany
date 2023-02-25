@@ -122,6 +122,7 @@ export const loadUsersList = () => async (dispatch) => {
     }
 };
 export const getUsers = () => (state) => state.users.entities;
+export const getCurrentUserData = () => (state) => state.users.entities.map(u => u._id === state.users.auth.userId);
 // export const getUsersLoadingStatus = () => (state) => state.users.isLoading;
 export const getUserById = (userId) => (state) => {
     if (state.users.entities) {
