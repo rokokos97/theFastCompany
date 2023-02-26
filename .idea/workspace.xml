@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="debug propTypes">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="debugging">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/form/multiselectField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/form/multiSelectField.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/form/selectedField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/form/selectField.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/page/editUserPage/editUserPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/editUserPage/editUserPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/page/userPage/userPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/userPage/userPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/page/usersListPage/usersListPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/usersListPage/usersListPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/hooks/useComment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useComment.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,13 +138,6 @@
       <workItem from="1676628750062" duration="942000" />
       <workItem from="1676815002661" duration="7539000" />
       <workItem from="1677067122908" duration="8320000" />
-    </task>
-    <task id="LOCAL-00186" summary="useComment.jsx =&gt; add method createComment(data)">
-      <created>1675848539365</created>
-      <option name="number" value="00186" />
-      <option name="presentableId" value="LOCAL-00186" />
-      <option name="project" value="LOCAL" />
-      <updated>1675848539365</updated>
     </task>
     <task id="LOCAL-00187" summary="create new service =&gt; commentService.js">
       <created>1675849501857</created>
@@ -484,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677363350852</updated>
     </task>
-    <option name="localTasksCounter" value="235" />
+    <task id="LOCAL-00235" summary="debugging">
+      <created>1677371658331</created>
+      <option name="number" value="00235" />
+      <option name="presentableId" value="LOCAL-00235" />
+      <option name="project" value="LOCAL" />
+      <updated>1677371658331</updated>
+    </task>
+    <option name="localTasksCounter" value="236" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -538,7 +536,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add folder store=&gt; add createStore.js =&gt;export function createStore()" />
     <MESSAGE value="change qualities from useQualities to useSelector(getQualities) in : &#10;registerForm.jsx&#10;editUserPage.jsx&#10;qualitiesList.jsx" />
     <MESSAGE value="qualities.js =&gt; add new selector getQualitiesByIds" />
     <MESSAGE value="delete QualitiesProvider in App.js" />
@@ -563,7 +560,8 @@
     <MESSAGE value="create HOC =&gt; appLoader.jsx;&#10;users.js =&gt; add selector getUsersLoadingStatus();&#10;users.jsx =&gt; delete &lt;UserProvider&gt;" />
     <MESSAGE value="delete useAuth() from =&gt;&#10;comment.jsx&#10;users.js =&gt; export const getCurrentUserData(125);" />
     <MESSAGE value="debug propTypes" />
-    <option name="LAST_COMMIT_MESSAGE" value="debug propTypes" />
+    <MESSAGE value="debugging" />
+    <option name="LAST_COMMIT_MESSAGE" value="debugging" />
   </component>
   <component name="regexState">
     <option name="map">

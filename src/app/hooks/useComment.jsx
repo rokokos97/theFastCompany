@@ -10,7 +10,7 @@ const CommentContext = React.createContext();
 export const useComment = () => {
     return useContext(CommentContext);
 };
-export const CommentProvider = ({ children }) => {
+export const CommentsProvider = ({ children }) => {
     const { userId } = useParams();
     const { currentUser } = useAuth();
     const [comments, setComments] = useState([]);
@@ -72,6 +72,6 @@ export const CommentProvider = ({ children }) => {
         </CommentContext.Provider>
     );
 };
-CommentProvider.propTypes = {
+CommentsProvider.propTypes = {
     children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node])
 };

@@ -33,7 +33,6 @@ const UsersListPage = () => {
 
     const handelDelete = (userId) => {
         // setUsers(users.filter((filteredUser) => filteredUser._id !== userId));
-        setCurrentPage(1);
         console.log(userId);
     };
     const handelToggleBookMark = (id) => {
@@ -56,15 +55,15 @@ const UsersListPage = () => {
     };
     const handleSearchQuery = ({ target }) => {
         setSearchQuery(target.value);
-        setSelectedProf(null);
+        setSelectedProf(undefined);
     };
-    const handlePageChange = (page) => {
-        setCurrentPage(page);
+    const handlePageChange = (pageIndex) => {
+        setCurrentPage(pageIndex);
     };
     const handelSort = (item) => {
         setSortBy(item);
     };
-    const handleReset = () => {
+    const clearFilter = () => {
         setSelectedProf(null);
     };
     if (users) {
@@ -93,7 +92,7 @@ const UsersListPage = () => {
                             items={professions}
                             onItemSelect={handleProfessionSelect}
                             selectedItem={selectedProf}
-                            onResat={handleReset}
+                            onResat={clearFilter}
                         />
                     )}
                 </div>

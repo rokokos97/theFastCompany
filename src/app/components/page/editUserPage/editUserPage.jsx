@@ -28,7 +28,6 @@ const EditUserPage = () => {
         e.preventDefault();
         const isValid = validate();
         if (!isValid) return;
-        console.log(data);
         await updateUserData({ ...data, qualities: data.qualities.map(q => q.value) });
         history.push(`/users/${currentUser._id}`);
     };
@@ -45,7 +44,6 @@ const EditUserPage = () => {
         return qualitiesArray;
     }
     const transformData = (data) => {
-        console.log(data);
         return getQualitiesListById(data).map((qual) => ({
             label: qual.name,
             value: qual._id
@@ -97,8 +95,8 @@ const EditUserPage = () => {
         <div className="container mt-5">
             <BackHistoryButton/>
             <div className="row">
-                {(!isLoading)
-                    ? <div className="card col-md-6 offset-md-3">
+                {!isLoading && Object.keys(professions).length > 0
+                    ? (<div className="card col-md-6 offset-md-3">
                         <div className="card-body">
                             <form onSubmit={handelSubmit} className={"card-body"}>
                                 <TextFiled
@@ -161,8 +159,10 @@ const EditUserPage = () => {
                                 </button>
                             </form>
                         </div>
-                    </div>
-                    : "Loading form..."}
+                    </div>)
+                    : (
+                        "Loading form..."
+                    )}
             </div>
         </div>
     );
