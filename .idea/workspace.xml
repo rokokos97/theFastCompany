@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="fix bug in navBar.jsx&#10;const isLoggedIn = useSelector(getIsLoggedIn());">
-      <change afterPath="$PROJECT_DIR$/src/app/store/comments.js" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create new slice =&gt; comments.js">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/comments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/comments.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/hooks/useComment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useComment.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/commentService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/commentService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/store/comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/comments.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,13 +138,6 @@
       <workItem from="1676628750062" duration="942000" />
       <workItem from="1676815002661" duration="7539000" />
       <workItem from="1677067122908" duration="8320000" />
-    </task>
-    <task id="LOCAL-00194" summary="useComment.jsx =&gt; add new comment to array of comment after creating (30)">
-      <created>1675854078579</created>
-      <option name="number" value="00194" />
-      <option name="presentableId" value="LOCAL-00194" />
-      <option name="project" value="LOCAL" />
-      <updated>1675854078579</updated>
     </task>
     <task id="LOCAL-00195" summary="useComment.jsx =&gt; add following userId in useEffect (48) -&gt; needed for situation with changing user.">
       <created>1675854546433</created>
@@ -478,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677426091305</updated>
     </task>
-    <option name="localTasksCounter" value="243" />
+    <task id="LOCAL-00243" summary="create new slice =&gt; comments.js">
+      <created>1677426234268</created>
+      <option name="number" value="00243" />
+      <option name="presentableId" value="LOCAL-00243" />
+      <option name="project" value="LOCAL" />
+      <updated>1677426234269</updated>
+    </task>
+    <option name="localTasksCounter" value="244" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,7 +536,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create authService.js" />
     <MESSAGE value="users.js =&gt; transfer singUp method (39-48)" />
     <MESSAGE value="registerForm.jsx =&gt; handleSubmit =&gt; dispatch(singUp(newData));" />
     <MESSAGE value="users.jsx =&gt; userCreateRequested;&#10;add action created&#10;add method createUser;&#10;add reducer userCreated;&#10;add action userCreateFailed;" />
@@ -557,7 +560,8 @@
     <MESSAGE value="users.js =&gt; export const getAuthError = () =&gt; (state) =&gt; state.users.error;" />
     <MESSAGE value="loginForm.jsx import and use getAuthErrors" />
     <MESSAGE value="fix bug in navBar.jsx&#10;const isLoggedIn = useSelector(getIsLoggedIn());" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bug in navBar.jsx&#10;const isLoggedIn = useSelector(getIsLoggedIn());" />
+    <MESSAGE value="create new slice =&gt; comments.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="create new slice =&gt; comments.js" />
   </component>
   <component name="regexState">
     <option name="map">

@@ -1,11 +1,19 @@
 import { orderBy } from "lodash";
-import React from "react";
+import React, { useEffect } from "react";
 import CommentsList from "../common/comments/commentsList";
 import AddCommentForm from "../common/comments/addCommentForm";
 import { useComment } from "../../hooks/useComment";
+import { useDispatch, useSelector } from "react-redux";
+import { getComments, getCommentsLoadingStatus, loadCommentsList } from "../../store/comments";
 
 const Comments = () => {
-    const { createComment, comments, removeComment } = useComment();
+    const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch(loadCommentsList());
+    }, []);
+    const isLoading = useSelector(getCommentsLoadingStatus());
+    const comments = useSelector(getComments);
+    const { createComment, removeComment } = useComment();
     const handleSubmit = (data) => {
         createComment(data);
     };
@@ -25,10 +33,13 @@ const Comments = () => {
                 <div className="card-body ">
                     <h2>Comments</h2>
                     <hr />
-                    <CommentsList
-                        comments={sortedComments}
-                        onRemove={handleRemoveComment}
-                    />
+                    {!isLoading
+                        ? <CommentsList
+                            comments={sortedComments}
+                            onRemove={handleRemoveComment}
+                        />
+                        : "Loading"
+                    }
                 </div>
             </div>
         )}

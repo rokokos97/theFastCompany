@@ -35,7 +35,7 @@ export const CommentsProvider = ({ children }) => {
     }
     async function getComments() {
         try {
-            const { content } = await commentService.getComment(userId);
+            const { content } = await commentService.getComments(userId);
             setComments(content);
         } catch (error) {
             catchError(error);
