@@ -18,7 +18,6 @@ import {
 
 const UsersListPage = () => {
     const users = useSelector(getUsersList());
-    console.log(users);
     const currentUserId = useSelector(getCurrentUserId());
 
     const professions = useSelector(getProfessions());

@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add slice comments.js to store.js">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="comments.js =&gt; export const createComment;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/comments/comment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/comments/comment.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/comments/addCommentForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/comments/addCommentForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/page/usersListPage/usersListPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/usersListPage/usersListPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/ui/comments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/comments.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/navProfile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/navProfile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/store/comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/comments.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -138,13 +138,6 @@
       <workItem from="1676628750062" duration="942000" />
       <workItem from="1676815002661" duration="7539000" />
       <workItem from="1677067122908" duration="8320000" />
-    </task>
-    <task id="LOCAL-00196" summary="commentService.js =&gt; create new method &quot;removeComment&quot;">
-      <created>1675865343933</created>
-      <option name="number" value="00196" />
-      <option name="presentableId" value="LOCAL-00196" />
-      <option name="project" value="LOCAL" />
-      <updated>1675865343933</updated>
     </task>
     <task id="LOCAL-00197" summary="httpService =&gt; add new method patch: http.patch">
       <created>1676316265413</created>
@@ -482,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677427331825</updated>
     </task>
-    <option name="localTasksCounter" value="245" />
+    <task id="LOCAL-00245" summary="comments.js =&gt; export const createComment;">
+      <created>1677445800696</created>
+      <option name="number" value="00245" />
+      <option name="presentableId" value="LOCAL-00245" />
+      <option name="project" value="LOCAL" />
+      <updated>1677445800696</updated>
+    </task>
+    <option name="localTasksCounter" value="246" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -536,7 +536,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="registerForm.jsx =&gt; handleSubmit =&gt; dispatch(singUp(newData));" />
     <MESSAGE value="users.jsx =&gt; userCreateRequested;&#10;add action created&#10;add method createUser;&#10;add reducer userCreated;&#10;add action userCreateFailed;" />
     <MESSAGE value="npm i history@4.9.0&#10;create history.js" />
     <MESSAGE value="index.js =&gt; &lt;BrowserRouter&gt; change to &lt;Router history={history}&gt;" />
@@ -561,7 +560,8 @@
     <MESSAGE value="fix bug in navBar.jsx&#10;const isLoggedIn = useSelector(getIsLoggedIn());" />
     <MESSAGE value="create new slice =&gt; comments.js" />
     <MESSAGE value="add slice comments.js to store.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="add slice comments.js to store.js" />
+    <MESSAGE value="comments.js =&gt; export const createComment;" />
+    <option name="LAST_COMMIT_MESSAGE" value="comments.js =&gt; export const createComment;" />
   </component>
   <component name="regexState">
     <option name="map">
