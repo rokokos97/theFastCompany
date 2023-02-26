@@ -6,7 +6,6 @@ import MeetingsCard from "../../ui/meetingsCard";
 import Comments from "../../ui/comments";
 import { useSelector } from "react-redux";
 import { getUserById } from "../../../store/users";
-
 const UserPage = ({ userId }) => {
     const user = useSelector(getUserById(userId));
     if (user) {
