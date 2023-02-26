@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="updateUser">
-      <change afterPath="$PROJECT_DIR$/src/app/utils/genetateAuthError.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="utils =&gt; create generateAuthError.js">
+      <change beforePath="$PROJECT_DIR$/src/app/store/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,13 +134,6 @@
       <workItem from="1676628750062" duration="942000" />
       <workItem from="1676815002661" duration="7539000" />
       <workItem from="1677067122908" duration="8320000" />
-    </task>
-    <task id="LOCAL-00189" summary="commentService.js =&gt; add method getComments from base.">
-      <created>1675851294580</created>
-      <option name="number" value="00189" />
-      <option name="presentableId" value="LOCAL-00189" />
-      <option name="project" value="LOCAL" />
-      <updated>1675851294580</updated>
     </task>
     <task id="LOCAL-00190" summary="commentService.js =&gt; transform requests parameters with double &#10;&#10;add new rule to firebase rule">
       <created>1675852775314</created>
@@ -480,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677418788550</updated>
     </task>
-    <option name="localTasksCounter" value="238" />
+    <task id="LOCAL-00238" summary="utils =&gt; create generateAuthError.js">
+      <created>1677422617413</created>
+      <option name="number" value="00238" />
+      <option name="presentableId" value="LOCAL-00238" />
+      <option name="project" value="LOCAL" />
+      <updated>1677422617413</updated>
+    </task>
+    <option name="localTasksCounter" value="239" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,7 +532,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="delete QualitiesProvider in App.js" />
     <MESSAGE value="qualitiesList.jsx =&gt; add useEffect (11-13)" />
     <MESSAGE value="create professions.js &#10;create outdate.js&#10;realise logic like qualities.js" />
     <MESSAGE value="delete &lt;ProfessionProvider/&gt;&#10;createStore.js =&gt; add professionReducer" />
@@ -559,7 +556,8 @@
     <MESSAGE value="debugging" />
     <MESSAGE value="searching errors(" />
     <MESSAGE value="updateUser" />
-    <option name="LAST_COMMIT_MESSAGE" value="updateUser" />
+    <MESSAGE value="utils =&gt; create generateAuthError.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="utils =&gt; create generateAuthError.js" />
   </component>
   <component name="regexState">
     <option name="map">

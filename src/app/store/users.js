@@ -4,6 +4,7 @@ import authService from "../services/authService";
 import localStorageService from "../services/localStorageService";
 import { getRandomInt } from "../utils/getRandomInt";
 import history from "../utils/history";
+import { generateAuthError } from "../utils/genetateAuthError";
 
 const initialState = localStorageService.getAccessToken()
     ? {
@@ -101,7 +102,13 @@ export const login = ({ payload, redirect }) => async (dispatch) => {
         localStorageService.setTokens(data);
         history.push(redirect);
     } catch (error) {
-        dispatch(authRequestFailed(error.message));
+        const { code, message } = error.response.data.error;
+        if (code === 400) {
+            const errorMessage = generateAuthError(message);
+            dispatch(authRequestFailed(errorMessage));
+        } else {
+            dispatch(authRequestFailed(error.message));
+        }
     }
 };
 export const singUp = ({ email, password, ...rest }) => async (dispatch) => {
