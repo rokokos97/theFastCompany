@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="utils =&gt; create generateAuthError.js">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="users.js =&gt; add error catch in login; (96-113)">
       <change beforePath="$PROJECT_DIR$/src/app/store/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,13 +134,6 @@
       <workItem from="1676628750062" duration="942000" />
       <workItem from="1676815002661" duration="7539000" />
       <workItem from="1677067122908" duration="8320000" />
-    </task>
-    <task id="LOCAL-00190" summary="commentService.js =&gt; transform requests parameters with double &#10;&#10;add new rule to firebase rule">
-      <created>1675852775314</created>
-      <option name="number" value="00190" />
-      <option name="presentableId" value="LOCAL-00190" />
-      <option name="project" value="LOCAL" />
-      <updated>1675852775314</updated>
     </task>
     <task id="LOCAL-00191" summary="useComment.jsx =&gt; get comments by pageId">
       <created>1675852980872</created>
@@ -478,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677422617413</updated>
     </task>
-    <option name="localTasksCounter" value="239" />
+    <task id="LOCAL-00239" summary="users.js =&gt; add error catch in login; (96-113)">
+      <created>1677423016437</created>
+      <option name="number" value="00239" />
+      <option name="presentableId" value="LOCAL-00239" />
+      <option name="project" value="LOCAL" />
+      <updated>1677423016438</updated>
+    </task>
+    <option name="localTasksCounter" value="240" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,7 +532,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="qualitiesList.jsx =&gt; add useEffect (11-13)" />
     <MESSAGE value="create professions.js &#10;create outdate.js&#10;realise logic like qualities.js" />
     <MESSAGE value="delete &lt;ProfessionProvider/&gt;&#10;createStore.js =&gt; add professionReducer" />
     <MESSAGE value="create users.js like professions.js&#10;createStore.js =&gt; add usersReducer&#10;App.js =&gt; download users" />
@@ -557,7 +556,8 @@
     <MESSAGE value="searching errors(" />
     <MESSAGE value="updateUser" />
     <MESSAGE value="utils =&gt; create generateAuthError.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="utils =&gt; create generateAuthError.js" />
+    <MESSAGE value="users.js =&gt; add error catch in login; (96-113)" />
+    <option name="LAST_COMMIT_MESSAGE" value="users.js =&gt; add error catch in login; (96-113)" />
   </component>
   <component name="regexState">
     <option name="map">
