@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { validator } from "../../utils/validator";
 import TextFiled from "../common/form/textField";
-import SelectedField from "../common/form/selectedField";
+import SelectField from "../common/form/selectField";
 import RadioField from "../common/form/radioField";
-import MultiSelectField from "../common/form/multiselectField";
+import MultiSelectField from "../common/form/multiSelectField";
 import CheckBoxField from "../common/form/checkBoxField";
 import { useDispatch, useSelector } from "react-redux";
 import { getQualities } from "../../store/qualities";
@@ -95,7 +95,7 @@ const RegisterForm = () => {
                 onChange={handelChange}
                 error={errors.password}
             />
-            <SelectedField
+            <SelectField
                 label={"Choose your profession"}
                 name={"profession"}
                 defaultOption={"Choose..."}

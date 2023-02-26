@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const SelectedField = ({ label, name, value, onChange, defaultOption, options, error }) => {
+const SelectField = ({ label, name, value, onChange, defaultOption, options, error }) => {
     // console.log("options", options);
     const optionsArray = !Array.isArray(options) && typeof options === "object"
         ? Object.values(options)
@@ -49,7 +49,7 @@ const SelectedField = ({ label, name, value, onChange, defaultOption, options, e
         </>
     );
 };
-SelectedField.propTypes = {
+SelectField.propTypes = {
     label: PropTypes.string,
     value: PropTypes.string,
     onChange: PropTypes.func,
@@ -58,4 +58,4 @@ SelectedField.propTypes = {
     error: PropTypes.string,
     name: PropTypes.string
 };
-export default SelectedField;
+export default SelectField;
