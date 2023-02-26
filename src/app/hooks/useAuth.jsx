@@ -35,12 +35,13 @@ const AuthProvider = ({ children }) => {
             errorCatcher(error);
             const { code, message } = error.response.data.error;
             if (code === 400) {
-                if (message === "INVALID_PASSWORD") {
-                    throw new Error("Email or Password is not correct");
-                } else if (message === "EMAIL_NOT_FOUND") {
-                    throw new Error("Email or Password is not correct");
-                } else {
-                    throw new Error("Too many attempts try latter");
+                switch (message) {
+                    case "INVALID_PASSWORD":
+                        throw new Error("Email or Password is not correct");
+                    case "EMAIL_NOT_FOUND":
+                        throw new Error("Email or Password is not correct");
+                    default:
+                        throw new Error("Too many attempts try latter");
                 }
             }
         }
