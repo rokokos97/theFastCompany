@@ -1,22 +1,19 @@
 import React, { useEffect, useState } from "react";
-import { useHistory } from "react-router-dom";
 import { validator } from "../../../utils/validator";
 import TextFiled from "../../common/form/textField";
 import SelectField from "../../common/form/selectField";
 import RadioField from "../../common/form/radioField";
 import MultiSelectField from "../../common/form/multiSelectField";
 import BackHistoryButton from "../../common/backButton";
-import { useAuth } from "../../../hooks/useAuth";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { getQualities, getQualitiesLoadingStatus } from "../../../store/qualities";
 import { getProfessions, getProfessionsLoadingStatus } from "../../../store/professions";
-import { getCurrentUserData } from "../../../store/users";
+import { getCurrentUserData, updateUser } from "../../../store/users";
 const EditUserPage = () => {
-    const history = useHistory();
     const [isLoading, setIsLoading] = useState(true);
     const [data, setData] = useState();
     const currentUser = useSelector(getCurrentUserData());
-    const { updateUserData } = useAuth();
+    const dispatch = useDispatch();
     const qualities = useSelector(getQualities());
     const qualitiesLoading = useSelector(getQualitiesLoadingStatus());
     const qualitiesList = qualities.map((q) => ({ label: q.name, value: q._id }));
@@ -24,12 +21,16 @@ const EditUserPage = () => {
     const professionsLoading = useSelector(getProfessionsLoadingStatus());
     const professionsList = professions.map((p) => ({ label: p.name, value: p._id }));
     const [errors, setErrors] = useState({});
-    const handelSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
         const isValid = validate();
         if (!isValid) return;
-        await updateUserData({ ...data, qualities: data.qualities.map(q => q.value) });
-        history.push(`/users/${currentUser._id}`);
+        dispatch(
+            updateUser({
+                ...data,
+                qualities: data.qualities.map((q) => q.value)
+            })
+        );
     };
     function getQualitiesListById(qualitiesIds) {
         const qualitiesArray = [];
@@ -98,7 +99,7 @@ const EditUserPage = () => {
                 {!isLoading && Object.keys(professions).length > 0
                     ? (<div className="card col-md-6 offset-md-3">
                         <div className="card-body">
-                            <form onSubmit={handelSubmit} className={"card-body"}>
+                            <form onSubmit={handleSubmit} className={"card-body"}>
                                 <TextFiled
                                     label={"Name"}
                                     name={"name"}
