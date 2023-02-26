@@ -4,7 +4,6 @@ import { useSelector } from "react-redux";
 import { getCurrentUserData } from "../../store/users";
 const NavProfile = () => {
     const currentUser = useSelector(getCurrentUserData());
-    console.log(currentUser);
     const [isOpen, setIsOpen] = useState(false);
     const toggleMenu = () => {
         setIsOpen(prevState => !prevState);

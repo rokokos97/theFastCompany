@@ -4,18 +4,24 @@ import CommentsList from "../common/comments/commentsList";
 import AddCommentForm from "../common/comments/addCommentForm";
 import { useComment } from "../../hooks/useComment";
 import { useDispatch, useSelector } from "react-redux";
-import { getComments, getCommentsLoadingStatus, loadCommentsList } from "../../store/comments";
+import { createComment, getComments, getCommentsLoadingStatus, loadCommentsList } from "../../store/comments";
+import { useParams } from "react-router-dom";
 
 const Comments = () => {
+    const { userId } = useParams();
     const dispatch = useDispatch();
     useEffect(() => {
-        dispatch(loadCommentsList());
-    }, []);
+        dispatch(loadCommentsList(userId));
+    }, [userId]);
     const isLoading = useSelector(getCommentsLoadingStatus());
-    const comments = useSelector(getComments);
-    const { createComment, removeComment } = useComment();
+    const comments = useSelector(getComments());
+    const { removeComment } = useComment();
     const handleSubmit = (data) => {
-        createComment(data);
+        console.log(data);
+        dispatch(createComment({
+            data,
+            pageId: userId
+        }));
     };
     const handleRemoveComment = (id) => {
         removeComment(id);

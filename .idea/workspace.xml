@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="create new slice =&gt; comments.js">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="add slice comments.js to store.js">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/comments/comment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/comments/comment.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/ui/comments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/comments.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/hooks/useComment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useComment.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/commentService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/commentService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/navProfile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/navProfile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/store/comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/comments.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="week_5_filtration" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,8 +42,8 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="develop_pagination_homework" />
-                    <option name="lastUsedInstant" value="1671635075" />
+                    <option name="branchName" value="week_20_add_comment_develop" />
+                    <option name="lastUsedInstant" value="1677442773" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="master" />
@@ -138,13 +138,6 @@
       <workItem from="1676628750062" duration="942000" />
       <workItem from="1676815002661" duration="7539000" />
       <workItem from="1677067122908" duration="8320000" />
-    </task>
-    <task id="LOCAL-00195" summary="useComment.jsx =&gt; add following userId in useEffect (48) -&gt; needed for situation with changing user.">
-      <created>1675854546433</created>
-      <option name="number" value="00195" />
-      <option name="presentableId" value="LOCAL-00195" />
-      <option name="project" value="LOCAL" />
-      <updated>1675854546433</updated>
     </task>
     <task id="LOCAL-00196" summary="commentService.js =&gt; create new method &quot;removeComment&quot;">
       <created>1675865343933</created>
@@ -482,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677426234269</updated>
     </task>
-    <option name="localTasksCounter" value="244" />
+    <task id="LOCAL-00244" summary="add slice comments.js to store.js">
+      <created>1677427331825</created>
+      <option name="number" value="00244" />
+      <option name="presentableId" value="LOCAL-00244" />
+      <option name="project" value="LOCAL" />
+      <updated>1677427331825</updated>
+    </task>
+    <option name="localTasksCounter" value="245" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -536,7 +536,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="users.js =&gt; transfer singUp method (39-48)" />
     <MESSAGE value="registerForm.jsx =&gt; handleSubmit =&gt; dispatch(singUp(newData));" />
     <MESSAGE value="users.jsx =&gt; userCreateRequested;&#10;add action created&#10;add method createUser;&#10;add reducer userCreated;&#10;add action userCreateFailed;" />
     <MESSAGE value="npm i history@4.9.0&#10;create history.js" />
@@ -561,7 +560,8 @@
     <MESSAGE value="loginForm.jsx import and use getAuthErrors" />
     <MESSAGE value="fix bug in navBar.jsx&#10;const isLoggedIn = useSelector(getIsLoggedIn());" />
     <MESSAGE value="create new slice =&gt; comments.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="create new slice =&gt; comments.js" />
+    <MESSAGE value="add slice comments.js to store.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="add slice comments.js to store.js" />
   </component>
   <component name="regexState">
     <option name="map">
