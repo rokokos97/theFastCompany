@@ -61,6 +61,9 @@ const usersSlice = createSlice({
         userUpdateSuccessed: (state, action) => {
             state.entities[
                 state.entities.findIndex((u) => u._id === action.payload._id)] = action.payload;
+        },
+        authRequested: (state) => {
+            state.error = null;
         }
     }
 });
@@ -173,6 +176,6 @@ export const getIsLoggedIn = () => (state) => state.users.isLoggedIn;
 export const getDataStatus = () => (state) => state.users.dataLoaded;
 export const getUsersLoadingStatus = () => (state) => state.users.isLoading;
 export const getCurrentUserId = () => (state) => state.users.auth.userId;
-export const getAuthError = () => (state) => state.users.error;
+export const getAuthErrors = () => (state) => state.users.error;
 
 export default usersReducer;

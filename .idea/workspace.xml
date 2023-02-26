@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="users.js =&gt; add error catch in login; (96-113)">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="users.js =&gt; export const getAuthError = () =&gt; (state) =&gt; state.users.error;">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/store/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,13 +136,6 @@
       <workItem from="1676628750062" duration="942000" />
       <workItem from="1676815002661" duration="7539000" />
       <workItem from="1677067122908" duration="8320000" />
-    </task>
-    <task id="LOCAL-00191" summary="useComment.jsx =&gt; get comments by pageId">
-      <created>1675852980872</created>
-      <option name="number" value="00191" />
-      <option name="presentableId" value="LOCAL-00191" />
-      <option name="project" value="LOCAL" />
-      <updated>1675852980872</updated>
     </task>
     <task id="LOCAL-00192" summary="comments.jsx =&gt; transfer comments from useComments">
       <created>1675853391282</created>
@@ -478,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677423016438</updated>
     </task>
-    <option name="localTasksCounter" value="240" />
+    <task id="LOCAL-00240" summary="users.js =&gt; export const getAuthError = () =&gt; (state) =&gt; state.users.error;">
+      <created>1677423132615</created>
+      <option name="number" value="00240" />
+      <option name="presentableId" value="LOCAL-00240" />
+      <option name="project" value="LOCAL" />
+      <updated>1677423132615</updated>
+    </task>
+    <option name="localTasksCounter" value="241" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,7 +534,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create professions.js &#10;create outdate.js&#10;realise logic like qualities.js" />
     <MESSAGE value="delete &lt;ProfessionProvider/&gt;&#10;createStore.js =&gt; add professionReducer" />
     <MESSAGE value="create users.js like professions.js&#10;createStore.js =&gt; add usersReducer&#10;App.js =&gt; download users" />
     <MESSAGE value="create authService.js" />
@@ -557,7 +558,8 @@
     <MESSAGE value="updateUser" />
     <MESSAGE value="utils =&gt; create generateAuthError.js" />
     <MESSAGE value="users.js =&gt; add error catch in login; (96-113)" />
-    <option name="LAST_COMMIT_MESSAGE" value="users.js =&gt; add error catch in login; (96-113)" />
+    <MESSAGE value="users.js =&gt; export const getAuthError = () =&gt; (state) =&gt; state.users.error;" />
+    <option name="LAST_COMMIT_MESSAGE" value="users.js =&gt; export const getAuthError = () =&gt; (state) =&gt; state.users.error;" />
   </component>
   <component name="regexState">
     <option name="map">
