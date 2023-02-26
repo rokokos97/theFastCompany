@@ -10,20 +10,12 @@ export const useUser = () => {
 };
 const UserProvider = ({ children }) => {
     const [users, setUsers] = useState([]);
+    const { currentUser } = useAuth();
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
-    const { currentUser } = useAuth();
     useEffect(() => {
         getUsers();
     }, []);
-    useEffect(() => {
-        if (isLoading === false) {
-            const newUsers = [...users];
-            const indexUser = users.findIndex(u => u._id === currentUser._id);
-            newUsers[indexUser] = currentUser;
-            setUsers(newUsers);
-        }
-    }, [currentUser]);
     useEffect(() => {
         if (error !== null) {
             toast.error(error);
@@ -36,13 +28,21 @@ const UserProvider = ({ children }) => {
             setUsers(users.content);
             setIsLoading(false);
         } catch (error) {
-            catchError(error);
+            errorCatcher(error);
         }
     };
-    const catchError = (error) => {
+    useEffect(() => {
+        if (isLoading === false) {
+            const newUsers = [...users];
+            const indexUser = users.findIndex(u => u._id === currentUser._id);
+            newUsers[indexUser] = currentUser;
+            setUsers(newUsers);
+        }
+    }, [currentUser]);
+    function errorCatcher(error) {
         const { message } = error.response.data;
         setError(message);
-    };
+    }
     const getUserById = (userId) => {
         return users.find((u) => u._id === userId);
     };
@@ -50,7 +50,7 @@ const UserProvider = ({ children }) => {
         <UserContext.Provider value={{ users, getUserById }}>
             { !isLoading
                 ? children
-                : <h1>Users loading...</h1>
+                : "Loading..."
             }
         </UserContext.Provider>
     );

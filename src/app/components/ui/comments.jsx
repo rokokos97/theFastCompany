@@ -1,5 +1,5 @@
+import { orderBy } from "lodash";
 import React from "react";
-import _ from "lodash";
 import CommentsList from "../common/comments/commentsList";
 import AddCommentForm from "../common/comments/addCommentForm";
 import { useComment } from "../../hooks/useComment";
@@ -12,7 +12,7 @@ const Comments = () => {
     const handleRemoveComment = (id) => {
         removeComment(id);
     };
-    const sortedComments = _.orderBy(comments, ["created_at"], ["desc"]);
+    const sortedComments = orderBy(comments, ["created_at"], ["desc"]);
     return <>
         <div className="card mb-2">
             {" "}

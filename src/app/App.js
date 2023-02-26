@@ -1,12 +1,12 @@
 import React from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 import Users from "./layouts/users";
 import Login from "./layouts/login";
 import Main from "./layouts/main";
 import NavBar from "./components/ui/navBar";
 import AuthProvider from "./hooks/useAuth";
 import ProtectedRouth from "./components/common/protectedRouth";
-import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import LogOut from "./layouts/logOut";
 import AppLoader from "./components/ui/HOC/appLoader";

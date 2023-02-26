@@ -1,12 +1,11 @@
 import React, { useContext, useState, useEffect } from "react";
 import PropTypes from "prop-types";
+import { toast } from "react-toastify";
 import axios from "axios";
 import userService from "../services/userService";
-import { toast } from "react-toastify";
 import localStorageService, { setTokens } from "../services/localStorageService";
 import { useHistory } from "react-router-dom";
 import { getRandomInt } from "../utils/getRandomInt";
-
 export const httpAuth = axios.create({
     baseURL: "https://identitytoolkit.googleapis.com/v1/",
     params: {
@@ -19,9 +18,9 @@ export const useAuth = () => {
 };
 
 const AuthProvider = ({ children }) => {
-    const [isLoading, setIsLoading] = useState(true);
     const [currentUser, setCurrentUser] = useState(null);
     const [error, setError] = useState(null);
+    const [isLoading, setIsLoading] = useState(true);
     const history = useHistory();
     async function logIn({ email, password }) {
         try {
@@ -33,7 +32,7 @@ const AuthProvider = ({ children }) => {
             setTokens(data);
             await getUserData();
         } catch (error) {
-            catchError(error);
+            errorCatcher(error);
             const { code, message } = error.response.data.error;
             if (code === 400) {
                 if (message === "INVALID_PASSWORD") {
@@ -44,6 +43,19 @@ const AuthProvider = ({ children }) => {
                     throw new Error("Too many attempts try latter");
                 }
             }
+        }
+    }
+    const logOut = () => {
+        localStorageService.removeAuthData();
+        setCurrentUser(null);
+        history.push("/");
+    };
+    async function updateUserData(data) {
+        try {
+            const { content } = await userService.update(data);
+            setCurrentUser(content);
+        } catch (error) {
+            errorCatcher(error);
         }
     }
     async function signUp({ email, password, ...rest }) {
@@ -66,11 +78,11 @@ const AuthProvider = ({ children }) => {
                 ...rest
             });
         } catch (error) {
-            catchError(error);
+            errorCatcher(error);
             const { code, message } = error.response.data.error;
+            const errorObject = { email: "User with this email already does exist" };
             if (code === 400) {
                 if (message === "EMAIL_EXISTS") {
-                    const errorObject = { email: "User with this email already does exist" };
                     throw errorObject;
                 }
             }
@@ -81,36 +93,23 @@ const AuthProvider = ({ children }) => {
             const { content } = await userService.create(data);
             setCurrentUser(content);
         } catch (error) {
-            catchError(error);
+            errorCatcher(error);
         }
     }
-    async function updateUserData(data) {
-        try {
-            const { content } = await userService.update(data);
-            setCurrentUser(content);
-        } catch (error) {
-            catchError(error);
-        }
-    }
-    const catchError = (error) => {
+    const errorCatcher = (error) => {
         const { message } = error.response.data;
         setError(message);
     };
-    const getUserData = async () => {
+    async function getUserData() {
         try {
             const { content } = await userService.getCurrentUser();
             setCurrentUser(content);
         } catch (error) {
-            catchError(error);
+            errorCatcher(error);
         } finally {
             setIsLoading(false);
         }
-    };
-    const logOut = () => {
-        localStorageService.removeAuthData();
-        setCurrentUser(null);
-        history.push("/");
-    };
+    }
     useEffect(() => {
         if (localStorageService.getAccessToken()) {
             getUserData();
@@ -120,7 +119,7 @@ const AuthProvider = ({ children }) => {
     }, []);
     useEffect(() => {
         if (error !== null) {
-            toast.error(error);
+            toast(error);
             setError(null);
         }
     }, [error]);

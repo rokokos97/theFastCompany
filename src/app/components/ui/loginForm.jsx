@@ -4,7 +4,7 @@ import CheckBoxField from "../common/form/checkBoxField";
 import * as yup from "yup";
 import { useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { logIn } from "../../store/users";
+import { login } from "../../store/users";
 
 const LoginForm = () => {
     const [data, setData] = useState({ email: "", password: "", stayOn: false });
@@ -35,7 +35,7 @@ const LoginForm = () => {
         const redirect = history.location.state
             ? history.location.state.from.pathname
             : "/";
-        dispatch(logIn({ payload: data, redirect }));
+        dispatch(login({ payload: data, redirect }));
     };
     useEffect(() => { validate(); }, [data]);
     // const validatorConfig = {

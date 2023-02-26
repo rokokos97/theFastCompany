@@ -4,12 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="debugging">
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="searching errors(">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/page/editUserPage/editUserPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/editUserPage/editUserPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/page/userPage/userPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/userPage/userPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/page/usersListPage/usersListPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/usersListPage/usersListPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/comments/addCommentForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/comments/addCommentForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/comments/commentsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/comments/commentsList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/protectedRouth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/protectedRouth.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/HOC/appLoader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/HOC/appLoader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/comments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/comments.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/navBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/navBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/navProfile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/navProfile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useAuth.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/hooks/useComment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useComment.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/hooks/useUsers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks/useUsers.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layouts/logOut.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/logOut.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/store/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,13 +148,6 @@
       <workItem from="1676628750062" duration="942000" />
       <workItem from="1676815002661" duration="7539000" />
       <workItem from="1677067122908" duration="8320000" />
-    </task>
-    <task id="LOCAL-00187" summary="create new service =&gt; commentService.js">
-      <created>1675849501857</created>
-      <option name="number" value="00187" />
-      <option name="presentableId" value="LOCAL-00187" />
-      <option name="project" value="LOCAL" />
-      <updated>1675849501857</updated>
     </task>
     <task id="LOCAL-00188" summary="add request to server and save new comment in firebase">
       <created>1675849872396</created>
@@ -482,7 +485,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677371658331</updated>
     </task>
-    <option name="localTasksCounter" value="236" />
+    <task id="LOCAL-00236" summary="searching errors(">
+      <created>1677412156808</created>
+      <option name="number" value="00236" />
+      <option name="presentableId" value="LOCAL-00236" />
+      <option name="project" value="LOCAL" />
+      <updated>1677412156808</updated>
+    </task>
+    <option name="localTasksCounter" value="237" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -536,7 +546,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="change qualities from useQualities to useSelector(getQualities) in : &#10;registerForm.jsx&#10;editUserPage.jsx&#10;qualitiesList.jsx" />
     <MESSAGE value="qualities.js =&gt; add new selector getQualitiesByIds" />
     <MESSAGE value="delete QualitiesProvider in App.js" />
     <MESSAGE value="qualitiesList.jsx =&gt; add useEffect (11-13)" />
@@ -561,7 +570,8 @@
     <MESSAGE value="delete useAuth() from =&gt;&#10;comment.jsx&#10;users.js =&gt; export const getCurrentUserData(125);" />
     <MESSAGE value="debug propTypes" />
     <MESSAGE value="debugging" />
-    <option name="LAST_COMMIT_MESSAGE" value="debugging" />
+    <MESSAGE value="searching errors(" />
+    <option name="LAST_COMMIT_MESSAGE" value="searching errors(" />
   </component>
   <component name="regexState">
     <option name="map">

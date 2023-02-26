@@ -43,7 +43,7 @@ const usersSlice = createSlice({
             state.isLoading = true;
         },
         authRequestFailed: (state, action) => {
-            state.auth = action.payload;
+            state.error = action.payload;
         },
         userCreated: (state, action) => {
             if (Array.isArray(state.entities)) {
@@ -61,9 +61,9 @@ const usersSlice = createSlice({
 });
 const { reducer: usersReducer, actions } = usersSlice;
 const {
-    usersRequestFiled,
     usersReceived,
     usersRequested,
+    usersRequestFiled,
     authRequestSuccess,
     authRequestFailed,
     userCreated,
@@ -74,7 +74,19 @@ const authRequested = createAction("users/authRequested");
 const userCreateRequested = createAction("users/createUserRequested");
 const userCreateFailed = createAction("users/userCreateFailed");
 
-export const logIn = ({ payload, redirect }) => async (dispatch) => {
+function createUser(payload) {
+    return async function (dispatch) {
+        dispatch(userCreateRequested());
+        try {
+            const { content } = await userService.create(payload);
+            dispatch(userCreated(content));
+            history.push("/users");
+        } catch (error) {
+            dispatch(userCreateFailed(error.message));
+        }
+    };
+}
+export const login = ({ payload, redirect }) => async (dispatch) => {
     const { email, password } = payload;
     dispatch(authRequested());
     try {
@@ -112,18 +124,6 @@ export const logOut = () => (dispatch) => {
     dispatch(userLoggedOut());
     history.push("/");
 };
-function createUser(payload) {
-    return async function (dispatch) {
-        dispatch(userCreateRequested());
-        try {
-            const { content } = await userService.create(payload);
-            dispatch(userCreated(content));
-            history.push("/users");
-        } catch (error) {
-            dispatch(userCreateFailed(error.message));
-        }
-    };
-}
 export const loadUsersList = () => async (dispatch) => {
     dispatch(usersRequested());
     try {
@@ -149,6 +149,5 @@ export const getUserById = (userId) => (state) => {
 export const getIsLoggedIn = () => (state) => state.users.isLoggedIn;
 export const getDataStatus = () => (state) => state.users.dataLoaded;
 export const getUsersLoadingStatus = () => (state) => state.users.isLoading;
-
 export const getCurrentUserId = () => (state) => state.users.auth.userId;
 export default usersReducer;
