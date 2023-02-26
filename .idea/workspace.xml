@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="loginForm.jsx import and use getAuthErrors">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/page/usersListPage/usersListPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/usersListPage/usersListPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/navBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/navBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/navProfile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/navProfile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layouts/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/users.js" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="fix bug in navBar.jsx&#10;const isLoggedIn = useSelector(getIsLoggedIn());">
+      <change afterPath="$PROJECT_DIR$/src/app/store/comments.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,32 +62,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/rokokos97/WebstormProjects/the-fast-company&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/usr/local/lib/node_modules/prettier&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/rokokos97/WebstormProjects/the-fast-company/src/app/store",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/usr/local/lib/node_modules/prettier",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "editing.templates",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/store" />
       <recent name="$PROJECT_DIR$/src/app/services" />
       <recent name="$PROJECT_DIR$/src/app/hooks" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/app" />
-      <recent name="$PROJECT_DIR$/src/app/api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/app/utils" />
@@ -139,13 +134,6 @@
       <workItem from="1676628750062" duration="942000" />
       <workItem from="1676815002661" duration="7539000" />
       <workItem from="1677067122908" duration="8320000" />
-    </task>
-    <task id="LOCAL-00193" summary="comments.jsx =&gt; getUserById from useUser()&#10;&#10;fix user image from user.image">
-      <created>1675853881940</created>
-      <option name="number" value="00193" />
-      <option name="presentableId" value="LOCAL-00193" />
-      <option name="project" value="LOCAL" />
-      <updated>1675853881940</updated>
     </task>
     <task id="LOCAL-00194" summary="useComment.jsx =&gt; add new comment to array of comment after creating (30)">
       <created>1675854078579</created>
@@ -483,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677423879274</updated>
     </task>
-    <option name="localTasksCounter" value="242" />
+    <task id="LOCAL-00242" summary="fix bug in navBar.jsx&#10;const isLoggedIn = useSelector(getIsLoggedIn());">
+      <created>1677426091305</created>
+      <option name="number" value="00242" />
+      <option name="presentableId" value="LOCAL-00242" />
+      <option name="project" value="LOCAL" />
+      <updated>1677426091305</updated>
+    </task>
+    <option name="localTasksCounter" value="243" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -537,7 +532,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create users.js like professions.js&#10;createStore.js =&gt; add usersReducer&#10;App.js =&gt; download users" />
     <MESSAGE value="create authService.js" />
     <MESSAGE value="users.js =&gt; transfer singUp method (39-48)" />
     <MESSAGE value="registerForm.jsx =&gt; handleSubmit =&gt; dispatch(singUp(newData));" />
@@ -562,7 +556,8 @@
     <MESSAGE value="users.js =&gt; add error catch in login; (96-113)" />
     <MESSAGE value="users.js =&gt; export const getAuthError = () =&gt; (state) =&gt; state.users.error;" />
     <MESSAGE value="loginForm.jsx import and use getAuthErrors" />
-    <option name="LAST_COMMIT_MESSAGE" value="loginForm.jsx import and use getAuthErrors" />
+    <MESSAGE value="fix bug in navBar.jsx&#10;const isLoggedIn = useSelector(getIsLoggedIn());" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug in navBar.jsx&#10;const isLoggedIn = useSelector(getIsLoggedIn());" />
   </component>
   <component name="regexState">
     <option name="map">
