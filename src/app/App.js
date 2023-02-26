@@ -5,7 +5,6 @@ import Users from "./layouts/users";
 import Login from "./layouts/login";
 import Main from "./layouts/main";
 import NavBar from "./components/ui/navBar";
-import AuthProvider from "./hooks/useAuth";
 import ProtectedRouth from "./components/common/protectedRouth";
 import "react-toastify/dist/ReactToastify.css";
 import LogOut from "./layouts/logOut";
@@ -14,25 +13,23 @@ function App() {
     return (
         <div>
             <AppLoader>
-                <AuthProvider>
-                    <NavBar />
-                    <Switch>
-                        <ProtectedRouth
-                            path="/users/:userId?/:edit?"
-                            component={Users} />
-                        <Route
-                            path="/login/:type?"
-                            component={Login} />
-                        <Route
-                            path="/"
-                            exact component={Main} />
-                        <Route
-                            path="/logout"
-                            exact component={LogOut} />
-                        <Redirect
-                            to="/" />
-                    </Switch>
-                </AuthProvider>
+                <NavBar />
+                <Switch>
+                    <ProtectedRouth
+                        path="/users/:userId?/:edit?"
+                        component={Users} />
+                    <Route
+                        path="/login/:type?"
+                        component={Login} />
+                    <Route
+                        path="/"
+                        exact component={Main} />
+                    <Route
+                        path="/logout"
+                        exact component={LogOut} />
+                    <Redirect
+                        to="/" />
+                </Switch>
             </AppLoader>
             <ToastContainer/>
         </div>

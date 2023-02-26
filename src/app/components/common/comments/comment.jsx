@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { getCurrentUserId, getUserById } from "../../../store/users";
 
 const Comment = ({
-    data,
+    content,
     created_at: created,
     _id: id,
     userId,
@@ -43,7 +43,7 @@ const Comment = ({
                                          </button>
                                      )}
                                  </div>
-                                 <p className="small mb-0">{data.content}</p>
+                                 <p className="small mb-0">{content}</p>
                              </div>
                          </div>
                      </div>
@@ -53,7 +53,7 @@ const Comment = ({
     );
 };
 Comment.propTypes = {
-    data: PropTypes.object,
+    content: PropTypes.string,
     edited_at: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     created_at: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     userId: PropTypes.string,
