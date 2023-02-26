@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { getIsLoggedIn } from "../../store/users";
 
 const NavBar = () => {
-    const isLoggedIn = useSelector(getIsLoggedIn);
+    const isLoggedIn = useSelector(getIsLoggedIn());
     return (
         <nav className={"navbar bg-light mb-3"}>
             <div className={"container-fluid"}>

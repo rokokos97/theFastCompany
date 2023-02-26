@@ -41,7 +41,7 @@ const usersSlice = createSlice({
         },
         authRequestSuccess: (state, action) => {
             state.auth = action.payload;
-            state.isLoading = true;
+            state.isLoggedIn = true;
         },
         authRequestFailed: (state, action) => {
             state.error = action.payload;
@@ -76,10 +76,11 @@ const {
     authRequestFailed,
     userCreated,
     userLoggedOut,
-    userUpdateSuccessed
+    userUpdateSuccessed,
+    authRequested
 } = actions;
 
-const authRequested = createAction("users/authRequested");
+// const authRequested = createAction("users/authRequested");
 const userCreateRequested = createAction("users/createUserRequested");
 const userCreateFailed = createAction("users/userCreateFailed");
 const userUpdateRequested = createAction("users/userUpdateRequested");
