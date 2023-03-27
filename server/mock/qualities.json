@@ -1,0 +1,42 @@
+[
+  {
+    "_id": "67rdca3eeb7f6fgeed471198",
+    "name": "Boring",
+    "color": "primary"
+  },
+  {
+    "_id": "67rdca3eeb7f6fgeed471100",
+    "name": "Strange",
+    "color": "secondary"
+  },
+  {
+    "_id": "67rdca3eeb7f6fgeed4711012",
+    "name": "Troll",
+    "color": "success"
+  },
+  {
+    "_id": "67rdca3eeb7f6fgeed471101",
+    "name": "Lucky",
+    "color": "danger"
+  },
+  {
+    "_id": "67rdca3eeb7f6fgeed471102",
+    "name": "Handsome",
+    "color": "info"
+  },
+  {
+    "_id": "67rdca3eeb7f6fgeed47r103",
+    "name": "Unsure",
+    "color": "dark"
+  },
+  {
+    "_id": "67rdca3ecb7f6fgeed4711031",
+    "name": "Patriot",
+    "color": "warning"
+  },
+  {
+    "_id": "67rdca3ewb7f6fgeed4711032",
+    "name": "Clever",
+    "color": "primary"
+  }
+]
