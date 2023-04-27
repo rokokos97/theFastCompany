@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="debug">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/config.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -179,21 +180,7 @@
       <workItem from="1681730419515" duration="598000" />
       <workItem from="1682371067927" duration="2126000" />
       <workItem from="1682530684921" duration="607000" />
-      <workItem from="1682597452403" duration="1278000" />
-    </task>
-    <task id="LOCAL-00205" summary="users.jsx =&gt; add &lt;Redirect to={`/users/${currentUser._id}/edit`}/&gt; (16-19)">
-      <created>1677017152698</created>
-      <option name="number" value="00205" />
-      <option name="presentableId" value="LOCAL-00205" />
-      <option name="project" value="LOCAL" />
-      <updated>1677017152698</updated>
-    </task>
-    <task id="LOCAL-00206" summary="install reduxjs/toolkit and react-redux">
-      <created>1677068221337</created>
-      <option name="number" value="00206" />
-      <option name="presentableId" value="LOCAL-00206" />
-      <option name="project" value="LOCAL" />
-      <updated>1677068221338</updated>
+      <workItem from="1682597452403" duration="4287000" />
     </task>
     <task id="LOCAL-00207" summary="add folder store=&gt; add createStore.js =&gt;export function createStore()">
       <created>1677068618499</created>
@@ -524,7 +511,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682598506037</updated>
     </task>
-    <option name="localTasksCounter" value="254" />
+    <task id="LOCAL-00254" summary="debug">
+      <created>1682598740198</created>
+      <option name="number" value="00254" />
+      <option name="presentableId" value="LOCAL-00254" />
+      <option name="project" value="LOCAL" />
+      <updated>1682598740198</updated>
+    </task>
+    <task id="LOCAL-00255" summary="debug">
+      <created>1682599731811</created>
+      <option name="number" value="00255" />
+      <option name="presentableId" value="LOCAL-00255" />
+      <option name="project" value="LOCAL" />
+      <updated>1682599731811</updated>
+    </task>
+    <option name="localTasksCounter" value="256" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
