@@ -6,7 +6,7 @@ import UserPage from "../components/page/userPage";
 import UsersListPage from "../components/page/usersListPage";
 import UsersLoader from "../components/ui/hoc/usersLoader";
 
-import { getCurrentUserId } from "../store/users";
+import { getCurrentUserId } from "../store/user";
 const Users = () => {
     const params = useParams();
     const { userId, edit } = params;

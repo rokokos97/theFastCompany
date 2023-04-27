@@ -14,7 +14,7 @@ import {
     getProfessions,
     getProfessionsLoadingStatus
 } from "../../../store/professions";
-import { getCurrentUserData, updateUser } from "../../../store/users";
+import { getCurrentUserData, updateUser } from "../../../store/user";
 
 const EditUserPage = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -60,12 +60,10 @@ const EditUserPage = () => {
         return qualitiesArray;
     }
     const transformData = (data) => {
-        const result = getQualitiesListByIds(data).map((qual) => ({
+        return getQualitiesListByIds(data).map((qual) => ({
             label: qual.name,
             value: qual._id
         }));
-
-        return result;
     };
     useEffect(() => {
         if (!professionLoading && !qualitiesLoading && currentUser && !data) {

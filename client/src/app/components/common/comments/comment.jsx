@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { displayDate } from "../../../utils/displayDate";
-import { getCurrentUserId, getUserById } from "../../../store/users";
+import { getCurrentUserId, getUserById } from "../../../store/user";
 import { useSelector } from "react-redux";
 const Comment = ({
     content,

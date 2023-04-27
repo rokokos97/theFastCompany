@@ -5,7 +5,7 @@ import {
     getIsLoggedIn,
     getUsersLoadingStatus,
     loadUsersList
-} from "../../../store/users";
+} from "../../../store/user";
 import { loadQualitiesList } from "../../../store/qualities";
 import { loadProfessionsList } from "../../../store/professions";
 

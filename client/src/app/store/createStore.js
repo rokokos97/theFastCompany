@@ -1,7 +1,7 @@
 import commentsReducer from "./comments";
 import professionsReducer from "./professions";
 import qualitiesReducer from "./qualities";
-import usersReducer from "./users";
+import usersReducer from "./user";
 
 const { combineReducers, configureStore } = require("@reduxjs/toolkit");
 

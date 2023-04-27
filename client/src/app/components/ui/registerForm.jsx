@@ -6,9 +6,9 @@ import RadioField from "../common/form/radio.Field";
 import MultiSelectField from "../common/form/multiSelectField";
 import CheckBoxField from "../common/form/checkBoxField";
 import { useSelector, useDispatch } from "react-redux";
-import {getQualities, loadQualitiesList} from "../../store/qualities";
+import {getQualities} from "../../store/qualities";
 import { getProfessions } from "../../store/professions";
-import { signUp } from "../../store/users";
+import { signUp } from "../../store/user";
 
 const RegisterForm = () => {
     const dispatch = useDispatch();
@@ -41,7 +41,7 @@ const RegisterForm = () => {
             [target.name]: target.value
         }));
     };
-    const validatorConfog = {
+    const validatorConfig = {
         email: {
             isRequired: {
                 message: "Email is required"
@@ -66,13 +66,16 @@ const RegisterForm = () => {
             isCapitalSymbol: {
                 message: "Password must contain at least one capital letter"
             },
+            isSpecialSymbol: {
+                message: "Password must contain at least one of symbols !_$%&*"
+            },
             isContainDigit: {
                 message: "Password must contain at least one number"
             },
             min: {
                 message: "Password must be at least 8 characters long",
                 value: 8
-            }
+            },
         },
         profession: {
             isRequired: {
@@ -90,7 +93,7 @@ const RegisterForm = () => {
         validate();
     }, [data]);
     const validate = () => {
-        const errors = validator(data, validatorConfog);
+        const errors = validator(data, validatorConfig);
         setErrors(errors);
         return Object.keys(errors).length === 0;
     };
@@ -107,7 +110,6 @@ const RegisterForm = () => {
         };
         dispatch(signUp(newData));
     };
-
     return (
         <form onSubmit={handleSubmit}>
             <TextField

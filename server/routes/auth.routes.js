@@ -6,15 +6,16 @@ const {generateUserData} = require('../utils/helpers')
 const tokenService = require('../services/token.service')
 const router = express.Router({ mergeParams: true })
 
-// /api/auth/signUp
-// 1. get data from req (email, password ...)
-// 2. check if users already exists
-// 3. hash password
-// 4. create user
-// 5. generate tokens
 router.post('/signUp', [
   check('email', 'Некорректный email').isEmail(),
-  check('password', 'Минимальная длина пароля 8 символов').isLength({min: 8}),
+  check('password', 'Минимальная длина пароля 8 символов')
+      .isStrongPassword({
+        minNumbers: 1,
+        minLowercase: 1,
+        minUppercase: 1,
+        minLength: 8,
+        minSymbols: 1,
+      }),
   async (req, res) => {
     try {
       const errors = validationResult(req)
@@ -23,7 +24,7 @@ router.post('/signUp', [
           error: {
             message: 'INVALID_DATA',
             code: 400,
-            // errors: errors.array()
+            errors: errors.array()
           }
         })
       }
@@ -60,12 +61,6 @@ router.post('/signUp', [
       })
     }
 }])
-
-// 1. validate
-// 2. find user
-// 3. compare hashed password
-// 4. generate token
-// 5. return data
 router.post('/signInWithPassword', [
   check('email', 'Email некорректный').normalizeEmail().isEmail(),
   check('password', 'Пароль не может быть пустым').exists(),

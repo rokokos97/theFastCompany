@@ -5,7 +5,7 @@ import Table from "../common/table";
 import { Link } from "react-router-dom";
 import Profession from "./profession";
 
-const UserTable = ({
+const  UserTable = ({
     users,
     onSort,
     selectedSort
