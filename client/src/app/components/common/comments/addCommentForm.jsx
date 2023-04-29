@@ -15,7 +15,7 @@ const AddCommentForm = ({ onSubmit }) => {
     const validatorConfig = {
         content: {
             isRequired: {
-                message: "Сообщение не может быть пустым"
+                message: "Message cannot be empty"
             }
         }
     };

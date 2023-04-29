@@ -33,6 +33,7 @@ const { professionsRequested, professionsReceved, professionsRequestFiled } =
 export const loadProfessionsList = () => async (dispatch, getState) => {
     const { lastFetch } = getState().professions;
     if (isOutdated(lastFetch)) {
+        console.log("lastFetch", lastFetch);
         dispatch(professionsRequested());
         try {
             const { content } = await professionService.get();
@@ -45,7 +46,7 @@ export const loadProfessionsList = () => async (dispatch, getState) => {
 export const getProfessions = () => (state) => state.professions.entities;
 export const getProfessionsLoadingStatus = () => (state) =>
     state.professions.isLoading;
-export const getProfessionById = (id) => (state) => {
+export const getProfessionbyId = (id) => (state) => {
     if (state.professions.entities) {
         return state.professions.entities.find((p) => p._id === id);
     }

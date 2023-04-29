@@ -14,7 +14,7 @@ import {
     getProfessions,
     getProfessionsLoadingStatus
 } from "../../../store/professions";
-import { getCurrentUserData, updateUser } from "../../../store/user";
+import { getCurrentUserData, updateUser } from "../../../store/users";
 
 const EditUserPage = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -60,10 +60,12 @@ const EditUserPage = () => {
         return qualitiesArray;
     }
     const transformData = (data) => {
-        return getQualitiesListByIds(data).map((qual) => ({
+        const result = getQualitiesListByIds(data).map((qual) => ({
             label: qual.name,
             value: qual._id
         }));
+
+        return result;
     };
     useEffect(() => {
         if (!professionLoading && !qualitiesLoading && currentUser && !data) {
@@ -79,19 +81,19 @@ const EditUserPage = () => {
         }
     }, [data]);
 
-    const validatorConfig = {
+    const validatorConfog = {
         email: {
             isRequired: {
-                message: "Email is required"
+                message: "Электронная почта обязательна для заполнения"
             },
             isEmail: {
-                message: "Email is not correct"
+                message: "Email введен некорректно"
             }
         },
 
         name: {
             isRequired: {
-                message: "Enter your name"
+                message: "Введите ваше имя"
             }
         }
     };
@@ -103,7 +105,7 @@ const EditUserPage = () => {
         }));
     };
     const validate = () => {
-        const errors = validator(data, validatorConfig);
+        const errors = validator(data, validatorConfog);
         setErrors(errors);
         return Object.keys(errors).length === 0;
     };
@@ -116,21 +118,21 @@ const EditUserPage = () => {
                     {!isLoading && Object.keys(professions).length > 0 ? (
                         <form onSubmit={handleSubmit}>
                             <TextField
-                                label="Name"
+                                label="Имя"
                                 name="name"
                                 value={data.name}
                                 onChange={handleChange}
                                 error={errors.name}
                             />
                             <TextField
-                                label="Email"
+                                label="Электронная почта"
                                 name="email"
                                 value={data.email}
                                 onChange={handleChange}
                                 error={errors.email}
                             />
                             <SelectField
-                                label="Choose your profession"
+                                label="Выбери свою профессию"
                                 defaultOption="Choose..."
                                 name="profession"
                                 options={professionsList}
@@ -147,21 +149,21 @@ const EditUserPage = () => {
                                 value={data.sex}
                                 name="sex"
                                 onChange={handleChange}
-                                label="Choose your gender"
+                                label="Выберите ваш пол"
                             />
                             <MultiSelectField
                                 defaultValue={data.qualities}
                                 options={qualitiesList}
                                 onChange={handleChange}
                                 name="qualities"
-                                label="Choose your qualities"
+                                label="Выберите ваши качесвта"
                             />
                             <button
                                 type="submit"
                                 disabled={!isValid}
                                 className="btn btn-primary w-100 mx-auto"
                             >
-                                Update
+                                Обновить
                             </button>
                         </form>
                     ) : (

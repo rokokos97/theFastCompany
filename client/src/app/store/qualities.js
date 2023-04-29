@@ -14,7 +14,7 @@ const qualitiesSlice = createSlice({
         qualitiesRequested: (state) => {
             state.isLoading = true;
         },
-        qualitiesReceived: (state, action) => {
+        qualitiesReceved: (state, action) => {
             state.entities = action.payload;
             state.lastFetch = Date.now();
             state.isLoading = false;
@@ -27,7 +27,7 @@ const qualitiesSlice = createSlice({
 });
 
 const { reducer: qualitiesReducer, actions } = qualitiesSlice;
-const { qualitiesRequested, qualitiesReceived, qualitiesRequestFiled } = actions;
+const { qualitiesRequested, qualitiesReceved, qualitiesRequestFiled } = actions;
 
 export const loadQualitiesList = () => async (dispatch, getState) => {
     const { lastFetch } = getState().qualities;
@@ -35,7 +35,7 @@ export const loadQualitiesList = () => async (dispatch, getState) => {
         dispatch(qualitiesRequested());
         try {
             const { content } = await qualityService.fetchAll();
-            dispatch(qualitiesReceived(content));
+            dispatch(qualitiesReceved(content));
         } catch (error) {
             dispatch(qualitiesRequestFiled(error.message));
         }
@@ -45,7 +45,7 @@ export const loadQualitiesList = () => async (dispatch, getState) => {
 export const getQualities = () => (state) => state.qualities.entities;
 export const getQualitiesLoadingStatus = () => (state) =>
     state.qualities.isLoading;
-export const getQualitiesByIds = (qualitiesIds) => (state) => {
+export const getQulitiesByIds = (qualitiesIds) => (state) => {
     if (state.qualities.entities) {
         const qualitiesArray = [];
         for (const qualId of qualitiesIds) {

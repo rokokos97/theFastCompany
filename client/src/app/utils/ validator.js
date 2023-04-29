@@ -21,11 +21,6 @@ export function validator(data, config) {
                 statusValidate = !capitalRegExp.test(data);
                 break;
             }
-            case "isSpecialSymbol": {
-                const specialRegExp = /[!$%&*_]+/g;
-                statusValidate = !specialRegExp.test(data);
-                break;
-            }
             case "isContainDigit": {
                 const digitRegExp = /\d+/g;
                 statusValidate = !digitRegExp.test(data);

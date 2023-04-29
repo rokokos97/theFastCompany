@@ -4,7 +4,7 @@ import TextField from "../common/form/textField";
 import CheckBoxField from "../common/form/checkBoxField";
 import { useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { getAuthErrors, login } from "../../store/user";
+import { getAuthErrors, login } from "../../store/users";
 
 const LoginForm = () => {
     const [data, setData] = useState({
@@ -14,7 +14,7 @@ const LoginForm = () => {
     });
     const loginError = useSelector(getAuthErrors());
     const history = useHistory();
-    const dispatch = useDispatch();
+    const dispath = useDispatch();
     const [errors, setErrors] = useState({});
 
     const handleChange = (target) => {
@@ -24,15 +24,15 @@ const LoginForm = () => {
         }));
     };
 
-    const validatorConfig = {
+    const validatorConfog = {
         email: {
             isRequired: {
-                message: "Email is required"
+                message: "Электронная почта обязательна для заполнения"
             }
         },
         password: {
             isRequired: {
-                message: "Password required"
+                message: "Пароль обязателкн для заполнения"
             }
         }
     };
@@ -40,7 +40,7 @@ const LoginForm = () => {
         validate();
     }, [data]);
     const validate = () => {
-        const errors = validator(data, validatorConfig);
+        const errors = validator(data, validatorConfog);
         setErrors(errors);
         return Object.keys(errors).length === 0;
     };
@@ -54,19 +54,19 @@ const LoginForm = () => {
             ? history.location.state.from.pathname
             : "/";
 
-        dispatch(login({ payload: data, redirect }));
+        dispath(login({ payload: data, redirect }));
     };
     return (
         <form onSubmit={handleSubmit}>
             <TextField
-                label="E-mail"
+                label="Электронная почта"
                 name="email"
                 value={data.email}
                 onChange={handleChange}
                 error={errors.email}
             />
             <TextField
-                label="Password"
+                label="Пароль"
                 type="password"
                 name="password"
                 value={data.password}
@@ -78,7 +78,7 @@ const LoginForm = () => {
                 onChange={handleChange}
                 name="stayOn"
             >
-                Remember me
+                Оставаться в системе
             </CheckBoxField>
             {loginError && <p className="text-danger">{loginError}</p>}
 
@@ -87,7 +87,7 @@ const LoginForm = () => {
                 disabled={!isValid}
                 className="btn btn-primary w-100 mx-auto"
             >
-                Log In
+                Submit
             </button>
         </form>
     );

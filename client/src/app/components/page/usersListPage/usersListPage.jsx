@@ -11,7 +11,7 @@ import {
     getProfessionsLoadingStatus
 } from "../../../store/professions";
 import { useSelector } from "react-redux";
-import { getCurrentUserId, getUsersList } from "../../../store/user";
+import { getCurrentUserId, getUsersList } from "../../../store/users";
 const UsersListPage = () => {
     const users = useSelector(getUsersList());
     const currentUserId = useSelector(getCurrentUserId());
@@ -23,6 +23,21 @@ const UsersListPage = () => {
     const [selectedProf, setSelectedProf] = useState();
     const [sortBy, setSortBy] = useState({ path: "name", order: "asc" });
     const pageSize = 8;
+
+    const handleDelete = (userId) => {
+        console.log("delete user");
+        // setUsers(users.filter((user) => user._id !== userId));
+    };
+    const handleToggleBookMark = (id) => {
+        const newArray = users.map((user) => {
+            if (user._id === id) {
+                return { ...user, bookmark: !user.bookmark };
+            }
+            return user;
+        });
+        // setUsers(newArray);
+        console.log(newArray);
+    };
 
     useEffect(() => {
         setCurrentPage(1);
@@ -78,11 +93,11 @@ const UsersListPage = () => {
                         className="btn btn-secondary mt-2"
                         onClick={clearFilter}
                     >
-                        Clear
+                        Очиститть
                     </button>
                 </div>
             )}
-            <div className="d-flex flex-column container-fluid">
+            <div className="d-flex flex-column">
                 <SearchStatus length={count} />
                 <input
                     type="text"
@@ -96,6 +111,8 @@ const UsersListPage = () => {
                         users={usersCrop}
                         onSort={handleSort}
                         selectedSort={sortBy}
+                        onDelete={handleDelete}
+                        onToggleBookMark={handleToggleBookMark}
                     />
                 )}
                 <div className="d-flex justify-content-center">
