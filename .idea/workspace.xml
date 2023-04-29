@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="translate app">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/components/common/comments/addCommentForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/common/comments/addCommentForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/utils/displayDate.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/utils/displayDate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/layouts/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/layouts/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,14 +184,7 @@
       <workItem from="1682597452403" duration="5732000" />
       <workItem from="1682682755541" duration="895000" />
       <workItem from="1682685509508" duration="2385000" />
-      <workItem from="1682687902406" duration="9453000" />
-    </task>
-    <task id="LOCAL-00210" summary="delete QualitiesProvider in App.js">
-      <created>1677078103675</created>
-      <option name="number" value="00210" />
-      <option name="presentableId" value="LOCAL-00210" />
-      <option name="project" value="LOCAL" />
-      <updated>1677078103675</updated>
+      <workItem from="1682687902406" duration="10617000" />
     </task>
     <task id="LOCAL-00211" summary="qualitiesList.jsx =&gt; add useEffect (11-13)">
       <created>1677079690075</created>
@@ -529,7 +522,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682763218447</updated>
     </task>
-    <option name="localTasksCounter" value="259" />
+    <task id="LOCAL-00259" summary="translate app">
+      <created>1682763614575</created>
+      <option name="number" value="00259" />
+      <option name="presentableId" value="LOCAL-00259" />
+      <option name="project" value="LOCAL" />
+      <updated>1682763614575</updated>
+    </task>
+    <option name="localTasksCounter" value="260" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
