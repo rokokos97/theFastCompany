@@ -2,13 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 const SearchStatus = ({ length }) => {
     const renderPhrase = (number) => {
-        const lastOne = Number(number.toString().slice(-1));
-        if (number > 4 && number < 15) {
-            return "человек тусанет";
+        if (number === 1) {
+            return "person";
         }
-        if (lastOne === 1) return "человек тусанет";
-        if ([2, 3, 4].indexOf(lastOne) >= 0) return "человека тусанут";
-        return "человек тусанет";
+        return "people";
     };
     return (
         <h2>
@@ -16,8 +13,8 @@ const SearchStatus = ({ length }) => {
                 className={"badge " + (length > 0 ? "bg-primary" : "bg-danger")}
             >
                 {length > 0
-                    ? `${length + " " + renderPhrase(length)}   с тобой сегодня`
-                    : "Никто с тобой не тусанет"}
+                    ? `${length + " " + renderPhrase(length)}  hangs out with you`
+                    : "Nobody hangs out with you"}
             </span>
         </h2>
     );

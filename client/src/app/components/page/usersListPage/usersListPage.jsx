@@ -25,7 +25,8 @@ const UsersListPage = () => {
     const pageSize = 8;
 
     const handleDelete = (userId) => {
-        console.log("delete user");
+
+        console.log(`delete user ${userId}`);
         // setUsers(users.filter((user) => user._id !== userId));
     };
     const handleToggleBookMark = (id) => {
@@ -93,7 +94,7 @@ const UsersListPage = () => {
                         className="btn btn-secondary mt-2"
                         onClick={clearFilter}
                     >
-                        Очиститть
+                        Reset
                     </button>
                 </div>
             )}

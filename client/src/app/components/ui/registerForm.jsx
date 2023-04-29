@@ -44,45 +44,45 @@ const RegisterForm = () => {
     const validatorConfog = {
         email: {
             isRequired: {
-                message: "Электронная почта обязательна для заполнения"
+                message: "Email is required"
             },
             isEmail: {
-                message: "Email введен некорректно"
+                message: "Email is not correct"
             }
         },
         name: {
             isRequired: {
-                message: "Имя обязательно для заполнения"
+                message: "Name is required"
             },
             min: {
-                message: "Имя должено состаять миниму из 3 символов",
+                message: "Name must be at least 3 characters long",
                 value: 3
             }
         },
         password: {
             isRequired: {
-                message: "Пароль обязательна для заполнения"
+                message: "Password is required"
             },
             isCapitalSymbol: {
-                message: "Пароль должен содержать хотя бы одну заглавную букву"
+                message: "Password must contain at least one capital letter"
             },
             isContainDigit: {
-                message: "Пароль должен содержать хотя бы одно число"
+                message: "Password must contain at least one number"
             },
             min: {
-                message: "Пароль должен состаять миниму из 8 символов",
+                message: "Password must be at least 8 characters long",
                 value: 8
             }
         },
         profession: {
             isRequired: {
-                message: "Обязательно выберите вашу профессию"
+                message: "Be sure to select your profession"
             }
         },
         licence: {
             isRequired: {
                 message:
-                    "Вы не можете использовать наш сервис без подтреврждения лицензионного соглашения"
+                    "You may not use our service without acknowledging the license agreement"
             }
         }
     };
@@ -110,21 +110,21 @@ const RegisterForm = () => {
     return (
         <form onSubmit={handleSubmit}>
             <TextField
-                label="Электронная почта"
+                label="Email"
                 name="email"
                 value={data.email}
                 onChange={handleChange}
                 error={errors.email}
             />
             <TextField
-                label="Имя"
+                label="Name"
                 name="name"
                 value={data.name}
                 onChange={handleChange}
                 error={errors.name}
             />
             <TextField
-                label="Пароль"
+                label="Password"
                 type="password"
                 name="password"
                 value={data.password}
@@ -132,7 +132,7 @@ const RegisterForm = () => {
                 error={errors.password}
             />
             <SelectField
-                label="Выбери свою профессию"
+                label="Choose your profession"
                 defaultOption="Choose..."
                 name="profession"
                 options={professionsList}
@@ -149,13 +149,13 @@ const RegisterForm = () => {
                 value={data.sex}
                 name="sex"
                 onChange={handleChange}
-                label="Выберите ваш пол"
+                label="Choose your sex"
             />
             <MultiSelectField
                 options={qualitiesList}
                 onChange={handleChange}
                 name="qualities"
-                label="Выберите ваши качесвта"
+                label="Choose your qualities"
             />
             <CheckBoxField
                 value={data.licence}
@@ -163,14 +163,14 @@ const RegisterForm = () => {
                 name="licence"
                 error={errors.licence}
             >
-                Подтвердить <a>лицензионное соглашение</a>
+                Confirm <a>license</a>
             </CheckBoxField>
             <button
                 type="submit"
                 disabled={!isValid}
                 className="btn btn-primary w-100 mx-auto"
             >
-                Submit
+                Register
             </button>
         </form>
     );

@@ -60,12 +60,11 @@ const EditUserPage = () => {
         return qualitiesArray;
     }
     const transformData = (data) => {
-        const result = getQualitiesListByIds(data).map((qual) => ({
+        return getQualitiesListByIds(data).map((qual) => ({
             label: qual.name,
             value: qual._id
         }));
 
-        return result;
     };
     useEffect(() => {
         if (!professionLoading && !qualitiesLoading && currentUser && !data) {
@@ -81,19 +80,19 @@ const EditUserPage = () => {
         }
     }, [data]);
 
-    const validatorConfog = {
+    const validatorConfig = {
         email: {
             isRequired: {
-                message: "Электронная почта обязательна для заполнения"
+                message: "Email is required"
             },
             isEmail: {
-                message: "Email введен некорректно"
+                message: "Email is not correct"
             }
         },
 
         name: {
             isRequired: {
-                message: "Введите ваше имя"
+                message: "Name is required"
             }
         }
     };
@@ -105,7 +104,7 @@ const EditUserPage = () => {
         }));
     };
     const validate = () => {
-        const errors = validator(data, validatorConfog);
+        const errors = validator(data, validatorConfig);
         setErrors(errors);
         return Object.keys(errors).length === 0;
     };
@@ -114,25 +113,25 @@ const EditUserPage = () => {
         <div className="container mt-5">
             <BackHistoryButton />
             <div className="row">
-                <div className="col-md-6 offset-md-3 shadow p-4">
+                <div className="card col-md-6 offset-md-3 shadow p-4">
                     {!isLoading && Object.keys(professions).length > 0 ? (
                         <form onSubmit={handleSubmit}>
                             <TextField
-                                label="Имя"
+                                label="Name"
                                 name="name"
                                 value={data.name}
                                 onChange={handleChange}
                                 error={errors.name}
                             />
                             <TextField
-                                label="Электронная почта"
+                                label="Email"
                                 name="email"
                                 value={data.email}
                                 onChange={handleChange}
                                 error={errors.email}
                             />
                             <SelectField
-                                label="Выбери свою профессию"
+                                label="Choose your profession"
                                 defaultOption="Choose..."
                                 name="profession"
                                 options={professionsList}
@@ -149,21 +148,21 @@ const EditUserPage = () => {
                                 value={data.sex}
                                 name="sex"
                                 onChange={handleChange}
-                                label="Выберите ваш пол"
+                                label="Choose your sex"
                             />
                             <MultiSelectField
                                 defaultValue={data.qualities}
                                 options={qualitiesList}
                                 onChange={handleChange}
                                 name="qualities"
-                                label="Выберите ваши качесвта"
+                                label="Choose your qualities"
                             />
                             <button
                                 type="submit"
                                 disabled={!isValid}
                                 className="btn btn-primary w-100 mx-auto"
                             >
-                                Обновить
+                                Edit info
                             </button>
                         </form>
                     ) : (

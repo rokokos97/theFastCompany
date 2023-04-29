@@ -14,7 +14,7 @@ const LoginForm = () => {
     });
     const loginError = useSelector(getAuthErrors());
     const history = useHistory();
-    const dispath = useDispatch();
+    const dispatch = useDispatch();
     const [errors, setErrors] = useState({});
 
     const handleChange = (target) => {
@@ -24,15 +24,15 @@ const LoginForm = () => {
         }));
     };
 
-    const validatorConfog = {
+    const validatorConfig = {
         email: {
             isRequired: {
-                message: "Электронная почта обязательна для заполнения"
+                message: "Email is required"
             }
         },
         password: {
             isRequired: {
-                message: "Пароль обязателкн для заполнения"
+                message: "Password required"
             }
         }
     };
@@ -40,7 +40,7 @@ const LoginForm = () => {
         validate();
     }, [data]);
     const validate = () => {
-        const errors = validator(data, validatorConfog);
+        const errors = validator(data, validatorConfig);
         setErrors(errors);
         return Object.keys(errors).length === 0;
     };
@@ -54,19 +54,19 @@ const LoginForm = () => {
             ? history.location.state.from.pathname
             : "/";
 
-        dispath(login({ payload: data, redirect }));
+        dispatch(login({ payload: data, redirect }));
     };
     return (
         <form onSubmit={handleSubmit}>
             <TextField
-                label="Электронная почта"
+                label="Email"
                 name="email"
                 value={data.email}
                 onChange={handleChange}
                 error={errors.email}
             />
             <TextField
-                label="Пароль"
+                label="Password"
                 type="password"
                 name="password"
                 value={data.password}
@@ -78,7 +78,7 @@ const LoginForm = () => {
                 onChange={handleChange}
                 name="stayOn"
             >
-                Оставаться в системе
+                Remember me
             </CheckBoxField>
             {loginError && <p className="text-danger">{loginError}</p>}
 
@@ -87,7 +87,7 @@ const LoginForm = () => {
                 disabled={!isValid}
                 className="btn btn-primary w-100 mx-auto"
             >
-                Submit
+                Log in
             </button>
         </form>
     );
