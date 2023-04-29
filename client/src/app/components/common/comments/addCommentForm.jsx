@@ -48,7 +48,7 @@ const AddCommentForm = ({ onSubmit }) => {
                     value={data.content || ""}
                     onChange={handleChange}
                     name="content"
-                    label="Сообщение"
+                    label="Message"
                     error={errors.content}
                 />
                 <div className="d-flex justify-content-end">
