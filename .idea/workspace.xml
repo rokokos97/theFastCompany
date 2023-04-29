@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="translate app">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/config/production.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/layouts/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/layouts/main.jsx" afterDir="false" />
+    <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="update README.md">
+      <change afterPath="$PROJECT_DIR$/server/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +84,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/rokokos97/WebstormProjects/the-fast-company",
+    "last_opened_file_path": "/Users/rokokos97/WebstormProjects/the-fast-company/server",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -104,11 +101,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/server/config" />
       <recent name="$PROJECT_DIR$/client" />
       <recent name="$PROJECT_DIR$/server/client" />
-      <recent name="$PROJECT_DIR$/client/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/app/utils" />
@@ -186,14 +183,7 @@
       <workItem from="1682682755541" duration="895000" />
       <workItem from="1682685509508" duration="2385000" />
       <workItem from="1682687902406" duration="13071000" />
-      <workItem from="1682795535303" duration="1747000" />
-    </task>
-    <task id="LOCAL-00212" summary="create professions.js &#10;create outdate.js&#10;realise logic like qualities.js">
-      <created>1677167968665</created>
-      <option name="number" value="00212" />
-      <option name="presentableId" value="LOCAL-00212" />
-      <option name="project" value="LOCAL" />
-      <updated>1677167968665</updated>
+      <workItem from="1682795535303" duration="2215000" />
     </task>
     <task id="LOCAL-00213" summary="delete &lt;ProfessionProvider/&gt;&#10;createStore.js =&gt; add professionReducer">
       <created>1677169941771</created>
@@ -531,7 +521,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682764756649</updated>
     </task>
-    <option name="localTasksCounter" value="261" />
+    <task id="LOCAL-00261" summary="update README.md">
+      <created>1682797318214</created>
+      <option name="number" value="00261" />
+      <option name="presentableId" value="LOCAL-00261" />
+      <option name="project" value="LOCAL" />
+      <updated>1682797318214</updated>
+    </task>
+    <option name="localTasksCounter" value="262" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -580,7 +577,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="protectedRouth.jsx =&gt; const isLoggedIn = useSelector(getIsLoggedIn());" />
     <MESSAGE value="users.js =&gt; add initialState parameter =&gt; dataLoaded: false;&#10; usersReceived =&gt; add state.dataLoaded = true;(24);&#10; export const getDataStatus = () =&gt; (state) =&gt; state.users.dataLoaded;(123)" />
     <MESSAGE value="users.js =&gt; add export const getCurrentUser = () =&gt; (state) =&gt; state.users.auth.userId;&#10;&#10;usersListPage.jsx =&gt; const { currentUser } = useSelector(getCurrentUser());" />
     <MESSAGE value="create HOC =&gt; usersLoader.jsx" />
@@ -605,7 +601,8 @@
     <MESSAGE value="Merge remote-tracking branch 'github/master'" />
     <MESSAGE value="debug" />
     <MESSAGE value="translate app" />
-    <option name="LAST_COMMIT_MESSAGE" value="translate app" />
+    <MESSAGE value="update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="update README.md" />
   </component>
   <component name="regexState">
     <option name="map">
