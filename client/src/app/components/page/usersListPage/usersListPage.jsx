@@ -29,16 +29,16 @@ const UsersListPage = () => {
         console.log(`delete user ${userId}`);
         // setUsers(users.filter((user) => user._id !== userId));
     };
-    const handleToggleBookMark = (id) => {
-        const newArray = users.map((user) => {
-            if (user._id === id) {
-                return { ...user, bookmark: !user.bookmark };
-            }
-            return user;
-        });
-        // setUsers(newArray);
-        console.log(newArray);
-    };
+    // const handleToggleBookMark = (id) => {
+    //     const newArray = users.map((user) => {
+    //         if (user._id === id) {
+    //             return { ...user, bookmark: !user.bookmark };
+    //         }
+    //         return user;
+    //     });
+    //     // setUsers(newArray);
+    //     console.log(newArray);
+    // };
 
     useEffect(() => {
         setCurrentPage(1);
@@ -78,42 +78,52 @@ const UsersListPage = () => {
     const sortedUsers = _.orderBy(filteredUsers, [sortBy.path], [sortBy.order]);
     const usersCrop = paginate(sortedUsers, currentPage, pageSize);
     const clearFilter = () => {
+        console.log("hello")
         setSelectedProf();
     };
 
     return (
-        <div className="d-flex">
-            {professions && !professionsLoading && (
-                <div className="d-flex flex-column flex-shrink-0 p-3">
-                    <GroupList
-                        selectedItem={selectedProf}
-                        items={professions}
-                        onItemSelect={handleProfessionSelect}
-                    />
-                    <button
-                        className="btn btn-secondary mt-2"
-                        onClick={clearFilter}
-                    >
-                        Reset
-                    </button>
-                </div>
-            )}
+        <>
+        <div className="mx-1">
+            <SearchStatus length={count}/>
+        </div>
+        <div className="w-100 mx-1">
+            <input
+                className="container-fluid"
+                type="text"
+                name="searchQuery"
+                placeholder="Search..."
+                onChange={handleSearchQuery}
+                value={searchQuery}
+            />
+        </div>
+            <div className="d-flex flex-nowrap">
+                {professions && !professionsLoading && (
+                    <div className="d-flex flex-column w-100 mx-1">
+                        <GroupList
+                            selectedItem={selectedProf}
+                            items={professions}
+                            onItemSelect={handleProfessionSelect}
+                            onReset={clearFilter}
+                        />
+                        <button
+                            className="btn btn-secondary"
+                            onClick={clearFilter}
+                        >
+                            Reset
+                        </button>
+                    </div>
+                )}
+            </div>
+
             <div className="d-flex flex-column">
-                <SearchStatus length={count} />
-                <input
-                    type="text"
-                    name="searchQuery"
-                    placeholder="Search..."
-                    onChange={handleSearchQuery}
-                    value={searchQuery}
-                />
                 {count > 0 && (
                     <UserTable
                         users={usersCrop}
                         onSort={handleSort}
                         selectedSort={sortBy}
                         onDelete={handleDelete}
-                        onToggleBookMark={handleToggleBookMark}
+                        // onToggleBookMark={handleToggleBookMark}
                     />
                 )}
                 <div className="d-flex justify-content-center">
@@ -125,7 +135,7 @@ const UsersListPage = () => {
                     />
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 UsersListPage.propTypes = {

@@ -16,9 +16,9 @@ const Login = () => {
     };
 
     return (
-        <div className="container mt-5">
+        <div className="container mt-5 ">
             <div className="row">
-                <div className="card col-md-6 offset-md-3 shadow p-4">
+                <div className="card col-md-6 offset-md-3 shadow p-4 mx-auto">
                     {formType === "register" ? (
                         <>
                             <h3 className="text-center mb-4">Register</h3>

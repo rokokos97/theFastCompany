@@ -6,8 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="update README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/client/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.env.development" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/common/groupList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/common/groupList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/page/usersListPage/usersListPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/page/usersListPage/usersListPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/ui/searchStatus.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/ui/searchStatus.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/ui/usersTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/ui/usersTable.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/services/http.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/services/http.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/layouts/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/layouts/login.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +90,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
@@ -187,14 +195,10 @@
       <workItem from="1682687902406" duration="13071000" />
       <workItem from="1682795535303" duration="2500000" />
       <workItem from="1682798800260" duration="9712000" />
-      <workItem from="1682939067391" duration="1849000" />
-    </task>
-    <task id="LOCAL-00214" summary="create users.js like professions.js&#10;createStore.js =&gt; add usersReducer&#10;App.js =&gt; download users">
-      <created>1677171595660</created>
-      <option name="number" value="00214" />
-      <option name="presentableId" value="LOCAL-00214" />
-      <option name="project" value="LOCAL" />
-      <updated>1677171595660</updated>
+      <workItem from="1682939067391" duration="5132000" />
+      <workItem from="1682947367181" duration="1817000" />
+      <workItem from="1682950489977" duration="12936000" />
+      <workItem from="1683116003846" duration="299000" />
     </task>
     <task id="LOCAL-00215" summary="create authService.js">
       <created>1677184028586</created>
@@ -532,7 +536,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682797847808</updated>
     </task>
-    <option name="localTasksCounter" value="263" />
+    <task id="LOCAL-00263" summary="update README.md">
+      <created>1682943793530</created>
+      <option name="number" value="00263" />
+      <option name="presentableId" value="LOCAL-00263" />
+      <option name="project" value="LOCAL" />
+      <updated>1682943793531</updated>
+    </task>
+    <option name="localTasksCounter" value="264" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

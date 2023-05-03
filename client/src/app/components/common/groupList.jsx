@@ -6,34 +6,16 @@ const GroupList = ({
     valueProperty,
     contentProperty,
     onItemSelect,
-    selectedItem
+    selectedItem,
+    onReset,
 }) => {
-    if (!Array.isArray(items)) {
-        return (
-            <ul className="list-group">
-                {Object.keys(items).map((item) => (
-                    <li
-                        key={items[item][valueProperty]}
-                        className={
-                            "list-group-item" +
-                            (items[item] === selectedItem ? " active" : "")
-                        }
-                        onClick={() => onItemSelect(items[item])}
-                        role="button"
-                    >
-                        {items[item][contentProperty]}
-                    </li>
-                ))}
-            </ul>
-        );
-    }
     return (
-        <ul className="list-group">
+        <ul className="nav justify-content-between flex-nowrap">
             {items.map((item) => (
                 <li
                     key={item[valueProperty]}
                     className={
-                        "list-group-item" +
+                        "px-1 nav-link " +
                         (item === selectedItem ? " active" : "")
                     }
                     onClick={() => onItemSelect(item)}
