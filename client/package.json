@@ -2,6 +2,7 @@
     "name": "the-fast-company",
     "version": "0.1.0",
     "private": true,
+    "homepage": "https://rokokos97.github.io/theFastCompany",
     "dependencies": {
         "@reduxjs/toolkit": "^1.7.1",
         "@testing-library/jest-dom": "^5.11.4",
@@ -24,6 +25,8 @@
         "web-vitals": "^1.0.1"
     },
     "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
@@ -50,6 +53,7 @@
         "eslint-plugin-node": "^11.1.0",
         "eslint-plugin-promise": "^5.1.0",
         "eslint-plugin-react": "^7.25.1",
-        "eslint-plugin-react-hooks": "^4.2.0"
+        "eslint-plugin-react-hooks": "^4.2.0",
+        "gh-pages": "^5.0.0"
     }
 }
