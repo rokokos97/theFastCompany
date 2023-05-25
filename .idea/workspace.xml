@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef18f83f-8036-4b3a-84c5-f6d546b41d50" name="Changes" comment="change server">
+      <change afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,14 +199,10 @@
       <workItem from="1684067770255" duration="602000" />
       <workItem from="1684176571990" duration="624000" />
       <workItem from="1684445688707" duration="2027000" />
-      <workItem from="1684448950466" duration="5064000" />
-    </task>
-    <task id="LOCAL-00219" summary="users.jsx =&gt; userCreateRequested;&#10;add action created&#10;add method createUser;&#10;add reducer userCreated;&#10;add action userCreateFailed;">
-      <created>1677258372292</created>
-      <option name="number" value="00219" />
-      <option name="presentableId" value="LOCAL-00219" />
-      <option name="project" value="LOCAL" />
-      <updated>1677258372292</updated>
+      <workItem from="1684448950466" duration="15148000" />
+      <workItem from="1684770067403" duration="3000" />
+      <workItem from="1684770094830" duration="37000" />
+      <workItem from="1685010026814" duration="31000" />
     </task>
     <task id="LOCAL-00220" summary="npm i history@4.9.0&#10;create history.js">
       <created>1677260176545</created>
@@ -543,7 +540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684483672172</updated>
     </task>
-    <option name="localTasksCounter" value="268" />
+    <task id="LOCAL-00268" summary="change server">
+      <created>1684484773669</created>
+      <option name="number" value="00268" />
+      <option name="presentableId" value="LOCAL-00268" />
+      <option name="project" value="LOCAL" />
+      <updated>1684484773669</updated>
+    </task>
+    <option name="localTasksCounter" value="269" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

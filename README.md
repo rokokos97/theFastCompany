@@ -1,4 +1,4 @@
-## About [TheFastCompany](http://5.101.50.9/) App
+## About [TheFastCompany](http://113.30.151.241/) App
 
 This project was created on the ["Junior Frontend Developer"](https://vladilen.notion.site/76c9f175aa094ee8ad4102bbc1c57ce6) course to demonstrate skills in JavaScript , React.js, Node.js 
 It is Full-stack project (ReactJs + NodeJs). In this application implemented, next parts :
