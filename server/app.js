@@ -17,7 +17,7 @@ app.use('/api/upload', express.static('uploads'));
 app.use('/api', routes)
 
 
-const PORT = config.get('port') ?? 8080
+const PORT = config.get('port') ?? 8800
 
 if (process.env.NODE_ENV === 'production') {
   app.use('/', express.static(path.join(__dirname, 'client')));
@@ -45,5 +45,5 @@ async function start() {
   }
 }
 
-start()
+start();
 
