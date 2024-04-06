@@ -53,7 +53,6 @@ const LoginForm = () => {
         const redirect = history.location.state
             ? history.location.state.from.pathname
             : "/";
-
         dispatch(login({ payload: data, redirect }));
     };
     return (

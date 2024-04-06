@@ -40,7 +40,8 @@ const Login = () => {
                             <LoginForm />
                             <p>
                                 Dont have account?{"  "}
-                                <a role="button"
+                                <a
+                                   role="button"
                                    className="link-dark"
                                    onClick={toggleFormType}>
                                     {" "}

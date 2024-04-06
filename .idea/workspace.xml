@@ -85,6 +85,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/rokokos97/WebstormProjects/the-fast-company&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
@@ -200,14 +201,48 @@
       <workItem from="1684448950466" duration="15148000" />
       <workItem from="1684770067403" duration="3000" />
       <workItem from="1684770094830" duration="37000" />
-      <workItem from="1685010026814" duration="180000" />
-    </task>
-    <task id="LOCAL-00221" summary="npm i history@4.9.0&#10;create history.js">
-      <created>1677260218059</created>
-      <option name="number" value="00221" />
-      <option name="presentableId" value="LOCAL-00221" />
-      <option name="project" value="LOCAL" />
-      <updated>1677260218059</updated>
+      <workItem from="1685010026814" duration="788000" />
+      <workItem from="1685022362189" duration="84000" />
+      <workItem from="1685125848795" duration="5000" />
+      <workItem from="1685288677371" duration="610000" />
+      <workItem from="1685308516323" duration="646000" />
+      <workItem from="1685888504328" duration="414000" />
+      <workItem from="1686066503198" duration="886000" />
+      <workItem from="1686069597943" duration="626000" />
+      <workItem from="1686322608530" duration="908000" />
+      <workItem from="1686914832339" duration="1771000" />
+      <workItem from="1686928792474" duration="29000" />
+      <workItem from="1686931636741" duration="112000" />
+      <workItem from="1687421134243" duration="808000" />
+      <workItem from="1687812946760" duration="533000" />
+      <workItem from="1687814717899" duration="621000" />
+      <workItem from="1687900630742" duration="598000" />
+      <workItem from="1689600799306" duration="619000" />
+      <workItem from="1690225953001" duration="606000" />
+      <workItem from="1690320087836" duration="235000" />
+      <workItem from="1690351505997" duration="578000" />
+      <workItem from="1690354293665" duration="599000" />
+      <workItem from="1690381785950" duration="598000" />
+      <workItem from="1690437299269" duration="16498000" />
+      <workItem from="1690573335425" duration="58000" />
+      <workItem from="1694934057583" duration="157000" />
+      <workItem from="1694952830372" duration="1473000" />
+      <workItem from="1695070494616" duration="136000" />
+      <workItem from="1695198906133" duration="4490000" />
+      <workItem from="1695593149792" duration="855000" />
+      <workItem from="1697050544181" duration="2570000" />
+      <workItem from="1697102328679" duration="23000" />
+      <workItem from="1697297234033" duration="589000" />
+      <workItem from="1698162834896" duration="225000" />
+      <workItem from="1698269779802" duration="2018000" />
+      <workItem from="1699894041864" duration="2975000" />
+      <workItem from="1701883673907" duration="1696000" />
+      <workItem from="1701904523467" duration="15000" />
+      <workItem from="1703676711232" duration="1403000" />
+      <workItem from="1708336725499" duration="622000" />
+      <workItem from="1711460205159" duration="5468000" />
+      <workItem from="1712334057532" duration="620000" />
+      <workItem from="1712336295491" duration="4281000" />
     </task>
     <task id="LOCAL-00222" summary="index.js =&gt; &lt;BrowserRouter&gt; change to &lt;Router history={history}&gt;">
       <created>1677260506252</created>
@@ -545,7 +580,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685010138175</updated>
     </task>
-    <option name="localTasksCounter" value="270" />
+    <task id="LOCAL-00270" summary="change server">
+      <created>1685010209973</created>
+      <option name="number" value="00270" />
+      <option name="presentableId" value="LOCAL-00270" />
+      <option name="project" value="LOCAL" />
+      <updated>1685010209973</updated>
+    </task>
+    <option name="localTasksCounter" value="271" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -568,7 +610,6 @@
         <entry key="e89b78b1-de24-420a-9e2f-6276776b1740">
           <value>
             <State>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
@@ -587,6 +628,7 @@
                   </entry>
                 </map>
               </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
             </State>
           </value>
         </entry>
